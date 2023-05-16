@@ -1,0 +1,30 @@
+DESIGN left@right@splitter_tester
+VIEW interface
+NO_GRAPHIC 0
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 50,0 8 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 13,0 13 1 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 488,0 17 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 498,0 18 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 503,0 19 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 493,0 20 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 508,0 21 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 1,0 24 0 
+DESIGN left@right@splitter_tester
+VIEW interface
+GRAPHIC 1,0 25 0 

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom iis
+DEFAULT_FILE atom iisResizer_iis.vhd

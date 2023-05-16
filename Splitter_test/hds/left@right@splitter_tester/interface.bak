@@ -312,7 +312,7 @@ tm "GenericEolColHdrMgr"
 generic (GiElement
 name "clockFrequency"
 type "real"
-value "+66E6"
+value "66E6"
 )
 uid 347,0
 )
@@ -539,7 +539,7 @@ value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:21:38"
+value "16:21:07"
 )
 (vvPair
 variable "group"
@@ -611,7 +611,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "16:21:38"
+value "16:21:07"
 )
 (vvPair
 variable "unit"
@@ -919,10 +919,10 @@ uid 15,0
 va (VaSet
 font "Verdana,8,0"
 )
-xt "16000,6000,29100,9000"
+xt "16000,6000,28400,9000"
 st "Generic Declarations
 
-clockFrequency real +66E6  
+clockFrequency real 66E6  
 "
 )
 header "Generic Declarations"
@@ -932,7 +932,7 @@ elements [
 (GiElement
 name "clockFrequency"
 type "real"
-value "+66E6"
+value "66E6"
 )
 ]
 )
@@ -1318,8 +1318,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "933,-1026,1952,-336"
-viewArea "-500,-500,70690,47560"
+windowSize "933,-1026,1951,-336"
+viewArea "-500,-500,70600,47560"
 cachedDiagramExtent "0,0,71000,51000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -1593,6 +1593,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 591,0
+lastUid 568,0
 activeModelName "Symbol:GEN"
 )

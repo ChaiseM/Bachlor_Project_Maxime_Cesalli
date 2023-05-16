@@ -1,0 +1,2 @@
+DEFAULT_FILE atom adc128S102_sim.vhd
+DEFAULT_ARCHITECTURE atom sim

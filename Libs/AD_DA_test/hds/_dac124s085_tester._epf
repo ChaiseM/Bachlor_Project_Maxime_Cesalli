@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom test
+DEFAULT_FILE atom dac124S085_tester_test.vhd

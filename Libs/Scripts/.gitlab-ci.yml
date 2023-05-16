@@ -1,0 +1,37 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: alpine:latest
+
+build-1:
+  stage: build
+  script:
+    - echo "Nothing to build-1"
+
+test-1:
+  stage: test
+  script:
+    - echo "Nothing to test-1"
+
+deploy-eda_scripts:
+  stage: deploy
+
+  before_script:
+    - echo "install additional packages"
+    - apk update
+    - apk upgrade
+    - echo "Install Bash"
+    - apk add bash
+    - echo "Install Core Utils"
+    - apk add coreutils
+    - echo "Install Git"
+    - apk add git
+    - echo "Set Git credentials"
+    - git config --global user.email "silvan.zahno@hevs.ch"
+    - git config --global user.name "Silvan Zahno"
+    - echo "Setting up deploy-eda_scripts environment"
+
+  script:
+    - bash ./deployScriptsAll.bash

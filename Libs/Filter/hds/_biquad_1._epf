@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom simplified
+DEFAULT_FILE atom biquad_1_simplified.vhd

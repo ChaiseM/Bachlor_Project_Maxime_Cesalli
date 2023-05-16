@@ -1,0 +1,3 @@
+DEFAULT_FILE atom spi@transceiver_slave_tb/struct.bd
+DEFAULT_ARCHITECTURE atom struct
+TOP_MARKER atom 1

@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom behavioral
+DEFAULT_FILE atom movingAverage_behavioral.vhd

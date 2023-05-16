@@ -1,0 +1,3 @@
+DEFAULT_FILE atom adc3425_sim.vhd
+DEFAULT_ARCHITECTURE atom sim
+TOP_MARKER atom 0

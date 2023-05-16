@@ -1,0 +1,54 @@
+[Concat]
+Board = $HDS_PROJECT_DIR/../Board/concat
+sequential = $HEI_LIBS_DIR\sequential\concat
+[ModelSim]
+Board = $SCRATCH_DIR/$DESIGN_NAME/Board
+Common = $SCRATCH_DIR/Libraries/Common
+Common_test = $SCRATCH_DIR/Libraries/Common_test
+gates = $SCRATCH_DIR/Libraries/gates
+Splitter = $SCRATCH_DIR/$DESIGN_NAME/Splitter
+Splitter_test = $SCRATCH_DIR/$DESIGN_NAME/Splitter_test
+io = $SCRATCH_DIR/Libraries/IO
+Memory = $SCRATCH_DIR/Libraries/Memory
+Memory_test = $SCRATCH_DIR/Libraries/Memory_test
+RS232 = $SCRATCH_DIR/Libraries/RS232
+RS232_test = $SCRATCH_DIR/Libraries/RS232_test
+sequential = $SCRATCH_DIR/Libraries/sequential
+[hdl]
+Board = $HDS_PROJECT_DIR/../Board/hdl
+Common = $HEI_LIBS_DIR/Common/hdl
+Common_test = $HEI_LIBS_DIR/Common_test/hdl
+gates = $HEI_LIBS_DIR/Gates/hdl
+Splitter = $HDS_PROJECT_DIR/../Splitter/hdl
+Splitter_test = $HDS_PROJECT_DIR/../Splitter_test/hdl
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+io = $HEI_LIBS_DIR/IO/hdl
+Memory = $HEI_LIBS_DIR/Memory/hdl
+Memory_test = $HEI_LIBS_DIR/Memory_test/hdl
+RS232 = $HEI_LIBS_DIR/RS232/hdl
+RS232_test = $HEI_LIBS_DIR/RS232_test/hdl
+sequential = $HEI_LIBS_DIR/Sequential/hdl
+std = $HDS_HOME/hdl_libs/std/hdl
+[hds]
+Board = $HDS_PROJECT_DIR/../Board/hds
+Common = $HEI_LIBS_DIR/Common/hds
+Common_test = $HEI_LIBS_DIR/Common_test/hds
+gates = $HEI_LIBS_DIR/Gates/hds
+Splitter = $HDS_PROJECT_DIR/../Splitter/hds
+Splitter_test = $HDS_PROJECT_DIR/../Splitter_test/hds
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+io = $HEI_LIBS_DIR/IO/hds
+Memory = $HEI_LIBS_DIR/Memory/hds
+Memory_test = $HEI_LIBS_DIR/Memory_test/hds
+RS232 = $HEI_LIBS_DIR/RS232/hds
+RS232_test = $HEI_LIBS_DIR/RS232_test/hds
+sequential = $HEI_LIBS_DIR/Sequential/hds
+std = $HDS_HOME/hdl_libs/std/hds
+[hds_settings]
+design_root = Splitter_test.motorControl_tb(struct)motor@control_tb/struct.bd
+[library_type]
+Board = regular
+ieee = standard
+std = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp

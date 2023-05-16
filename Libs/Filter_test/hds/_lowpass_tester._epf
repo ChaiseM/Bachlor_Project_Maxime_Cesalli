@@ -1,0 +1,2 @@
+DEFAULT_FILE atom lowpass_tester_step.vhd
+DEFAULT_ARCHITECTURE atom step

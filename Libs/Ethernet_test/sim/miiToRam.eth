@@ -1,0 +1,327 @@
+at      1 us
+info    sending even byte count (34h) ping request
+frame   00 0c 29 7d ae c7
+        00 50 56 c0 00 08
+        08 00
+           45 00 00 26
+           c4 60 00 00
+           40 01 30 a5
+           c0 a8 02 01
+           c0 a8 02 80
+              08 00 cc 73
+              24 03 00 00
+              56 e0 36 de
+              00 03 78 c5
+              01 02
+# RAM addr | data
+#      000   8034 (52d)
+#      001   000C
+#      002   297D
+#       ..    ..
+# (26d)01A   0102
+#      01B   0000
+wait    7 us
+
+info    sending odd byte count (33h) ping request
+frame   00 0c 29 7d ae c7
+        00 50 56 c0 00 08
+        08 00
+           45 00 00 25
+           c3 f9 00 00
+           40 01 31 0d
+           c0 a8 02 01
+           c0 a8 02 80
+              08 00 5d 6b
+              26 03 00 00
+              56 e0 36 e9
+              00 05 e5 c2
+              01
+# RAM addr | data
+#      01B   8033 (51d)
+#      01C   000C
+#      01D   297D
+#       ..    ..
+#      034   E5C2
+# (53d)035   01--
+#      036   0000
+wait 7 us
+
+info    sending odd byte count (33h) ping request
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 5d 6b 26 03 00 00 56 e0 36 e9 00 05
+        e5 c2 01
+wait 7 us
+
+info    sending even byte count (34h) ping request
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 cc 73 24 03 00 00 56 e0 36 de 00 03
+        78 c5 01 02
+# RAM addr | data
+#      051   8034 (52d)
+#      052   000C
+#      053   297D
+#       ..    ..
+#      06A   78C5
+#      06B   0102
+#      06C   0000
+wait 7 us
+
+info    sending frame with CRC error
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 5d 6b 26 03 00 00 56 e0 36 e9 00 05
+        e5 c2 01
+crc     01 23 45 67
+# RAM addr | data
+#      06C   9---
+#      06D   0000
+wait 7 us
+
+info    sending ping request
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 cc 73 24 03 00 00 56 e0 36 de 00 03
+        78 c5 01 02
+wait 7 us
+
+info    sending frame with rx error
+error   rx_err
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 cc 73 24 03 00 00 56 e0 36 de 00 03
+        78 c5 01 02
+# RAM addr | data
+#      088   A---
+#      089   0000
+wait 7 us
+
+info    sending ping request
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 cc 73 24 03 00 00 56 e0 36 de 00 03
+        78 c5 01 02
+# RAM addr | data
+#      089   8034
+#      08A   000C
+#       ..    ..
+#      0A3   0102
+#      0A4   0000
+wait 7 us
+
+info    sending long frame
+frame   00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 100h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 200h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 300h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 400h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 500h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF # length: 5F0h
+        00 01                                           # length: 5F2h (max length)
+# RAM addr | data
+#      0A4   85F2
+#      0A5   0001
+#      0A6   0203
+#       ..    ..
+#      39C   EEEF
+#      39D   0001
+#      39E   0000
+wait 128 us
+
+info    sending long frame (will cause RAM full error)
+frame   00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 100h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 200h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 300h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 400h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
+        F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF # length: 500h
+        00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+        10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+        20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+        30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+        40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+        50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+        60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+        70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+        80 81 82 83 84 85 86 87 88 89 8A 8B 8C 8D 8E 8F
+        90 91 92 93 94 95 96 97 98 99 9A 9B 9C 9D 9E 9F
+        A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 AA AB AC AD AE AF
+        B0 B1 B2 B3 B4 B5 B6 B7 B8 B9 BA BB BC BD BE BF
+        C0 C1 C2 C3 C4 C5 C6 C7 C8 C9 CA CB CC CD CE CF
+        D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB DC DD DE DF
+        E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF # length: 5F0h
+        00 01                                           # length: 5F2h (max length)
+# RAM addr | data
+#      39E   C000
+#      39F   0000
+wait 160 us
+
+info    sending ping request
+frame   00 0c 29 7d ae c7 00 50 56 c0 00 08 08 00 45 00
+        00 25 c3 f9 00 00 40 01 31 0d c0 a8 02 01 c0 a8
+        02 80 08 00 cc 73 24 03 00 00 56 e0 36 de 00 03
+        78 c5 01 02
+wait 7 us

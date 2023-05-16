@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom struct_simplified_bq1
+DEFAULT_FILE atom highpass_50/struct_simplified_bq1.bd

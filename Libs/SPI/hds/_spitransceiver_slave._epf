@@ -1,0 +1,3 @@
+DEFAULT_FILE atom spiTransceiver_slave_rtl.vhd
+DEFAULT_ARCHITECTURE atom RTL
+TOP_MARKER atom 1

@@ -1,0 +1,2 @@
+DEFAULT_FILE atom spiControl_master_rtl.vhd
+DEFAULT_ARCHITECTURE atom rtl

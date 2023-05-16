@@ -1,0 +1,3 @@
+TOP_MARKER atom 0
+DEFAULT_ARCHITECTURE atom RTL
+DEFAULT_FILE atom adc5368_controller_RTL.vhd

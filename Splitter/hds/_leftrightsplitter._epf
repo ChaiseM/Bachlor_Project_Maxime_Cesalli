@@ -1,0 +1,3 @@
+DEFAULT_FILE atom left@right@splitter/visitors@version.bd
+DEFAULT_ARCHITECTURE atom visitors@version
+TOP_MARKER atom 1

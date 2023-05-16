@@ -1,0 +1,2 @@
+DEFAULT_FILE atom sin@cos@pipelined_tb/struct.bd
+DEFAULT_ARCHITECTURE atom struct

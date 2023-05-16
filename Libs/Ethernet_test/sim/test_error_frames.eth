@@ -1,0 +1,20 @@
+at      1 us
+
+info    Correct packet
+frame   72 C1 14 7F 35 BC F9 EB 2C F6 
+wait    3 us
+
+info    Wrong CRC
+frame   09 9D 7A 94 84 E0 48 BD 5A 54 DF F2 
+crc     435E14A3
+wait    3 us
+
+info    Frame Error RX_ERR
+error   RX_ERR
+frame   35 26 9B 14 BB CC 0A D0 76 
+wait    3 us
+
+info    Frame Valid RX_DV
+error   RX_DV
+frame   53 96 2A 41 8C 18 41 87 B5 96 61 
+wait    3 us

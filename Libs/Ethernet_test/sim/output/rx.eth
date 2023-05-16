@@ -1,0 +1,11 @@
+at      2556 ns
+info    frame 1
+frame   01 00 5E 00 00 FB E4 AF A1 39 02 01 08 00 45 00
+        00 40 00 00 40 00 10 11 5A 08 C0 A8 6F 01 E0 00
+        00 FB 00 09 00 09 00 2C 9F AF 48 65 6C 6C 4F 20
+        77 6F 72 6C 64 21 20 48 65 6C 6C 4F 20 77 6F 72
+        6C 64 21 20 48 65 6C 6C 4F 20 77 6F 72 6C 80 
+crc     CAE41ED3
+
+at      10836 ns
+info    frame 2

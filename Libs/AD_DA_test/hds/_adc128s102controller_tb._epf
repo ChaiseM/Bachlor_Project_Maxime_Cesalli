@@ -1,0 +1,3 @@
+DEFAULT_FILE atom adc128@s102@controller_tb/struct.bd
+DEFAULT_ARCHITECTURE atom struct
+TOP_MARKER atom 1

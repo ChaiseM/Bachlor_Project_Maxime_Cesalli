@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom test_bench
+DEFAULT_FILE atom filter_1_tester_test_bench.vhd

@@ -1,0 +1,2 @@
+DEFAULT_FILE atom adc112S102Controller_tester_test.vhd
+DEFAULT_ARCHITECTURE atom test

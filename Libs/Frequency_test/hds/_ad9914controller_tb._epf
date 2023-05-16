@@ -1,0 +1,2 @@
+DEFAULT_FILE atom ad9914@controller_tb/struct.bd
+DEFAULT_ARCHITECTURE atom struct

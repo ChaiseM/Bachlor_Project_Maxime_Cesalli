@@ -1,0 +1,217 @@
+at      1 us
+info    Echo
+frame   E4 AF A1 39 02 01       # destination MAC address
+        A0 A1 A2 A3 A4 A5       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 74          # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3          # source IP address
+           C0 A8 6F 01          # destination IP address
+              07 07 00 07       # source and dest. UDP ports
+              00 16 F2 92       # length, checksum
+                 48 65 6C 6C 6F 20 77 6F 72 6C 64 21 0D 0A      # Hello World!
+        00 00 00 00             # padding
+
+wait    8 us
+
+info    Echo
+frame   E4 AF A1 39 02 01       # destination MAC address
+        A0 A1 A2 A3 A4 A5       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 74          # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3          # source IP address
+           C0 A8 6F 01          # destination IP address
+              07 07 00 07       # source and dest. UDP ports
+              00 2B DE 9F       # length, checksum
+                 48 65 6C 6C 6F 2C 20 79 6F 75 20 62 72 61 76 65
+                 20 6E 65 77 6F 72 6C 64 20 6F 66 20 6F 75 72 73
+                 21 0D 0A       # Hello, you brave new world of ours!
+
+wait    8 us
+
+info    Quote of the day
+frame   E4 AF A1 39 02 01       # destination MAC address
+        A0 A1 A2 A3 A4 A5       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 74          # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3          # source IP address
+           C0 A8 6F 01          # destination IP address
+              11 11 00 11       # source and dest. UDP ports
+              00 16 65 6D       # length, checksum
+                 48 65 6C 6C 6F 20 77 6F 72 6C 64 21 0D 0A      # Hello World!
+        00 00 00 00             # padding
+
+wait    8 us
+
+info    Bonjour host discovery request
+frame   01 00 5E 00 00 FB       # destination MAC address (multicast)
+        00 23 32 B1 21 52       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 3A
+           5F 11 00 00
+           FF 11 DC 98
+           99 6D 05 A0          # source IP address
+           E0 00 00 FB          # destination IP address (multicast)
+              14 E9 14 E9       # source and dest. UDP ports
+              00 26 80 40
+                 00 00
+                 00 00
+                 00 01          # QDcount
+                 00 00          # ANcount
+                 00 00          # NRcount
+                 00 00          # ARcount
+                 06 66 70 67 61 30 31   # "FPGA01"
+                 05 6C 6F 63 61 6C 00   # "local"
+                 00 01          # Qtype
+                 00 01          # Qclass
+wait    8 us
+
+info    frame with bad MAC address
+frame   FF FF FF FF FF FF A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    frame with bad Ethernet CRC
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+crc     00000000
+wait    8 us
+
+info    frame with bad IP checksum
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11
+                                00 00
+                                      D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    frame with bad UDP checksum
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16
+                                00 00
+                                      48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us
+
+info    reference frame
+frame   E4 AF A1 39 02 01 A0 A1 A2 A3 A4 A5 08 00 45 00
+        00 2A 00 00 40 00 10 11 97 74 D0 D1 D2 D3 C0 A8
+        6F 01 11 11 00 11 00 16 CB 75 48 65 6C 6C 6F 20
+        77 6F 72 6C 64 21 0D 0A 00 00 00 00
+wait    8 us

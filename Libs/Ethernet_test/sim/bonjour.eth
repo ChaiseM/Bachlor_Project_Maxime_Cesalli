@@ -1,0 +1,114 @@
+at      20 us
+
+info    bonjour request fpga01.local
+frame   01 00 5E 00 00 FB       # destination MAC address
+        00 23 32 B1 21 52       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 3A
+           5F 11 00 00
+           FF 11 DC 98          # TTL, protocol:UDP, checksum
+           99 6D 05 A0          # source IP address
+           E0 00 00 FB          # destination IP address
+              14 E9 14 E9       # source and dest. UDP ports
+              00 26 10 F0       # length, checksum
+                 00 00 00 00 00 01 00 00 00 00 00 00 06 66 70 67
+                 61 30 31 05 6C 6F 63 61 6C 00 00 01 00 01
+wait    20 us
+
+info    bonjour request fpga00.local
+frame   01 00 5e 00 00 fb
+        00 26 2d ab 9f 04
+        08 00
+           45 00 00 3a
+           00 00 40 00
+           ff 11 6b 04
+           c0 a8 6f 0a
+           e0 00 00 fb
+              14 e9 14 e9
+              00 26 10 e6
+              00 00 00 00 00 01 00 00 00 00 00 00 06 66 70 67
+              61 30 30 05 6c 6f 63 61 6c 00 00 01 00 01
+wait    20 us
+
+
+
+info    Echo 2 192.168.111.0
+frame   E4 AF A1 39 02 00      # destination MAC address
+        A0 A1 A2 A3 A4 A5      # source MAC address
+        08 00                  # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 75         # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3         # source IP address
+           C0 A8 6F 00         # destination IP address
+              07 07 00 07      # source and dest. UDP ports
+              00 16 F2 93      # length, checksu
+                 48 65 6C 6C 6F 20 77 6F 6C 64 21 0D 0A 00
+wait    8 us
+
+info    Echo 1 192.168.111.1
+frame   E4 AF A1 39 02 01       # destination MAC address
+        A0 A1 A2 A3 A4 A5       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 74          # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3          # source IP address
+           C0 A8 6F 00          # destination IP address
+              07 07 00 07       # source and dest. UDP ports
+              00 2B DE 9F       # length, checksum
+                 48 65 6C 6C 6F 2C 20 79 6F 75 20 62 72 61 76 65
+                 20 6E 65 77 6F 72 6C 64 20 6F 66 20 6F 75 72 73
+                 21 0D 0A       # Hello, you brave new world of ours!
+
+wait    20 us
+
+info    Quote of the day 192.168.111.0
+frame   E4 AF A1 39 02 00       # destination MAC address
+        A0 A1 A2 A3 A4 A5       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 74          # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3          # source IP address
+           C0 A8 6F 01          # destination IP address
+              11 11 00 11       # source and dest. UDP ports
+              00 16 65 6D       # length, checksum
+                 48 65 6C 6C 6F 20 77 6F 72 6C 64 21 0D 0A      # Hello World!
+        00 00 00 00             # padding
+wait    20 us
+
+info    Quote of the day 192.168.111.1
+frame   E4 AF A1 39 02 01       # destination MAC address
+        A0 A1 A2 A3 A4 A5       # source MAC address
+        08 00                   # IP Ethertype
+           45 00 00 2A
+           00 00 40 00
+           10 11 97 74          # TTL, protocol:UDP, checksum
+           D0 D1 D2 D3          # source IP address
+           C0 A8 6F 01          # destination IP address
+              11 11 00 11       # source and dest. UDP ports
+              00 16 65 6D       # length, checksum
+                 48 65 6C 6C 6F 20 77 6F 72 6C 64 21 0D 0A      # Hello World!
+        00 00 00 00             # padding
+wait    20 us
+
+info    bonjour real request
+frame   01 00 5e 00 00 fb 00 26  2d ab 9f 04 08 00 45 00
+        00 3a 00 00 40 00 ff 11  6b 04 c0 a8 6f 0a e0 00
+        00 fb 14 e9 14 e9 00 26  10 e6 00 00 00 00 00 01
+        00 00 00 00 00 00 06 66  70 67 61 30 30 05 6c 6f
+        63 61 6c 00 00 01 00 01
+wait    20 us
+
+info    bonjour answer
+frame   01 00 5e 00 00 fb 00 23  32 b1 21 52 08 00 45 00
+        00 76 b5 c4 00 00 ff 11  00 00 99 6d 07 a0 e0 00
+        00 fb 14 e9 14 e9 00 62  82 7c 00 00 84 00 00 00
+        00 01 00 00 00 02 08 64  69 6f 6e 79 73 6f 73 05
+        6c 6f 63 61 6c 00 00 01  80 01 00 00 00 78 00 04
+        99 6d 07 a0 c0 0c 00 1c  80 01 00 00 00 78 00 10
+        fe 80 00 00 00 00 00 00  02 23 32 ff fe b1 21 52
+        c0 0c 00 2f 80 01 00 00  00 78 00 08 c0 0c 00 04
+        40 00 00 08
+wait    20 us

@@ -42,7 +42,7 @@ ARCHITECTURE iis OF iisDecoder IS
 	signal lrck_delayed : std_ulogic;
 	signal sck_rising : std_ulogic;
 	signal lrck_changed : std_ulogic;
-
+    
 	signal bitCounter : unsigned(4 downto 0);  -- count to 32
 
 	signal audioLeftReg  : signed(audioLeft'range);
@@ -68,6 +68,8 @@ begin
 		if reset = '1' then
 			bitCounter <= (others => '0');
 		elsif rising_edge(clock) then
+        
+        
 			if lrck_changed = '1' then
 				bitCounter <= (others => '0');
 			elsif sck_rising = '1' then 

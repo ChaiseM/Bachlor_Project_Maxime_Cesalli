@@ -77,62 +77,62 @@ VIEW interface
 GRAPHIC 14,0 48 1 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5476,0 52 0 
+GRAPHIC 5476,0 54 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5468,0 53 0 
+GRAPHIC 5468,0 55 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5460,0 54 0 
+GRAPHIC 5460,0 56 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1327,0 55 0 
+GRAPHIC 1327,0 57 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1317,0 56 0 
+GRAPHIC 1317,0 58 0 
 LIBRARY Splitter_test
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-NO_GRAPHIC 59
+NO_GRAPHIC 61
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5562,0 62 0 
+GRAPHIC 5562,0 64 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1774,0 63 0 
-DESIGN left@right@splitter_tb
-VIEW struct.bd
-NO_GRAPHIC 66
+GRAPHIC 1774,0 65 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
 NO_GRAPHIC 68
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5562,0 70 0 
+NO_GRAPHIC 70
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5569,0 71 1 
+GRAPHIC 5562,0 72 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5476,0 77 0 
+GRAPHIC 5569,0 73 1 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5468,0 78 0 
+GRAPHIC 5476,0 79 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 5460,0 79 0 
+GRAPHIC 5468,0 80 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1327,0 80 0 
+GRAPHIC 5460,0 81 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1317,0 81 0 
+GRAPHIC 1327,0 82 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1774,0 86 0 
+GRAPHIC 1317,0 83 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-GRAPHIC 1781,0 87 1 
+GRAPHIC 1774,0 88 0 
 DESIGN left@right@splitter_tb
 VIEW struct.bd
-NO_GRAPHIC 98
+GRAPHIC 1781,0 89 1 
+DESIGN left@right@splitter_tb
+VIEW struct.bd
+NO_GRAPHIC 101

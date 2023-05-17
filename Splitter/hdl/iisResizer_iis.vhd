@@ -48,33 +48,30 @@ BEGIN
 	begin
 		if reset = '1' then
 			tempR <= (others => '0');
+            cnt <= (others => '0');
 			tempL <= (others => '0');
+            audioLeftO  <= (others => '0');
+            audioRightO <= (others => '0');
 		elsif rising_edge(clock) then
-            if dataValidI ='1' then
+            if dataValidI = '1' then
                 cnt <= to_unsigned(2,cnt'length);
-                tempR <= shift_left(resize(audioRightI,tempR'length),signalOBitNb-signalIBitNb);
-                tempL <= shift_left(resize(audioLeftI,tempL'length),signalOBitNb-signalIBitNb);
+                tempR <= shift_left(resize(audioRightI,tempR'length),(signalOBitNb-signalIBitNb));
+                tempL <= shift_left(resize(audioLeftI,tempL'length),(signalOBitNb-signalIBitNb));
+                --tempR <= audioRightI;
+                --tempL <= audioLeftI;    
+            end if;
+            if ShiftData ='1' then
+                --if cnt = 2 then 
+                    audioRightO <= tempR;
+                    --cnt <= cnt-1;
+                --elsif cnt = 1 then 
+                    audioLeftO <= tempL;
+                    --cnt <= cnt-1;
+                --end if;
             end if;
 		end if;
 	end process FlipFlopAndResize;
     
-    OutFlipFlop: process(reset, clock)
-	begin
-		if reset = '1' then
-			
-		elsif rising_edge(clock) then
-            if ShiftData ='1' then
-                if cnt = 2 then 
-                    audioRightO <= tempR;
-                    cnt <= cnt-1;
-                elsif cnt = 1 then 
-                    audioLeftO <= tempL;
-                    cnt <= cnt-1;
-                end if;
-            end if;
-		end if;
-	end process OutFlipFlop;
-
 
 
 END ARCHITECTURE iis;

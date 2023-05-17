@@ -19,9 +19,14 @@ duLibraryName "Splitter_test"
 duName "leftRightSplitter_tester"
 elements [
 (GiElement
-name "clockFrequency"
+name "dataBitNb"
 type "real"
-value "66000000"
+value "24.0"
+)
+(GiElement
+name "databitnumbers"
+type "integer"
+value "24"
 )
 ]
 mwi 0
@@ -112,19 +117,19 @@ value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter_test\\hds\\leftRig
 )
 (vvPair
 variable "date"
-value "16/05/2023"
+value "17/05/2023"
 )
 (vvPair
 variable "day"
-value "Tue"
+value "Wed"
 )
 (vvPair
 variable "day_long"
-value "Tuesday"
+value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "16"
+value "17"
 )
 (vvPair
 variable "designName"
@@ -156,7 +161,7 @@ value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "16/05/2023"
+value "17/05/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -168,7 +173,7 @@ value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:19:11"
+value "10:29:35"
 )
 (vvPair
 variable "group"
@@ -292,7 +297,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:19:11"
+value "10:29:35"
 )
 (vvPair
 variable "unit"
@@ -734,17 +739,22 @@ text (MLText
 uid 1782,0
 va (VaSet
 )
-xt "29000,68800,51000,70000"
-st "clockFrequency = 66000000    ( real )  
-"
+xt "29000,68800,48900,71200"
+st "dataBitNb      = 24.0    ( real    )  
+databitnumbers = 24      ( integer )  "
 )
 header ""
 )
 elements [
 (GiElement
-name "clockFrequency"
+name "dataBitNb"
 type "real"
-value "66000000"
+value "24.0"
+)
+(GiElement
+name "databitnumbers"
+type "integer"
+value "24"
 )
 ]
 )
@@ -1293,6 +1303,7 @@ pts [
 )
 start &14
 end &28
+es 0
 sat 2
 eat 32
 stc 0
@@ -1371,6 +1382,7 @@ pts [
 )
 start &14
 end &25
+es 0
 sat 2
 eat 32
 stc 0
@@ -1504,8 +1516,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "837,-1080,2758,-24"
-viewArea "24551,26300,124438,81052"
+windowSize "-8,-8,1544,832"
+viewArea "-3458,28020,93816,78273"
 cachedDiagramExtent "-7000,0,102000,93000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -1532,7 +1544,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 5604,0
+lastUid 5670,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

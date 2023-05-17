@@ -16,74 +16,77 @@ LIBRARY Common;
   USE Common.CommonLib.all;
 
 ENTITY iisEncoder IS
--- Declarations
-    generic(
+    GENERIC( 
         signalBitNb : positive := 32
-	);
+    );
+    PORT( 
+        reset      : IN     std_ulogic;
+        clock      : IN     std_ulogic;
+        audioLeft  : IN     signed (signalBitNb-1 DOWNTO 0);
+        audioRight : IN     signed (signalBitNb-1 DOWNTO 0);
+        LRCK       : OUT    std_ulogic;
+        SCK        : OUT    std_ulogic;
+        DOUT       : OUT    std_ulogic;
+        ShiftData  : OUT    std_ulogic;
+        CLKI2s     : IN     std_ulogic
+    );
 
-	port(
-        reset		: in std_ulogic;
-        clock  		: in std_ulogic; 
-        audioLeft 	: in signed(signalBitNb-1 downto 0);
-        audioRight 	: in signed(signalBitNb-1 downto 0);
-        LRCK 		: out std_ulogic;
-        SCK			: out std_ulogic;
-        DOUT  		: out std_ulogic;
-        ShiftData 	: out std_ulogic
-	);
+-- Declarations
+
 END iisEncoder ;
 
 --
 ARCHITECTURE iis OF iisEncoder IS
    
-    constant frameLength : positive := 2*2*signalBitNb;
+    constant frameLength : positive := signalBitNb;
     constant frameCounterBitNb : positive := requiredBitNb(frameLength-1);
-
+    signal pastI2SClock : std_uLogic;
+    signal LR : std_uLogic;
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
-    signal leftShiftRegister : unsigned(audioLeft'range);
-    signal rightShiftRegister : unsigned(audioRight'range);
+    signal leftShiftRegister : signed(audioLeft'range);
+    signal rightShiftRegister : signed(audioRight'range);
+     
 
 begin
 
-    countFrame: process(reset, clock)
-    begin
-        if reset = '1' then
-            frameCounter <= (others => '0');
-        elsif rising_edge(clock) then
-            frameCounter <= frameCounter + 1;
-        end if;
-    end process countFrame;
-
-    shiftRegisters: process(reset, clock)
-    begin
-        if reset = '1' then
-            leftShiftRegister  <= (others => '0');
+    FlipFlopAndResize: process(reset, clock)
+	begin
+		if reset = '1' then
+			frameCounter <= (others => '0');
+            leftShiftRegister <= (others => '0');
             rightShiftRegister <= (others => '0');
-        elsif rising_edge(clock) then
-            if frameCounter = 0 then
-                leftShiftRegister <= unsigned(audioLeft);
-                rightShiftRegister <= unsigned(audioRight);
-            elsif frameCounter(0) = '1' then
-                if frameCounter(frameCounter'high-1 downto 0) > 1 then
-                    if (frameCounter(frameCounter'high) = '0') then
-                        leftShiftRegister <= shift_left(leftShiftRegister, 1);
-                    else
-                        rightShiftRegister <= shift_left(rightShiftRegister, 1);
-                    end if;
+            LR <= '0';
+            pastI2SClock <= '0';
+           -- switch <= '0';
+		elsif rising_edge(clock) then
+            
+            if CLKI2s = '1' and pastI2SClock = '0' then 
+                ShiftData <= '0';
+                frameCounter <= frameCounter+1;
+                pastI2SClock <= '1'; 
+                if frameCounter  = 0 then
+                    ShiftData <= '1';
+                end if;         
+  
+            elsif CLKI2s = '0' and pastI2SClock = '1' then
+                pastI2SClock <= '0';
+                if frameCounter + 1 = 0 then
+                    LR <=  not LR; 
                 end if;
+            end if ; 
+
+            LRCK <= LR;
+            SCK <= CLKI2s;
+            if LR = '1' then 
+                DOUT <= rightShiftRegister(signalBitNb-1); 
+                rightShiftRegister <= shift_left(audioRight,to_integer(frameCounter));
+            else 
+                DOUT <= leftShiftRegister(signalBitNb-1); 
+                leftShiftRegister <= shift_left(audioLeft,to_integer(frameCounter));
             end if;
-        end if;
-    end process shiftRegisters;
-
-    LRCK <= frameCounter(frameCounter'high);
-    SCK <= frameCounter(0);
-    DOUT <= '0' when frameCounter(frameCounter'high-1 downto 0) <= 1
-        else leftShiftRegister(leftShiftRegister'high)
-            when frameCounter(frameCounter'high) = '0'
-        else rightShiftRegister(rightShiftRegister'high);
-
-        shiftData <= '1' when frameCounter+1 = 0
-        else '0';
+           
+		end if;
+	end process FlipFlopAndResize;
         
 END ARCHITECTURE iis;
 

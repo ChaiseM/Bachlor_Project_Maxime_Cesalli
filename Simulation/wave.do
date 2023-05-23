@@ -17,13 +17,17 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I1/audioRightI
 add wave -noupdate /leftrightsplitter_tb/I_dut/I1/ShiftData
 add wave -noupdate /leftrightsplitter_tb/I_dut/I1/audioLeftO
 add wave -noupdate /leftrightsplitter_tb/I_dut/I1/audioRightO
+add wave -noupdate -divider StoM
+add wave -noupdate /leftrightsplitter_tb/I_dut/I3/audioLeft
+add wave -noupdate /leftrightsplitter_tb/I_dut/I3/audioRight
+add wave -noupdate /leftrightsplitter_tb/I_dut/I3/audioMono
 add wave -noupdate -divider I2Sencoder
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/SCK
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/DOUT
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/ShiftData
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/LRCK
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {464 ns} 0}
+WaveRestoreCursors {{Cursor 1} {380 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 415
 configure wave -valuecolwidth 100
@@ -39,4 +43,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {837 ns}
+WaveRestoreZoom {0 ns} {79641 ns}

@@ -17,9 +17,8 @@ LIBRARY Common;
 
 ENTITY iisEncoder IS
     GENERIC( 
-		signalBitNb : 		positive := 32;
-		I2SFrequency : 		positive := 2048000;
-		clockFrequency : 	positive := 66000000
+		signalBitNb : 		positive := 32
+		
     );
     PORT( 
         reset      : IN     std_ulogic;
@@ -43,7 +42,6 @@ ARCHITECTURE iis OF iisEncoder IS
    
     constant frameLength : positive := signalBitNb;
     constant frameCounterBitNb : positive := requiredBitNb(frameLength-1);
-	constant nbrClk : positive := clockFrequency/(2*I2SFrequency) ;
     signal pastI2SClock : std_uLogic;
     signal LR : std_uLogic;
 	

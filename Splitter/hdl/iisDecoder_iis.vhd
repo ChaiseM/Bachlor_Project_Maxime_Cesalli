@@ -101,7 +101,7 @@ begin
     audioLeft  <= audioLeftReg;
     audioRight <= audioRightReg;
 
-    dataValid <= '1' when (LRCK = '1') and (bitCounter = audioLeftReg'length+1)
+    dataValid <= '1' when  (bitCounter = audioLeftReg'length+1)
     else '0';
 
 END ARCHITECTURE iis;

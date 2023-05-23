@@ -1270,8 +1270,8 @@ projectPaths [
 "C:\\work\\edu\\eln\\project\\eln_inverter\\Prefs\\hds.hdp"
 "C:\\Users\\francois.corthay\\Documents\\eln_inverter\\Prefs\\hds.hdp"
 "C:\\Users\\francois.corthay\\Documents\\Projects\\ElN_synchro\\Prefs\\hds.hdp"
-"C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\hds.hdp"
 "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\hds.hdp"
+"C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\hds.hdp"
 ]
 libMappingsRootDir ""
 teamLibMappingsRootDir ""
@@ -1292,27 +1292,33 @@ exportedDirectories [
 exportStdIncludeRefs 1
 exportStdPackageRefs 1
 )
-printerName "\\\\vmenpprint1\\VS-ENP.23.N308-PRN"
+printerName "Microsoft Print to PDF"
 pageSizes [
 (PageSizeInfo
-name "Letter"
+name "Lettre US (215,9 x 279,4 mm)"
 width 783
 height 1013
 )
 (PageSizeInfo
-name "Legal"
+name "Tabloïd"
+type 3
+width 1013
+height 1566
+)
+(PageSizeInfo
+name "Legal US"
 type 5
 width 783
 height 1290
 )
 (PageSizeInfo
-name "Statement"
+name "Statement US"
 type 6
 width 506
 height 783
 )
 (PageSizeInfo
-name "Executive"
+name "Exécutif US (18,42 x 26,67 cm)"
 type 7
 width 667
 height 967
@@ -1346,90 +1352,6 @@ name "B5 (JIS)"
 type 13
 width 660
 height 932
-)
-(PageSizeInfo
-name "11�17"
-type 17
-width 1013
-height 1566
-)
-(PageSizeInfo
-name "Envelope #10"
-type 20
-width 379
-height 875
-)
-(PageSizeInfo
-name "Envelope DL"
-type 27
-width 399
-height 798
-)
-(PageSizeInfo
-name "Envelope C5"
-type 28
-width 587
-height 830
-)
-(PageSizeInfo
-name "Envelope B5"
-type 34
-width 638
-height 907
-)
-(PageSizeInfo
-name "Envelope Monarch"
-type 37
-width 357
-height 691
-)
-(PageSizeInfo
-name "Japanese Postcard"
-type 43
-width 362
-height 536
-)
-(PageSizeInfo
-name "A6"
-type 70
-width 380
-height 536
-)
-(PageSizeInfo
-name "Double Japan Postcard Rotated"
-type 82
-width 536
-height 725
-)
-(PageSizeInfo
-name "Executive (JIS)"
-type 119
-width 783
-height 1196
-)
-(PageSizeInfo
-name "Oficio 8.5x13"
-type 120
-width 783
-height 1198
-)
-(PageSizeInfo
-name "12x18"
-type 121
-width 1105
-height 1658
-)
-(PageSizeInfo
-name "8K 273x394 mm"
-type 139
-width 990
-height 1428
-)
-(PageSizeInfo
-name "16K 197x273 mm"
-type 140
-width 714
-height 990
 )
 ]
 exportPageSetupInfo (PageSetupInfo
@@ -6159,12 +6081,12 @@ size 190
 )
 ]
 displayHierarchy 0
-xPos 0
+xPos 419
 yPos 0
-width 1936
-height 1066
+width 1552
+height 840
 activeSidePanelTab 2
-activeLibraryTab 1
+activeLibraryTab 3
 sidePanelSize 293
 showUnixHiddenFiles 0
 componentBrowserXpos 1406

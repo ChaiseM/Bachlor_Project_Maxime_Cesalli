@@ -2,7 +2,7 @@ ARCHITECTURE test OF leftRightSplitter_tester IS
         
     signal frameCounter: unsigned(4 downto 0); -- count to 32
     constant clockPeriod: time := 1.0/clockFrequency * 1 sec;
-    constant i2sClockPeriod: time := 1.0/(2.0*dataBitNb*44100.0)* 1 sec;
+    constant i2sClockPeriod: time := 1.0/2048000.0* 1 sec;
     signal sClock: std_uLogic := '1';
     signal i2sClock: std_uLogic := '1';
     signal sReset: std_uLogic;

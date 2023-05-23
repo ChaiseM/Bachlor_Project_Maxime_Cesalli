@@ -257,7 +257,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:20:03"
+value "15:20:12"
 )
 (vvPair
 variable "group"
@@ -393,7 +393,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "15:20:03"
+value "15:20:12"
 )
 (vvPair
 variable "unit"
@@ -438,8 +438,7 @@ va (VaSet
 isHidden 1
 )
 xt "-5000,-68400,8100,-67200"
-st "clock        : std_ulogic
-"
+st "clock        : std_ulogic"
 )
 )
 *2 (Grouping
@@ -524,7 +523,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "94200,17400,110500,18600"
+xt "94200,17400,113700,18600"
 st "
 by %user on %dd %month %year
 "
@@ -881,8 +880,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,-123200,11000,-122200"
-st "reset_n      : std_ulogic
-"
+st "reset_n      : std_ulogic"
 )
 )
 *16 (Net
@@ -900,8 +898,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,-123200,13800,-122200"
-st "SIGNAL reset        : std_ulogic
-"
+st "SIGNAL reset        : std_ulogic"
 )
 )
 *17 (SaComponent
@@ -1330,8 +1327,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,-96200,14700,-95200"
-st "SIGNAL resetSynch   : std_ulogic
-"
+st "SIGNAL resetSynch   : std_ulogic"
 )
 )
 *34 (SaComponent
@@ -1530,8 +1526,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-12000,-90200,3100,-89200"
-st "SIGNAL resetSynch_n : std_ulogic
-"
+st "SIGNAL resetSynch_n : std_ulogic"
 )
 )
 *42 (SaComponent
@@ -1670,8 +1665,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,1400,17900,2600"
-st "SIGNAL reset1       : std_ulogic
-"
+st "SIGNAL reset1       : std_ulogic"
 )
 )
 *48 (SaComponent
@@ -2246,8 +2240,7 @@ va (VaSet
 xt "88000,-3600,110100,0"
 st "clockFrequency = 66.0E6    ( real     )  
 signalBitNb    = 24        ( positive )  
-signalOBitNb   = 32        ( positive )  
-"
+signalOBitNb   = 32        ( positive )  "
 )
 header ""
 )
@@ -2914,8 +2907,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,14200,1200"
-st "CLK_In       : std_uLogic
-"
+st "CLK_In       : std_uLogic"
 )
 )
 *91 (Net
@@ -2932,8 +2924,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,14200,1200"
-st "Data_In      : std_uLogic
-"
+st "Data_In      : std_uLogic"
 )
 )
 *92 (Net
@@ -2950,8 +2941,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,13700,1200"
-st "LR_In        : std_uLogic
-"
+st "LR_In        : std_uLogic"
 )
 )
 *93 (Net
@@ -2968,8 +2958,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,18400,1200"
-st "SIGNAL Data_I       : std_uLogic
-"
+st "SIGNAL Data_I       : std_uLogic"
 )
 )
 *94 (Net
@@ -2986,8 +2975,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,18400,1200"
-st "SIGNAL CLK_I        : std_uLogic
-"
+st "SIGNAL CLK_I        : std_uLogic"
 )
 )
 *95 (Net
@@ -3004,8 +2992,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,17900,1200"
-st "SIGNAL LR_I         : std_uLogic
-"
+st "SIGNAL LR_I         : std_uLogic"
 )
 )
 *96 (PortIoOut
@@ -3181,8 +3168,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,14300,1200"
-st "Data_O       : std_uLogic
-"
+st "Data_O       : std_uLogic"
 )
 )
 *100 (Net
@@ -3199,8 +3185,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,14300,1200"
-st "CLK_O        : std_uLogic
-"
+st "CLK_O        : std_uLogic"
 )
 )
 *101 (Net
@@ -3217,8 +3202,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,13500,1200"
-st "LR_O         : std_ulogic
-"
+st "LR_O         : std_ulogic"
 )
 )
 *102 (Wire
@@ -4174,7 +4158,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "-8,-8,1928,1058"
-viewArea "33293,-34851,125345,14193"
+viewArea "33293,-54469,125345,-5424"
 cachedDiagramExtent "-12000,-123200,140000,19000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"

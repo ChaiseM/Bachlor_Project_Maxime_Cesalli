@@ -57,17 +57,10 @@ BEGIN
                 cnt <= to_unsigned(2,cnt'length);
                 tempR <= shift_left(resize(audioRightI,tempR'length),(signalOBitNb-signalIBitNb));
                 tempL <= shift_left(resize(audioLeftI,tempL'length),(signalOBitNb-signalIBitNb));
-                --tempR <= audioRightI;
-                --tempL <= audioLeftI;    
             end if;
             if ShiftData ='1' then
-                --if cnt = 2 then 
                     audioRightO <= tempR;
-                    --cnt <= cnt-1;
-                --elsif cnt = 1 then 
                     audioLeftO <= tempL;
-                    --cnt <= cnt-1;
-                --end if;
             end if;
 		end if;
 	end process FlipFlopAndResize;

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-05-17T15:45:59</DateModified>
+  <DateModified>2023-05-22T11:19:37</DateModified>
   <ModuleName>FPGA_splitter</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/maxime.cesalli/Desktop/I2s/Bachlor_Project/Board/ise/iseconfig/FPGA_splitter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/maxime.cesalli/Desktop/I2s/Bachlor_Project/Board/ise</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/maxime.cesalli/Desktop/I2s/Bachlor_Project/Board/ise\</ImplementationReportsDirectory>
   <DateInitialized>2023-05-17T15:45:59</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

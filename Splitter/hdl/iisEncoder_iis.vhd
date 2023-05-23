@@ -17,7 +17,9 @@ LIBRARY Common;
 
 ENTITY iisEncoder IS
     GENERIC( 
-        signalBitNb : positive := 32
+		signalBitNb : 		positive := 32;
+		I2SFrequency : 		positive := 2048000;
+		clockFrequency : 	positive := 66000000
     );
     PORT( 
         reset      : IN     std_ulogic;
@@ -28,7 +30,8 @@ ENTITY iisEncoder IS
         SCK        : OUT    std_ulogic;
         DOUT       : OUT    std_ulogic;
         ShiftData  : OUT    std_ulogic;
-        CLKI2s     : IN     std_ulogic
+		CLKI2s 	   : IN     std_uLogic
+      
     );
 
 -- Declarations
@@ -40,8 +43,11 @@ ARCHITECTURE iis OF iisEncoder IS
    
     constant frameLength : positive := signalBitNb;
     constant frameCounterBitNb : positive := requiredBitNb(frameLength-1);
+	constant nbrClk : positive := clockFrequency/(2*I2SFrequency) ;
     signal pastI2SClock : std_uLogic;
     signal LR : std_uLogic;
+	
+	signal tempCnt : unsigned(10 downto 0);
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
     signal leftShiftRegister : signed(audioLeft'range);
     signal rightShiftRegister : signed(audioRight'range);
@@ -57,36 +63,38 @@ begin
             rightShiftRegister <= (others => '0');
             LR <= '0';
             pastI2SClock <= '0';
+			tempCnt <= (others => '0');
            -- switch <= '0';
 		elsif rising_edge(clock) then
-            
+		
+           
             if CLKI2s = '1' and pastI2SClock = '0' then 
-                ShiftData <= '0';
-                frameCounter <= frameCounter+1;
+               
                 pastI2SClock <= '1'; 
-                if frameCounter  = 0 then
-                    ShiftData <= '1';
-                end if;         
+                
   
             elsif CLKI2s = '0' and pastI2SClock = '1' then
                 pastI2SClock <= '0';
-                if frameCounter + 1 = 0 then
-                    LR <=  not LR; 
+				ShiftData <= '0';
+                frameCounter <= frameCounter+1;
+				if frameCounter + 1 = 0 then
+                    ShiftData <= '1';
+					LR <=  not LR; 
                 end if;
             end if ; 
 
             LRCK <= LR;
             SCK <= CLKI2s;
             if LR = '1' then 
-                DOUT <= rightShiftRegister(signalBitNb-1); 
-                rightShiftRegister <= shift_left(audioRight,to_integer(frameCounter));
-            else 
-                DOUT <= leftShiftRegister(signalBitNb-1); 
+				DOUT <= leftShiftRegister(signalBitNb-1); 
                 leftShiftRegister <= shift_left(audioLeft,to_integer(frameCounter));
+            else 
+				DOUT <= rightShiftRegister(signalBitNb-1); 
+                rightShiftRegister <= shift_left(audioRight,to_integer(frameCounter));
+                
             end if;
            
 		end if;
 	end process FlipFlopAndResize;
         
 END ARCHITECTURE iis;
-

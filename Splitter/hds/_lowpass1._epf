@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom parallell
+DEFAULT_FILE atom Lowpass1_parallell.vhd

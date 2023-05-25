@@ -46,7 +46,7 @@ settingsMap [
 "GlitchGeneration"
 "1"
 "InitCmd"
-"C:/Users/maxim/Bachelor/Audio/Simulation/wave.do"
+"$SIMULATION_DIR/lowpass.do"
 "LogFile"
 ""
 "RemoteHost"

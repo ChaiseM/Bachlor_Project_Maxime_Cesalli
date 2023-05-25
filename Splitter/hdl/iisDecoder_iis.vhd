@@ -42,7 +42,8 @@ ARCHITECTURE iis OF iisDecoder IS
 	signal lrck_delayed : std_ulogic;
 	signal sck_rising : std_ulogic;
 	signal lrck_changed : std_ulogic;
-    
+    signal oldDataValid :std_ulogic;
+     signal DataValid1 :std_ulogic;
 	signal bitCounter : unsigned(4 downto 0);  -- count to 32
 
 	signal audioLeftReg  : signed(audioLeft'range);
@@ -83,7 +84,10 @@ begin
 		if reset = '1' then
 			audioLeftReg  <= (others => '0');
 			audioRightReg <= (others => '0');
+            dataValid1 <= '0';
+            oldDataValid <= '0';
 		elsif rising_edge(clock) then
+            dataValid <= '0';
 			if sck_rising = '1' then
 				if bitCounter < audioLeftReg'length+1 and bitCounter > 0 then
 					if LRCK = '0' then    -- odd channel
@@ -95,14 +99,25 @@ begin
 					end if;
 				end if;
 			end if;
+                --dataValid <= '1' when  (bitCounter = audioLeftReg'length+1)
+            if (LRCK = '1') and (bitCounter = audioLeftReg'length+1) then 
+                dataValid1 <= '1';
+            else 
+                dataValid1 <= '0';
+            end if;
+            if dataValid1 = '1' and oldDataValid = '0' then 
+                oldDataValid <= '1';
+                dataValid <= '1';
+            elsif dataValid1 = '0' and oldDataValid = '1' then 
+                 oldDataValid <= '1';
+            end if;
 		end if;
 	end process shiftRegisters;
 
     audioLeft  <= audioLeftReg;
     audioRight <= audioRightReg;
-
-    dataValid <= '1' when  (bitCounter = audioLeftReg'length+1)
-    else '0';
+    
+    
 
 END ARCHITECTURE iis;
 

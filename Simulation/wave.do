@@ -26,8 +26,11 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I2/SCK
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/DOUT
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/ShiftData
 add wave -noupdate /leftrightsplitter_tb/I_dut/I2/LRCK
+add wave -noupdate /leftrightsplitter_tb/I_dut/I5/coeff
+add wave -noupdate /leftrightsplitter_tb/I_dut/I5/adder
+add wave -noupdate -expand /leftrightsplitter_tb/I_dut/I5/samples
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {380 ns} 0}
+WaveRestoreCursors {{Cursor 1} {2579443 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 415
 configure wave -valuecolwidth 100
@@ -43,4 +46,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {79641 ns}
+WaveRestoreZoom {2554470 ns} {2661373 ns}

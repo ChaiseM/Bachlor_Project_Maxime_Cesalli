@@ -117,19 +117,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "22.05.2023"
+value "25.05.2023"
 )
 (vvPair
 variable "day"
-value "lun."
+value "jeu."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "jeudi"
 )
 (vvPair
 variable "dd"
-value "22"
+value "25"
 )
 (vvPair
 variable "designName"
@@ -161,7 +161,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "22.05.2023"
+value "25.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -173,7 +173,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:16:06"
+value "16:38:21"
 )
 (vvPair
 variable "group"
@@ -297,7 +297,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:16:06"
+value "16:38:21"
 )
 (vvPair
 variable "unit"
@@ -343,7 +343,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-5000,34200,7000,35200"
-st "SIGNAL reset  : std_ulogic"
+st "SIGNAL reset  : std_ulogic
+"
 )
 )
 *2 (Net
@@ -361,7 +362,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-5000,28200,7000,29200"
-st "SIGNAL clock  : std_ulogic"
+st "SIGNAL clock  : std_ulogic
+"
 )
 )
 *3 (Grouping
@@ -446,7 +448,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "56200,91400,71800,92600"
+xt "56200,91400,75700,92600"
 st "
 by %user on %dd %month %year
 "
@@ -787,7 +789,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,12300,1000"
-st "SIGNAL LR_I   : std_uLogic"
+st "SIGNAL LR_I   : std_uLogic
+"
 )
 )
 *19 (Net
@@ -805,7 +808,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,12600,1000"
-st "SIGNAL Data_I : std_uLogic"
+st "SIGNAL Data_I : std_uLogic
+"
 )
 )
 *20 (Net
@@ -823,7 +827,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,12600,1000"
-st "SIGNAL CLK_I  : std_uLogic"
+st "SIGNAL CLK_I  : std_uLogic
+"
 )
 )
 *21 (SaComponent
@@ -1516,8 +1521,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1553,840"
-viewArea "-3500,28000,93225,79976"
+windowSize "0,14,1921,1080"
+viewArea "-30875,-6125,96100,62125"
 cachedDiagramExtent "-7000,0,102000,93000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -1544,7 +1549,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 5703,0
+lastUid 5868,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -2590,8 +2595,11 @@ preUserText (MLText
 uid 5,0
 va (VaSet
 )
-xt "-5000,28200,18900,29400"
-st "constant clockFrequency: real := 66.0E6;"
+xt "-5000,28200,19700,33000"
+st "constant clockFrequency: real := 66.0E6;
+constant DATA_WIDTH : positive := 32;
+constant COEFF_BIT_NB : positive := 16;
+constant FILTER_TAP_NB : positive := 59;"
 tm "BdDeclarativeTextMgr"
 )
 diagSignalLabel (Text

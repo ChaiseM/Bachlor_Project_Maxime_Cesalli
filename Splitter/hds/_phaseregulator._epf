@@ -1,2 +1,0 @@
-DEFAULT_FILE atom phaseRegulator_PID.vhd
-DEFAULT_ARCHITECTURE atom PID

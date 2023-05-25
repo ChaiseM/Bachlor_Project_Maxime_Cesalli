@@ -1,0 +1,30 @@
+DESIGN @lowpass1
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 13,0 17 1 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 151,0 23 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 141,0 24 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 161,0 25 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 146,0 26 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 156,0 27 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 1,0 30 0 
+DESIGN @lowpass1
+VIEW symbol.sb
+GRAPHIC 1,0 31 0 

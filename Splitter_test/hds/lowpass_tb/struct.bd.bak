@@ -38,9 +38,9 @@ mwi 0
 uid 3455,0
 )
 (Instance
-name "I_DUT"
+name "I4"
 duLibraryName "Splitter"
-duName "Lowpass"
+duName "Lowpass1"
 elements [
 (GiElement
 name "DATA_WIDTH"
@@ -59,7 +59,7 @@ value "COEFF_BIT_NB"
 )
 ]
 mwi 0
-uid 3666,0
+uid 3919,0
 )
 ]
 libraryRefs [
@@ -122,19 +122,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "25.05.2023"
+value "26.05.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "25"
+value "26"
 )
 (vvPair
 variable "designName"
@@ -166,7 +166,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "25.05.2023"
+value "26.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -178,7 +178,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:52:19"
+value "09:46:28"
 )
 (vvPair
 variable "group"
@@ -302,7 +302,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:52:19"
+value "09:46:28"
 )
 (vvPair
 variable "unit"
@@ -347,7 +347,8 @@ va (VaSet
 isHidden 1
 )
 xt "-5000,34200,11300,35400"
-st "SIGNAL reset    : std_ulogic"
+st "SIGNAL reset    : std_ulogic
+"
 )
 )
 *2 (Net
@@ -364,7 +365,8 @@ va (VaSet
 isHidden 1
 )
 xt "-5000,28200,11400,29400"
-st "SIGNAL clock    : std_ulogic"
+st "SIGNAL clock    : std_ulogic
+"
 )
 )
 *3 (Grouping
@@ -697,7 +699,8 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,15800,1200"
-st "SIGNAL en       : std_ulogic"
+st "SIGNAL en       : std_ulogic
+"
 )
 )
 *15 (Net
@@ -715,7 +718,8 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,29900,1200"
-st "SIGNAL audioIn  : signed(DATA_WIDTH-1 downto 0)"
+st "SIGNAL audioIn  : signed(DATA_WIDTH-1 downto 0)
+"
 )
 )
 *16 (Net
@@ -733,7 +737,8 @@ va (VaSet
 isHidden 1
 )
 xt "0,0,30400,1200"
-st "SIGNAL audioOut : signed(DATA_WIDTH-1 downto 0)"
+st "SIGNAL audioOut : signed(DATA_WIDTH-1 downto 0)
+"
 )
 )
 *17 (Blk
@@ -822,83 +827,83 @@ value "DATA_WIDTH"
 )
 )
 *21 (SaComponent
-uid 3666,0
+uid 3919,0
 optionalChildren [
 *22 (CptPort
-uid 3646,0
+uid 3929,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3647,0
+uid 3930,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "35250,43625,36000,44375"
+xt "35250,44625,36000,45375"
 )
 tg (CPTG
-uid 3648,0
+uid 3931,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3649,0
+uid 3932,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "37000,43300,40800,44700"
+xt "37000,44300,40800,45700"
 st "clock"
-blo "37000,44500"
+blo "37000,45500"
 )
 )
 thePort (LogicalPort
+lang 11
 decl (Decl
 n "clock"
-t "STD_LOGIC"
+t "std_logic"
 o 1
-suid 1,0
 )
 )
 )
 *23 (CptPort
-uid 3650,0
+uid 3933,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3651,0
+uid 3934,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "35250,45625,36000,46375"
+xt "35250,46625,36000,47375"
 )
 tg (CPTG
-uid 3652,0
+uid 3935,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3653,0
+uid 3936,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "37000,45300,41100,46700"
+xt "37000,46300,41100,47700"
 st "reset"
-blo "37000,46500"
+blo "37000,47500"
 )
 )
 thePort (LogicalPort
+lang 11
 decl (Decl
 n "reset"
-t "STD_LOGIC"
+t "std_logic"
 o 2
-suid 2,0
 )
 )
 )
 *24 (CptPort
-uid 3654,0
+uid 3937,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3655,0
+uid 3938,0
 ro 90
 va (VaSet
 vasetType 1
@@ -907,11 +912,11 @@ fg "0,65535,0"
 xt "35250,39625,36000,40375"
 )
 tg (CPTG
-uid 3656,0
+uid 3939,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3657,0
+uid 3940,0
 va (VaSet
 font "Verdana,12,0"
 )
@@ -921,58 +926,58 @@ blo "37000,40500"
 )
 )
 thePort (LogicalPort
+lang 11
 decl (Decl
 n "audioIn"
 t "signed"
-b "(DATA_WIDTH-1 downto 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
-suid 3,0
 )
 )
 )
 *25 (CptPort
-uid 3658,0
+uid 3941,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3659,0
+uid 3942,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "54000,42625,54750,43375"
+xt "53000,41625,53750,42375"
 )
 tg (CPTG
-uid 3660,0
+uid 3943,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 3661,0
+uid 3944,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "46400,42300,53000,43700"
+xt "45400,41300,52000,42700"
 st "audioOut"
 ju 2
-blo "53000,43500"
+blo "52000,42500"
 )
 )
 thePort (LogicalPort
+lang 11
 m 1
 decl (Decl
 n "audioOut"
 t "signed"
-b "(DATA_WIDTH-1 downto 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
-suid 4,0
 )
 )
 )
 *26 (CptPort
-uid 3662,0
+uid 3945,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 3663,0
+uid 3946,0
 ro 90
 va (VaSet
 vasetType 1
@@ -981,11 +986,11 @@ fg "0,65535,0"
 xt "35250,41625,36000,42375"
 )
 tg (CPTG
-uid 3664,0
+uid 3947,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 3665,0
+uid 3948,0
 va (VaSet
 font "Verdana,12,0"
 )
@@ -995,74 +1000,74 @@ blo "37000,42500"
 )
 )
 thePort (LogicalPort
+lang 11
 decl (Decl
 n "en"
-t "std_ulogic"
+t "std_logic"
 o 5
-suid 5,0
 )
 )
 )
 ]
 shape (Rectangle
-uid 3667,0
+uid 3920,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "36000,38000,54000,48000"
+xt "36000,37000,53000,49000"
 )
-oxt "-9000,8000,9000,18000"
+oxt "23000,15000,40000,27000"
 ttg (MlTextGroup
-uid 3668,0
+uid 3921,0
 ps "CenterOffsetStrategy"
 stg "VerticalLayoutStrategy"
 textVec [
 *27 (Text
-uid 3669,0
+uid 3922,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "36250,34800,40650,36000"
+xt "37250,33800,41650,35000"
 st "Splitter"
-blo "36250,35800"
+blo "37250,34800"
 tm "BdLibraryNameMgr"
 )
 *28 (Text
-uid 3670,0
+uid 3923,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "36250,36000,41150,37200"
-st "Lowpass"
-blo "36250,37000"
+xt "37250,35000,42750,36200"
+st "Lowpass1"
+blo "37250,36000"
 tm "CptNameMgr"
 )
 *29 (Text
-uid 3671,0
+uid 3924,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "36250,37200,39950,38400"
-st "I_DUT"
-blo "36250,38200"
+xt "37250,36200,38950,37400"
+st "I4"
+blo "37250,37200"
 tm "InstanceNameMgr"
 )
 ]
 )
 ga (GenericAssociation
-uid 3672,0
+uid 3925,0
 ps "EdgeToEdgeStrategy"
 matrix (Matrix
-uid 3673,0
+uid 3926,0
 text (MLText
-uid 3674,0
+uid 3927,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "36000,50800,61500,53200"
+xt "38000,51000,63500,53400"
 st "DATA_WIDTH    = DATA_WIDTH       ( positive )  
 FILTER_TAP_NB = FILTER_TAP_NB    ( positive )  
 COEFF_BIT_NB  = COEFF_BIT_NB     ( positive )  "
@@ -1087,7 +1092,19 @@ value "COEFF_BIT_NB"
 )
 ]
 )
-ordering 1
+viewicon (ZoomableIcon
+uid 3928,0
+sl 0
+va (VaSet
+vasetType 1
+fg "49152,49152,49152"
+)
+xt "36250,47250,37750,48750"
+iconName "VhdlFileViewIcon.png"
+iconMaskName "VhdlFileViewIcon.msk"
+ftype 10
+)
+viewiconposition 0
 portVis (PortSigDisplay
 sTC 0
 sF 0
@@ -1101,10 +1118,10 @@ uid 1318,0
 va (VaSet
 vasetType 3
 )
-xt "32000,46000,35250,57000"
+xt "32000,47000,35250,57000"
 pts [
-"35250,46000"
-"32000,46000"
+"35250,47000"
+"32000,47000"
 "32000,57000"
 ]
 )
@@ -1125,9 +1142,9 @@ uid 1322,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "32000,44600,36100,46000"
+xt "32000,45600,36100,47000"
 st "reset"
-blo "32000,45800"
+blo "32000,46800"
 tm "WireNameMgr"
 )
 )
@@ -1140,10 +1157,10 @@ uid 1328,0
 va (VaSet
 vasetType 3
 )
-xt "30000,44000,35250,57000"
+xt "30000,45000,35250,57000"
 pts [
-"35250,44000"
-"30000,44000"
+"35250,45000"
+"30000,45000"
 "30000,57000"
 ]
 )
@@ -1164,9 +1181,9 @@ uid 1332,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "32000,42600,35800,44000"
+xt "32000,43600,35800,45000"
 st "clock"
-blo "32000,43800"
+blo "32000,44800"
 tm "WireNameMgr"
 )
 )
@@ -1258,15 +1275,16 @@ va (VaSet
 vasetType 3
 lineWidth 2
 )
-xt "54750,43000,58000,57000"
+xt "53750,42000,58000,57000"
 pts [
-"54750,43000"
-"58000,43000"
+"53750,42000"
+"58000,42000"
 "58000,57000"
 ]
 )
 start &25
 end &17
+ss 0
 sat 32
 eat 1
 sty 1
@@ -1282,9 +1300,9 @@ uid 3377,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "56750,41600,63350,43000"
+xt "55750,40600,62350,42000"
 st "audioOut"
-blo "56750,42800"
+blo "55750,41800"
 tm "WireNameMgr"
 )
 )
@@ -1400,8 +1418,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "323,71,1563,927"
-viewArea "-8500,18100,92700,88300"
+windowSize "323,71,1565,927"
+viewArea "16144,27748,68061,62257"
 cachedDiagramExtent "-7000,0,91000,85000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -1428,7 +1446,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 3707,0
+lastUid 3948,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

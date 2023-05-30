@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom test_lowpas_i2s
+DEFAULT_FILE atom bascule_test_lowpas_i2s.vhd

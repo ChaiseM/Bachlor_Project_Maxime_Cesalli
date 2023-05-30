@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom edge
+DEFAULT_FILE atom risingEdgeDetector_edge.vhd

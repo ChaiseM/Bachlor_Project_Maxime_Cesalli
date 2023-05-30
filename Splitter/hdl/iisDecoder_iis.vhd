@@ -15,26 +15,6 @@ LIBRARY gates;
 LIBRARY Common;
   USE Common.CommonLib.all;
 
-ENTITY iisDecoder IS
-
-	generic(
-		signalBitNb : positive := 24
-	);
-
-	port(
-		reset		: in std_ulogic;
-		clock  		: in std_ulogic;
-		LRCK 		: in std_ulogic;
-		SCK			: in std_ulogic;
-		DOUT  		: in std_ulogic;
-		dataValid 	: out std_ulogic;
-		audioLeft 	: out signed(signalBitNb-1 downto 0);
-		audioRight 	: out signed(signalBitNb-1 downto 0)
-	);
-
-
-END ENTITY iisDecoder ;
-
 --
 ARCHITECTURE iis OF iisDecoder IS
 
@@ -42,8 +22,10 @@ ARCHITECTURE iis OF iisDecoder IS
 	signal lrck_delayed : std_ulogic;
 	signal sck_rising : std_ulogic;
 	signal lrck_changed : std_ulogic;
-    signal oldDataValid :std_ulogic;
-     signal DataValid1 :std_ulogic;
+    signal old_dataValid : std_ulogic;
+    signal s_dataValid : std_ulogic;
+    
+    
 	signal bitCounter : unsigned(4 downto 0);  -- count to 32
 
 	signal audioLeftReg  : signed(audioLeft'range);
@@ -53,6 +35,7 @@ begin
 	delayClocks: process(reset, clock)
 	begin
 		if reset = '1' then
+            
 			sck_delayed <= '0';
 			lrck_delayed <= '0';
 		elsif rising_edge(clock) then
@@ -82,42 +65,44 @@ begin
 	shiftRegisters: process(reset, clock)
 	begin
 		if reset = '1' then
+            old_dataValid <= '0';
 			audioLeftReg  <= (others => '0');
 			audioRightReg <= (others => '0');
-            dataValid1 <= '0';
-            oldDataValid <= '0';
 		elsif rising_edge(clock) then
-            dataValid <= '0';
 			if sck_rising = '1' then
-				if bitCounter < audioLeftReg'length+1 and bitCounter > 0 then
+				if bitCounter < audioLeftReg'length then
+                   
+                    
 					if LRCK = '0' then    -- odd channel
+                        audioLeftReg  <= (others => '0');
 						audioLeftReg <= shift_left(audioLeftReg, 1);
 						audioLeftReg(0) <= DOUT;
 					else -- even channel
+                        audioRightReg <= (others => '0');
 						audioRightReg <= shift_left(audioRightReg, 1);
 						audioRightReg(0) <= DOUT;
 					end if;
 				end if;
 			end if;
-                --dataValid <= '1' when  (bitCounter = audioLeftReg'length+1)
-            if (LRCK = '1') and (bitCounter = audioLeftReg'length+1) then 
-                dataValid1 <= '1';
-            else 
-                dataValid1 <= '0';
-            end if;
-            if dataValid1 = '1' and oldDataValid = '0' then 
-                oldDataValid <= '1';
-                dataValid <= '1';
-            elsif dataValid1 = '0' and oldDataValid = '1' then 
-                 oldDataValid <= '1';
-            end if;
+            
+            if s_dataValid = '1' and old_dataValid = '0' then 
+                old_dataValid <= '1';
+            elsif s_dataValid = '0' and old_dataValid = '1' then 
+                old_dataValid <= '0';
+            end if ;
+            
 		end if;
 	end process shiftRegisters;
 
     audioLeft  <= audioLeftReg;
     audioRight <= audioRightReg;
+
+    s_dataValid  <= '1' when (LRCK = '1') and (bitCounter = audioLeftReg'length+1)
+    else '0';
     
+   -- s_dataValid <= '1' when (bitCounter = audioLeftReg'length+1)
+    --else '0';
     
+    dataValid <= s_dataValid;
 
 END ARCHITECTURE iis;
-

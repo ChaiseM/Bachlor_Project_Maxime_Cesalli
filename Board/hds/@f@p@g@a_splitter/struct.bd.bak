@@ -92,11 +92,6 @@ duLibraryName "Splitter"
 duName "leftRightSplitter"
 elements [
 (GiElement
-name "clockFrequency"
-type "real"
-value "66.0E6"
-)
-(GiElement
 name "signalBitNb"
 type "positive"
 value "24"
@@ -201,19 +196,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Boar
 )
 (vvPair
 variable "date"
-value "17.05.2023"
+value "26.05.2023"
 )
 (vvPair
 variable "day"
-value "mer."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "17"
+value "26"
 )
 (vvPair
 variable "designName"
@@ -245,7 +240,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "17.05.2023"
+value "26.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -257,7 +252,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:20:12"
+value "14:29:19"
 )
 (vvPair
 variable "group"
@@ -393,7 +388,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "15:20:12"
+value "14:29:19"
 )
 (vvPair
 variable "unit"
@@ -2237,19 +2232,13 @@ text (MLText
 uid 7315,0
 va (VaSet
 )
-xt "88000,-3600,110100,0"
-st "clockFrequency = 66.0E6    ( real     )  
-signalBitNb    = 24        ( positive )  
-signalOBitNb   = 32        ( positive )  "
+xt "88000,-3600,106700,-1200"
+st "signalBitNb  = 24    ( positive )  
+signalOBitNb = 32    ( positive )  "
 )
 header ""
 )
 elements [
-(GiElement
-name "clockFrequency"
-type "real"
-value "66.0E6"
-)
 (GiElement
 name "signalBitNb"
 type "positive"
@@ -4157,8 +4146,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1058"
-viewArea "33293,-54469,125345,-5424"
+windowSize "0,14,1921,1080"
+viewArea "33300,-29400,124722,21252"
 cachedDiagramExtent "-12000,-123200,140000,19000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -4186,7 +4175,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,-80000"
-lastUid 7531,0
+lastUid 7642,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

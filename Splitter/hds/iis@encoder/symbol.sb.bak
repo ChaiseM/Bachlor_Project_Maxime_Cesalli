@@ -32,7 +32,7 @@ model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
 ordering 1
-suid 9,0
+suid 11,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -178,12 +178,12 @@ port (LogicalPort
 lang 11
 decl (Decl
 n "CLKI2s"
-t "std_ulogic"
+t "std_uLogic"
 o 9
-suid 9,0
+suid 11,0
 )
 )
-uid 190,0
+uid 311,0
 )
 ]
 )
@@ -287,7 +287,7 @@ uid 106,0
 litem &22
 pos 8
 dimension 20
-uid 191,0
+uid 312,0
 )
 ]
 )
@@ -399,11 +399,11 @@ tm "GenericEolColHdrMgr"
 )
 *57 (LogGeneric
 generic (GiElement
-name "signalBitNb"
+name "DATA_WIDTH"
 type "positive"
-value "32"
+value ""
 )
-uid 220,0
+uid 342,0
 )
 ]
 )
@@ -459,7 +459,7 @@ uid 157,0
 litem &57
 pos 0
 dimension 20
-uid 221,0
+uid 343,0
 )
 ]
 )
@@ -576,19 +576,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "22.05.2023"
+value "26.05.2023"
 )
 (vvPair
 variable "day"
-value "lun."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "22"
+value "26"
 )
 (vvPair
 variable "entity_name"
@@ -616,7 +616,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "22.05.2023"
+value "26.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -628,7 +628,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:14:42"
+value "10:28:25"
 )
 (vvPair
 variable "group"
@@ -700,7 +700,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:14:42"
+value "10:28:25"
 )
 (vvPair
 variable "unit"
@@ -744,7 +744,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,9625,15000,10375"
+xt "34250,21625,35000,22375"
 )
 tg (CPTG
 uid 53,0
@@ -755,9 +755,9 @@ uid 54,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,9300,22700,10700"
+xt "36000,21300,42700,22700"
 st "audioLeft"
-blo "16000,10500"
+blo "36000,22500"
 tm "CptPortNameMgr"
 )
 )
@@ -767,8 +767,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,72500,4800"
-st "audioLeft  : IN     signed (signalBitNb-1 DOWNTO 0) ;
-"
+st "audioLeft  : IN     signed (signalBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -791,7 +790,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,12625,15000,13375"
+xt "34250,24625,35000,25375"
 )
 tg (CPTG
 uid 58,0
@@ -802,9 +801,9 @@ uid 59,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,12300,24300,13700"
+xt "36000,24300,44300,25700"
 st "audioRight"
-blo "16000,13500"
+blo "36000,25500"
 tm "CptPortNameMgr"
 )
 )
@@ -814,8 +813,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,72500,5600"
-st "audioRight : IN     signed (signalBitNb-1 DOWNTO 0) ;
-"
+st "audioRight : IN     signed (signalBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -838,7 +836,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,23625,15000,24375"
+xt "34250,33625,35000,34375"
 )
 tg (CPTG
 uid 63,0
@@ -849,9 +847,9 @@ uid 64,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,23300,19800,24700"
+xt "36000,33300,39800,34700"
 st "clock"
-blo "16000,24500"
+blo "36000,34500"
 tm "CptPortNameMgr"
 )
 )
@@ -861,8 +859,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,62000,4000"
-st "clock      : IN     std_ulogic  ;
-"
+st "clock      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -884,7 +881,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,11625,39750,12375"
+xt "59000,21625,59750,22375"
 )
 tg (CPTG
 uid 68,0
@@ -895,10 +892,10 @@ uid 69,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "33700,11300,38000,12700"
+xt "53700,21300,58000,22700"
 st "DOUT"
 ju 2
-blo "38000,12500"
+blo "58000,22500"
 tm "CptPortNameMgr"
 )
 )
@@ -908,8 +905,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,7200,62000,8000"
-st "DOUT       : OUT    std_ulogic  ;
-"
+st "DOUT       : OUT    std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -932,7 +928,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,13625,39750,14375"
+xt "59000,23625,59750,24375"
 )
 tg (CPTG
 uid 73,0
@@ -943,10 +939,10 @@ uid 74,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "34000,13300,38000,14700"
+xt "54000,23300,58000,24700"
 st "LRCK"
 ju 2
-blo "38000,14500"
+blo "58000,24500"
 tm "CptPortNameMgr"
 )
 )
@@ -956,8 +952,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,62000,6400"
-st "LRCK       : OUT    std_ulogic  ;
-"
+st "LRCK       : OUT    std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -980,7 +975,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,24625,15000,25375"
+xt "34250,35625,35000,36375"
 )
 tg (CPTG
 uid 78,0
@@ -991,9 +986,9 @@ uid 79,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,24300,20100,25700"
+xt "36000,35300,40100,36700"
 st "reset"
-blo "16000,25500"
+blo "36000,36500"
 tm "CptPortNameMgr"
 )
 )
@@ -1003,8 +998,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,62000,3200"
-st "reset      : IN     std_ulogic  ;
-"
+st "reset      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1026,7 +1020,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "39000,15625,39750,16375"
+xt "59000,25625,59750,26375"
 )
 tg (CPTG
 uid 83,0
@@ -1037,10 +1031,10 @@ uid 84,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "34700,15300,38000,16700"
+xt "54700,25300,58000,26700"
 st "SCK"
 ju 2
-blo "38000,16500"
+blo "58000,26500"
 tm "CptPortNameMgr"
 )
 )
@@ -1050,8 +1044,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,62000,7200"
-st "SCK        : OUT    std_ulogic  ;
-"
+st "SCK        : OUT    std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1074,7 +1067,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,15625,15000,16375"
+xt "34250,29625,35000,30375"
 )
 tg (CPTG
 uid 88,0
@@ -1085,9 +1078,9 @@ uid 89,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,15300,22600,16700"
+xt "36000,29300,42600,30700"
 st "ShiftData"
-blo "16000,16500"
+blo "36000,30500"
 tm "CptPortNameMgr"
 )
 )
@@ -1097,8 +1090,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8000,62000,8800"
-st "ShiftData  : OUT    std_ulogic  ;
-"
+st "ShiftData  : OUT    std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1112,48 +1104,47 @@ suid 8,0
 )
 )
 *80 (CptPort
-uid 192,0
+uid 306,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 193,0
+uid 307,0
 ro 90
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,25625,15000,26375"
+xt "34250,18625,35000,19375"
 )
 tg (CPTG
-uid 194,0
+uid 308,0
 ps "CptPortTextPlaceStrategy"
 stg "VerticalLayoutStrategy"
 f (Text
-uid 195,0
+uid 309,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,25300,21200,26700"
+xt "36000,18300,41200,19700"
 st "CLKI2s"
-blo "16000,26500"
+blo "36000,19500"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 196,0
+uid 310,0
 va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8800,61000,9600"
-st "CLKI2s     : IN     std_ulogic 
-"
+st "CLKI2s     : IN     std_uLogic "
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "CLKI2s"
-t "std_ulogic"
+t "std_uLogic"
 o 9
-suid 9,0
+suid 11,0
 )
 )
 )
@@ -1166,7 +1157,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,8000,39000,27000"
+xt "35000,18000,59000,38000"
 )
 oxt "15000,6000,46000,26000"
 biTextGroup (BiTextGroup
@@ -1178,18 +1169,18 @@ uid 11,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "14900,2800,19300,4000"
+xt "34900,12800,39300,14000"
 st "Splitter"
-blo "14900,3800"
+blo "34900,13800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "14900,4000,21100,5200"
+xt "34900,14000,41100,15200"
 st "iisEncoder"
-blo "14900,5000"
+blo "34900,15000"
 )
 )
 gi *81 (GenericInterface
@@ -1202,10 +1193,10 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "-113000,-47000,-99000,-44600"
+xt "41000,14600,53500,17000"
 st "Generic Declarations
 
-signalBitNb positive 32  
+DATA_WIDTH positive   
 "
 )
 header "Generic Declarations"
@@ -1213,9 +1204,9 @@ showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "signalBitNb"
+name "DATA_WIDTH"
 type "positive"
-value "32"
+value ""
 )
 ]
 )
@@ -1251,7 +1242,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,46300,49000"
+xt "36200,48000,48900,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1604,10 +1595,11 @@ tm "PackageList"
 )
 ]
 )
-windowSize "837,-1080,1853,-390"
-viewArea "-500,-500,70420,47560"
-cachedDiagramExtent "-113000,-47000,73000,49000"
-pageBreakOrigin "0,0"
+windowSize "0,14,1921,1080"
+viewArea "-3100,7100,95094,59880"
+cachedDiagramExtent "0,0,73000,49000"
+hasePageBreakOrigin 1
+pageBreakOrigin "-41000,-48000"
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -1877,6 +1869,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 221,0
-activeModelName "Symbol:CDM"
+lastUid 460,0
+activeModelName "Symbol:GEN"
 )

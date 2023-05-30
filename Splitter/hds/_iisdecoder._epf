@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom iis
+DEFAULT_FILE atom iisDecoder_iis.vhd

@@ -1,0 +1,134 @@
+Application HDL Designer version 2019.2 (Build 5)
+Created on 26.05.2023 10:38:55
+HDL Designer Series
+HDL Designer
+Version 2019.2 (Build 5) 
+Built on Sat Apr 20 2019 at 23:05
+Verilog parser dynamic library version 5.1.42.f ( 2019/04/20 21:28:10 )
+Running on Professional  (Build 9200)
+
+Loading HDS Project file via Environment variable $HDS_LIBS C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds.hdp
+Loading prefs env variable USER_HOME C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds_user
+Loading teamprefs from current directory C:\Users\maxime.cesalli\AppData\Roaming\HDL Designer Series\hds_team
+Loading user Task files from 'C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds_user\v2019.2\tasks'.
+Loading team Task files from 'C:\Users\maxime.cesalli\AppData\Roaming\HDL Designer Series\hds_team\v2019.2\tasks'.
+The timezone environment variable is set : TZ=GMT-2:0DST
+
+HDS_HOME is set to : C:\eda\MentorGraphics\HDS
+
+Environment variables:
+HDS_HOME set to C:\eda\MentorGraphics\HDS
+HDS_USER_HOME set to C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds_user
+HDS_TEAM_HOME set to C:\Users\maxime.cesalli\AppData\Roaming\HDL Designer Series\hds_team
+HDS_LIBS set to C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds.hdp
+HDS_PORT set to WE2330804:50270
+10 events recorded:
+RunTaskOpUSER:ModelSim Flow
+RunTaskOpUSER:ModelSim FlowThruComponents
+EditGenericDecl
+Save
+RunTaskOpUSER:ModelSim Flow
+RunTaskOpUSER:ModelSim FlowThruComponents
+Save
+RunTaskOpUSER:ModelSim Flow
+RunTaskOpUSER:ModelSim FlowThruComponents
+EditGenericDecl
+
+Traceback
+
+hdldesigner.exe caused an EXCEPTION_ACCESS_VIOLATION in module hdldesigner.exe at 0023:0126F1F6
+EAX=6E61430A  EBX=0291A7F0  ECX=0CBBCE00  EDX=0CBBCE00  ESI=00171F56
+EDI=00000111  EBP=03C3F500  ESP=03C3F3D8  EIP=0126F1F6  FLG=00010206
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0x0126F1F6 hdldesigner.exe
+0x0204AE8B hdldesigner.exe
+0x01B00A2F hdldesigner.exe
+0x01CE7705 hdldesigner.exe
+0x01A07AA9 hdldesigner.exe
+0x01A0763F hdldesigner.exe
+0x02797EC1 hdldesigner.exe
+0x02818CBB hdldesigner.exe
+0x027D611E hdldesigner.exe
+0x0291A820 hdldesigner.exe
+0x0004148B USER32.dll, AddClipboardFormatListener()+0075 byte(s)
+0x0003844A USER32.dll, GetClassLongW()+1962 byte(s)
+0x000361BA USER32.dll, DispatchMessageW()+0586 byte(s)
+0x000282A0 USER32.dll, DispatchMessageA()+0016 byte(s)
+0x027D4515 hdldesigner.exe
+0x027D42CB hdldesigner.exe
+0x0040469A hdldesigner.exe
+0x00401BA6 hdldesigner.exe
+0x0291B412 hdldesigner.exe
+0x028DAD8F hdldesigner.exe
+0x000200F9 KERNEL32.DLL, BaseThreadInitThunk()+0025 byte(s)
+0x00067BBE ntdll.dll, RtlGetAppContainerNamedObjectPath()+0286 byte(s)
+0x00067B8E ntdll.dll, RtlGetAppContainerNamedObjectPath()+0238 byte(s)
+End of traceback
+
+Application HDL Designer version 2019.2 (Build 5)
+Created on 26.05.2023 11:52:19
+HDL Designer Series
+HDL Designer
+Version 2019.2 (Build 5) 
+Built on Sat Apr 20 2019 at 23:05
+Verilog parser dynamic library version 5.1.42.f ( 2019/04/20 21:28:10 )
+Running on Professional  (Build 9200)
+
+Loading HDS Project file via Environment variable $HDS_LIBS C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds.hdp
+Loading prefs env variable USER_HOME C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds_user
+Loading teamprefs from current directory C:\Users\maxime.cesalli\AppData\Roaming\HDL Designer Series\hds_team
+Loading user Task files from 'C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds_user\v2019.2\tasks'.
+Loading team Task files from 'C:\Users\maxime.cesalli\AppData\Roaming\HDL Designer Series\hds_team\v2019.2\tasks'.
+The timezone environment variable is set : TZ=GMT-2:0DST
+
+HDS_HOME is set to : C:\eda\MentorGraphics\HDS
+
+Environment variables:
+HDS_HOME set to C:\eda\MentorGraphics\HDS
+HDS_USER_HOME set to C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds_user
+HDS_TEAM_HOME set to C:\Users\maxime.cesalli\AppData\Roaming\HDL Designer Series\hds_team
+HDS_LIBS set to C:\Users\maxime.cesalli\Desktop\I2s\Bachlor_Project\Prefs\hds.hdp
+HDS_PORT set to WE2330804:51040
+10 events recorded:
+ObjectProperties
+EditGenericDecl
+Save
+ObjectProperties
+ObjectProperties
+EditGenericDecl
+Save
+ObjectProperties
+Save
+EditGenericDecl
+
+Traceback
+
+hdldesigner.exe caused an EXCEPTION_ACCESS_VIOLATION in module hdldesigner.exe at 0023:0126F275
+EAX=00000000  EBX=0291A7F0  ECX=03C3F40E  EDX=03C3F410  ESI=000E10AC
+EDI=00000111  EBP=03C3F500  ESP=03C3F3C8  EIP=0126F275  FLG=00010246
+CS=0023   DS=002B  SS=002B  ES=002B   FS=0053  GS=002B
+0x0126F275 hdldesigner.exe
+0x0204AE8B hdldesigner.exe
+0x01B00A2F hdldesigner.exe
+0x01CE7705 hdldesigner.exe
+0x01A07AA9 hdldesigner.exe
+0x01A0763F hdldesigner.exe
+0x02797EC1 hdldesigner.exe
+0x02818CBB hdldesigner.exe
+0x027D611E hdldesigner.exe
+0x0291A820 hdldesigner.exe
+0x0004148B USER32.dll, AddClipboardFormatListener()+0075 byte(s)
+0x0003844A USER32.dll, GetClassLongW()+1962 byte(s)
+0x000361BA USER32.dll, DispatchMessageW()+0586 byte(s)
+0x000282A0 USER32.dll, DispatchMessageA()+0016 byte(s)
+0x027D4515 hdldesigner.exe
+0x027D42CB hdldesigner.exe
+0x0040469A hdldesigner.exe
+0x00401BA6 hdldesigner.exe
+0x0291B412 hdldesigner.exe
+0x028DAD8F hdldesigner.exe
+0x000200F9 KERNEL32.DLL, BaseThreadInitThunk()+0025 byte(s)
+0x00067BBE ntdll.dll, RtlGetAppContainerNamedObjectPath()+0286 byte(s)
+0x00067B8E ntdll.dll, RtlGetAppContainerNamedObjectPath()+0238 byte(s)
+End of traceback
+

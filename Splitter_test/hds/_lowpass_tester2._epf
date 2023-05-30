@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom testerFull
+DEFAULT_FILE atom lowpass_tester2_testerFull.vhd

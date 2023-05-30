@@ -15,32 +15,14 @@ LIBRARY gates;
 LIBRARY Common;
   USE Common.CommonLib.all;
 
-ENTITY iisResizer IS
-    GENERIC( 
-        signalIBitNb : positive := 24;
-        signalOBitNb : positive := 32
-    );
-    PORT( 
-        dataValidI  : IN     std_ulogic;
-        audioLeftI  : IN     signed (signalIBitNb-1 DOWNTO 0);
-        audioRightI : IN     signed (signalIBitNb-1 DOWNTO 0);
-        ShiftData   : IN     std_ulogic;
-        audioLeftO  : OUT    signed (signalOBitNb-1 DOWNTO 0);
-        audioRightO : OUT    signed (signalOBitNb-1 DOWNTO 0);
-        clock       : IN     std_ulogic;
-        reset       : IN     std_ulogic
-    );
 
--- Declarations
-
-END iisResizer ;
 
 --
-ARCHITECTURE iis OF iisResizer IS
+    ARCHITECTURE iis OF iisResizer IS
 
-    signal tempR : signed(signalOBitNb-1 DOWNTO 0);
-    signal tempL : signed(signalOBitNb-1 DOWNTO 0);
-    signal cnt: unsigned(1 downto 0); 
+    signal tempR : signed(audioRightO'range);
+    signal tempL : signed(audioLeftO'range);
+    
 
 BEGIN
 
@@ -48,15 +30,13 @@ BEGIN
 	begin
 		if reset = '1' then
 			tempR <= (others => '0');
-            cnt <= (others => '0');
 			tempL <= (others => '0');
             audioLeftO  <= (others => '0');
             audioRightO <= (others => '0');
 		elsif rising_edge(clock) then
             if dataValidI = '1' then
-                cnt <= to_unsigned(2,cnt'length);
-                tempR <= shift_left(resize(audioRightI,tempR'length),(signalOBitNb-signalIBitNb));
-                tempL <= shift_left(resize(audioLeftI,tempL'length),(signalOBitNb-signalIBitNb));
+                tempR <= shift_left(resize(audioRightI,tempR'length),(audioRightO'length-audioRightI'length));
+                tempL <= shift_left(resize(audioLeftI,tempL'length),(audioLeftO'length-audioLeftI'length));
             end if;
             if ShiftData ='1' then
                     audioRightO <= tempR;

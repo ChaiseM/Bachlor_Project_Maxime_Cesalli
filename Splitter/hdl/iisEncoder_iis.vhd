@@ -15,32 +15,9 @@ LIBRARY gates;
 LIBRARY Common;
   USE Common.CommonLib.all;
 
-ENTITY iisEncoder IS
-    GENERIC( 
-		signalBitNb : 		positive := 32
-		
-    );
-    PORT( 
-        reset      : IN     std_ulogic;
-        clock      : IN     std_ulogic;
-        audioLeft  : IN     signed (signalBitNb-1 DOWNTO 0);
-        audioRight : IN     signed (signalBitNb-1 DOWNTO 0);
-        LRCK       : OUT    std_ulogic;
-        SCK        : OUT    std_ulogic;
-        DOUT       : OUT    std_ulogic;
-        ShiftData  : OUT    std_ulogic;
-		CLKI2s 	   : IN     std_uLogic
-      
-    );
-
--- Declarations
-
-END iisEncoder ;
-
---
 ARCHITECTURE iis OF iisEncoder IS
    
-    constant frameLength : positive := signalBitNb;
+    constant frameLength : positive := audioLeft'length;
     constant frameCounterBitNb : positive := requiredBitNb(frameLength-1);
     signal pastI2SClock : std_uLogic;
     signal LR : std_uLogic;
@@ -84,10 +61,10 @@ begin
             LRCK <= LR;
             SCK <= CLKI2s;
             if LR = '1' then 
-				DOUT <= leftShiftRegister(signalBitNb-1); 
+				DOUT <= leftShiftRegister(DATA_WIDTH-1); 
                 leftShiftRegister <= shift_left(audioLeft,to_integer(frameCounter));
             else 
-				DOUT <= rightShiftRegister(signalBitNb-1); 
+				DOUT <= rightShiftRegister(DATA_WIDTH-1); 
                 rightShiftRegister <= shift_left(audioRight,to_integer(frameCounter));
                 
             end if;

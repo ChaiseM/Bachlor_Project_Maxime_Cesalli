@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom filterTo32
+DEFAULT_FILE atom resize_filterTo32.vhd

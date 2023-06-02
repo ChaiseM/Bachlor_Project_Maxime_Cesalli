@@ -1,0 +1,63 @@
+--
+-- VHDL Architecture Splitter.Lowpass1.parallell
+--
+-- Created:
+--          by - maxime.cesalli.UNKNOWN (WE2330804)
+--          at - 17:09:34 25.05.2023
+--
+-- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
+--
+ARCHITECTURE parallell OF Lowpass1 IS
+ constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2;
+    constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);  
+    constant ADDER_BIT_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT;
+    type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioIn'range);  -- vector of 50 signed elements
+    signal      samples : t_samples ; 
+    -- 
+    type coefficients is array (0 to FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
+    signal coeff: coefficients :=( 
+    x"0030", x"003B", x"003F", x"0037", x"0020", x"FFF7", 
+    x"FFBA", x"FF6D", x"FF18", x"FEC5", x"FE84", x"FE66", 
+    x"FE7E", x"FEDD", x"FF8F", x"0099", x"01FA", x"03A6", 
+    x"0585", x"0778", x"095B", x"0B08", x"0C58", x"0D2F", 
+    x"0D79", x"0D2F", x"0C58", x"0B08", x"095B", x"0778", 
+    x"0585", x"03A6", x"01FA", x"0099", x"FF8F", x"FEDD", 
+    x"FE7E", x"FE66", x"FE84", x"FEC5", x"FF18", x"FF6D", 
+    x"FFBA", x"FFF7", x"0020", x"0037", x"003F", x"003B", 
+    x"0030");
+begin 
+ 
+    shiftSamples : process(clock,reset)
+    begin
+        if (reset = '1') then
+            samples <= (others =>(others => '0'));
+        elsif rising_edge(clock) then  
+        
+            if en = '1' then
+                samples(0) <= audioIn ;
+                shift : for ii in 0 to FILTER_TAP_NB-2 loop
+                
+                    samples(ii+1) <= samples(ii) ;
+                    
+                end loop shift;
+                
+            end if ; 
+        
+        end if;
+       
+    end process shiftSamples;
+ 
+    multiplyAdd : process(samples)
+        variable adder : signed (ADDER_BIT_NB-1 DOWNTO 0);
+    begin
+        adder := (others => '0');
+        
+        multAdd : for ii in 0 to FILTER_TAP_NB-1 loop
+        
+            adder := adder + samples(ii)*coeff(ii);
+            
+        end loop multAdd;
+        audioOut <= resize(shift_right(adder, COEFF_BIT_NB+FINAL_SHIFT), audioOut'length);
+
+    end process multiplyAdd;
+END ARCHITECTURE parallell;

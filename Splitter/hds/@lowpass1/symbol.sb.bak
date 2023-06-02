@@ -100,7 +100,7 @@ lang 11
 decl (Decl
 n "audioIn"
 t "signed"
-b "(15 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
 suid 3,0
 )
@@ -113,8 +113,8 @@ lang 11
 m 1
 decl (Decl
 n "audioOut"
-t "signed"
-b "(15 DOWNTO 0)"
+t "unsigned"
+b "(53 DOWNTO 0)"
 o 4
 suid 4,0
 )
@@ -528,7 +528,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "25.05.2023"
+value "01.06.2023"
 )
 (vvPair
 variable "day"
@@ -540,7 +540,7 @@ value "jeudi"
 )
 (vvPair
 variable "dd"
-value "25"
+value "01"
 )
 (vvPair
 variable "entity_name"
@@ -568,7 +568,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "25.05.2023"
+value "01.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -580,7 +580,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "17:13:04"
+value "10:48:32"
 )
 (vvPair
 variable "group"
@@ -604,7 +604,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -612,11 +612,11 @@ value "Lowpass1"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -652,7 +652,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "17:13:04"
+value "10:48:32"
 )
 (vvPair
 variable "unit"
@@ -719,7 +719,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,60500,4000"
-st "clock    : IN     std_logic  ;"
+st "clock    : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -764,7 +765,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,60500,5600"
-st "reset    : IN     std_logic  ;"
+st "reset    : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -786,7 +788,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "22250,17625,23000,18375"
+xt "22250,19625,23000,20375"
 )
 tg (CPTG
 uid 153,0
@@ -797,9 +799,9 @@ uid 154,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "24000,17300,29600,18700"
+xt "24000,19300,29600,20700"
 st "audioIn"
-blo "24000,18500"
+blo "24000,20500"
 tm "CptPortNameMgr"
 )
 )
@@ -808,15 +810,16 @@ uid 155,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,66000,3200"
-st "audioIn  : IN     signed (15 DOWNTO 0) ;"
+xt "44000,2400,71000,3200"
+st "audioIn  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "audioIn"
 t "signed"
-b "(15 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
 suid 3,0
 )
@@ -855,16 +858,17 @@ uid 160,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,5600,64500,6400"
-st "audioOut : OUT    signed (15 DOWNTO 0)"
+xt "44000,5600,66000,6400"
+st "audioOut : OUT    unsigned (53 DOWNTO 0)
+"
 )
 thePort (LogicalPort
 lang 11
 m 1
 decl (Decl
 n "audioOut"
-t "signed"
-b "(15 DOWNTO 0)"
+t "unsigned"
+b "(53 DOWNTO 0)"
 o 4
 suid 4,0
 )
@@ -880,7 +884,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "22250,19625,23000,20375"
+xt "22250,17625,23000,18375"
 )
 tg (CPTG
 uid 163,0
@@ -891,9 +895,9 @@ uid 164,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "24000,19300,26400,20700"
+xt "24000,17300,26400,18700"
 st "en"
-blo "24000,20500"
+blo "24000,18500"
 tm "CptPortNameMgr"
 )
 )
@@ -903,7 +907,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,60500,4800"
-st "en       : IN     std_logic  ;"
+st "en       : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1020,7 +1025,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,48900,49000"
+xt "36200,48000,48800,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1373,8 +1378,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "0,0,1921,1066"
-viewArea "-9800,-1500,88394,52904"
+windowSize "0,14,1921,1080"
+viewArea "-9800,-1500,88394,51280"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,0"
@@ -1647,6 +1652,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 195,0
-activeModelName "Symbol"
+lastUid 333,0
+activeModelName "Symbol:CDM"
 )

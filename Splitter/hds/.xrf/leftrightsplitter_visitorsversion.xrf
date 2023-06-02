@@ -9,327 +9,334 @@ VIEW visitors@version.bd
 NO_GRAPHIC 16
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 0,0 19 2 
+GRAPHIC 0,0 20 2 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 1,0 22 0 
+GRAPHIC 1,0 23 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 22
+NO_GRAPHIC 23
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 13734,0 28 0 
+GRAPHIC 20198,0 29 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 14047,0 29 0 
+GRAPHIC 20206,0 30 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18938,0 30 0 
+GRAPHIC 20214,0 31 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 19145,0 31 0 
+GRAPHIC 14047,0 32 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17989,0 32 0 
+GRAPHIC 17989,0 33 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 19139,0 33 0 
+GRAPHIC 21260,0 34 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18410,0 34 0 
+GRAPHIC 20999,0 35 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18507,0 35 0 
+GRAPHIC 21005,0 36 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 36
+GRAPHIC 18410,0 37 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 37
+GRAPHIC 20868,0 38 0 
+DESIGN left@right@splitter
+VIEW visitors@version.bd
+NO_GRAPHIC 39
+DESIGN left@right@splitter
+VIEW visitors@version.bd
+NO_GRAPHIC 40
 LIBRARY Splitter
-DESIGN @lowpass1
-VIEW parallell
-GRAPHIC 17321,0 39 0 
-DESIGN @lowpass1
+DESIGN @sto@m
+VIEW iis
+GRAPHIC 20983,0 42 0 
+DESIGN @sto@m
 VIEW symbol.sb
-GRAPHIC 14,0 40 1 
-DESIGN @lowpass1
+GRAPHIC 14,0 43 1 
+DESIGN @sto@m
 VIEW symbol.sb
-GRAPHIC 151,0 46 0 
-DESIGN @lowpass1
+GRAPHIC 217,0 47 0 
+DESIGN @sto@m
 VIEW symbol.sb
-GRAPHIC 141,0 47 0 
-DESIGN @lowpass1
+GRAPHIC 227,0 48 0 
+DESIGN @sto@m
 VIEW symbol.sb
-GRAPHIC 161,0 48 0 
-DESIGN @lowpass1
+GRAPHIC 222,0 49 0 
+DESIGN @sto@m
 VIEW symbol.sb
-GRAPHIC 146,0 49 0 
-DESIGN @lowpass1
+GRAPHIC 313,0 50 0 
+DESIGN @sto@m
 VIEW symbol.sb
-GRAPHIC 156,0 50 0 
+GRAPHIC 318,0 51 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18029,0 53 0 
+GRAPHIC 20644,0 54 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 14,0 54 1 
+GRAPHIC 14,0 55 1 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 108,0 58 0 
+GRAPHIC 108,0 59 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 113,0 59 0 
+GRAPHIC 113,0 60 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 118,0 60 0 
+GRAPHIC 118,0 61 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 123,0 61 0 
+GRAPHIC 123,0 62 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 128,0 62 0 
+GRAPHIC 128,0 63 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 133,0 63 0 
+GRAPHIC 133,0 64 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 138,0 64 0 
+GRAPHIC 138,0 65 0 
 DESIGN iis@decoder
 VIEW symbol.sb
-GRAPHIC 143,0 65 0 
+GRAPHIC 143,0 66 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17808,0 68 0 
+GRAPHIC 20564,0 69 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 14,0 69 1 
+GRAPHIC 14,0 70 1 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 76,0 73 0 
+GRAPHIC 76,0 74 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 61,0 74 0 
+GRAPHIC 61,0 75 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 51,0 75 0 
+GRAPHIC 51,0 76 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 56,0 76 0 
+GRAPHIC 56,0 77 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 71,0 77 0 
+GRAPHIC 71,0 78 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 81,0 78 0 
+GRAPHIC 81,0 79 0 
 DESIGN iis@encoder
 VIEW symbol.sb
-GRAPHIC 66,0 79 0 
-DESIGN iis@encoder
-VIEW symbol.sb
-GRAPHIC 86,0 80 0 
+GRAPHIC 66,0 80 0 
 DESIGN iis@encoder
 VIEW symbol.sb
 GRAPHIC 306,0 81 0 
+DESIGN iis@encoder
+VIEW symbol.sb
+GRAPHIC 509,0 82 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18220,0 84 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 14,0 85 1 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 71,0 90 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 51,0 91 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 61,0 92 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 76,0 93 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 56,0 94 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 66,0 95 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 210,0 96 0 
-DESIGN iis@resizer
-VIEW symbol.sb
-GRAPHIC 215,0 97 0 
-DESIGN left@right@splitter
-VIEW visitors@version.bd
-GRAPHIC 17490,0 100 0 
+GRAPHIC 20696,0 85 0 
 DESIGN rising@edge@detector
 VIEW symbol.sb
-GRAPHIC 139,0 102 0 
+GRAPHIC 139,0 87 0 
 DESIGN rising@edge@detector
+VIEW symbol.sb
+GRAPHIC 149,0 88 0 
+DESIGN rising@edge@detector
+VIEW symbol.sb
+GRAPHIC 144,0 89 0 
+DESIGN rising@edge@detector
+VIEW symbol.sb
+GRAPHIC 154,0 90 0 
+LIBRARY Splitter_test
+DESIGN bascule
+VIEW test_lowpas_i2s
+GRAPHIC 20793,0 93 0 
+DESIGN bascule
+VIEW symbol.sb
+GRAPHIC 14,0 94 1 
+DESIGN bascule
+VIEW symbol.sb
+GRAPHIC 144,0 98 0 
+DESIGN bascule
+VIEW symbol.sb
+GRAPHIC 139,0 99 0 
+DESIGN bascule
+VIEW symbol.sb
+GRAPHIC 186,0 100 0 
+DESIGN bascule
+VIEW symbol.sb
+GRAPHIC 244,0 101 0 
+DESIGN bascule
+VIEW symbol.sb
+GRAPHIC 191,0 102 0 
+DESIGN bascule
 VIEW symbol.sb
 GRAPHIC 149,0 103 0 
-DESIGN rising@edge@detector
+DESIGN bascule
 VIEW symbol.sb
-GRAPHIC 144,0 104 0 
-DESIGN rising@edge@detector
-VIEW symbol.sb
-GRAPHIC 154,0 105 0 
+GRAPHIC 154,0 104 0 
 LIBRARY Splitter
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 108
+NO_GRAPHIC 107
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17321,0 111 0 
+GRAPHIC 20983,0 110 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18029,0 112 0 
+GRAPHIC 20793,0 111 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17808,0 113 0 
+GRAPHIC 20644,0 112 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18220,0 114 0 
+GRAPHIC 20564,0 113 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17490,0 115 0 
+GRAPHIC 20696,0 114 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 118
+NO_GRAPHIC 117
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 120
+GRAPHIC 20192,0 120 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17321,0 122 0 
+NO_GRAPHIC 129
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17328,0 123 1 
+NO_GRAPHIC 130
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 19141,0 129 0 
+GRAPHIC 20983,0 132 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 15724,0 130 0 
+GRAPHIC 20990,0 133 1 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18509,0 131 0 
+GRAPHIC 21001,0 137 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 16113,0 132 0 
+GRAPHIC 21007,0 138 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 19147,0 133 0 
+GRAPHIC 21262,0 139 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18029,0 135 0 
+GRAPHIC 21037,0 140 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18036,0 136 1 
+GRAPHIC 21029,0 141 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 2376,0 140 0 
+GRAPHIC 20644,0 143 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 2384,0 141 0 
+GRAPHIC 20651,0 144 1 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 12846,0 142 0 
+GRAPHIC 2376,0 148 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 12801,0 143 0 
+GRAPHIC 2384,0 149 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 12831,0 144 0 
+GRAPHIC 12846,0 150 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18412,0 145 0 
+GRAPHIC 12801,0 151 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 14049,0 146 0 
+GRAPHIC 12831,0 152 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17991,0 147 0 
+GRAPHIC 18501,0 153 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17808,0 149 0 
+GRAPHIC 14049,0 154 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17815,0 150 1 
+GRAPHIC 17991,0 155 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 15740,0 154 0 
+GRAPHIC 20564,0 157 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 15732,0 155 0 
+GRAPHIC 20571,0 158 1 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18940,0 156 0 
+GRAPHIC 15740,0 162 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 19147,0 157 0 
+GRAPHIC 15732,0 163 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 12861,0 158 0 
+GRAPHIC 21268,0 164 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 12816,0 159 0 
+GRAPHIC 21262,0 165 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 12786,0 160 0 
+GRAPHIC 20208,0 166 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 13726,0 161 0 
+GRAPHIC 20216,0 167 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 14616,0 162 0 
+GRAPHIC 20200,0 168 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18220,0 164 0 
+GRAPHIC 14616,0 169 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18227,0 165 1 
+GRAPHIC 20339,0 170 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18412,0 170 0 
+GRAPHIC 20696,0 172 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 14049,0 171 0 
+GRAPHIC 17508,0 174 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17991,0 172 0 
+GRAPHIC 18501,0 175 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 13726,0 173 0 
+GRAPHIC 17500,0 176 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18940,0 174 0 
+GRAPHIC 20870,0 177 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 19141,0 175 0 
+GRAPHIC 20793,0 179 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 13972,0 176 0 
+GRAPHIC 20800,0 180 1 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 13960,0 177 0 
+GRAPHIC 17991,0 184 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17490,0 179 0 
+GRAPHIC 14049,0 185 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17508,0 181 0 
+GRAPHIC 13972,0 186 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18501,0 182 0 
+GRAPHIC 20870,0 187 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 17500,0 183 0 
+GRAPHIC 13960,0 188 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-GRAPHIC 18509,0 184 0 
+GRAPHIC 21001,0 189 0 
 DESIGN left@right@splitter
 VIEW visitors@version.bd
-NO_GRAPHIC 187
+GRAPHIC 21007,0 190 0 
+DESIGN left@right@splitter
+VIEW visitors@version.bd
+NO_GRAPHIC 193

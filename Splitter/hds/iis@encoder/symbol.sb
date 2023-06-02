@@ -32,7 +32,7 @@ model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
 ordering 1
-suid 11,0
+suid 12,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -163,27 +163,26 @@ uid 103,0
 *21 (LogPort
 port (LogicalPort
 lang 11
-m 1
 decl (Decl
-n "ShiftData"
-t "std_ulogic"
+n "CLKI2s"
+t "std_uLogic"
 o 8
-suid 8,0
+suid 11,0
 )
 )
-uid 105,0
+uid 311,0
 )
 *22 (LogPort
 port (LogicalPort
 lang 11
 decl (Decl
-n "CLKI2s"
+n "LRCK1"
 t "std_uLogic"
 o 9
-suid 11,0
+suid 12,0
 )
 )
-uid 311,0
+uid 507,0
 )
 ]
 )
@@ -281,13 +280,13 @@ uid 104,0
 litem &21
 pos 7
 dimension 20
-uid 106,0
+uid 312,0
 )
 *36 (MRCItem
 litem &22
 pos 8
 dimension 20
-uid 312,0
+uid 508,0
 )
 ]
 )
@@ -576,7 +575,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "26.05.2023"
+value "02.06.2023"
 )
 (vvPair
 variable "day"
@@ -588,7 +587,7 @@ value "vendredi"
 )
 (vvPair
 variable "dd"
-value "26"
+value "02"
 )
 (vvPair
 variable "entity_name"
@@ -616,7 +615,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "26.05.2023"
+value "02.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -628,7 +627,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:30:51"
+value "08:39:17"
 )
 (vvPair
 variable "group"
@@ -652,7 +651,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -660,11 +659,11 @@ value "iisEncoder"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -700,7 +699,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:30:51"
+value "08:39:17"
 )
 (vvPair
 variable "unit"
@@ -744,7 +743,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "34250,21625,35000,22375"
+xt "34250,23625,35000,24375"
 )
 tg (CPTG
 uid 53,0
@@ -755,9 +754,9 @@ uid 54,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "36000,21300,42700,22700"
+xt "36000,23300,42700,24700"
 st "audioLeft"
-blo "36000,22500"
+blo "36000,24500"
 tm "CptPortNameMgr"
 )
 )
@@ -791,7 +790,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "34250,24625,35000,25375"
+xt "34250,25625,35000,26375"
 )
 tg (CPTG
 uid 58,0
@@ -802,9 +801,9 @@ uid 59,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "36000,24300,44300,25700"
+xt "36000,25300,44300,26700"
 st "audioRight"
-blo "36000,25500"
+blo "36000,26500"
 tm "CptPortNameMgr"
 )
 )
@@ -1065,53 +1064,6 @@ suid 7,0
 )
 )
 *79 (CptPort
-uid 86,0
-ps "OnEdgeStrategy"
-shape (Triangle
-uid 87,0
-ro 270
-va (VaSet
-vasetType 1
-fg "0,65535,0"
-)
-xt "34250,29625,35000,30375"
-)
-tg (CPTG
-uid 88,0
-ps "CptPortTextPlaceStrategy"
-stg "VerticalLayoutStrategy"
-f (Text
-uid 89,0
-va (VaSet
-font "Verdana,12,0"
-)
-xt "36000,29300,42600,30700"
-st "ShiftData"
-blo "36000,30500"
-tm "CptPortNameMgr"
-)
-)
-dt (MLText
-uid 90,0
-va (VaSet
-font "Courier New,8,0"
-)
-xt "44000,8000,62000,8800"
-st "ShiftData  : OUT    std_ulogic  ;
-"
-)
-thePort (LogicalPort
-lang 11
-m 1
-decl (Decl
-n "ShiftData"
-t "std_ulogic"
-o 8
-suid 8,0
-)
-)
-)
-*80 (CptPort
 uid 306,0
 ps "OnEdgeStrategy"
 shape (Triangle
@@ -1121,7 +1073,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "34250,18625,35000,19375"
+xt "34250,19625,35000,20375"
 )
 tg (CPTG
 uid 308,0
@@ -1132,9 +1084,9 @@ uid 309,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "36000,18300,41200,19700"
+xt "36000,19300,41200,20700"
 st "CLKI2s"
-blo "36000,19500"
+blo "36000,20500"
 tm "CptPortNameMgr"
 )
 )
@@ -1143,8 +1095,8 @@ uid 310,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,8800,61000,9600"
-st "CLKI2s     : IN     std_uLogic 
+xt "44000,8000,62000,8800"
+st "CLKI2s     : IN     std_uLogic  ;
 "
 )
 thePort (LogicalPort
@@ -1152,8 +1104,54 @@ lang 11
 decl (Decl
 n "CLKI2s"
 t "std_uLogic"
-o 9
+o 8
 suid 11,0
+)
+)
+)
+*80 (CptPort
+uid 509,0
+ps "OnEdgeStrategy"
+shape (Triangle
+uid 510,0
+ro 90
+va (VaSet
+vasetType 1
+fg "0,65535,0"
+)
+xt "34250,20625,35000,21375"
+)
+tg (CPTG
+uid 511,0
+ps "CptPortTextPlaceStrategy"
+stg "VerticalLayoutStrategy"
+f (Text
+uid 512,0
+va (VaSet
+font "Verdana,12,0"
+)
+xt "36000,20300,40800,21700"
+st "LRCK1"
+blo "36000,21500"
+tm "CptPortNameMgr"
+)
+)
+dt (MLText
+uid 513,0
+va (VaSet
+font "Courier New,8,0"
+)
+xt "44000,8800,61000,9600"
+st "LRCK1      : IN     std_uLogic 
+"
+)
+thePort (LogicalPort
+lang 11
+decl (Decl
+n "LRCK1"
+t "std_uLogic"
+o 9
+suid 12,0
 )
 )
 )
@@ -1250,7 +1248,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,48900,49000"
+xt "36200,48000,48800,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1877,6 +1875,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 483,0
+lastUid 536,0
 activeModelName "Symbol:CDM"
 )

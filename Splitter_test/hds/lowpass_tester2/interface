@@ -21,7 +21,7 @@ appVersion "2019.2 (Build 5)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 70,0
+suid 80,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -67,12 +67,12 @@ m 1
 decl (Decl
 n "audioIn"
 t "signed"
-b "(DATA_WIDTH_T-1 DOWNTO 0)"
-o 6
-suid 66,0
+b "(DATA_WIDTH-1 DOWNTO 0)"
+o 17
+suid 76,0
 )
 )
-uid 941,0
+uid 1057,0
 )
 *15 (LogPort
 port (LogicalPort
@@ -82,10 +82,10 @@ decl (Decl
 n "CLKI2s"
 t "std_uLogic"
 o 7
-suid 67,0
+suid 77,0
 )
 )
-uid 943,0
+uid 1059,0
 )
 *16 (LogPort
 port (LogicalPort
@@ -94,10 +94,10 @@ decl (Decl
 n "clock"
 t "std_ulogic"
 o 3
-suid 68,0
+suid 78,0
 )
 )
-uid 945,0
+uid 1061,0
 )
 *17 (LogPort
 port (LogicalPort
@@ -106,10 +106,10 @@ decl (Decl
 n "en"
 t "std_logic"
 o 9
-suid 69,0
+suid 79,0
 )
 )
-uid 947,0
+uid 1063,0
 )
 *18 (LogPort
 port (LogicalPort
@@ -118,10 +118,10 @@ decl (Decl
 n "reset"
 t "std_ulogic"
 o 8
-suid 70,0
+suid 80,0
 )
 )
-uid 949,0
+uid 1065,0
 )
 ]
 )
@@ -149,7 +149,7 @@ font "Tahoma,10,0"
 )
 emptyMRCItem *20 (MRCItem
 litem &1
-pos 7
+pos 5
 dimension 20
 )
 uid 103,0
@@ -177,31 +177,31 @@ uid 106,0
 litem &14
 pos 0
 dimension 20
-uid 942,0
+uid 1058,0
 )
 *25 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 944,0
+uid 1060,0
 )
 *26 (MRCItem
 litem &16
 pos 2
 dimension 20
-uid 946,0
+uid 1062,0
 )
 *27 (MRCItem
 litem &17
 pos 3
 dimension 20
-uid 948,0
+uid 1064,0
 )
 *28 (MRCItem
 litem &18
 pos 4
 dimension 20
-uid 950,0
+uid 1066,0
 )
 ]
 )
@@ -532,19 +532,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "30.05.2023"
+value "02.06.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "30"
+value "02"
 )
 (vvPair
 variable "entity_name"
@@ -572,7 +572,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "30.05.2023"
+value "02.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -584,7 +584,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:59:34"
+value "09:08:09"
 )
 (vvPair
 variable "group"
@@ -608,7 +608,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter_test"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -616,11 +616,11 @@ value "lowpass_tester2"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -656,7 +656,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "09:59:34"
+value "09:08:09"
 )
 (vvPair
 variable "unit"
@@ -691,40 +691,40 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *70 (CptPort
-uid 916,0
+uid 1032,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 917,0
+uid 1033,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "26625,5250,27375,6000"
+xt "24625,5250,25375,6000"
 )
 tg (CPTG
-uid 918,0
+uid 1034,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 919,0
+uid 1035,0
 ro 270
 va (VaSet
 font "Verdana,12,0"
 )
-xt "26300,7000,27700,12600"
+xt "24300,7000,25700,12600"
 st "audioIn"
 ju 2
-blo "27500,7000"
+blo "25500,7000"
 tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 920,0
+uid 1036,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4000,71500,4800"
-st "audioIn : OUT    signed (DATA_WIDTH_T-1 DOWNTO 0) ;
+xt "44000,4000,70500,4800"
+st "audioIn : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;
 "
 )
 thePort (LogicalPort
@@ -733,17 +733,17 @@ m 1
 decl (Decl
 n "audioIn"
 t "signed"
-b "(DATA_WIDTH_T-1 DOWNTO 0)"
-o 6
-suid 66,0
+b "(DATA_WIDTH-1 DOWNTO 0)"
+o 17
+suid 76,0
 )
 )
 )
 *71 (CptPort
-uid 921,0
+uid 1037,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 922,0
+uid 1038,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -751,11 +751,11 @@ fg "0,65535,0"
 xt "20625,5250,21375,6000"
 )
 tg (CPTG
-uid 923,0
+uid 1039,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 924,0
+uid 1040,0
 ro 270
 va (VaSet
 font "Verdana,12,0"
@@ -768,7 +768,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 925,0
+uid 1041,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -783,15 +783,15 @@ decl (Decl
 n "CLKI2s"
 t "std_uLogic"
 o 7
-suid 67,0
+suid 77,0
 )
 )
 )
 *72 (CptPort
-uid 926,0
+uid 1042,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 927,0
+uid 1043,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -799,11 +799,11 @@ fg "0,65535,0"
 xt "48625,5250,49375,6000"
 )
 tg (CPTG
-uid 928,0
+uid 1044,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 929,0
+uid 1045,0
 ro 270
 va (VaSet
 font "Verdana,12,0"
@@ -816,7 +816,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 930,0
+uid 1046,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -830,15 +830,15 @@ decl (Decl
 n "clock"
 t "std_ulogic"
 o 3
-suid 68,0
+suid 78,0
 )
 )
 )
 *73 (CptPort
-uid 931,0
+uid 1047,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 932,0
+uid 1048,0
 ro 180
 va (VaSet
 vasetType 1
@@ -847,11 +847,11 @@ fg "0,65535,0"
 xt "30625,5250,31375,6000"
 )
 tg (CPTG
-uid 933,0
+uid 1049,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 934,0
+uid 1050,0
 ro 270
 va (VaSet
 font "Verdana,12,0"
@@ -864,7 +864,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 935,0
+uid 1051,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -878,15 +878,15 @@ decl (Decl
 n "en"
 t "std_logic"
 o 9
-suid 69,0
+suid 79,0
 )
 )
 )
 *74 (CptPort
-uid 936,0
+uid 1052,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 937,0
+uid 1053,0
 va (VaSet
 vasetType 1
 fg "0,65535,0"
@@ -894,11 +894,11 @@ fg "0,65535,0"
 xt "51625,5250,52375,6000"
 )
 tg (CPTG
-uid 938,0
+uid 1054,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 939,0
+uid 1055,0
 ro 270
 va (VaSet
 font "Verdana,12,0"
@@ -911,7 +911,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 940,0
+uid 1056,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -925,7 +925,7 @@ decl (Decl
 n "reset"
 t "std_ulogic"
 o 8
-suid 70,0
+suid 80,0
 )
 )
 )
@@ -1039,7 +1039,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,48900,49000"
+xt "36200,48000,48800,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1388,8 +1388,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "192,108,1210,798"
-viewArea "-500,-500,70600,47560"
+windowSize "192,108,1212,798"
+viewArea "-500,-500,70780,47560"
 cachedDiagramExtent "0,0,110000,49000"
 pageBreakOrigin "0,0"
 defaultCommentText (CommentText
@@ -1661,6 +1661,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 950,0
-activeModelName "Symbol:GEN"
+lastUid 1112,0
+activeModelName "Symbol:CDM"
 )

@@ -9,19 +9,19 @@ VIEW interface
 GRAPHIC 13,0 13 1 
 DESIGN lowpass_tester2
 VIEW interface
-GRAPHIC 931,0 20 0 
+GRAPHIC 1047,0 20 0 
 DESIGN lowpass_tester2
 VIEW interface
-GRAPHIC 921,0 21 0 
+GRAPHIC 1037,0 21 0 
 DESIGN lowpass_tester2
 VIEW interface
-GRAPHIC 916,0 22 0 
+GRAPHIC 1032,0 22 0 
 DESIGN lowpass_tester2
 VIEW interface
-GRAPHIC 926,0 23 0 
+GRAPHIC 1042,0 23 0 
 DESIGN lowpass_tester2
 VIEW interface
-GRAPHIC 936,0 24 0 
+GRAPHIC 1052,0 24 0 
 DESIGN lowpass_tester2
 VIEW interface
 GRAPHIC 1,0 27 0 

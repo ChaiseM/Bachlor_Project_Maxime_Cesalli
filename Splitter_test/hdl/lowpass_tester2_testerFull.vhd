@@ -20,7 +20,7 @@ ARCHITECTURE testerFull OF lowpass_tester2 IS
   constant minFrequencyLog: real := 3.0;
   constant maxFrequencyLog: real := 6.0;
   constant frequencyStepLog: real := 1.0/10.0;
-  constant frequencyStepPeriod: time := 1.0 * (1.0/(10.0**minFrequencyLog)) * 1 sec;
+  constant frequencyStepPeriod: time := 1.0 * (1.0/(10.0**minFrequencyLog)) * 3 sec;
   signal sineFrequency: real;
                                                                  -- time signals
   signal tReal: real := 0.0;
@@ -40,13 +40,17 @@ BEGIN
   process
   begin
     sEn <= '0';
-    wait for SAMPLING_PERIOD - 2*CLOCK_PERIOD - 2 ns;
-    wait until rising_edge(sClock);
+    wait for SAMPLING_PERIOD/2;
     sEn <= '1';
-    wait until rising_edge(sClock);
+    wait for SAMPLING_PERIOD/2;
   end process;
 
-  CLKI2s <= sEn;
+  process(sClock)
+  begin
+    if rising_edge(sClock) then
+        CLKI2s <= sEn;
+    end if;
+  end process;
 
   ------------------------------------------------------------------------------
                                                               -- frequency sweep

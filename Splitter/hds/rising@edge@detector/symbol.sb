@@ -466,7 +466,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "26.05.2023"
+value "02.06.2023"
 )
 (vvPair
 variable "day"
@@ -478,7 +478,7 @@ value "vendredi"
 )
 (vvPair
 variable "dd"
-value "26"
+value "02"
 )
 (vvPair
 variable "entity_name"
@@ -506,7 +506,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "26.05.2023"
+value "02.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -518,7 +518,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:36:33"
+value "09:00:47"
 )
 (vvPair
 variable "group"
@@ -542,7 +542,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -550,11 +550,11 @@ value "risingEdgeDetector"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -590,7 +590,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:36:33"
+value "09:00:47"
 )
 (vvPair
 variable "unit"
@@ -634,7 +634,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,6625,15000,7375"
+xt "23250,22625,24000,23375"
 )
 tg (CPTG
 uid 141,0
@@ -645,9 +645,9 @@ uid 142,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,6300,19800,7700"
+xt "25000,22300,28800,23700"
 st "clock"
-blo "16000,7500"
+blo "25000,23500"
 tm "CptPortNameMgr"
 )
 )
@@ -657,8 +657,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,61000,3200"
-st "clock     : IN     std_logic  ;
-"
+st "clock     : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -680,7 +679,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,7625,15000,8375"
+xt "23250,23625,24000,24375"
 )
 tg (CPTG
 uid 146,0
@@ -691,9 +690,9 @@ uid 147,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,7300,20100,8700"
+xt "25000,23300,29100,24700"
 st "reset"
-blo "16000,8500"
+blo "25000,24500"
 tm "CptPortNameMgr"
 )
 )
@@ -703,8 +702,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,61000,4800"
-st "reset     : IN     std_logic  ;
-"
+st "reset     : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -726,7 +724,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,8625,15000,9375"
+xt "23250,17625,24000,18375"
 )
 tg (CPTG
 uid 151,0
@@ -737,9 +735,9 @@ uid 152,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,8300,22700,9700"
+xt "25000,17300,31700,18700"
 st "dataValid"
-blo "16000,9500"
+blo "25000,18500"
 tm "CptPortNameMgr"
 )
 )
@@ -749,8 +747,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,61000,4000"
-st "dataValid : IN     std_logic  ;
-"
+st "dataValid : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -772,7 +769,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "27000,6625,27750,7375"
+xt "36000,20625,36750,21375"
 )
 tg (CPTG
 uid 156,0
@@ -783,10 +780,10 @@ uid 157,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "23600,6300,26000,7700"
+xt "32600,20300,35000,21700"
 st "en"
 ju 2
-blo "26000,7500"
+blo "35000,21500"
 tm "CptPortNameMgr"
 )
 )
@@ -796,8 +793,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,60000,5600"
-st "en        : OUT    std_logic 
-"
+st "en        : OUT    std_logic "
 )
 thePort (LogicalPort
 lang 11
@@ -819,7 +815,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,6000,27000,16000"
+xt "24000,15000,36000,25000"
 )
 oxt "15000,6000,23000,16000"
 biTextGroup (BiTextGroup
@@ -831,18 +827,18 @@ uid 11,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "13650,9800,18050,11000"
+xt "24650,28800,29050,30000"
 st "Splitter"
-blo "13650,10800"
+blo "24650,29800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "13650,11000,24350,12200"
+xt "24650,30000,35350,31200"
 st "risingEdgeDetector"
-blo "13650,12000"
+blo "24650,31000"
 )
 )
 gi *64 (GenericInterface
@@ -855,7 +851,7 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "-10500,7000,1000,7800"
+xt "29000,26200,40500,27000"
 st "Generic Declarations"
 )
 header "Generic Declarations"
@@ -1249,10 +1245,11 @@ tm "PackageList"
 )
 ]
 )
-windowSize "270,171,1286,861"
-viewArea "-500,-500,70420,47560"
-cachedDiagramExtent "-10500,0,73000,49000"
-pageBreakOrigin "0,0"
+windowSize "270,171,1287,861"
+viewArea "-500,43870,70510,94450"
+cachedDiagramExtent "0,0,73000,49000"
+hasePageBreakOrigin 1
+pageBreakOrigin "-11000,0"
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -1522,6 +1519,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 158,0
-activeModelName "Symbol:CDM"
+lastUid 181,0
+activeModelName "Symbol"
 )

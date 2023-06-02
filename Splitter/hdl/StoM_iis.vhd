@@ -15,21 +15,7 @@ LIBRARY gates;
 LIBRARY Common;
   USE Common.CommonLib.all;
 
-ENTITY StoM IS
-    GENERIC( 
-        signalOBitNb : positive := 32
-    );
-    PORT( 
-        audioLeft  : IN     signed (signalOBitNb-1 DOWNTO 0);
-        audioRight : IN     signed (signalOBitNb-1 DOWNTO 0);
-        audioMono  : OUT    signed (signalOBitNb-1 DOWNTO 0);
-        clock      : IN     std_ulogic;
-        reset      : IN     std_ulogic
-    );
 
--- Declarations
-
-END StoM ;
 
 --
 ARCHITECTURE iis OF StoM IS
@@ -45,10 +31,10 @@ BEGIN
 			temp1 <= (others => '0');
             temp2 <= (others => '0');
 		elsif rising_edge(clock) then
-           -- temp1 <= resize(resize(audioRight,temp1'length)+resize(audioLeft,temp1'length),temp1'length);
+            --temp1 <= resize(shift_right((resize(audioRight,temp1'length+1)+audioLeft),1),temp1'length);
             temp1 <= resize(audioRight,temp1'length)+audioLeft;
             temp2 <= shift_right(temp1,1);
-            audioMono <= resize(temp2,audioMono'length);
+            audioMono <= temp1;
             
         end if;
     end process stereoToMono;

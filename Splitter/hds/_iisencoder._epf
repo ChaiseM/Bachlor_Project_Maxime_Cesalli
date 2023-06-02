@@ -1,2 +1,2 @@
-DEFAULT_ARCHITECTURE atom iis
-DEFAULT_FILE atom iisEncoder_iis.vhd
+DEFAULT_ARCHITECTURE atom inputLRCK
+DEFAULT_FILE atom iisEncoder_inputLRCK.vhd

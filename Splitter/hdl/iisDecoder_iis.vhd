@@ -46,7 +46,8 @@ begin
 
 	sck_rising <= '1' when (SCK = '1') and (sck_delayed = '0') else '0';
 	lrck_changed <= '1' when lrck_delayed /= LRCK else '0';
-
+    s_dataValid  <= lrck_changed;
+    
 	countBits: process(reset, clock)
 	begin
 		if reset = '1' then
@@ -97,12 +98,12 @@ begin
     audioLeft  <= audioLeftReg;
     audioRight <= audioRightReg;
 
-    s_dataValid  <= '1' when (LRCK = '1') and (bitCounter = audioLeftReg'length+1)
-    else '0';
-    
-   -- s_dataValid <= '1' when (bitCounter = audioLeftReg'length+1)
+    --s_dataValid  <= '1' when (LRCK = '1') and (bitCounter = audioLeftReg'length+1)
     --else '0';
     
-    dataValid <= s_dataValid;
+    dataValid <= '1' when s_dataValid = '1' and LRCK = '1'
+    else '0';
+    
+    
 
 END ARCHITECTURE iis;

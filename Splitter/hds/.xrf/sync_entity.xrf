@@ -1,0 +1,30 @@
+DESIGN @sync
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 13,0 17 1 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 155,0 21 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 135,0 22 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 165,0 23 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 160,0 24 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 140,0 25 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 1,0 28 0 
+DESIGN @sync
+VIEW symbol.sb
+GRAPHIC 1,0 29 0 

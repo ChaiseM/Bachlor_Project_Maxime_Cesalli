@@ -372,7 +372,7 @@ tm "GenericEolColHdrMgr"
 )
 *55 (LogGeneric
 generic (GiElement
-name "DATA_IN_WIDTH"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -549,7 +549,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "26.05.2023"
+value "09.06.2023"
 )
 (vvPair
 variable "day"
@@ -561,7 +561,7 @@ value "vendredi"
 )
 (vvPair
 variable "dd"
-value "26"
+value "09"
 )
 (vvPair
 variable "entity_name"
@@ -589,7 +589,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "26.05.2023"
+value "09.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -601,7 +601,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:54:37"
+value "15:25:47"
 )
 (vvPair
 variable "group"
@@ -625,7 +625,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -633,11 +633,11 @@ value "iisDecoder"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -673,7 +673,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:54:37"
+value "15:25:47"
 )
 (vvPair
 variable "unit"
@@ -1112,17 +1112,18 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "-33000,-3000,-19000,-600"
+xt "25000,16600,37500,19000"
 st "Generic Declarations
 
-DATA_IN_WIDTH positive   "
+DATA_WIDTH positive   
+"
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "DATA_IN_WIDTH"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -1513,9 +1514,9 @@ tm "PackageList"
 )
 ]
 )
-windowSize "-8,-8,1928,1058"
-viewArea "-14687,14378,48277,48957"
-cachedDiagramExtent "-33000,-3000,73500,49000"
+windowSize "0,0,1921,1066"
+viewArea "-60000,-10500,94063,72310"
+cachedDiagramExtent "0,0,73500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-34000,-4000"
 defaultCommentText (CommentText
@@ -1787,6 +1788,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 212,0
-activeModelName "Symbol"
+lastUid 235,0
+activeModelName "Symbol:GEN"
 )

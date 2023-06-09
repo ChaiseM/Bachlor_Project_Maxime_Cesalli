@@ -42,7 +42,7 @@ BEGIN
     sEn <= '0';
     wait for SAMPLING_PERIOD/2;
     sEn <= '1';
-    wait for SAMPLING_PERIOD/2;
+    wait for SAMPLING_PERIOD/2;         
   end process;
 
   process(sClock)

@@ -9,19 +9,21 @@
 --
 ARCHITECTURE paralelSYM OF Lowpass1 IS
     constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
-    constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);  
+    constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
+    constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT ;    
+    constant ShiftNB : positive := ACCUMULATOR_Bit_NB-audioOut'length-7;    
     -- +1 because it is symetrical we add two samples together
-    constant ADDER_BIT_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT + 1; 
-    type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioIn'range);  -- vector of 50 signed elements
+    type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioIn'range);  -- vector of FILTER_TAP_NB signed elements
     signal      samples : t_samples ; 
     signal fromage : std_ulogic;
     -- 
+    signal accumulator : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
+    
     type coefficients is array (0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
-    signal coeff: coefficients :=( 
-    x"0030", x"003B", x"003F", x"0037", x"0020", x"FFF7", 
-    x"FFBA", x"FF6D", x"FF18", x"FEC5", x"FE84", x"FE66", 
-    x"FE7E", x"FEDD", x"FF8F", x"0099", x"01FA", x"03A6", 
-    x"0585", x"0778", x"095B", x"0B08", x"0C58", x"0D2F", 
+    signal coeff: coefficients := (x"0000", x"0000", x"0000", x"0000", x"0000", x"FFFF", 
+    x"FFFD", x"FFF6", x"FFE9", x"FFD5", x"FFBB", x"FFA0", 
+    x"FF8E", x"FF96", x"FFCF", x"004F", x"012D", x"0275", 
+    x"0423", x"061F", x"083E", x"0A46", x"0BF6", x"0D15", 
     x"0D79");
 begin 
  
@@ -34,9 +36,7 @@ begin
             if en = '1' then
                 samples(0) <= audioIn ;
                 shift : for ii in 0 to FILTER_TAP_NB-2 loop
-                
-                    samples(ii+1) <= samples(ii) ;
-                    
+                    samples(ii+1) <= samples(ii) ;  
                 end loop shift;
                 
             end if ; 
@@ -46,7 +46,7 @@ begin
     end process shiftSamples;
  
     multiplyAdd : process(samples)
-        variable adder : signed (ADDER_BIT_NB-1 DOWNTO 0);
+        variable adder : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
     begin 
         adder := (others => '0');
         
@@ -59,11 +59,12 @@ begin
             end if;
             
         end loop multAdd;
+        accumulator <=  adder;
         
-        
-        audioOut <= resize(shift_right(adder, COEFF_BIT_NB+FINAL_SHIFT-7), audioOut'length);
-       -- audioOut <= resize(shift_right(adder, COEFF_BIT_NB+7), audioOut'length);
-        
+        --audioOut <= adder;
+       --audioOut <= adder(ACCUMULATOR_Bit_NB-3 downto ACCUMULATOR_Bit_NB-audioOut'length-2);
+       audioOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-audioOut'length-6),audioOut'length);
+       -- audioOut <= adder(ACCUMULATOR_Bit_NB-19 downto ACCUMULATOR_Bit_NB-audioOut'length-18);
     end process multiplyAdd;
 END ARCHITECTURE paralelSYM;
 

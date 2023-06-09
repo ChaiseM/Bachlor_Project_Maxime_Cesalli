@@ -6166,16 +6166,17 @@ size 190
 ]
 displayHierarchy 0
 xPos 0
-yPos 0
-width 1041
-height 1057
+yPos 6
+width 1936
+height 1060
 activeSidePanelTab 2
 activeLibraryTab 1
 sidePanelSize 293
 showUnixHiddenFiles 0
-componentBrowserXpos 1371
-componentBrowserWidth 300
-componentBrowserHeight 340
+componentBrowserXpos 1332
+componentBrowserYpos 141
+componentBrowserWidth 427
+componentBrowserHeight 373
 componentBrowserLibraryNames [
 "Splitter"
 "Splitter_test"

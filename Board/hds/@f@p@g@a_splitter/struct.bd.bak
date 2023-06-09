@@ -196,19 +196,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Boar
 )
 (vvPair
 variable "date"
-value "26.05.2023"
+value "30.05.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "26"
+value "30"
 )
 (vvPair
 variable "designName"
@@ -240,7 +240,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "26.05.2023"
+value "30.05.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -252,7 +252,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:29:19"
+value "11:51:31"
 )
 (vvPair
 variable "group"
@@ -388,7 +388,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:29:19"
+value "11:51:31"
 )
 (vvPair
 variable "unit"
@@ -4147,7 +4147,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,14,1921,1080"
-viewArea "33300,-29400,124722,21252"
+viewArea "33300,-34314,124722,16338"
 cachedDiagramExtent "-12000,-123200,140000,19000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -4175,7 +4175,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,-80000"
-lastUid 7642,0
+lastUid 7679,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

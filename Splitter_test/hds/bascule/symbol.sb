@@ -66,7 +66,7 @@ lang 11
 decl (Decl
 n "audio_R_in"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 1
 suid 1,0
 )
@@ -79,7 +79,7 @@ lang 11
 decl (Decl
 n "audio_L_in"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 2
 suid 2,0
 )
@@ -93,7 +93,7 @@ m 1
 decl (Decl
 n "audio_L_out"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
 suid 3,0
 )
@@ -107,7 +107,7 @@ m 1
 decl (Decl
 n "audio_R_out"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
 suid 4,0
 )
@@ -352,7 +352,7 @@ tm "GenericEolColHdrMgr"
 )
 *53 (LogGeneric
 generic (GiElement
-name "DATA_IN_WIDTH"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -529,7 +529,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "02.06.2023"
+value "09.06.2023"
 )
 (vvPair
 variable "day"
@@ -541,7 +541,7 @@ value "vendredi"
 )
 (vvPair
 variable "dd"
-value "02"
+value "09"
 )
 (vvPair
 variable "entity_name"
@@ -569,7 +569,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "02.06.2023"
+value "09.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -581,7 +581,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "08:44:01"
+value "15:27:20"
 )
 (vvPair
 variable "group"
@@ -653,7 +653,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "08:44:01"
+value "15:27:20"
 )
 (vvPair
 variable "unit"
@@ -719,15 +719,15 @@ uid 143,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,3200,74000,4000"
-st "audio_R_in  : IN     signed (DATA_IN_WIDTH-1 DOWNTO 0) ;"
+xt "44000,3200,72500,4000"
+st "audio_R_in  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "audio_R_in"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 1
 suid 1,0
 )
@@ -765,15 +765,15 @@ uid 148,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,74000,3200"
-st "audio_L_in  : IN     signed (DATA_IN_WIDTH-1 DOWNTO 0) ;"
+xt "44000,2400,72500,3200"
+st "audio_L_in  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "audio_L_in"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 2
 suid 2,0
 )
@@ -812,8 +812,8 @@ uid 153,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,6400,74000,7200"
-st "audio_L_out : OUT    signed (DATA_IN_WIDTH-1 DOWNTO 0) ;"
+xt "44000,6400,72500,7200"
+st "audio_L_out : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -821,7 +821,7 @@ m 1
 decl (Decl
 n "audio_L_out"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
 suid 3,0
 )
@@ -860,8 +860,8 @@ uid 158,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,7200,73000,8000"
-st "audio_R_out : OUT    signed (DATA_IN_WIDTH-1 DOWNTO 0)"
+xt "44000,7200,71500,8000"
+st "audio_R_out : OUT    signed (DATA_WIDTH-1 DOWNTO 0)"
 )
 thePort (LogicalPort
 lang 11
@@ -869,7 +869,7 @@ m 1
 decl (Decl
 n "audio_R_out"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
 suid 4,0
 )
@@ -1055,18 +1055,17 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "23000,19600,37000,22000"
+xt "23000,19600,35500,22000"
 st "Generic Declarations
 
-DATA_IN_WIDTH positive   
-"
+DATA_WIDTH positive   "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "DATA_IN_WIDTH"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -1453,9 +1452,9 @@ tm "PackageList"
 )
 ]
 )
-windowSize "96,54,1122,744"
-viewArea "-6400,-3100,51056,35348"
-cachedDiagramExtent "0,0,74000,49000"
+windowSize "96,54,1124,744"
+viewArea "-6400,-3100,51200,35348"
+cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,0"
 defaultCommentText (CommentText
@@ -1727,6 +1726,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 411,0
+lastUid 457,0
 activeModelName "Symbol:GEN"
 )

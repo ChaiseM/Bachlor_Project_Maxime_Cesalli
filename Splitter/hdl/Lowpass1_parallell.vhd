@@ -10,8 +10,8 @@
 ARCHITECTURE parallell OF Lowpass1 IS
  constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2;
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB); 
-    constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT;
-    constant ShiftNB : positive := ACCUMULATOR_Bit_NB-audioOut'length-6;
+    constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT+6;
+    --constant ShiftNB : positive := ACCUMULATOR_Bit_NB-audioOut'length+15;
     type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioIn'range);  -- vector of 50 signed elements
     signal      samples : t_samples ; 
     signal accumulator : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
@@ -61,7 +61,8 @@ begin
       
         accumulator <= adder;
 
-        audioOut <= resize(shift_right(adder, ShiftNB), audioOut'length);
+        audioOut <= adder(ACCUMULATOR_Bit_NB-12 downto ACCUMULATOR_Bit_NB-audioOut'length-11);
+        --audioOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-audioOut'length-13),audioOut'length);
         --audioOut <= unsigned(adder);
        --audioOut <= adder;
     end process multiplyAdd;

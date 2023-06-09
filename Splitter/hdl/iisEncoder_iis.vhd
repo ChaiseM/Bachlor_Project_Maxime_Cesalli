@@ -50,10 +50,10 @@ begin
   
             elsif CLKI2s = '0' and pastI2SClock = '1' then
                 pastI2SClock <= '0';
-				ShiftData <= '0';
+				
                 frameCounter <= frameCounter+1;
 				if frameCounter + 1 = 0 then
-                    ShiftData <= '1';
+                    
 					LR <=  not LR; 
                 end if;
             end if ; 

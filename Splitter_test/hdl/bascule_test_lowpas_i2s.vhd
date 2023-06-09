@@ -20,8 +20,8 @@ BEGIN
             audio_L_out <= (others => '0');
 		elsif rising_edge(clock) then
             if dataValid = '1' then
-                 audio_R_out <= audio_R_in;
-                 audio_L_out <= audio_L_in;
+                 audio_R_out <= shift_right(signed(shift_left(unsigned(audio_R_in),1)),1);
+                 audio_L_out <= shift_right(signed(shift_left(unsigned(audio_L_in),1)),1);
             end if;
 		end if;
 	end process FlipFlopAndResize;

@@ -144,7 +144,7 @@ m 1
 decl (Decl
 n "audioLeft"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 7
 suid 7,0
 )
@@ -157,7 +157,7 @@ m 1
 decl (Decl
 n "audioRight"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 8
 suid 8,0
 )
@@ -372,7 +372,7 @@ tm "GenericEolColHdrMgr"
 )
 *55 (LogGeneric
 generic (GiElement
-name "DATA_IN_WIDTH"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -549,7 +549,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "26.05.2023"
+value "09.06.2023"
 )
 (vvPair
 variable "day"
@@ -561,7 +561,7 @@ value "vendredi"
 )
 (vvPair
 variable "dd"
-value "26"
+value "09"
 )
 (vvPair
 variable "entity_name"
@@ -589,7 +589,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "26.05.2023"
+value "09.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -601,7 +601,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:58:43"
+value "15:26:32"
 )
 (vvPair
 variable "group"
@@ -625,7 +625,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -633,11 +633,11 @@ value "iisDecoder"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -673,7 +673,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:58:43"
+value "15:26:32"
 )
 (vvPair
 variable "unit"
@@ -740,7 +740,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,62000,3200"
-st "reset      : IN     std_ulogic  ;"
+st "reset      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -784,7 +785,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,62000,4000"
-st "clock      : IN     std_ulogic  ;"
+st "clock      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -828,7 +830,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,62000,4800"
-st "LRCK       : IN     std_ulogic  ;"
+st "LRCK       : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -872,7 +875,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,62000,5600"
-st "SCK        : IN     std_ulogic  ;"
+st "SCK        : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -916,7 +920,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,62000,6400"
-st "DOUT       : IN     std_ulogic  ;"
+st "DOUT       : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -961,7 +966,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,62000,7200"
-st "dataValid  : OUT    std_ulogic  ;"
+st "dataValid  : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1006,15 +1012,16 @@ uid 142,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,7200,73500,8000"
-st "audioLeft  : OUT    signed (DATA_IN_WIDTH-1 DOWNTO 0) ;"
+xt "44000,7200,72000,8000"
+st "audioLeft  : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "audioLeft"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 7
 suid 7,0
 )
@@ -1053,15 +1060,16 @@ uid 147,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,8000,72500,8800"
-st "audioRight : OUT    signed (DATA_IN_WIDTH-1 DOWNTO 0)"
+xt "44000,8000,71000,8800"
+st "audioRight : OUT    signed (DATA_WIDTH-1 DOWNTO 0)
+"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "audioRight"
 t "signed"
-b "(DATA_IN_WIDTH-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 8
 suid 8,0
 )
@@ -1112,17 +1120,17 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "25000,16600,39000,19000"
+xt "25000,16600,37500,19000"
 st "Generic Declarations
 
-DATA_IN_WIDTH positive   "
+DATA_WIDTH positive   "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "DATA_IN_WIDTH"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -1160,7 +1168,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,48900,49000"
+xt "36200,48000,48800,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1513,9 +1521,9 @@ tm "PackageList"
 )
 ]
 )
-windowSize "-8,-8,1928,1058"
-viewArea "-59959,-10490,93761,73930"
-cachedDiagramExtent "0,0,73500,49000"
+windowSize "0,0,1921,1066"
+viewArea "-60000,-10500,94063,72310"
+cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-34000,-4000"
 defaultCommentText (CommentText
@@ -1787,6 +1795,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 212,0
-activeModelName "Symbol"
+lastUid 258,0
+activeModelName "Symbol:CDM"
 )

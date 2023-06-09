@@ -7,9 +7,15 @@
 --
 -- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
 --
+LIBRARY ieee;
+  USE ieee.std_logic_1164.all;
+  USE ieee.numeric_std.all;
+
 ARCHITECTURE by2_test OF devider IS
+    
 BEGIN
-    audioDevided <= shift_right(audiofull,1);
+
+        audioDevided <=  shift_right(audiofull,4);
 
 END ARCHITECTURE by2_test;
 

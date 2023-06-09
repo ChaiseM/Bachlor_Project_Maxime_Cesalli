@@ -14,12 +14,8 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/en
 add wave -noupdate /leftrightsplitter_tb/I_dut/audioLeft
 add wave -noupdate /leftrightsplitter_tb/I_dut/audioRight
 add wave -noupdate -divider Bascule
-add wave -noupdate -format Analog-Step -height 75 -max 2000000000.0 -min -2000000000.0 -radix decimal /leftrightsplitter_tb/I_dut/audioLeftO
-add wave -noupdate -format Analog-Step -height 75 -max 2000000000.0 -min -2000000000.0 -radix decimal /leftrightsplitter_tb/I_dut/audioRightO
 add wave -noupdate -divider mono
-add wave -noupdate -format Analog-Step -height 74 -max 1999999999.9999998 -min -2000000000.0 -radix decimal /leftrightsplitter_tb/I_dut/audioMono
 add wave -noupdate -divider Lowpass
-add wave -noupdate -format Analog-Step -height 74 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/lowpassOut
 add wave -noupdate -divider {I2S encoder CIRCUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/DOUT
 add wave -noupdate /leftrightsplitter_tb/I_dut/LRCK
@@ -29,10 +25,13 @@ add wave -noupdate /leftrightsplitter_tb/audioLeft
 add wave -noupdate /leftrightsplitter_tb/audioRight
 add wave -noupdate /leftrightsplitter_tb/dataValid
 add wave -noupdate -divider {Final data Out}
+add wave -noupdate -color White -height 30 -radix binary /leftrightsplitter_tb/I_dut/I3/accumulator
+add wave -noupdate -format Analog-Step -height 74 -max 2147455421.9999998 -min -2145094061.0 -radix decimal /leftrightsplitter_tb/I_dut/I3/audioOut
 add wave -noupdate -format Analog-Step -height 70 -max 2000000000.0000002 -min -2000000000.0 -radix decimal /leftrightsplitter_tb/audioRightO
 add wave -noupdate -format Analog-Step -height 70 -max 2000000000.0000002 -min -2000000000.0 -radix decimal /leftrightsplitter_tb/audioLeftO
+add wave -noupdate -radix decimal /leftrightsplitter_tb/I_dut/I3/ShiftNB
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {35224501 ns} 0} {{Cursor 2} {5072101 ns} 0}
+WaveRestoreCursors {{Cursor 1} {30736061 ns} 0} {{Cursor 2} {5072101 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 243
 configure wave -valuecolwidth 100
@@ -48,4 +47,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ns} {172359 ns}
+WaveRestoreZoom {0 ns} {52500 us}

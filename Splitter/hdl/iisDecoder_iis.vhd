@@ -77,12 +77,13 @@ begin
 					if LRCK = '0' then    -- odd channel
                         audioLeftReg  <= (others => '0');
 						audioLeftReg <= shift_left(audioLeftReg, 1);
-						audioLeftReg(0) <= DOUT;
+                        audioLeftReg(0) <= DOUT;
+						
 					else -- even channel
                         audioRightReg <= (others => '0');
 						audioRightReg <= shift_left(audioRightReg, 1);
-						audioRightReg(0) <= DOUT;
-					end if;
+                        audioRightReg(0) <= DOUT;
+					end if; 
 				end if;
 			end if;
             

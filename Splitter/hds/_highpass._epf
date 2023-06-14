@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom ParalelSym
+DEFAULT_FILE atom HighPass_ParalelSym.vhd

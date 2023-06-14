@@ -161,7 +161,7 @@ font "Tahoma,10,0"
 )
 emptyMRCItem *20 (MRCItem
 litem &1
-pos 3
+pos 5
 dimension 20
 )
 uid 91,0
@@ -325,9 +325,9 @@ tm "GenericEolColHdrMgr"
 )
 *49 (LogGeneric
 generic (GiElement
-name "signalOBitNb"
+name "DATA_WIDTH"
 type "positive"
-value "32"
+value ""
 )
 uid 327,0
 )
@@ -458,23 +458,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hdl"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds\\@sto@m\\symbol.sb.info"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@sto@m\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds\\@sto@m\\symbol.sb.user"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@sto@m\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "appl"
@@ -494,27 +494,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds\\@sto@m"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@sto@m"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds\\StoM"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\StoM"
 )
 (vvPair
 variable "date"
-value "23/05/2023"
+value "12.06.2023"
 )
 (vvPair
 variable "day"
-value "Tue"
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "Tuesday"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "23"
+value "12"
 )
 (vvPair
 variable "entity_name"
@@ -538,11 +538,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxim"
+value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "23/05/2023"
+value "12.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -550,11 +550,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "DESKTOP-ADLE19A"
+value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:16:28"
+value "14:54:37"
 )
 (vvPair
 variable "group"
@@ -562,7 +562,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "DESKTOP-ADLE19A"
+value "WE2330804"
 )
 (vvPair
 variable "language"
@@ -578,7 +578,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -586,19 +586,19 @@ value "StoM"
 )
 (vvPair
 variable "month"
-value "May"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "May"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds\\@sto@m\\symbol.sb"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@sto@m\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Prefs\\..\\Splitter\\hds\\StoM\\symbol.sb"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\StoM\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -626,7 +626,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:16:28"
+value "14:54:37"
 )
 (vvPair
 variable "unit"
@@ -634,7 +634,7 @@ value "StoM"
 )
 (vvPair
 variable "user"
-value "maxim"
+value "maxime.cesalli"
 )
 (vvPair
 variable "version"
@@ -670,7 +670,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,18625,15000,19375"
+xt "14250,16625,15000,17375"
 )
 tg (CPTG
 uid 219,0
@@ -681,9 +681,9 @@ uid 220,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,18300,22700,19700"
+xt "16000,16300,22700,17700"
 st "audioLeft"
-blo "16000,19500"
+blo "16000,17500"
 tm "CptPortNameMgr"
 )
 )
@@ -693,8 +693,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,73000,3200"
-st "audioLeft  : IN     signed (signalOBitNb-1 DOWNTO 0) ;
-"
+st "audioLeft  : IN     signed (signalOBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -741,8 +740,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,73000,4800"
-st "audioMono  : OUT    signed (signalOBitNb-1 DOWNTO 0) ;
-"
+st "audioMono  : OUT    signed (signalOBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -789,8 +787,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,73000,4000"
-st "audioRight : IN     signed (signalOBitNb-1 DOWNTO 0) ;
-"
+st "audioRight : IN     signed (signalOBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -813,7 +810,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,20625,15000,21375"
+xt "14250,22625,15000,23375"
 )
 tg (CPTG
 uid 315,0
@@ -824,9 +821,9 @@ uid 316,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,20300,19800,21700"
+xt "16000,22300,19800,23700"
 st "clock"
-blo "16000,21500"
+blo "16000,23500"
 tm "CptPortNameMgr"
 )
 )
@@ -836,8 +833,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,62000,5600"
-st "clock      : IN     std_ulogic  ;
-"
+st "clock      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -859,7 +855,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,21625,15000,22375"
+xt "14250,23625,15000,24375"
 )
 tg (CPTG
 uid 320,0
@@ -870,9 +866,9 @@ uid 321,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,21300,20100,22700"
+xt "16000,23300,20100,24700"
 st "reset"
-blo "16000,22500"
+blo "16000,24500"
 tm "CptPortNameMgr"
 )
 )
@@ -882,8 +878,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,61000,6400"
-st "reset      : IN     std_ulogic 
-"
+st "reset      : IN     std_ulogic "
 )
 thePort (LogicalPort
 lang 11
@@ -904,7 +899,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,18000,35000,26000"
+xt "15000,15000,35000,26000"
 )
 oxt "15000,6000,57000,26000"
 biTextGroup (BiTextGroup
@@ -940,10 +935,10 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "-115000,-39000,-100500,-36600"
+xt "21000,27600,33500,30000"
 st "Generic Declarations
 
-signalOBitNb positive 32  
+DATA_WIDTH positive   
 "
 )
 header "Generic Declarations"
@@ -951,9 +946,9 @@ showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "signalOBitNb"
+name "DATA_WIDTH"
 type "positive"
-value "32"
+value ""
 )
 ]
 )
@@ -989,7 +984,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,46300,49000"
+xt "36200,48000,48800,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1342,11 +1337,11 @@ tm "PackageList"
 )
 ]
 )
-windowSize "837,-1080,1854,-390"
-viewArea "-29210,-22894,36829,24146"
-cachedDiagramExtent "-115000,-39000,73000,49000"
+windowSize "837,0,1857,690"
+viewArea "-10300,-13500,56228,31356"
+cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
-pageBreakOrigin "-116000,-40000"
+pageBreakOrigin "-43000,-40000"
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -1616,6 +1611,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 328,0
+lastUid 397,0
 activeModelName "Symbol:GEN"
 )

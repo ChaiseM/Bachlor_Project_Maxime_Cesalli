@@ -99,10 +99,11 @@ begin
     audioLeft  <= audioLeftReg;
     audioRight <= audioRightReg;
 
-    --s_dataValid  <= '1' when (LRCK = '1') and (bitCounter = audioLeftReg'length+1)
-    --else '0';
+   
     
-    dataValid <= '1' when s_dataValid = '1' and LRCK = '1'
+   -- dataValid <= '1' when s_dataValid = '1' 
+    --else '0';
+    dataValid <= '1' when s_dataValid = '1' and lrck = '0'
     else '0';
     
     

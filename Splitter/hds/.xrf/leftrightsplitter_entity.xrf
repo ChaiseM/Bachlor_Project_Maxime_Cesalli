@@ -18,22 +18,34 @@ VIEW symbol.sb
 GRAPHIC 887,0 20 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 52,0 21 0 
+GRAPHIC 1619,0 21 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 62,0 22 0 
+GRAPHIC 1510,0 22 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 179,0 23 0 
+GRAPHIC 1515,0 23 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 105,0 24 0 
+GRAPHIC 1520,0 24 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 1043,0 25 0 
+GRAPHIC 52,0 25 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 1,0 28 0 
+GRAPHIC 62,0 26 0 
 DESIGN left@right@splitter
 VIEW symbol.sb
-GRAPHIC 1,0 29 0 
+GRAPHIC 179,0 27 0 
+DESIGN left@right@splitter
+VIEW symbol.sb
+GRAPHIC 105,0 28 0 
+DESIGN left@right@splitter
+VIEW symbol.sb
+GRAPHIC 1043,0 29 0 
+DESIGN left@right@splitter
+VIEW symbol.sb
+GRAPHIC 1,0 32 0 
+DESIGN left@right@splitter
+VIEW symbol.sb
+GRAPHIC 1,0 33 0 

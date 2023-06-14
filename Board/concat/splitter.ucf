@@ -9,13 +9,18 @@ NET     "reset_n"       LOC = "A15"     | PULLUP;
 NET     "LR_In"         LOC = "G4" ;
 NET     "CLK_In"        LOC = "E2" ;
 NET     "Data_In"       LOC = "G3" ;
+NET     "S20"           LOC = "C7";
+NET     "S21"           LOC = "E9";
+NET     "S22"           LOC = "A8";
+NET     "S23"           LOC = "F11";
+
 
 #-------------------------------------------------------------------------------
 # Out signals
 #
-NET     "Data_O"  		LOC = "A11"  ;
-NET     "CLK_O"  		LOC = "A14" ;
-NET     "LR_O"  		LOC = "A8"  ;
+NET     "Data_O"  		LOC = "A4"  ;
+NET     "CLK_O"  		LOC = "B6" ;
+NET     "LR_O"  		LOC = "A6"  ;
 
 #----------------------------------------------------------------------------
 # Globals

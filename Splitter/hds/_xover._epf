@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom ParalelSmHL
+DEFAULT_FILE atom Xover_ParalelSmHL.vhd

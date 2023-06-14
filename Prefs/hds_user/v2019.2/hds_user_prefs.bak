@@ -6168,18 +6168,18 @@ displayHierarchy 0
 xPos 0
 yPos 6
 width 1936
-height 1060
+height 1066
 activeSidePanelTab 2
 activeLibraryTab 1
 sidePanelSize 293
 showUnixHiddenFiles 0
-componentBrowserXpos 1332
-componentBrowserYpos 141
+componentBrowserXpos 1081
+componentBrowserYpos 707
 componentBrowserWidth 427
 componentBrowserHeight 373
 componentBrowserLibraryNames [
-"Splitter"
 "Splitter_test"
+"Splitter"
 ]
 )
 (SmPreferences

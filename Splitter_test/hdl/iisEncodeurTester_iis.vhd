@@ -23,8 +23,8 @@ ARCHITECTURE iis OF iisEncodeurTester IS
 	
 	signal tempCnt : unsigned(10 downto 0);
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
-    signal leftShiftRegister : signed(audioInL'range);
-    signal rightShiftRegister : signed(audioInR'range);
+    signal leftShiftRegister : unsigned(audioInL'range);
+    signal rightShiftRegister : unsigned(audioInR'range);
      
 
 begin
@@ -61,10 +61,10 @@ begin
             SCK_in <= CLKI2s;
             if LR = '1' then 
 				DOUT_in <= leftShiftRegister(DATA_WIDTH-1); 
-                leftShiftRegister <= shift_left(audioInL,to_integer(frameCounter));
+                leftShiftRegister <= shift_left(unsigned(audioInL),to_integer(frameCounter-1));
             else 
 				DOUT_in <= rightShiftRegister(DATA_WIDTH-1); 
-                rightShiftRegister <= shift_left(audioInR,to_integer(frameCounter));
+                rightShiftRegister <= shift_left(unsigned(audioInR),to_integer(frameCounter-1));
                 
             end if;
            

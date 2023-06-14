@@ -15,7 +15,7 @@ ARCHITECTURE by2_test OF devider IS
     
 BEGIN
 
-        audioDevided <=  shift_right(audiofull,4);
+        audioDevided <= shift_right(audiofull,2);
 
 END ARCHITECTURE by2_test;
 

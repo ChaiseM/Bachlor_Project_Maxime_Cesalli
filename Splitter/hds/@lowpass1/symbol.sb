@@ -112,7 +112,7 @@ port (LogicalPort
 lang 11
 m 1
 decl (Decl
-n "audioOut"
+n "LowPassOut"
 t "signed"
 b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
@@ -528,19 +528,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "01.06.2023"
+value "13.06.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "01"
+value "13"
 )
 (vvPair
 variable "entity_name"
@@ -568,7 +568,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "01.06.2023"
+value "13.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -580,7 +580,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:18:29"
+value "09:25:32"
 )
 (vvPair
 variable "group"
@@ -652,7 +652,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:18:29"
+value "09:25:32"
 )
 (vvPair
 variable "unit"
@@ -718,9 +718,8 @@ uid 145,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,3200,60500,4000"
-st "clock    : IN     std_logic  ;
-"
+xt "44000,3200,61500,4000"
+st "clock      : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -764,9 +763,8 @@ uid 150,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4800,60500,5600"
-st "reset    : IN     std_logic  ;
-"
+xt "44000,4800,61500,5600"
+st "reset      : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -810,9 +808,8 @@ uid 155,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,71000,3200"
-st "audioIn  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
-"
+xt "44000,2400,72000,3200"
+st "audioIn    : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -846,8 +843,8 @@ uid 159,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "32400,19300,39000,20700"
-st "audioOut"
+xt "29500,19300,39000,20700"
+st "LowPassOut"
 ju 2
 blo "39000,20500"
 tm "CptPortNameMgr"
@@ -858,15 +855,14 @@ uid 160,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,5600,70000,6400"
-st "audioOut : OUT    signed (DATA_WIDTH-1 DOWNTO 0)
-"
+xt "44000,5600,71000,6400"
+st "LowPassOut : OUT    signed (DATA_WIDTH-1 DOWNTO 0)"
 )
 thePort (LogicalPort
 lang 11
 m 1
 decl (Decl
-n "audioOut"
+n "LowPassOut"
 t "signed"
 b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
@@ -906,9 +902,8 @@ uid 165,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4000,60500,4800"
-st "en       : IN     std_logic  ;
-"
+xt "44000,4000,61500,4800"
+st "en         : IN     std_logic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -941,18 +936,18 @@ uid 11,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "24250,11800,28650,13000"
+xt "22250,28800,26650,30000"
 st "Splitter"
-blo "24250,12800"
+blo "22250,29800"
 )
 second (Text
 uid 12,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "24250,13000,29750,14200"
+xt "22250,30000,27750,31200"
 st "Lowpass1"
-blo "24250,14000"
+blo "22250,31000"
 )
 )
 gi *73 (GenericInterface
@@ -965,7 +960,7 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "25000,29000,39000,33000"
+xt "30000,28000,44000,32000"
 st "Generic Declarations
 
 DATA_WIDTH    positive   
@@ -1379,7 +1374,7 @@ tm "PackageList"
 ]
 )
 windowSize "0,14,1921,1080"
-viewArea "-9800,-1500,88394,51280"
+viewArea "-9800,-1500,88394,52904"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,0"
@@ -1652,6 +1647,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 356,0
-activeModelName "Symbol:CDM"
+lastUid 402,0
+activeModelName "Symbol"
 )

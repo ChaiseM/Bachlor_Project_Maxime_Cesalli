@@ -84,6 +84,11 @@ BEGIN
     integer(outReal * ( 2.0**(audioIn'length-1) - 1.0 )),
     audioIn'length
   );
+  
+    sig0 <= '0';
+    sig1 <= '0';
+    sig2 <= '0';
+    sig3 <= '0';
 
 END ARCHITECTURE testerFull;
 

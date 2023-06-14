@@ -77,7 +77,7 @@ lang 11
 decl (Decl
 n "audioLeft"
 t "signed"
-b "(signalOBitNb-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 1
 suid 6,0
 )
@@ -91,7 +91,7 @@ m 1
 decl (Decl
 n "audioMono"
 t "signed"
-b "(signalOBitNb-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
 suid 7,0
 )
@@ -104,7 +104,7 @@ lang 11
 decl (Decl
 n "audioRight"
 t "signed"
-b "(signalOBitNb-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 2
 suid 8,0
 )
@@ -325,7 +325,7 @@ tm "GenericEolColHdrMgr"
 )
 *49 (LogGeneric
 generic (GiElement
-name "signalOBitNb"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -502,19 +502,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "31.05.2023"
+value "12.06.2023"
 )
 (vvPair
 variable "day"
-value "mer."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "31"
+value "12"
 )
 (vvPair
 variable "entity_name"
@@ -542,7 +542,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "31.05.2023"
+value "12.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -554,7 +554,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:02:39"
+value "14:57:18"
 )
 (vvPair
 variable "group"
@@ -578,7 +578,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "05"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -586,11 +586,11 @@ value "StoM"
 )
 (vvPair
 variable "month"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "mai"
+value "juin"
 )
 (vvPair
 variable "p"
@@ -626,7 +626,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "16:02:39"
+value "14:57:18"
 )
 (vvPair
 variable "unit"
@@ -670,7 +670,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,18625,15000,19375"
+xt "14250,16625,15000,17375"
 )
 tg (CPTG
 uid 219,0
@@ -681,9 +681,9 @@ uid 220,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,18300,22700,19700"
+xt "16000,16300,22700,17700"
 st "audioLeft"
-blo "16000,19500"
+blo "16000,17500"
 tm "CptPortNameMgr"
 )
 )
@@ -692,15 +692,16 @@ uid 221,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,73000,3200"
-st "audioLeft  : IN     signed (signalOBitNb-1 DOWNTO 0) ;"
+xt "44000,2400,72000,3200"
+st "audioLeft  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "audioLeft"
 t "signed"
-b "(signalOBitNb-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 1
 suid 6,0
 )
@@ -739,8 +740,9 @@ uid 226,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4000,73000,4800"
-st "audioMono  : OUT    signed (signalOBitNb-1 DOWNTO 0) ;"
+xt "44000,4000,72000,4800"
+st "audioMono  : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -748,7 +750,7 @@ m 1
 decl (Decl
 n "audioMono"
 t "signed"
-b "(signalOBitNb-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 3
 suid 7,0
 )
@@ -764,7 +766,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "14250,20625,15000,21375"
+xt "14250,19625,15000,20375"
 )
 tg (CPTG
 uid 229,0
@@ -775,9 +777,9 @@ uid 230,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "16000,20300,24300,21700"
+xt "16000,19300,24300,20700"
 st "audioRight"
-blo "16000,21500"
+blo "16000,20500"
 tm "CptPortNameMgr"
 )
 )
@@ -786,15 +788,16 @@ uid 231,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,3200,73000,4000"
-st "audioRight : IN     signed (signalOBitNb-1 DOWNTO 0) ;"
+xt "44000,3200,72000,4000"
+st "audioRight : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "audioRight"
 t "signed"
-b "(signalOBitNb-1 DOWNTO 0)"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 2
 suid 8,0
 )
@@ -833,7 +836,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,62000,5600"
-st "clock      : IN     std_ulogic  ;"
+st "clock      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -878,7 +882,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,61000,6400"
-st "reset      : IN     std_ulogic "
+st "reset      : IN     std_ulogic 
+"
 )
 thePort (LogicalPort
 lang 11
@@ -899,7 +904,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "15000,18000,35000,26000"
+xt "15000,15000,35000,26000"
 )
 oxt "15000,6000,57000,26000"
 biTextGroup (BiTextGroup
@@ -935,18 +940,17 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "21000,27600,34500,30000"
+xt "21000,27600,33500,30000"
 st "Generic Declarations
 
-signalOBitNb positive   
-"
+DATA_WIDTH positive   "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
 )
 elements [
 (GiElement
-name "signalOBitNb"
+name "DATA_WIDTH"
 type "positive"
 value ""
 )
@@ -984,7 +988,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,46300,49000"
+xt "36200,48000,48800,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1337,11 +1341,11 @@ tm "PackageList"
 )
 ]
 )
-windowSize "837,0,1855,690"
-viewArea "-10298,-13492,56062,33716"
+windowSize "837,0,1858,690"
+viewArea "-10300,-13500,56312,31356"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
-pageBreakOrigin "-116000,-40000"
+pageBreakOrigin "-43000,-40000"
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -1611,6 +1615,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 351,0
-activeModelName "Symbol"
+lastUid 420,0
+activeModelName "Symbol:CDM"
 )

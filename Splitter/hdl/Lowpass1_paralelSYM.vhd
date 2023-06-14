@@ -11,7 +11,7 @@ ARCHITECTURE paralelSYM OF Lowpass1 IS
     constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
     constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT ;    
-    constant ShiftNB : positive := ACCUMULATOR_Bit_NB-audioOut'length-7;    
+    constant ShiftNB : positive := ACCUMULATOR_Bit_NB-LowPassOut'length-7;    
     -- +1 because it is symetrical we add two samples together
     type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioIn'range);  -- vector of FILTER_TAP_NB signed elements
     signal      samples : t_samples ; 
@@ -20,11 +20,12 @@ ARCHITECTURE paralelSYM OF Lowpass1 IS
     signal accumulator : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
     
     type coefficients is array (0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
-    signal coeff: coefficients := (x"0000", x"0000", x"0000", x"0000", x"0000", x"FFFF", 
-    x"FFFD", x"FFF6", x"FFE9", x"FFD5", x"FFBB", x"FFA0", 
-    x"FF8E", x"FF96", x"FFCF", x"004F", x"012D", x"0275", 
-    x"0423", x"061F", x"083E", x"0A46", x"0BF6", x"0D15", 
-    x"0D79");
+    signal coeff: coefficients :=( 
+    x"FFC3", x"FFC1", x"FFC6", x"FFD2", x"FFE8", x"0007", 
+    x"0033", x"006B", x"00B0", x"0102", x"0160", x"01C9", 
+    x"023B", x"02B5", x"0333", x"03B3", x"0432", x"04AC", 
+    x"051E", x"0585", x"05DE", x"0626", x"065B", x"067C", 
+    x"0687");
 begin 
  
     shiftSamples : process(clock,reset)
@@ -61,10 +62,10 @@ begin
         end loop multAdd;
         accumulator <=  adder;
         
-        --audioOut <= adder;
-       --audioOut <= adder(ACCUMULATOR_Bit_NB-3 downto ACCUMULATOR_Bit_NB-audioOut'length-2);
-       audioOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-audioOut'length-6),audioOut'length);
-       -- audioOut <= adder(ACCUMULATOR_Bit_NB-19 downto ACCUMULATOR_Bit_NB-audioOut'length-18);
+        -- for Hardware 
+        LowPassOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-LowPassOut'length-7),LowPassOut'length);
+        -- for simulation
+        --LowPassOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-LowPassOut'length-6),LowPassOut'length);
     end process multiplyAdd;
 END ARCHITECTURE paralelSYM;
 

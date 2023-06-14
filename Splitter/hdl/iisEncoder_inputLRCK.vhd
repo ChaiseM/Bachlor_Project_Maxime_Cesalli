@@ -22,6 +22,8 @@ ARCHITECTURE inputLRCK OF iisEncoder IS
     signal pastI2SClock : std_uLogic;
     signal pastLRCK : std_uLogic;
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
+    signal frameCounter2 : unsigned(frameCounterBitNb-1 downto 0);
+
     constant maxFrameNBR : unsigned(frameCounter'range) := (others => '1');
     signal leftShiftRegister : unsigned(audioLeft'range);
     signal rightShiftRegister : unsigned(audioRight'range);
@@ -35,6 +37,7 @@ begin
 	begin
 		if reset = '1' then
 			frameCounter <= (others => '0');
+            frameCounter2 <= (others => '0');
             leftShiftRegister <= (others => '0');
             rightShiftRegister <= (others => '0');
             pastI2SClock <= '0';
@@ -45,11 +48,13 @@ begin
             if LRCK1 = '1' and pastLRCK = '0' then  
                 pastLRCK <= '1'; 
                 frameCounter <= (others => '1');
-                dummy2 <= unsigned(audioRight) ;
-                dummy1 <= unsigned(audioLeft);    
+                  
+                dummy1 <= unsigned(audioLeft);  
             elsif LRCK1 = '0' and pastLRCK = '1' then
                 pastLRCK <= '0';
-                frameCounter <= (others => '1');  
+                frameCounter <= (others => '1'); 
+                 dummy2 <= unsigned(audioRight) ;
+                              
                 
                          
             end if ; 
@@ -65,7 +70,7 @@ begin
                 --else 
                     --rightShiftRegister <= shift_left(dummy2,to_integer(frameCounter));
                 --end if ; 
-                
+                frameCounter2 <= frameCounter;
                
             end if;  
            
@@ -79,8 +84,8 @@ begin
 	end process FlipFlopAndResize;
     
     
-    DOUT <= dummy1(to_integer(frameCounter)) when LRCK1 = '1' 
-    else dummy2(to_integer(frameCounter)) ;
+    DOUT <= dummy1(to_integer(frameCounter2)) when LRCK1 = '1' 
+    else dummy2(to_integer(frameCounter2)) ;
     
     
 END ARCHITECTURE inputLRCK;

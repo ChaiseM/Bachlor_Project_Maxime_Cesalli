@@ -112,9 +112,9 @@ port (LogicalPort
 lang 11
 m 1
 decl (Decl
-n "audioOut"
-t "unsigned"
-b "(53 DOWNTO 0)"
+n "LowPassOut"
+t "signed"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
 suid 4,0
 )
@@ -528,19 +528,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "01.06.2023"
+value "12.06.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "01"
+value "12"
 )
 (vvPair
 variable "entity_name"
@@ -568,7 +568,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "01.06.2023"
+value "12.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -580,7 +580,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:48:32"
+value "11:20:01"
 )
 (vvPair
 variable "group"
@@ -652,7 +652,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:48:32"
+value "11:20:01"
 )
 (vvPair
 variable "unit"
@@ -718,8 +718,8 @@ uid 145,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,3200,60500,4000"
-st "clock    : IN     std_logic  ;
+xt "44000,3200,61500,4000"
+st "clock      : IN     std_logic  ;
 "
 )
 thePort (LogicalPort
@@ -764,8 +764,8 @@ uid 150,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4800,60500,5600"
-st "reset    : IN     std_logic  ;
+xt "44000,4800,61500,5600"
+st "reset      : IN     std_logic  ;
 "
 )
 thePort (LogicalPort
@@ -810,8 +810,8 @@ uid 155,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,71000,3200"
-st "audioIn  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+xt "44000,2400,72000,3200"
+st "audioIn    : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
 "
 )
 thePort (LogicalPort
@@ -846,8 +846,8 @@ uid 159,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "32400,19300,39000,20700"
-st "audioOut"
+xt "29500,19300,39000,20700"
+st "LowPassOut"
 ju 2
 blo "39000,20500"
 tm "CptPortNameMgr"
@@ -858,17 +858,17 @@ uid 160,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,5600,66000,6400"
-st "audioOut : OUT    unsigned (53 DOWNTO 0)
+xt "44000,5600,71000,6400"
+st "LowPassOut : OUT    signed (DATA_WIDTH-1 DOWNTO 0)
 "
 )
 thePort (LogicalPort
 lang 11
 m 1
 decl (Decl
-n "audioOut"
-t "unsigned"
-b "(53 DOWNTO 0)"
+n "LowPassOut"
+t "signed"
+b "(DATA_WIDTH-1 DOWNTO 0)"
 o 4
 suid 4,0
 )
@@ -906,8 +906,8 @@ uid 165,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4000,60500,4800"
-st "en       : IN     std_logic  ;
+xt "44000,4000,61500,4800"
+st "en         : IN     std_logic  ;
 "
 )
 thePort (LogicalPort
@@ -1652,6 +1652,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 333,0
+lastUid 379,0
 activeModelName "Symbol:CDM"
 )

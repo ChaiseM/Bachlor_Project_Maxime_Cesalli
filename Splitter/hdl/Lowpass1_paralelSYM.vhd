@@ -21,11 +21,11 @@ ARCHITECTURE paralelSYM OF Lowpass1 IS
     
     type coefficients is array (0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
     signal coeff: coefficients :=( 
-    x"FFC3", x"FFC1", x"FFC6", x"FFD2", x"FFE8", x"0007", 
-    x"0033", x"006B", x"00B0", x"0102", x"0160", x"01C9", 
-    x"023B", x"02B5", x"0333", x"03B3", x"0432", x"04AC", 
-    x"051E", x"0585", x"05DE", x"0626", x"065B", x"067C", 
-    x"0687");
+    x"0012", x"0024", x"0039", x"004E", x"005C", x"005F", 
+    x"0051", x"002D", x"FFF3", x"FFA2", x"FF42", x"FEDC", 
+    x"FE80", x"FE3E", x"FE28", x"FE52", x"FEC9", x"FF96", 
+    x"00B9", x"022E", x"03E3", x"05C1", x"07A9", x"0978", 
+    x"0B0D", x"0C48", x"0D10", x"0D55");
 begin 
  
     shiftSamples : process(clock,reset)

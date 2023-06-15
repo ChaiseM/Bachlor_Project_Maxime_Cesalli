@@ -9,10 +9,21 @@ NET     "reset_n"       LOC = "A15"     | PULLUP;
 NET     "LR_In"         LOC = "G4" ;
 NET     "CLK_In"        LOC = "E2" ;
 NET     "Data_In"       LOC = "G3" ;
+#set 2
 NET     "S20"           LOC = "C7";
 NET     "S21"           LOC = "E9";
 NET     "S22"           LOC = "A8";
 NET     "S23"           LOC = "F11";
+#set 3
+NET     "S30"           LOC = "B11";
+NET     "S31"           LOC = "B13";
+NET     "S32"           LOC = "B14";
+NET     "S33"           LOC = "E7";
+#set 4
+NET     "S40"           LOC = "E8";
+NET     "S41"           LOC = "G9";
+NET     "S42"           LOC = "F9";
+NET     "S43"           LOC = "F7";
 
 
 #-------------------------------------------------------------------------------

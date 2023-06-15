@@ -48,13 +48,14 @@ begin
             if LRCK1 = '1' and pastLRCK = '0' then  
                 pastLRCK <= '1'; 
                 frameCounter <= (others => '1');
-                  
-                dummy1 <= unsigned(audioLeft);  
+                
+                              
             elsif LRCK1 = '0' and pastLRCK = '1' then
                 pastLRCK <= '0';
                 frameCounter <= (others => '1'); 
-                 dummy2 <= unsigned(audioRight) ;
-                              
+                dummy2 <= unsigned(audioRight) ;
+                dummy1 <= unsigned(audioLeft);  
+              
                 
                          
             end if ; 

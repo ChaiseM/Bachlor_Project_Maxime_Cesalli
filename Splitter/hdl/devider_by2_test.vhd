@@ -15,7 +15,7 @@ ARCHITECTURE by2_test OF devider IS
     
 BEGIN
 
-        audioDevided <= shift_right(audiofull,2);
+        audioDevided <= resize((shift_right(audiofull,2)*3),audioDevided'length);
 
 END ARCHITECTURE by2_test;
 

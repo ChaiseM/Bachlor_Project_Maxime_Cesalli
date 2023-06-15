@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom With_rot_sw
+DEFAULT_FILE atom eq_With_rot_sw.vhd

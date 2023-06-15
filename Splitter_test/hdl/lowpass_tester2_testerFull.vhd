@@ -89,6 +89,14 @@ BEGIN
     sig1 <= '0';
     sig2 <= '0';
     sig3 <= '0';
+    sig4 <= '0';
+    sig5 <= '0';
+    sig6 <= '0';
+    sig7 <= '0';
+    sig8 <= '0';
+    sig9 <= '0';
+    sig10 <= '0';
+    sig11 <= '0';
 
 END ARCHITECTURE testerFull;
 

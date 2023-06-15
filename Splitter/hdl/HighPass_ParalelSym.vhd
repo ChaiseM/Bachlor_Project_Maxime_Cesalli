@@ -21,12 +21,12 @@ ARCHITECTURE ParalelSym OF HighPass IS
     signal accumulator : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
     
     type coefficients is array (0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
-    signal coeff: coefficients :=( 
-    x"003E", x"0040", x"003B", x"002F", x"0019", x"FFF9", 
-    x"FFCC", x"FF93", x"FF4D", x"FEF9", x"FE99", x"FE2E", 
-    x"FDBA", x"FD3E", x"FCBD", x"FC3B", x"FBB9", x"FB3D", 
-    x"FAC8", x"FA5F", x"FA05", x"F9BB", x"F985", x"F964", 
-    x"791B");
+        signal coeff: coefficients :=( 
+    x"FFEE", x"FFDC", x"FFC7", x"FFB2", x"FFA4", x"FFA1", 
+    x"FFAF", x"FFD3", x"000D", x"005E", x"00BE", x"0124", 
+    x"0180", x"01C2", x"01D7", x"01AE", x"0137", x"006A", 
+    x"FF47", x"FDD2", x"FC1D", x"FA40", x"F858", x"F689", 
+    x"F4F4", x"F3B9", x"F2F1", x"72A0");
 begin 
  
     shiftSamples : process(clock,reset)

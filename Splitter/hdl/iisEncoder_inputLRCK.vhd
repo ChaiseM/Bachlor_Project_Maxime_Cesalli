@@ -23,7 +23,7 @@ ARCHITECTURE inputLRCK OF iisEncoder IS
     signal pastLRCK : std_uLogic;
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
     signal frameCounter2 : unsigned(frameCounterBitNb-1 downto 0);
-
+    signal LRCKShifted :  std_uLogic;
     constant maxFrameNBR : unsigned(frameCounter'range) := (others => '1');
     signal leftShiftRegister : unsigned(audioLeft'range);
     signal rightShiftRegister : unsigned(audioRight'range);
@@ -42,27 +42,15 @@ begin
             rightShiftRegister <= (others => '0');
             pastI2SClock <= '0';
 			pastLRCK <= '0';
+            LRCKShifted <= '0';
            -- switch <= '0';
 		elsif rising_edge(clock) then
-		           
-            if LRCK1 = '1' and pastLRCK = '0' then  
-                pastLRCK <= '1'; 
-                frameCounter <= (others => '1');
-                
-                              
-            elsif LRCK1 = '0' and pastLRCK = '1' then
-                pastLRCK <= '0';
-                frameCounter <= (others => '1'); 
-                dummy2 <= unsigned(audioRight) ;
-                dummy1 <= unsigned(audioLeft);  
-              
-                
-                         
-            end if ; 
-            
+		     
+
             if CLKI2s = '1' and pastI2SClock = '0' then  
                 pastI2SClock <= '1';                
-                frameCounter <= frameCounter-1;   
+                frameCounter <= frameCounter-1; 
+                LRCKShifted  <= LRCK1;              
                           
             elsif CLKI2s = '0' and pastI2SClock = '1' then
                 pastI2SClock <= '0';
@@ -74,6 +62,23 @@ begin
                 frameCounter2 <= frameCounter;
                
             end if;  
+             
+            if LRCKShifted = '1' and pastLRCK = '0' then  
+                pastLRCK <= '1'; 
+                frameCounter <= (others => '1');
+                
+                              
+            elsif LRCKShifted = '0' and pastLRCK = '1' then
+                pastLRCK <= '0';
+                frameCounter <= (others => '1'); 
+                dummy2 <= unsigned(audioRight) ;
+                dummy1 <= unsigned(audioLeft);  
+              
+                
+                         
+            end if ; 
+            
+          
            
         LRCK <= LRCK1;
         SCK <= CLKI2s;

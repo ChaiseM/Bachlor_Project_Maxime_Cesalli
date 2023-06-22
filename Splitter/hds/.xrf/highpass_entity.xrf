@@ -21,10 +21,13 @@ VIEW symbol.sb
 GRAPHIC 71,0 26 0 
 DESIGN @high@pass
 VIEW symbol.sb
-GRAPHIC 66,0 27 0 
+GRAPHIC 220,0 27 0 
 DESIGN @high@pass
 VIEW symbol.sb
-GRAPHIC 1,0 30 0 
+GRAPHIC 66,0 28 0 
 DESIGN @high@pass
 VIEW symbol.sb
 GRAPHIC 1,0 31 0 
+DESIGN @high@pass
+VIEW symbol.sb
+GRAPHIC 1,0 32 0 

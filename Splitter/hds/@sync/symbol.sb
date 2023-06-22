@@ -125,7 +125,7 @@ uid 151,0
 port (LogicalPort
 lang 11
 decl (Decl
-n "lrck"
+n "data_Ready"
 t "std_ulogic"
 o 5
 suid 7,0
@@ -500,19 +500,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "06.06.2023"
+value "22.06.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "jeu."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "jeudi"
 )
 (vvPair
 variable "dd"
-value "06"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -540,7 +540,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "06.06.2023"
+value "22.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -552,7 +552,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:54:29"
+value "13:51:47"
 )
 (vvPair
 variable "group"
@@ -624,7 +624,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:54:29"
+value "13:51:47"
 )
 (vvPair
 variable "unit"
@@ -690,8 +690,9 @@ uid 139,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,3200,72500,4000"
-st "data_in   : IN     signed (DATA_WIDTH-1  DOWNTO  0) ;"
+xt "44000,4000,73000,4800"
+st "data_in    : IN     signed (DATA_WIDTH-1  DOWNTO  0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -737,8 +738,9 @@ uid 144,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,5600,71500,6400"
-st "data_SYNC : OUT    signed (DATA_WIDTH-1  DOWNTO  0)"
+xt "44000,5600,72000,6400"
+st "data_SYNC  : OUT    signed (DATA_WIDTH-1  DOWNTO  0)
+"
 )
 thePort (LogicalPort
 lang 11
@@ -784,8 +786,9 @@ uid 159,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2400,61500,3200"
-st "clock     : IN     std_ulogic  ;"
+xt "44000,2400,62000,3200"
+st "clock      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -829,8 +832,9 @@ uid 164,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4800,61500,5600"
-st "reset     : IN     std_ulogic  ;"
+xt "44000,4800,62000,5600"
+st "reset      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -863,8 +867,8 @@ uid 168,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "19000,20300,21900,21700"
-st "lrck"
+xt "19000,20300,28200,21700"
+st "data_Ready"
 blo "19000,21500"
 tm "CptPortNameMgr"
 )
@@ -874,13 +878,14 @@ uid 169,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4000,61500,4800"
-st "lrck      : IN     std_ulogic  ;"
+xt "44000,3200,62000,4000"
+st "data_Ready : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
-n "lrck"
+n "data_Ready"
 t "std_ulogic"
 o 5
 suid 7,0
@@ -1333,8 +1338,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "904,134,1921,824"
-viewArea "-500,-500,70510,50080"
+windowSize "903,134,1921,824"
+viewArea "-500,-500,70600,47560"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,0"
@@ -1607,6 +1612,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 195,0
-activeModelName "Symbol"
+lastUid 218,0
+activeModelName "Symbol:CDM"
 )

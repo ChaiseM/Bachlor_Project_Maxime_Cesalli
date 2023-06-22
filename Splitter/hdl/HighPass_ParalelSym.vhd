@@ -22,11 +22,11 @@ ARCHITECTURE ParalelSym OF HighPass IS
     
     type coefficients is array (0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
         signal coeff: coefficients :=( 
-    x"FFEE", x"FFDC", x"FFC7", x"FFB2", x"FFA4", x"FFA1", 
-    x"FFAF", x"FFD3", x"000D", x"005E", x"00BE", x"0124", 
-    x"0180", x"01C2", x"01D7", x"01AE", x"0137", x"006A", 
-    x"FF47", x"FDD2", x"FC1D", x"FA40", x"F858", x"F689", 
-    x"F4F4", x"F3B9", x"F2F1", x"72A0");
+   x"FFFFCB50", x"FFFF2E0D", x"FFFE359A", x"FFFCEF56", x"FFFB848F", x"FFFA3D35", x"FFF97CD0", x"FFF9B84E", x"FFFB6471", x"FFFEDDF1", 
+x"00044DFB", x"000B8F3A", x"00141880", x"001CF2D1", x"0024BFB5", x"0029D37C", x"002A6461", x"0024CC4C", x"0017D745", x"0003152D", 
+x"FFE72295", x"FFC5DB4B", x"FFA2698D", x"FF812786", x"FF674D57", x"FF5A6C46", x"FF5FBF22", x"FF7B5F75", x"FFAF7589", x"FFFB7DF0", 
+x"005BC07B", x"00C91294", x"0138F8C5", x"019E320A", x"01E9AB58", x"020BCCB4", x"01F60471", x"019C6A62", x"00F74E19", x"0004814B", 
+x"FEC83324", x"FD4D3AC1", x"FBA4BD09", x"F9E52B90", x"F828ACE2", x"F68B107B", x"F5277F16", x"F41621A5", x"F369FC2F", x"732F35C3");
 begin 
  
     shiftSamples : process(clock,reset)
@@ -65,7 +65,7 @@ begin
         
         --HighpassOut <= adder;
        --HighpassOut <= adder(ACCUMULATOR_Bit_NB-3 downto ACCUMULATOR_Bit_NB-HighpassOut'length-2);
-       HighpassOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-HighpassOut'length-7),HighpassOut'length);
+       HighpassOut <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-HighpassOut'length-8),HighpassOut'length);
        -- HighpassOut <= adder(ACCUMULATOR_Bit_NB-19 downto ACCUMULATOR_Bit_NB-HighpassOut'length-18);
     end process multiplyAdd;
 END ARCHITECTURE ParalelSym;

@@ -21,6 +21,8 @@ ARCHITECTURE iis OF iisEncodeurTester IS
     signal pastI2SClock : std_uLogic;
     signal LR : std_uLogic;
 	
+	
+	
 	signal tempCnt : unsigned(10 downto 0);
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
     signal leftShiftRegister : unsigned(audioInL'range);
@@ -51,7 +53,7 @@ begin
                 pastI2SClock <= '0';
 				ShiftData <= '0';
                 frameCounter <= frameCounter+1;
-				if frameCounter + 1 = 0 then
+				if frameCounter +1  = 0 then
                     ShiftData <= '1';
 					LR <=  not LR; 
                 end if;

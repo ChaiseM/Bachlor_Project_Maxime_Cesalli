@@ -24,16 +24,17 @@ ARCHITECTURE ParalelSmHL OF Xover IS
     signal sys_LRCK : integer := 0 ;
     type coefficients is array (0 to 1,0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
     signal coeff: coefficients :=(
-    ( x"FFC3", x"FFC1", x"FFC6", x"FFD2", x"FFE8", x"0007", 
-    x"0033", x"006B", x"00B0", x"0102", x"0160", x"01C9", 
-    x"023B", x"02B5", x"0333", x"03B3", x"0432", x"04AC", 
-    x"051E", x"0585", x"05DE", x"0626", x"065B", x"067C", 
-    x"0687"),
-    ( x"003E", x"0040", x"003B", x"002F", x"0019", x"FFF9", 
-    x"FFCC", x"FF93", x"FF4D", x"FEF9", x"FE99", x"FE2E", 
-    x"FDBA", x"FD3E", x"FCBD", x"FC3B", x"FBB9", x"FB3D", 
-    x"FAC8", x"FA5F", x"FA05", x"F9BB", x"F985", x"F964", 
-    x"791B"));
+    ( 
+    x"0012", x"0024", x"0039", x"004E", x"005C", x"005F", 
+    x"0051", x"002D", x"FFF3", x"FFA2", x"FF42", x"FEDC", 
+    x"FE80", x"FE3E", x"FE28", x"FE52", x"FEC9", x"FF96", 
+    x"00B9", x"022E", x"03E3", x"05C1", x"07A9", x"0978", 
+    x"0B0D", x"0C48", x"0D10", x"0D55"),
+    (x"FFEE", x"FFDC", x"FFC7", x"FFB2", x"FFA4", x"FFA1", 
+    x"FFAF", x"FFD3", x"000D", x"005E", x"00BE", x"0124", 
+    x"0180", x"01C2", x"01D7", x"01AE", x"0137", x"006A", 
+    x"FF47", x"FDD2", x"FC1D", x"FA40", x"F858", x"F689", 
+    x"F4F4", x"F3B9", x"F2F1", x"72A0"));
 begin 
  
     shiftSamples : process(clock,reset)
@@ -56,7 +57,7 @@ begin
     
     sys_LRCK <= 1 when (lrck = '1') else 0;
     
-    multiplyAdd : process(samples)
+    multiplyAdd : process(lrck)
         variable adder : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
     begin 
         adder := (others => '0');

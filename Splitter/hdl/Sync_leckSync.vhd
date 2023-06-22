@@ -9,7 +9,7 @@
 --
 ARCHITECTURE leckSync OF Sync IS
 
-    signal oldLRCK : std_ulogic;
+    signal oldR : std_ulogic;
 
 BEGIN
 
@@ -18,13 +18,13 @@ BEGIN
     syncro : process(clock,reset)
     begin
         if (reset = '1') then
-           oldLRCK <= '0'; 
+           oldR <= '0'; 
         elsif rising_edge(clock) then  
-            if lrck = '0' and oldLRCK = '1' then 
-                oldLRCK <= '0';   
+            if data_Ready = '0' and oldR = '1' then 
+                oldR <= '0';   
                 data_SYNC <= data_in;                
-            elsif lrck = '1' and oldLRCK = '0' then
-                oldLRCK <= '1';
+            elsif data_Ready = '1' and oldR= '0' then
+                oldR <= '1';
                 
             end if;
         end if;

@@ -552,7 +552,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:54:11"
+value "10:54:29"
 )
 (vvPair
 variable "group"
@@ -624,7 +624,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:54:11"
+value "10:54:29"
 )
 (vvPair
 variable "unit"
@@ -708,6 +708,7 @@ suid 1,0
 uid 140,0
 ps "OnEdgeStrategy"
 shape (Triangle
+uid 195,0
 ro 90
 va (VaSet
 vasetType 1
@@ -931,11 +932,10 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "-7500,17000,5000,19400"
+xt "25000,26600,37500,29000"
 st "Generic Declarations
 
-DATA_WIDTH positive   
-"
+DATA_WIDTH positive   "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
@@ -1333,9 +1333,9 @@ tm "PackageList"
 )
 ]
 )
-windowSize "931,134,1947,824"
-viewArea "-500,-500,70420,47560"
-cachedDiagramExtent "-7500,0,73000,49000"
+windowSize "904,134,1921,824"
+viewArea "-500,-500,70510,50080"
+cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,0"
 defaultCommentText (CommentText
@@ -1607,6 +1607,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 171,0
-activeModelName "Symbol:GEN"
+lastUid 195,0
+activeModelName "Symbol"
 )

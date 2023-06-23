@@ -24,13 +24,16 @@ VIEW symbol.sb
 GRAPHIC 76,0 27 0 
 DESIGN @xover
 VIEW symbol.sb
-GRAPHIC 66,0 28 0 
+GRAPHIC 303,0 28 0 
 DESIGN @xover
 VIEW symbol.sb
-GRAPHIC 71,0 29 0 
+GRAPHIC 66,0 29 0 
 DESIGN @xover
 VIEW symbol.sb
-GRAPHIC 1,0 32 0 
+GRAPHIC 71,0 30 0 
 DESIGN @xover
 VIEW symbol.sb
 GRAPHIC 1,0 33 0 
+DESIGN @xover
+VIEW symbol.sb
+GRAPHIC 1,0 34 0 

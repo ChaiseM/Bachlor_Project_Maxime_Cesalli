@@ -16,9 +16,8 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/audioRight
 add wave -noupdate -divider Bascule
 add wave -noupdate -divider mono
 add wave -noupdate -divider Lowpass
-add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/audio_L_out
-add wave -noupdate /leftrightsplitter_tb/I_dut/I3/samples
-add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/LowPassOut
+add wave -noupdate /leftrightsplitter_tb/I_dut/DataReady
+add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/lowPass
 add wave -noupdate -divider {I2S encoder CIRCUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/DOUT
 add wave -noupdate /leftrightsplitter_tb/I_dut/LRCK

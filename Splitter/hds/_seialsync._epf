@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom sync1
+DEFAULT_FILE atom SeialSync_sync1.vhd

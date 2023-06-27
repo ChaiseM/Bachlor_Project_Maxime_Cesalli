@@ -183,19 +183,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "23.06.2023"
+value "26.06.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "23"
+value "26"
 )
 (vvPair
 variable "designName"
@@ -227,7 +227,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "23.06.2023"
+value "26.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -239,7 +239,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:14:44"
+value "14:22:05"
 )
 (vvPair
 variable "group"
@@ -363,7 +363,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "10:14:44"
+value "14:22:05"
 )
 (vvPair
 variable "unit"
@@ -1611,9 +1611,9 @@ uid 7469,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "37000,74300,44700,75500"
+xt "37000,72300,44700,73500"
 st "Splitter_test"
-blo "37000,75300"
+blo "37000,73300"
 tm "BdLibraryNameMgr"
 )
 *47 (Text
@@ -1621,9 +1621,9 @@ uid 7470,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "37000,75500,47000,76700"
+xt "37000,73500,47000,74700"
 st "iisEncodeurTester"
-blo "37000,76500"
+blo "37000,74500"
 tm "CptNameMgr"
 )
 *48 (Text
@@ -1631,9 +1631,9 @@ uid 7471,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "37000,76700,38700,77900"
+xt "37000,74700,38700,75900"
 st "I2"
-blo "37000,77700"
+blo "37000,75700"
 tm "InstanceNameMgr"
 )
 ]
@@ -1648,7 +1648,7 @@ uid 7474,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "48000,73600,71500,74400"
+xt "45000,73200,68500,74000"
 st "DATA_WIDTH = DATA_WIDTH_T    ( positive )  "
 )
 header ""
@@ -3287,7 +3287,7 @@ text (MLText
 uid 9780,0
 va (VaSet
 )
-xt "37700,70800,56400,73200"
+xt "83000,75600,101700,78000"
 st "signalBitNb  = 32    ( positive )  
 signalOBitNb = 32    ( positive )  "
 )
@@ -5379,7 +5379,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,14,1921,1080"
-viewArea "-22606,12092,171992,116690"
+viewArea "-12057,31636,112485,98578"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5406,7 +5406,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 10329,0
+lastUid 10466,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

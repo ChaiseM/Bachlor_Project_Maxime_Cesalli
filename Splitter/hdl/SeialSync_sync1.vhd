@@ -12,6 +12,8 @@ ARCHITECTURE sync1 OF SeialSync IS
  signal oldR : std_ulogic;
  signal oldLR : std_ulogic;
  signal cnt : unsigned(2 downto 0); 
+ signal tempLow : signed(lowPass'range);
+ signal tempHigh : signed(highPass'range);
 
 BEGIN
 
@@ -21,23 +23,30 @@ BEGIN
     begin
         if (reset = '1') then
            oldR <= '0'; 
+           oldLR <= '0'; 
            cnt <= (others => '0');
+           tempHigh <= (others => '0');
+           tempLow <= (others => '0');
         elsif rising_edge(clock) then  
-            if DataReady = '0' and oldR = '1' then 
-                oldR <= '0';   
-                cnt <= cnt + 1;                
-            elsif DataReady = '1' and oldR= '0' then
-                oldR <= '1';
-                
+        
+            if DataReady = '1' then 
+                tempLow <= lowPass;
+                tempHigh <= highPass ;
+                tempLow(0) <= '0';
+                tempLow(1) <= '0';
+                tempLow(2) <= '0';
+                tempHigh(0) <= '0';
+                tempHigh(1) <= '0';
+                tempHigh(2) <= '0';
             end if;
-             
-            if cnt = 2 then 
-                
-                cnt <= (others => '0');
-               audioRight1 <= lowPass  ;
-                audioLeft1 <= highPass ;
             
+            if NewData = '1' then 
+                audioRight1 <= tempLow;
+                -- to account for the higher efficency of the twitter
+                audioLeft1 <= shift_right(tempHigh,1);       
             end if;
+            
+            
             
         end if;
     end process syncro;

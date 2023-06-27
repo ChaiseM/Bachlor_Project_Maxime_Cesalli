@@ -25,8 +25,8 @@ ARCHITECTURE inputLRCK OF iisEncoder IS
     signal frameCounter2 : unsigned(frameCounterBitNb-1 downto 0);
     signal LRCKShifted :  std_uLogic;
     constant maxFrameNBR : unsigned(frameCounter'range) := (others => '1');
-    signal leftShiftRegister : unsigned(audioLeft'range);
-    signal rightShiftRegister : unsigned(audioRight'range);
+    signal leftShiftRegister : signed(audioLeft'range);
+    signal rightShiftRegister : signed(audioRight'range);
     signal dummy1 : unsigned(audioLeft'range);
     signal dummy2 : unsigned(audioRight'range);
      
@@ -46,6 +46,7 @@ begin
            -- switch <= '0';
 		elsif rising_edge(clock) then
 		     
+            NewData <= '0';
 
             if CLKI2s = '1' and pastI2SClock = '0' then  
                 pastI2SClock <= '1';                
@@ -54,11 +55,12 @@ begin
                           
             elsif CLKI2s = '0' and pastI2SClock = '1' then
                 pastI2SClock <= '0';
-                -- if LRCK1 = '1' then 
-                   -- leftShiftRegister <= shift_left(dummy1,to_integer(frameCounter));
-                --else 
-                    --rightShiftRegister <= shift_left(dummy2,to_integer(frameCounter));
-                --end if ; 
+                
+                if LRCK1 = '0' then 
+                    DOUT <= leftShiftRegister(to_integer(frameCounter));
+                else 
+                    DOUT <= rightShiftRegister(to_integer(frameCounter)) ; 
+                end if;       
                 frameCounter2 <= frameCounter;
                
             end if;  
@@ -66,21 +68,22 @@ begin
             if LRCKShifted = '1' and pastLRCK = '0' then  
                 pastLRCK <= '1'; 
                 frameCounter <= (others => '1');
-                
-                              
+                      
             elsif LRCKShifted = '0' and pastLRCK = '1' then
                 pastLRCK <= '0';
                 frameCounter <= (others => '1'); 
-                dummy2 <= unsigned(audioRight) ;
-                dummy1 <= unsigned(audioLeft);  
-              
-                
-                         
+                    
             end if ; 
             
-          
+            if frameCounter = 3 and LRCKShifted = '1' and CLKI2s = '0' then 
+                NewData <= '1';
+            end if ;
+            if frameCounter = 3 and LRCKShifted = '1' and CLKI2s = '1' then 
+                rightShiftRegister <= audioRight;
+                leftShiftRegister <= audioLeft;
+            end if ;
            
-        LRCK <= LRCK1;
+        LRCK <= LRCK1;  
         SCK <= CLKI2s;
       
        
@@ -90,9 +93,8 @@ begin
 	end process FlipFlopAndResize;
     
     
-    DOUT <= dummy1(to_integer(frameCounter2)) when LRCK1 = '1' 
-    else dummy2(to_integer(frameCounter2)) ;
+  -- DOUT <= leftShiftRegister(to_integer(frameCounter))when LRCK1 = '1' 
+   --else rightShiftRegister(to_integer(frameCounter)) ;
     
     
 END ARCHITECTURE inputLRCK;
-

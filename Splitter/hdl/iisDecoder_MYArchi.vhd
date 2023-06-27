@@ -45,7 +45,7 @@ BEGIN
                 oldSCK <= '1';
                 
             end if ; 
-            lrCounter <= bitCounter + 2;
+            lrCounter <= bitCounter + 1;
         end if;
     end process countBits;
     

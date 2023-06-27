@@ -563,19 +563,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "02.06.2023"
+value "26.06.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "lun."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "lundi"
 )
 (vvPair
 variable "dd"
-value "02"
+value "26"
 )
 (vvPair
 variable "entity_name"
@@ -603,7 +603,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "02.06.2023"
+value "26.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -615,7 +615,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:20:49"
+value "14:25:45"
 )
 (vvPair
 variable "group"
@@ -687,7 +687,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:20:49"
+value "14:25:45"
 )
 (vvPair
 variable "unit"
@@ -1178,7 +1178,7 @@ uid 15,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "26000,30600,38500,33000"
+xt "28000,30600,40500,33000"
 st "Generic Declarations
 
 DATA_WIDTH positive   "
@@ -1575,8 +1575,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "96,54,1118,744"
-viewArea "-500,-500,70960,47560"
+windowSize "96,54,1121,744"
+viewArea "12370,-22894,79079,24146"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-2000,0"
@@ -1849,6 +1849,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 358,0
+lastUid 427,0
 activeModelName "Symbol:CDM"
 )

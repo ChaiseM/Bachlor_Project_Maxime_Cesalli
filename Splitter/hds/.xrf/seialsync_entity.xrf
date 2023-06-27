@@ -15,25 +15,28 @@ VIEW symbol.sb
 GRAPHIC 76,0 22 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 225,0 23 0 
+GRAPHIC 283,0 23 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 66,0 24 0 
+GRAPHIC 225,0 24 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 71,0 25 0 
+GRAPHIC 66,0 25 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 230,0 26 0 
+GRAPHIC 71,0 26 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 51,0 27 0 
+GRAPHIC 230,0 27 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 56,0 28 0 
+GRAPHIC 51,0 28 0 
 DESIGN @seial@sync
 VIEW symbol.sb
-GRAPHIC 1,0 31 0 
+GRAPHIC 56,0 29 0 
 DESIGN @seial@sync
 VIEW symbol.sb
 GRAPHIC 1,0 32 0 
+DESIGN @seial@sync
+VIEW symbol.sb
+GRAPHIC 1,0 33 0 

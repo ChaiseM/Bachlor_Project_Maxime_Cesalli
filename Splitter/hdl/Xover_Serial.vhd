@@ -19,7 +19,7 @@ constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2)
     type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioMono'range);  -- vector of FILTER_TAP_NB signed elements
     signal      samples : t_samples ; 
     signal oldLRCK : std_ulogic;
-    signal calculate  : std_uLogic;
+    signal calculate  : unsigned (2 downto 0);
     signal cnt   : unsigned(FINAL_SHIFT-1 DOWNTO 0);
     signal cnt2 :  unsigned (2 downto 0);
     -- 
@@ -29,25 +29,25 @@ constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2)
     type coefficients is array (0 to 1,0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
     signal coeff: coefficients :=(
     ( 
-    x"FFFF", x"FFFF", x"FFFF", x"0000", x"0002", x"0004", 
-    x"0006", x"0009", x"000A", x"000B", x"000A", x"0006", 
-    x"FFFF", x"FFF6", x"FFEA", x"FFDD", x"FFD1", x"FFC9", 
-    x"FFC6", x"FFCC", x"FFDC", x"FFF7", x"001B", x"0047", 
-    x"0074", x"009E", x"00BC", x"00C7", x"00B7", x"0089", 
-    x"003B", x"FFD1", x"FF50", x"FEC7", x"FE48", x"FDE5", 
-    x"FDB6", x"FDCE", x"FE3C", x"FF0D", x"003F", x"01CD", 
-    x"03A5", x"05AB", x"07BE", x"09B9", x"0B74", x"0CCD", 
-    x"0DA9", x"0DF4"),
+    x"FFFF", x"0000", x"0000", x"0000", x"0000", x"0000", 
+    x"0001", x"0001", x"0001", x"0001", x"0000", x"FFFF", 
+    x"FFFD", x"FFF9", x"FFF5", x"FFF0", x"FFEC", x"FFEA", 
+    x"FFEC", x"FFF2", x"FFFD", x"000E", x"0025", x"003F", 
+    x"0059", x"006F", x"007C", x"0079", x"0063", x"0035", 
+    x"FFF1", x"FF97", x"FF30", x"FEC5", x"FE67", x"FE27", 
+    x"FE15", x"FE44", x"FEC1", x"FF94", x"00BC", x"0234", 
+    x"03EC", x"05CA", x"07B0", x"097E", x"0B11", x"0C4A", 
+    x"0D11", x"0D55"),
    ( 
-    x"FFFF", x"FFFF", x"FFFF", x"FFFD", x"FFFC", x"FFFB", 
-    x"FFFA", x"FFFA", x"FFFC", x"FFFF", x"0004", x"000B", 
-    x"0014", x"001C", x"0024", x"0029", x"002A", x"0024", 
-    x"0017", x"0003", x"FFE8", x"FFC6", x"FFA3", x"FF82", 
-    x"FF68", x"FF5B", x"FF60", x"FF7C", x"FFB0", x"FFFC", 
-    x"005B", x"00C9", x"0138", x"019E", x"01E9", x"020B", 
-    x"01F6", x"019C", x"00F7", x"0004", x"FEC9", x"FD4E", 
-    x"FBA5", x"F9E6", x"F829", x"F68C", x"F528", x"F417", 
-    x"F36A", x"732F")
+    x"0000", x"0000", x"FFFF", x"FFFF", x"FFFF", x"FFFF", 
+    x"FFFF", x"FFFF", x"FFFF", x"FFFF", x"FFFF", x"0000", 
+    x"0003", x"0007", x"000B", x"0010", x"0014", x"0016", 
+    x"0014", x"000E", x"0003", x"FFF2", x"FFDB", x"FFC1", 
+    x"FFA7", x"FF91", x"FF84", x"FF87", x"FF9D", x"FFCB", 
+    x"000F", x"0069", x"00D0", x"013B", x"0199", x"01D9", 
+    x"01EB", x"01BC", x"013F", x"006C", x"FF44", x"FDCC", 
+    x"FC14", x"FA36", x"F850", x"F682", x"F4EF", x"F3B6", 
+    x"F2EF", x"72AA")
    );
 begin 
 
@@ -60,15 +60,16 @@ begin
             samples <= (others =>(others => '0'));
             cnt <= (others => '0');
             cnt2 <= (others => '0');
-            calculate <= '0';
+            calculate <= (others => '0');
             oldLRCK <= '0';
         elsif rising_edge(clock) then  
             
             if en = '1' then
                 cnt2 <= cnt2 + 1;
-                calculate <= '1';
+                
             end if;
             if cnt2 = 2 then 
+                calculate <= to_unsigned(2,calculate'length);
                 cnt2 <= (others => '0');
                 samples(0) <= audioMono ;
                 shift : for ii in 0 to FILTER_TAP_NB-2 loop
@@ -76,33 +77,33 @@ begin
                 end loop shift;
             end if ; 
          
-            if calculate = '1' then 
+            if calculate > 0 then 
                 if cnt = HALF_FILTER_TAP_NB-1  then 
                     
                     if (FILTER_TAP_NB mod 2)= 1 then 
-                        adder := adder + samples(to_integer(cnt)) * coeff(sys_LRCK,to_integer(cnt));  
+                        adder := adder + samples(to_integer(cnt)) * coeff(to_integer(calculate mod 2),to_integer(cnt));  
                     end if; 
-                    if lrck = '0' then 
+                    if (calculate mod 2) = 0 then 
                         lowPass <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-Lowpass'length-7),Lowpass'length);
-                    else 
+                    elsif (calculate mod 2) = 1 then 
                         Highpass <= resize(shift_right(adder,ACCUMULATOR_Bit_NB-Lowpass'length-7),Lowpass'length);
                     end if ;
                     cnt <= (others => '0');  
                     adder := (others => '0');
-                    calculate <= '0';                    
+                    calculate <= calculate-1;                    
                 else
                     adder := adder +((resize(samples(to_integer(cnt)),audioMono'length+1)+
-                    samples(FILTER_TAP_NB-1-to_integer(cnt)))*coeff(sys_LRCK,to_integer(cnt)));
+                    samples(FILTER_TAP_NB-1-to_integer(cnt)))*coeff(to_integer(calculate mod 2),to_integer(cnt)));
                     cnt <= cnt + 1;
                 end if;  
                
             end if;
             
-            DataReady <= calculate;
+           
             
         end if ;
     end process shiftSamplesAndMul;
     
-    
+     DataReady <= '1' when calculate = 0 else '0';
 END ARCHITECTURE Serial;
 

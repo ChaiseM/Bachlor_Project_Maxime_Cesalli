@@ -66,19 +66,13 @@ VIEW symbol.sb
 GRAPHIC 1455,0 36 0 
 DESIGN @f@p@g@a_splitter
 VIEW symbol.sb
-GRAPHIC 1869,0 37 0 
+GRAPHIC 1465,0 37 0 
 DESIGN @f@p@g@a_splitter
 VIEW symbol.sb
-GRAPHIC 1465,0 38 0 
+GRAPHIC 2067,0 38 0 
 DESIGN @f@p@g@a_splitter
 VIEW symbol.sb
-GRAPHIC 1864,0 39 0 
+GRAPHIC 1,0 41 0 
 DESIGN @f@p@g@a_splitter
 VIEW symbol.sb
-GRAPHIC 1859,0 40 0 
-DESIGN @f@p@g@a_splitter
-VIEW symbol.sb
-GRAPHIC 1,0 43 0 
-DESIGN @f@p@g@a_splitter
-VIEW symbol.sb
-GRAPHIC 1,0 44 0 
+GRAPHIC 1,0 42 0 

@@ -322,7 +322,7 @@ font "Tahoma,10,0"
 )
 emptyMRCItem *36 (MRCItem
 litem &1
-pos 21
+pos 10
 dimension 20
 )
 uid 216,0
@@ -831,7 +831,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:18:08"
+value "14:00:55"
 )
 (vvPair
 variable "group"
@@ -967,7 +967,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:18:08"
+value "14:00:55"
 )
 (vvPair
 variable "unit"
@@ -1895,7 +1895,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "50000,17625,50750,18375"
+xt "50000,16625,50750,17375"
 )
 tg (CPTG
 uid 2069,0
@@ -1906,10 +1906,10 @@ uid 2070,0
 va (VaSet
 font "Verdana,8,0"
 )
-xt "45600,17500,49000,18500"
+xt "45600,16500,49000,17500"
 st "testOut"
 ju 2
-blo "49000,18300"
+blo "49000,17300"
 tm "CptPortNameMgr"
 )
 )
@@ -2363,8 +2363,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "15,31,1269,900"
-viewArea "-1100,4376,74824,59210"
+windowSize "15,31,1268,900"
+viewArea "-1065,-1065,74590,52128"
 cachedDiagramExtent "0,0,73000,49000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -2649,8 +2649,8 @@ xt "0,7800,0,7800"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2117,0
+lastUid 2094,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
-activeModelName "Symbol"
+activeModelName "Symbol:GEN"
 )

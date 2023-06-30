@@ -59,13 +59,13 @@ begin
                 end if;
             end if ; 
 
-            LRCK_in <= LR;
+            LRCK_in <= LR after 20 ns;
             SCK_in <= CLKI2s;
             if LR = '1' then 
-				DOUT_in <= leftShiftRegister(DATA_WIDTH-1); 
+				DOUT_in <= leftShiftRegister(DATA_WIDTH-1) after 20 ns; 
                 leftShiftRegister <= shift_left(unsigned(audioInL),to_integer(frameCounter-1));
             else 
-				DOUT_in <= rightShiftRegister(DATA_WIDTH-1); 
+				DOUT_in <= rightShiftRegister(DATA_WIDTH-1) after 20 ns; 
                 rightShiftRegister <= shift_left(unsigned(audioInR),to_integer(frameCounter-1));
                 
             end if;

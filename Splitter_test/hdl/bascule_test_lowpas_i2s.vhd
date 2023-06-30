@@ -25,8 +25,8 @@ BEGIN
             end if;
             if cnt = 2 then 
                 cnt <= (others => '0');
-                audio_R_out <= signed(shift_left(unsigned(audio_R_in),2));
-                audio_L_out <= signed(shift_left(unsigned(audio_L_in),2));
+                audio_R_out <= audio_R_in;
+                audio_L_out <= audio_L_in;
             end if ; 
 		end if;
 	end process FlipFlopAndResize;

@@ -75,10 +75,10 @@ begin
                     
             end if ; 
             
-            if frameCounter = 3 and LRCKShifted = '1' and CLKI2s = '0' then 
+            if frameCounter = 2 and LRCKShifted = '1' and CLKI2s = '0' then 
                 NewData <= '1';
             end if ;
-            if frameCounter = 3 and LRCKShifted = '1' and CLKI2s = '1' then 
+            if frameCounter = 1 and LRCKShifted = '1' and CLKI2s = '1' then 
                 rightShiftRegister <= audioRight;
                 leftShiftRegister <= audioLeft;
             end if ;
@@ -97,4 +97,4 @@ begin
    --else rightShiftRegister(to_integer(frameCounter)) ;
     
     
-END ARCHITECTURE inputLRCK;
+END ARCHITECTURE inputLRCK;     

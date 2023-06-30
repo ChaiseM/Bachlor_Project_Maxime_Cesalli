@@ -45,7 +45,7 @@ BEGIN
                 oldSCK <= '1';
                 
             end if ; 
-            lrCounter <= bitCounter + 1;
+            lrCounter <= bitCounter +2;
         end if;
     end process countBits;
     
@@ -82,4 +82,3 @@ BEGIN
   --dataValid <= '1' when  lrCounter = 0 and SCK = '1' and LRCK = '1' else '0';     
     dataValid <= '1' when  lrCounter = 0 and SCK = '1' else '0';         
 END ARCHITECTURE MYArchi;
-

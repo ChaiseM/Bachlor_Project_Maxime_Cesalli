@@ -1,33 +1,42 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -divider tester
-add wave -noupdate /leftrightsplitter_tb/I_tester/reset
-add wave -noupdate /leftrightsplitter_tb/I_tester/clock
-add wave -noupdate -format Analog-Step -height 74 -max 10000000.0 -min -10000000.0 -radix decimal -childformat {{/leftrightsplitter_tb/I_tester/audioIn(23) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(22) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(21) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(20) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(19) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(18) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(17) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(16) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(15) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(14) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(13) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(12) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(11) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(10) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(9) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(8) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(7) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(6) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(5) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(4) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(3) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(2) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(1) -radix decimal} {/leftrightsplitter_tb/I_tester/audioIn(0) -radix decimal}} -subitemconfig {/leftrightsplitter_tb/I_tester/audioIn(23) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(22) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(21) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(20) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(19) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(18) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(17) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(16) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(15) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(14) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(13) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(12) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(11) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(10) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(9) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(8) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(7) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(6) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(5) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(4) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(3) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(2) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(1) {-height 15 -radix decimal} /leftrightsplitter_tb/I_tester/audioIn(0) {-height 15 -radix decimal}} /leftrightsplitter_tb/I_tester/audioIn
-add wave -noupdate -divider {I2s Encoder TESTER}
+add wave -noupdate -divider {Testder data}
+add wave -noupdate /leftrightsplitter_tb/reset
+add wave -noupdate /leftrightsplitter_tb/clock
+add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 /leftrightsplitter_tb/audioIn
+add wave -noupdate /leftrightsplitter_tb/en
+add wave -noupdate -divider {i2s encodeur Tester}
 add wave -noupdate /leftrightsplitter_tb/DOUT_in
 add wave -noupdate /leftrightsplitter_tb/LRCK_in
 add wave -noupdate /leftrightsplitter_tb/SCK_in
-add wave -noupdate -divider {I2s Decoder CIRCUT}
-add wave -noupdate /leftrightsplitter_tb/I_dut/dataValid
-add wave -noupdate /leftrightsplitter_tb/I_dut/en
+add wave -noupdate -divider {i2s decoder DUT}
+add wave -noupdate /leftrightsplitter_tb/I_dut/I0/lrCounter
+add wave -noupdate /leftrightsplitter_tb/I_dut/Data_Valid
 add wave -noupdate /leftrightsplitter_tb/I_dut/audioLeft
 add wave -noupdate /leftrightsplitter_tb/I_dut/audioRight
-add wave -noupdate -divider Bascule
-add wave -noupdate -divider mono
-add wave -noupdate -divider Lowpass
-add wave -noupdate /leftrightsplitter_tb/I_dut/DataReady
+add wave -noupdate -divider {reguster DUT}
+add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/audio_R_out
+add wave -noupdate -divider {Xover DUT}
+add wave -noupdate /leftrightsplitter_tb/I_dut/end_Calc
+add wave -noupdate /leftrightsplitter_tb/I_dut/I3/cnt
+add wave -noupdate /leftrightsplitter_tb/I_dut/highPass
+add wave -noupdate /leftrightsplitter_tb/I_dut/lowPass
+add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/highPass
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/lowPass
-add wave -noupdate -divider {I2S encoder CIRCUT}
+add wave -noupdate -divider {Rgegister 2 dut}
+add wave -noupdate /leftrightsplitter_tb/I_dut/Next_data
+add wave -noupdate /leftrightsplitter_tb/I_dut/audioLeft1
+add wave -noupdate /leftrightsplitter_tb/I_dut/audioRight1
+add wave -noupdate -divider {i2s encoder DUT}
+add wave -noupdate /leftrightsplitter_tb/I_dut/I2/frameCounter
 add wave -noupdate /leftrightsplitter_tb/I_dut/DOUT
 add wave -noupdate /leftrightsplitter_tb/I_dut/LRCK
 add wave -noupdate /leftrightsplitter_tb/I_dut/SCK
-add wave -noupdate -divider {I2s decoder TESTER}
-add wave -noupdate -divider {Final data Out}
+add wave -noupdate -divider {Final Data}
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_L_out
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_R_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {95527735 ns} 0} {{Cursor 2} {9360301 ns} 0}
+WaveRestoreCursors {{Cursor 1} {95527735 ns} 0} {{Cursor 2} {21837802 ns} 0}
 quietly wave cursor active 2
 configure wave -namecolwidth 243
 configure wave -valuecolwidth 100

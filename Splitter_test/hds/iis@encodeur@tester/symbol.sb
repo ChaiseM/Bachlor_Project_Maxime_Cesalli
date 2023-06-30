@@ -563,19 +563,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "27.06.2023"
+value "30.06.2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "27"
+value "30"
 )
 (vvPair
 variable "entity_name"
@@ -603,7 +603,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "27.06.2023"
+value "30.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -615,7 +615,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:10:53"
+value "09:39:04"
 )
 (vvPair
 variable "group"
@@ -687,7 +687,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "11:10:53"
+value "09:39:04"
 )
 (vvPair
 variable "unit"
@@ -1575,8 +1575,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "96,54,1122,744"
-viewArea "12400,-22900,79432,21956"
+windowSize "96,54,1124,744"
+viewArea "12400,-22900,79600,21956"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-2000,0"
@@ -1849,6 +1849,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 450,0
+lastUid 496,0
 activeModelName "Symbol:CDM"
 )

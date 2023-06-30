@@ -32,6 +32,9 @@ NET     "S43"           LOC = "F7";
 NET     "Data_O"  		LOC = "A4"  ;
 NET     "CLK_O"  		LOC = "B6" ;
 NET     "LR_O"  		LOC = "A6"  ;
+NET     "Data_Valid"  		LOC = "D5"  ;
+NET     "Next_data"  		LOC = "C3"  ;
+NET     "end_Calc"  		LOC = "C4"  ;
 
 #----------------------------------------------------------------------------
 # Globals

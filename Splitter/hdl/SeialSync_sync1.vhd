@@ -52,4 +52,3 @@ BEGIN
     end process syncro;
 
 END ARCHITECTURE sync1;
-

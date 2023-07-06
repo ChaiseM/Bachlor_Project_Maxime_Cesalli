@@ -1666,11 +1666,15 @@ second "concatenated"
 defaultCategoryTemplates [
 1
 "architecture.vhd"
+2
+"entity.vhd"
 3
 "combined.vhd"
 ]
 defaultCategoryTemplatesPrefs [
 1
+0
+2
 0
 3
 0
@@ -4213,7 +4217,7 @@ hdsWorkspaceLocation ""
 relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
-logWindowGeometry "876x706+261+0"
+logWindowGeometry "655x554+621+254"
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0

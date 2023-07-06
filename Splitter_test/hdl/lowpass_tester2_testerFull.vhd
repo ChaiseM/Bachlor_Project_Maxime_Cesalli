@@ -17,18 +17,15 @@ ARCHITECTURE testerFull OF lowpass_tester2 IS
   constant SAMPLING_PERIOD: time := (1.0/SAMPLING_FREQUENCY) * 1 sec;
   signal sEn: std_uLogic := '1';
                                                               -- frequency sweep
-  -- constant minFrequencyLog: real := 3.0;
-  -- constant maxFrequencyLog: real := 6.0;
-  constant minFrequencyLog: real := 4.0;
-  constant maxFrequencyLog: real := 5.0;
+  constant minFrequencyLog: real := 3.0;
+  constant maxFrequencyLog: real := 6.0;
   constant frequencyStepLog: real := 1.0/10.0;
   constant frequencyStepPeriod: time := 1.0 * (1.0/(10.0**minFrequencyLog)) * 3 sec;
   signal sineFrequency: real;
                                                                  -- time signals
   signal tReal: real := 0.0;
   signal phase: real := 0.0;
-  -- signal outAmplitude: real := 1.0;
-  signal outAmplitude: real := 2.0;
+  signal outAmplitude: real := 1.0;
   signal outReal: real := 0.0;
 
 BEGIN
@@ -67,7 +64,6 @@ BEGIN
       sineFrequencyLog := sineFrequencyLog + frequencyStepLog;
       sineFrequency <= 10**sineFrequencyLog;
     end loop;
-    wait;
   end process;
 
   ------------------------------------------------------------------------------
@@ -82,8 +78,7 @@ BEGIN
     end if;
   end process;
 
---  outReal <= outAmplitude * sin(phase);
-  outReal <= outAmplitude * ( arcsin(sin(phase))/math_pi );
+  outReal <= outAmplitude * sin(phase);
 
   audioIn <= to_signed(
     integer(outReal * ( 2.0**(audioIn'length-1) - 1.0 )),
@@ -104,4 +99,3 @@ BEGIN
     sig11 <= '0';
 
 END ARCHITECTURE testerFull;
-

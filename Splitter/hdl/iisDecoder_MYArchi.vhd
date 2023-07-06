@@ -93,6 +93,6 @@ BEGIN
     end process fillReg;
 
     lr2 <= lrSel;
-  --dataValid <= '1' when  lrCounter = 0 and SCK = '1' and LRCK = '1' else '0';     
-    dataValid <= '1' when  lrCounter = 0 and SCK = '1' else '0';         
+  dataValid <= '1' when  lrCounter = 0 and SCK = '1' and LRCK = '1' else '0';     
+    --dataValid <= '1' when  lrCounter = 0 and SCK = '1' else '0';         
 END ARCHITECTURE MYArchi;

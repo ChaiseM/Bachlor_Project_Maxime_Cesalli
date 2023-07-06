@@ -1,25 +1,22 @@
 
 ARCHITECTURE edge OF risingEdgeDetector IS
 
-    signal oldSignal : std_logic;
+    signal signalDelayed : std_logic;
 
 BEGIN
 
-    risingEdge : process(clock,reset)
+    delaySignal : process(clock,reset)
     begin 
     
         if reset = '1' then
-			oldSignal <= '0';
+			signalDelayed <= '0';
 		elsif rising_edge(clock) then
-            en <= '0';
-            if dataValid = '1' and oldSignal = '0' then 
-                en <= '1';
-                oldSignal <= '1';
-            elsif  dataValid = '0' and oldSignal = '1' then 
-                 oldSignal <= '0';
-            end if;
-        end if ;  
-    end process risingEdge;
-
+           signalDelayed <= DataValid;
+        end if;
+    end process delaySignal;
+    
+    en <= '1' when (DataValid = '1') and (signalDelayed = '0')
+        else '0';
 END ARCHITECTURE edge;
 
+ 

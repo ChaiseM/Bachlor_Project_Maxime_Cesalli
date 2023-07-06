@@ -7,7 +7,7 @@
 --
 -- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
 --
-ARCHITECTURE sync1 OF SeialSync IS
+    ARCHITECTURE sync1 OF SeialSync IS
 
  signal oldR : std_ulogic;
  signal oldLR : std_ulogic;
@@ -40,11 +40,11 @@ BEGIN
                 tempHigh(2) <= '0';
             end if;
             
-            if NewData = '1' then 
+            --if NewData = '1' then 
                 audioRight1 <= tempLow;
                 -- to account for the higher efficency of the twitter
                 audioLeft1 <= shift_right(tempHigh,1);       
-            end if;
+            --end if;
             
             
             

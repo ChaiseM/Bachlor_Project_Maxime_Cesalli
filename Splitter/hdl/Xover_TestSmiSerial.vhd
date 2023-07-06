@@ -1,14 +1,14 @@
 --
--- VHDL Architecture Splitter.Xover.ParalelSym
+-- VHDL Architecture Splitter.Xover.TestSmiSerial
 --
 -- Created:
 --          by - maxime.cesalli.UNKNOWN (WE2330804)
---          at - 09:34:27 30.06.2023
+--          at - 16:01:03 03.07.2023
 --
 -- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
 --
-ARCHITECTURE ParalelSym OF Xover IS
- constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
+ARCHITECTURE TestSmiSerial OF Xover IS
+constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
     constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioMono'length + FINAL_SHIFT ; 
   
@@ -80,18 +80,19 @@ begin
                 shift : for ii in 0 to FILTER_TAP_NB-2 loop
                     samples(ii+1) <= samples(ii) ;
                 end loop shift;
+                
             end if ; 
          
             if calculate > 0 then 
                 if cnt >= HALF_FILTER_TAP_NB-n  then 
                     
                     
-                    if signed(remaining_calc) - 1  >= 0 then 
-                        do : for m in 0 to to_integer(signed(remaining_calc) - 1) loop
-                            adder := adder +((resize(samples(to_integer(cnt+m)),audioMono'length+1)+
-                            samples(FILTER_TAP_NB-1-to_integer(cnt+m)))*coeff(to_integer(calculate mod 2),to_integer(cnt+m)));
-                        end loop do;
-                    end if;
+                   
+                       
+                            --adder := adder +((resize(samples(to_integer(cnt+1)),audioMono'length+1)+
+                            --samples(FILTER_TAP_NB-1-to_integer(cnt+1)))*coeff(to_integer(calculate mod 2),to_integer(cnt+1)));
+                       
+                    
                    
                     adder := adder + samples(HALF_FILTER_TAP_NB-1) 
                     * coeff(to_integer(calculate mod 2),HALF_FILTER_TAP_NB-1);  
@@ -105,12 +106,14 @@ begin
                     adder := (others => '0');
                     calculate <= calculate-1;                    
                 else
-                    accumulator : for k in 0 to to_integer(n-1) loop
-                        adder := adder +((resize(samples(to_integer(cnt+k)),audioMono'length+1)+
-                        samples(FILTER_TAP_NB-1-to_integer(cnt+k)))*coeff(to_integer(calculate mod 2),to_integer(cnt+k)));
-                    end loop accumulator;
+                   
+                        adder := adder +((resize(samples(to_integer(cnt)),audioMono'length+1)+
+                        samples(FILTER_TAP_NB-1-to_integer(cnt)))*coeff(to_integer(calculate mod 2),to_integer(cnt)));
+                        adder := adder +((resize(samples(to_integer(cnt+1)),audioMono'length+1)+
+                        samples(FILTER_TAP_NB-1-to_integer(cnt+1)))*coeff(to_integer(calculate mod 2),to_integer(cnt+1)));
+                  
                     
-                    cnt <= cnt + n;
+                    cnt <= cnt + 2;
                 end if;  
                
             end if;
@@ -121,5 +124,8 @@ begin
     end process shiftSamplesAndMul;
     
      DataReady <= '1' when calculate = 0 else '0';
-END ARCHITECTURE ParalelSym;
+     DebugData(1) <= samples(samples'high)(30); 
+     DebugData(0) <= samples(samples'high-1)(30); 
+
+END ARCHITECTURE TestSmiSerial;
 

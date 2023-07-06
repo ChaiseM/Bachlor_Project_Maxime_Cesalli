@@ -183,19 +183,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "30.06.2023"
+value "05.07.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mer."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mercredi"
 )
 (vvPair
 variable "dd"
-value "30"
+value "05"
 )
 (vvPair
 variable "designName"
@@ -227,7 +227,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "30.06.2023"
+value "05.07.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -239,7 +239,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:17:37"
+value "14:44:40"
 )
 (vvPair
 variable "group"
@@ -267,7 +267,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter_test"
 )
 (vvPair
 variable "mm"
-value "06"
+value "07"
 )
 (vvPair
 variable "module_name"
@@ -275,11 +275,11 @@ value "leftRightSplitter_tb"
 )
 (vvPair
 variable "month"
-value "juin"
+value "juil."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "juillet"
 )
 (vvPair
 variable "p"
@@ -363,7 +363,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:17:37"
+value "14:44:40"
 )
 (vvPair
 variable "unit"
@@ -409,7 +409,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-4000,35000,9500,36000"
-st "SIGNAL reset       : std_ulogic"
+st "SIGNAL reset       : std_ulogic
+"
 )
 )
 *2 (Net
@@ -427,7 +428,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-4000,29000,9500,30000"
-st "SIGNAL clock       : std_ulogic"
+st "SIGNAL clock       : std_ulogic
+"
 )
 )
 *3 (Grouping
@@ -853,7 +855,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,14200,3000"
-st "SIGNAL CLKI2s      : std_uLogic"
+st "SIGNAL CLKI2s      : std_uLogic
+"
 )
 )
 *19 (SaComponent
@@ -1104,7 +1107,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,14000,3000"
-st "SIGNAL ShiftData   : std_ulogic"
+st "SIGNAL ShiftData   : std_ulogic
+"
 )
 )
 *28 (Net
@@ -1123,7 +1127,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,12900,3000"
-st "SIGNAL en          : std_logic"
+st "SIGNAL en          : std_logic
+"
 )
 )
 *29 (Net
@@ -1141,7 +1146,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14000,1000"
-st "SIGNAL dataValid   : std_ulogic"
+st "SIGNAL dataValid   : std_ulogic
+"
 )
 )
 *30 (Net
@@ -1160,7 +1166,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14100,1000"
-st "SIGNAL SCK_in      : std_ulogic"
+st "SIGNAL SCK_in      : std_ulogic
+"
 )
 )
 *31 (Net
@@ -1179,7 +1186,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14400,1000"
-st "SIGNAL DOUT_in     : std_ulogic"
+st "SIGNAL DOUT_in     : std_ulogic
+"
 )
 )
 *32 (Net
@@ -1198,7 +1206,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14300,1000"
-st "SIGNAL LRCK_in     : std_ulogic"
+st "SIGNAL LRCK_in     : std_ulogic
+"
 )
 )
 *33 (Net
@@ -1216,7 +1225,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL CLK_out     : std_uLogic"
+st "SIGNAL CLK_out     : std_uLogic
+"
 )
 )
 *34 (Net
@@ -1234,7 +1244,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL Data_out    : std_uLogic"
+st "SIGNAL Data_out    : std_uLogic
+"
 )
 )
 *35 (Net
@@ -1252,7 +1263,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14600,1000"
-st "SIGNAL LRCK_out    : std_ulogic"
+st "SIGNAL LRCK_out    : std_ulogic
+"
 )
 )
 *36 (SaComponent
@@ -2050,7 +2062,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27400,1000"
-st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
+st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
+"
 )
 )
 *61 (Net
@@ -2069,7 +2082,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27700,1000"
-st "SIGNAL audioRight  : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
+st "SIGNAL audioRight  : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
+"
 )
 )
 *62 (Net
@@ -2089,7 +2103,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28000,1000"
-st "SIGNAL audio_L_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
+st "SIGNAL audio_L_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
+"
 )
 )
 *63 (Net
@@ -2109,7 +2124,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28200,1000"
-st "SIGNAL audio_R_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
+st "SIGNAL audio_R_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
+"
 )
 )
 *64 (Net
@@ -2128,7 +2144,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig0        : std_ulogic"
+st "SIGNAL sig0        : std_ulogic
+"
 )
 )
 *65 (Net
@@ -2147,7 +2164,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig1        : std_ulogic"
+st "SIGNAL sig1        : std_ulogic
+"
 )
 )
 *66 (Net
@@ -2166,7 +2184,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig2        : std_ulogic"
+st "SIGNAL sig2        : std_ulogic
+"
 )
 )
 *67 (Net
@@ -2185,7 +2204,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig3        : std_ulogic"
+st "SIGNAL sig3        : std_ulogic
+"
 )
 )
 *68 (Net
@@ -2205,7 +2225,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25900,1000"
-st "SIGNAL audioIn     : signed(DATA_WIDTH_T-1 DOWNTO 0)"
+st "SIGNAL audioIn     : signed(DATA_WIDTH_T-1 DOWNTO 0)
+"
 )
 )
 *69 (SaComponent
@@ -2644,7 +2665,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig4        : std_ulogic"
+st "SIGNAL sig4        : std_ulogic
+"
 )
 )
 *83 (Net
@@ -2663,7 +2685,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig5        : std_ulogic"
+st "SIGNAL sig5        : std_ulogic
+"
 )
 )
 *84 (Net
@@ -2682,7 +2705,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig6        : std_ulogic"
+st "SIGNAL sig6        : std_ulogic
+"
 )
 )
 *85 (Net
@@ -2701,7 +2725,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig7        : std_ulogic"
+st "SIGNAL sig7        : std_ulogic
+"
 )
 )
 *86 (Net
@@ -2720,7 +2745,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig8        : std_ulogic"
+st "SIGNAL sig8        : std_ulogic
+"
 )
 )
 *87 (Net
@@ -2739,7 +2765,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig9        : std_ulogic"
+st "SIGNAL sig9        : std_ulogic
+"
 )
 )
 *88 (Net
@@ -2758,7 +2785,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL sig10       : std_ulogic"
+st "SIGNAL sig10       : std_ulogic
+"
 )
 )
 *89 (Net
@@ -2777,7 +2805,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL sig11       : std_ulogic"
+st "SIGNAL sig11       : std_ulogic
+"
 )
 )
 *90 (SaComponent
@@ -2793,7 +2822,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "76250,63625,77000,64375"
+xt "77250,63625,78000,64375"
 )
 tg (CPTG
 uid 10891,0
@@ -2803,9 +2832,9 @@ f (Text
 uid 10892,0
 va (VaSet
 )
-xt "78000,63400,81400,64600"
+xt "79000,63400,82400,64600"
 st "clock"
-blo "78000,64400"
+blo "79000,64400"
 )
 )
 thePort (LogicalPort
@@ -2827,7 +2856,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "76250,65625,77000,66375"
+xt "77250,65625,78000,66375"
 )
 tg (CPTG
 uid 10895,0
@@ -2837,9 +2866,9 @@ f (Text
 uid 10896,0
 va (VaSet
 )
-xt "78000,65400,81300,66600"
+xt "79000,65400,82300,66600"
 st "reset"
-blo "78000,66400"
+blo "79000,66400"
 )
 )
 thePort (LogicalPort
@@ -2861,7 +2890,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "107000,53625,107750,54375"
+xt "108000,53625,108750,54375"
 )
 tg (CPTG
 uid 10899,0
@@ -2871,10 +2900,10 @@ f (Text
 uid 10900,0
 va (VaSet
 )
-xt "101400,53500,106000,54700"
+xt "102400,53500,107000,54700"
 st "Data_O"
 ju 2
-blo "106000,54500"
+blo "107000,54500"
 )
 )
 thePort (LogicalPort
@@ -2897,7 +2926,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "76250,55625,77000,56375"
+xt "77250,55625,78000,56375"
 )
 tg (CPTG
 uid 10903,0
@@ -2907,9 +2936,9 @@ f (Text
 uid 10904,0
 va (VaSet
 )
-xt "78000,55400,81900,56600"
+xt "79000,55400,82900,56600"
 st "CLK_I"
-blo "78000,56400"
+blo "79000,56400"
 )
 )
 thePort (LogicalPort
@@ -2931,7 +2960,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "76250,53625,77000,54375"
+xt "77250,53625,78000,54375"
 )
 tg (CPTG
 uid 10907,0
@@ -2941,9 +2970,9 @@ f (Text
 uid 10908,0
 va (VaSet
 )
-xt "78000,53400,82200,54600"
+xt "79000,53400,83200,54600"
 st "Data_I"
-blo "78000,54400"
+blo "79000,54400"
 )
 )
 thePort (LogicalPort
@@ -2965,7 +2994,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "107000,55625,107750,56375"
+xt "108000,55625,108750,56375"
 )
 tg (CPTG
 uid 10911,0
@@ -2975,10 +3004,10 @@ f (Text
 uid 10912,0
 va (VaSet
 )
-xt "101700,55500,106000,56700"
+xt "102700,55500,107000,56700"
 st "CLK_O"
 ju 2
-blo "106000,56500"
+blo "107000,56500"
 )
 )
 thePort (LogicalPort
@@ -3001,7 +3030,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "76250,57625,77000,58375"
+xt "77250,57625,78000,58375"
 )
 tg (CPTG
 uid 10915,0
@@ -3011,9 +3040,9 @@ f (Text
 uid 10916,0
 va (VaSet
 )
-xt "78000,57400,81100,58600"
+xt "79000,57400,82100,58600"
 st "LR_I"
-blo "78000,58400"
+blo "79000,58400"
 )
 )
 thePort (LogicalPort
@@ -3035,7 +3064,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "107000,57625,107750,58375"
+xt "108000,57625,108750,58375"
 )
 tg (CPTG
 uid 10919,0
@@ -3045,10 +3074,10 @@ f (Text
 uid 10920,0
 va (VaSet
 )
-xt "102500,57400,106000,58600"
+xt "103500,57400,107000,58600"
 st "LR_O"
 ju 2
-blo "106000,58400"
+blo "107000,58400"
 )
 )
 thePort (LogicalPort
@@ -3071,7 +3100,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "82625,49250,83375,50000"
+xt "83625,49250,84375,50000"
 )
 tg (CPTG
 uid 10923,0
@@ -3083,10 +3112,10 @@ ro 270
 va (VaSet
 font "Verdana,8,0"
 )
-xt "82500,51000,83500,53000"
+xt "83500,51000,84500,53000"
 st "S21"
 ju 2
-blo "83300,51000"
+blo "84300,51000"
 )
 )
 thePort (LogicalPort
@@ -3108,7 +3137,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "83625,49250,84375,50000"
+xt "84625,49250,85375,50000"
 )
 tg (CPTG
 uid 10927,0
@@ -3120,10 +3149,10 @@ ro 270
 va (VaSet
 font "Verdana,8,0"
 )
-xt "83500,51000,84500,53000"
+xt "84500,51000,85500,53000"
 st "S22"
 ju 2
-blo "84300,51000"
+blo "85300,51000"
 )
 )
 thePort (LogicalPort
@@ -3145,7 +3174,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "84625,49250,85375,50000"
+xt "85625,49250,86375,50000"
 )
 tg (CPTG
 uid 10931,0
@@ -3157,10 +3186,10 @@ ro 270
 va (VaSet
 font "Verdana,8,0"
 )
-xt "84500,51000,85500,53000"
+xt "85500,51000,86500,53000"
 st "S23"
 ju 2
-blo "85300,51000"
+blo "86300,51000"
 )
 )
 thePort (LogicalPort
@@ -3182,7 +3211,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "81625,49250,82375,50000"
+xt "82625,49250,83375,50000"
 )
 tg (CPTG
 uid 10935,0
@@ -3194,10 +3223,10 @@ ro 270
 va (VaSet
 font "Verdana,8,0"
 )
-xt "81500,51000,82500,53000"
+xt "82500,51000,83500,53000"
 st "S20"
 ju 2
-blo "82300,51000"
+blo "83300,51000"
 )
 )
 thePort (LogicalPort
@@ -3219,7 +3248,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "107000,64625,107750,65375"
+xt "108000,64625,108750,65375"
 )
 tg (CPTG
 uid 10939,0
@@ -3230,10 +3259,10 @@ uid 10940,0
 va (VaSet
 font "Verdana,8,0"
 )
-xt "102600,64500,106000,65500"
+xt "103600,64500,107000,65500"
 st "testOut"
 ju 2
-blo "106000,65300"
+blo "107000,65300"
 )
 )
 thePort (LogicalPort
@@ -3251,8 +3280,8 @@ suid 2029,0
 uid 10941,0
 shape (PolyLine2D
 pts [
-"77000,69000"
-"93000,69000"
+"78000,69000"
+"94000,69000"
 ]
 uid 10942,0
 layer 0
@@ -3262,7 +3291,7 @@ vasetType 1
 transparent 1
 fg "49152,49152,49152"
 )
-xt "77000,69000,93000,69000"
+xt "78000,69000,94000,69000"
 )
 oxt "38000,22000,54000,22000"
 )
@@ -3275,7 +3304,7 @@ fg "0,65535,0"
 lineColor "0,32896,0"
 lineWidth 2
 )
-xt "77000,50000,107000,75000"
+xt "78000,50000,108000,75000"
 fos 1
 )
 oxt "38000,3000,68000,28000"
@@ -3289,9 +3318,9 @@ uid 10946,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "77100,67700,81500,68900"
+xt "78100,67700,82500,68900"
 st "Splitter"
-blo "77100,68700"
+blo "78100,68700"
 tm "BdLibraryNameMgr"
 )
 *106 (Text
@@ -3299,9 +3328,9 @@ uid 10947,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "77100,68900,86700,70100"
+xt "78100,68900,87700,70100"
 st "leftRightSplitter"
-blo "77100,69900"
+blo "78100,69900"
 tm "CptNameMgr"
 )
 *107 (Text
@@ -3309,9 +3338,9 @@ uid 10948,0
 va (VaSet
 font "Verdana,9,1"
 )
-xt "77100,70100,80500,71300"
+xt "78100,70100,81500,71300"
 st "I_dut"
-blo "77100,71100"
+blo "78100,71100"
 tm "InstanceNameMgr"
 )
 ]
@@ -3325,7 +3354,7 @@ text (MLText
 uid 10951,0
 va (VaSet
 )
-xt "37700,70800,56400,73200"
+xt "38700,70800,57400,73200"
 st "signalBitNb  = 32    ( positive )  
 signalOBitNb = 32    ( positive )  "
 )
@@ -3351,7 +3380,7 @@ va (VaSet
 vasetType 1
 fg "49152,49152,49152"
 )
-xt "77250,73250,78750,74750"
+xt "78250,73250,79750,74750"
 iconName "BlockDiagram.png"
 iconMaskName "BlockDiagram.msk"
 ftype 1
@@ -3371,10 +3400,10 @@ uid 1318,0
 va (VaSet
 vasetType 3
 )
-xt "68000,66000,76250,66000"
+xt "69000,66000,77250,66000"
 pts [
-"76250,66000"
-"68000,66000"
+"77250,66000"
+"69000,66000"
 ]
 )
 start &92
@@ -3393,9 +3422,9 @@ uid 1322,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "73000,64600,77100,66000"
+xt "74000,64600,78100,66000"
 st "reset"
-blo "73000,65800"
+blo "74000,65800"
 tm "WireNameMgr"
 )
 )
@@ -3408,10 +3437,10 @@ uid 1328,0
 va (VaSet
 vasetType 3
 )
-xt "68000,64000,76250,64000"
+xt "69000,64000,77250,64000"
 pts [
-"76250,64000"
-"68000,64000"
+"77250,64000"
+"69000,64000"
 ]
 )
 start &91
@@ -3430,9 +3459,9 @@ uid 1332,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "73000,62600,76800,64000"
+xt "74000,62600,77800,64000"
 st "clock"
-blo "73000,63800"
+blo "74000,63800"
 tm "WireNameMgr"
 )
 )
@@ -3445,12 +3474,12 @@ uid 5951,0
 va (VaSet
 vasetType 3
 )
-xt "63750,54000,76250,56000"
+xt "63750,54000,77250,56000"
 pts [
 "63750,54000"
 "70000,54000"
 "70000,56000"
-"76250,56000"
+"77250,56000"
 ]
 )
 start &43
@@ -3484,12 +3513,12 @@ uid 5957,0
 va (VaSet
 vasetType 3
 )
-xt "63750,54000,76250,56000"
+xt "63750,54000,77250,56000"
 pts [
 "63750,56000"
 "70000,56000"
 "70000,54000"
-"76250,54000"
+"77250,54000"
 ]
 )
 start &40
@@ -3523,10 +3552,10 @@ uid 5963,0
 va (VaSet
 vasetType 3
 )
-xt "63750,58000,76250,58000"
+xt "63750,58000,77250,58000"
 pts [
 "63750,58000"
-"76250,58000"
+"77250,58000"
 ]
 )
 start &41
@@ -3853,9 +3882,9 @@ uid 6320,0
 va (VaSet
 vasetType 3
 )
-xt "107750,56000,130250,56000"
+xt "108750,56000,130250,56000"
 pts [
-"107750,56000"
+"108750,56000"
 "130250,56000"
 ]
 )
@@ -3875,9 +3904,9 @@ uid 6322,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "115000,54600,121100,56000"
+xt "116000,54600,122100,56000"
 st "CLK_out"
-blo "115000,55800"
+blo "116000,55800"
 tm "WireNameMgr"
 )
 )
@@ -3890,9 +3919,9 @@ uid 6326,0
 va (VaSet
 vasetType 3
 )
-xt "107750,54000,130250,58000"
+xt "108750,54000,130250,58000"
 pts [
-"107750,54000"
+"108750,54000"
 "119000,54000"
 "119000,58000"
 "130250,58000"
@@ -3914,9 +3943,9 @@ uid 6328,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "113000,52600,119700,54000"
+xt "114000,52600,120700,54000"
 st "Data_out"
-blo "113000,53800"
+blo "114000,53800"
 tm "WireNameMgr"
 )
 )
@@ -3929,9 +3958,9 @@ uid 6332,0
 va (VaSet
 vasetType 3
 )
-xt "107750,54000,130250,58000"
+xt "108750,54000,130250,58000"
 pts [
-"107750,58000"
+"108750,58000"
 "119000,58000"
 "119000,54000"
 "130250,54000"
@@ -4461,10 +4490,10 @@ uid 8603,0
 va (VaSet
 vasetType 3
 )
-xt "83000,45000,83000,49250"
+xt "84000,45000,84000,49250"
 pts [
-"83000,49250"
-"83000,45000"
+"84000,49250"
+"84000,45000"
 ]
 )
 start &99
@@ -4484,9 +4513,9 @@ ro 270
 va (VaSet
 font "Verdana,12,0"
 )
-xt "81600,45000,83000,48400"
+xt "82600,45000,84000,48400"
 st "sig1"
-blo "82800,48400"
+blo "83800,48400"
 tm "WireNameMgr"
 )
 )
@@ -4499,10 +4528,10 @@ uid 8611,0
 va (VaSet
 vasetType 3
 )
-xt "84000,45000,84000,49250"
+xt "85000,45000,85000,49250"
 pts [
-"84000,49250"
-"84000,45000"
+"85000,49250"
+"85000,45000"
 ]
 )
 start &100
@@ -4522,9 +4551,9 @@ ro 270
 va (VaSet
 font "Verdana,12,0"
 )
-xt "82600,45000,84000,48400"
+xt "83600,45000,85000,48400"
 st "sig2"
-blo "83800,48400"
+blo "84800,48400"
 tm "WireNameMgr"
 )
 )
@@ -4537,10 +4566,10 @@ uid 8619,0
 va (VaSet
 vasetType 3
 )
-xt "85000,45000,85000,49250"
+xt "86000,45000,86000,49250"
 pts [
-"85000,49250"
-"85000,45000"
+"86000,49250"
+"86000,45000"
 ]
 )
 start &101
@@ -4560,9 +4589,9 @@ ro 270
 va (VaSet
 font "Verdana,12,0"
 )
-xt "83600,45000,85000,48400"
+xt "84600,45000,86000,48400"
 st "sig3"
-blo "84800,48400"
+blo "85800,48400"
 tm "WireNameMgr"
 )
 )
@@ -4575,10 +4604,10 @@ uid 8627,0
 va (VaSet
 vasetType 3
 )
-xt "82000,45000,82000,49250"
+xt "83000,45000,83000,49250"
 pts [
-"82000,49250"
-"82000,45000"
+"83000,49250"
+"83000,45000"
 ]
 )
 start &102
@@ -4598,9 +4627,9 @@ ro 270
 va (VaSet
 font "Verdana,12,0"
 )
-xt "80600,45000,82000,48400"
+xt "81600,45000,83000,48400"
 st "sig0"
-blo "81800,48400"
+blo "82800,48400"
 tm "WireNameMgr"
 )
 )
@@ -5416,8 +5445,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,14,1921,1080"
-viewArea "-10085,16525,201988,130516"
+windowSize "0,0,1921,1066"
+viewArea "-32836,22200,105990,96820"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5444,7 +5473,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 10952,0
+lastUid 11363,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -6495,7 +6524,7 @@ st "constant CLOCK_FREQUENCY: real := 66.0E6;
 constant SAMPLING_FREQUENCY: real := 2.0E6;
 constant DATA_WIDTH_T : positive := 24;
 constant COEFF_BIT_NB : positive := 32;
-constant FILTER_TAP_NB : positive := 99;
+constant FILTER_TAP_NB : positive := 149;
 constant DATA_IN_WIDTH_T : positive := 32;"
 tm "BdDeclarativeTextMgr"
 )

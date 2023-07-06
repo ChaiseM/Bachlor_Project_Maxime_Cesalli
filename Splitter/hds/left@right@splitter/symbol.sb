@@ -639,19 +639,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "30.06.2023"
+value "04.07.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "30"
+value "04"
 )
 (vvPair
 variable "designName"
@@ -683,7 +683,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "30.06.2023"
+value "04.07.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -695,7 +695,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "17:11:05"
+value "13:11:02"
 )
 (vvPair
 variable "group"
@@ -731,7 +731,7 @@ value "D:\\Users\\Syslo\\Chronometer\\Synthesis"
 )
 (vvPair
 variable "mm"
-value "06"
+value "07"
 )
 (vvPair
 variable "module_name"
@@ -739,11 +739,11 @@ value "leftRightSplitter"
 )
 (vvPair
 variable "month"
-value "juin"
+value "juil."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "juillet"
 )
 (vvPair
 variable "p"
@@ -827,7 +827,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "17:11:05"
+value "13:11:02"
 )
 (vvPair
 variable "unit"
@@ -2166,7 +2166,7 @@ xt "0,9900,0,9900"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 4290,0
+lastUid 4911,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

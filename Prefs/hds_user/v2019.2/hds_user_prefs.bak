@@ -4219,7 +4219,6 @@ relativeLibraryRootDir ""
 vmLabelLatestDontAskAgain 0
 vmLabelWorkspaceDontAskAgain 0
 logWindowGeometry "655x554+621+234"
-showDiagramBrowser 0
 diagramBrowserTabNo 0
 showInsertPortHint 0
 showContentFirstTime 0
@@ -6315,21 +6314,23 @@ size 190
 )
 ]
 displayHierarchy 0
-xPos 23
+xPos 0
 yPos 10
 width 1936
 height 1066
 activeSidePanelTab 2
+activeLibraryTab 1
 sidePanelSize 293
 showUnixHiddenFiles 0
-componentBrowserXpos 513
-componentBrowserYpos 195
+componentBrowserXpos 934
+componentBrowserYpos 157
 componentBrowserWidth 427
 componentBrowserHeight 373
 componentBrowserLibraryNames [
-"Splitter_test"
-"Splitter"
-"moduleware"
+"Board"
+"Common"
+"Common_test"
+"Memory"
 ]
 )
 (SmPreferences

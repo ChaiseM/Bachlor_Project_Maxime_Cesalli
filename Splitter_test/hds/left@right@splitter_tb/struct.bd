@@ -139,23 +139,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hdl"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.info"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.user"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
 )
 (vvPair
 variable "appl"
@@ -175,27 +175,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb"
 )
 (vvPair
 variable "date"
-value "05.07.2023"
+value "13/07/2023"
 )
 (vvPair
 variable "day"
-value "mer."
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "05"
+value "13"
 )
 (vvPair
 variable "designName"
@@ -223,11 +223,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.07.2023"
+value "13/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -235,11 +235,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:44:40"
+value "14:45:30"
 )
 (vvPair
 variable "group"
@@ -247,7 +247,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "language"
@@ -275,19 +275,19 @@ value "leftRightSplitter_tb"
 )
 (vvPair
 variable "month"
-value "juil."
+value "Jul"
 )
 (vvPair
 variable "month_long"
-value "juillet"
+value "July"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb\\struct.bd"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -363,7 +363,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:44:40"
+value "14:45:30"
 )
 (vvPair
 variable "unit"
@@ -371,7 +371,7 @@ value "leftRightSplitter_tb"
 )
 (vvPair
 variable "user"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "version"
@@ -409,8 +409,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-4000,35000,9500,36000"
-st "SIGNAL reset       : std_ulogic
-"
+st "SIGNAL reset       : std_ulogic"
 )
 )
 *2 (Net
@@ -428,8 +427,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-4000,29000,9500,30000"
-st "SIGNAL clock       : std_ulogic
-"
+st "SIGNAL clock       : std_ulogic"
 )
 )
 *3 (Grouping
@@ -514,7 +512,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "91200,111400,110700,112600"
+xt "91200,111400,106100,112600"
 st "
 by %user on %dd %month %year
 "
@@ -855,8 +853,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,14200,3000"
-st "SIGNAL CLKI2s      : std_uLogic
-"
+st "SIGNAL CLKI2s      : std_uLogic"
 )
 )
 *19 (SaComponent
@@ -1107,8 +1104,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,14000,3000"
-st "SIGNAL ShiftData   : std_ulogic
-"
+st "SIGNAL ShiftData   : std_ulogic"
 )
 )
 *28 (Net
@@ -1127,8 +1123,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,12900,3000"
-st "SIGNAL en          : std_logic
-"
+st "SIGNAL en          : std_logic"
 )
 )
 *29 (Net
@@ -1146,8 +1141,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14000,1000"
-st "SIGNAL dataValid   : std_ulogic
-"
+st "SIGNAL dataValid   : std_ulogic"
 )
 )
 *30 (Net
@@ -1166,8 +1160,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14100,1000"
-st "SIGNAL SCK_in      : std_ulogic
-"
+st "SIGNAL SCK_in      : std_ulogic"
 )
 )
 *31 (Net
@@ -1186,8 +1179,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14400,1000"
-st "SIGNAL DOUT_in     : std_ulogic
-"
+st "SIGNAL DOUT_in     : std_ulogic"
 )
 )
 *32 (Net
@@ -1206,8 +1198,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14300,1000"
-st "SIGNAL LRCK_in     : std_ulogic
-"
+st "SIGNAL LRCK_in     : std_ulogic"
 )
 )
 *33 (Net
@@ -1225,8 +1216,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL CLK_out     : std_uLogic
-"
+st "SIGNAL CLK_out     : std_uLogic"
 )
 )
 *34 (Net
@@ -1244,8 +1234,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL Data_out    : std_uLogic
-"
+st "SIGNAL Data_out    : std_uLogic"
 )
 )
 *35 (Net
@@ -1263,8 +1252,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14600,1000"
-st "SIGNAL LRCK_out    : std_ulogic
-"
+st "SIGNAL LRCK_out    : std_ulogic"
 )
 )
 *36 (SaComponent
@@ -2062,8 +2050,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27400,1000"
-st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *61 (Net
@@ -2082,8 +2069,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27700,1000"
-st "SIGNAL audioRight  : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audioRight  : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *62 (Net
@@ -2103,8 +2089,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28000,1000"
-st "SIGNAL audio_L_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audio_L_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *63 (Net
@@ -2124,8 +2109,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28200,1000"
-st "SIGNAL audio_R_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audio_R_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *64 (Net
@@ -2144,8 +2128,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig0        : std_ulogic
-"
+st "SIGNAL sig0        : std_ulogic"
 )
 )
 *65 (Net
@@ -2164,8 +2147,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig1        : std_ulogic
-"
+st "SIGNAL sig1        : std_ulogic"
 )
 )
 *66 (Net
@@ -2184,8 +2166,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig2        : std_ulogic
-"
+st "SIGNAL sig2        : std_ulogic"
 )
 )
 *67 (Net
@@ -2204,8 +2185,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig3        : std_ulogic
-"
+st "SIGNAL sig3        : std_ulogic"
 )
 )
 *68 (Net
@@ -2225,8 +2205,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25900,1000"
-st "SIGNAL audioIn     : signed(DATA_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audioIn     : signed(DATA_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *69 (SaComponent
@@ -2665,8 +2644,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig4        : std_ulogic
-"
+st "SIGNAL sig4        : std_ulogic"
 )
 )
 *83 (Net
@@ -2685,8 +2663,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig5        : std_ulogic
-"
+st "SIGNAL sig5        : std_ulogic"
 )
 )
 *84 (Net
@@ -2705,8 +2682,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig6        : std_ulogic
-"
+st "SIGNAL sig6        : std_ulogic"
 )
 )
 *85 (Net
@@ -2725,8 +2701,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig7        : std_ulogic
-"
+st "SIGNAL sig7        : std_ulogic"
 )
 )
 *86 (Net
@@ -2745,8 +2720,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig8        : std_ulogic
-"
+st "SIGNAL sig8        : std_ulogic"
 )
 )
 *87 (Net
@@ -2765,8 +2739,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig9        : std_ulogic
-"
+st "SIGNAL sig9        : std_ulogic"
 )
 )
 *88 (Net
@@ -2785,8 +2758,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL sig10       : std_ulogic
-"
+st "SIGNAL sig10       : std_ulogic"
 )
 )
 *89 (Net
@@ -2805,8 +2777,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL sig11       : std_ulogic
-"
+st "SIGNAL sig11       : std_ulogic"
 )
 )
 *90 (SaComponent
@@ -5445,8 +5416,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1066"
-viewArea "-32836,22200,105990,96820"
+windowSize "-8,-8,1544,872"
+viewArea "27300,40412,138516,99464"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5473,7 +5444,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 11363,0
+lastUid 11774,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

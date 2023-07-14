@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom FirstArchi
+DEFAULT_FILE atom Xover_with_RAM_FirstArchi.vhd

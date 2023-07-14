@@ -25,6 +25,7 @@ ARCHITECTURE inputLRCK OF iisEncoder IS
   
    
     signal frameCounter : unsigned(frameCounterBitNb-1 downto 0);
+    signal frameCounter2 : unsigned(frameCounterBitNb-1 downto 0);
     signal LRCKShifted :  std_uLogic;
     signal leftShiftRegister : signed(audioLeft'range);
     signal rightShiftRegister : signed(audioRight'range);
@@ -56,6 +57,7 @@ begin
 	begin
 		if reset = '1' then
 			frameCounter <= (others => '0');
+			frameCounter2 <= (others => '0');
             leftShiftRegister <= (others => '0');
             rightShiftRegister <= (others => '0');
 
@@ -67,13 +69,14 @@ begin
 
             if sckRising = '1' then            
                 frameCounter <= frameCounter-1; 
+                frameCounter2 <= frameCounter; 
                 LRCKShifted  <= LRCK1;              
                           
             elsif sckFalling = '1' then
                 if LRCKShifted = '0' then 
-                    DOUT <= leftShiftRegister(to_integer(frameCounter));
+                    DOUT <= leftShiftRegister(to_integer(frameCounter2));
                 else 
-                    DOUT <= rightShiftRegister(to_integer(frameCounter)) ; 
+                    DOUT <= rightShiftRegister(to_integer(frameCounter2)) ; 
                 end if;       
             end if;  
              

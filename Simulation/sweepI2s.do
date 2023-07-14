@@ -3,7 +3,7 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider {Testder data}
 add wave -noupdate /leftrightsplitter_tb/reset
 add wave -noupdate /leftrightsplitter_tb/clock
-add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 /leftrightsplitter_tb/audioIn
+add wave -noupdate -format Analog-Step -height 74 -max 8388610.0 -min -8388610.0 -radix decimal /leftrightsplitter_tb/audioIn
 add wave -noupdate /leftrightsplitter_tb/en
 add wave -noupdate -divider {i2s encodeur Tester}
 add wave -noupdate /leftrightsplitter_tb/DOUT_in
@@ -11,16 +11,30 @@ add wave -noupdate /leftrightsplitter_tb/LRCK_in
 add wave -noupdate /leftrightsplitter_tb/SCK_in
 add wave -noupdate -divider {i2s decoder DUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/I0/lrCounter
-add wave -noupdate /leftrightsplitter_tb/I_dut/Data_Valid
 add wave -noupdate /leftrightsplitter_tb/I_dut/audioLeft
 add wave -noupdate /leftrightsplitter_tb/I_dut/audioRight
 add wave -noupdate -divider {reguster DUT}
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/audio_R_out
+add wave -noupdate -divider write
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/wraddr
+add wave -noupdate /leftrightsplitter_tb/I_dut/we
+add wave -noupdate /leftrightsplitter_tb/I_dut/din
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/initialRAddress
+add wave -noupdate -divider Read
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/rdaddr
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/re
+add wave -noupdate /leftrightsplitter_tb/I_dut/dout1
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/rAddrCnt_Plus
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/cntNooffset
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMfull
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMLength
 add wave -noupdate -divider {Xover DUT}
-add wave -noupdate /leftrightsplitter_tb/I_dut/end_Calc
-add wave -noupdate /leftrightsplitter_tb/I_dut/I3/cnt
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample1
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample2
 add wave -noupdate /leftrightsplitter_tb/I_dut/highPass
+add wave -noupdate /leftrightsplitter_tb/I_dut/end_Calc
 add wave -noupdate /leftrightsplitter_tb/I_dut/lowPass
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/calculate
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/highPass
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/I_dut/lowPass
 add wave -noupdate -divider {Rgegister 2 dut}
@@ -36,9 +50,9 @@ add wave -noupdate -divider {Final Data}
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_L_out
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_R_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {95527735 ns} 0} {{Cursor 2} {21837802 ns} 0}
+WaveRestoreCursors {{Cursor 1} {94125327 ns} 0} {{Cursor 2} {352 ns} 0}
 quietly wave cursor active 2
-configure wave -namecolwidth 243
+configure wave -namecolwidth 302
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
@@ -52,4 +66,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ns} {105 ms}
+WaveRestoreZoom {7984238 ns} {7984590 ns}

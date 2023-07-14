@@ -138,11 +138,11 @@ begin
                 elsif cnt > HALF_FILTER_TAP_NB-1  then 
                    
                      if selector = 0 then 
-                        lowPass <= resize(shift_right(accumulator1,ACCUMULATOR_Bit_NB-Lowpass'length-8),Lowpass'length);
+                        lowPass <= resize(shift_right(accumulator1,ACCUMULATOR_Bit_NB-Lowpass'length-9),Lowpass'length);
                         selector <= selector+1;
                     else 
                         selector <= (others => '0');
-                        Highpass <= resize(shift_right(accumulator2,ACCUMULATOR_Bit_NB-Lowpass'length-8),Lowpass'length);
+                        Highpass <= resize(shift_right(accumulator2,ACCUMULATOR_Bit_NB-Lowpass'length-9),Lowpass'length);
                         calculate <= calculate-1; 
                         cnt <= (others => '0');  
                         accumulator1 <= (others => '0'); 

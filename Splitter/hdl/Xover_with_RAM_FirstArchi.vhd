@@ -8,7 +8,7 @@
 -- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
 --
 ARCHITECTURE FirstArchi OF Xover_with_RAM IS
- constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
+ --constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
     constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audio_In'length + FINAL_SHIFT  ;  
    
@@ -116,11 +116,12 @@ begin
             if en = '1' then
                 
                 firstWrite <= '1';
-                initialRAddress <= ((wAddrCnt+(2*n)- initialWAddress) mod (2*(FILTER_TAP_NB) ));
+                initialRAddress <= ((wAddrCnt+(2*n)- initialWAddress));
+           
                 wAddrCnt <= wAddrCnt + n;
                 we <= '1';
-                din <= unsigned(audio_In(audio_In'length-1 downto (audio_In'length-(audio_In'length/2))));
-                wraddr <= wAddrCnt;
+                din <= std_ulogic_vector(unsigned(audio_In(audio_In'length-1 downto (audio_In'length-(audio_In'length/2)))));
+                wraddr <= std_ulogic_vector(wAddrCnt);
                 
             end if;
            
@@ -131,7 +132,7 @@ begin
                 wAddrCnt <= wAddrCnt + n;
                 
                 rAddrCnt_Plus <= initialRAddress;
-                rdaddr <= initialRAddress; 
+                rdaddr <= std_ulogic_vector(initialRAddress); 
                 if wAddrCnt >= RAMLength then
                     RAMfull <= '1';
                 
@@ -139,8 +140,8 @@ begin
                 end if;
                 RAMfulldelayed <= RAMfull;
                 we <= '1';
-                din <= unsigned(audio_In((audio_In'length-(audio_In'length/2)-1) downto 0));
-                wraddr <= wAddrCnt;
+                din <= std_ulogic_vector(unsigned(audio_In((audio_In'length-(audio_In'length/2)-1) downto 0)));
+                wraddr <= std_ulogic_vector(wAddrCnt);
             end if ; 
             
             calculatedelayed <= calculate;
@@ -166,7 +167,7 @@ begin
                 else
                     cntNooffset <= cntNooffset + 1; 
                 end if;
-                rdaddr <= rAddrCnt_Plus; 
+                rdaddr <= std_ulogic_vector(rAddrCnt_Plus); 
                 if (rAddrCnt_Plus mod 2) = 0 then 
                     rAddrCnt_Plus <= rAddrCnt_Plus + 1;
                     firstRead <= firstRead +1;
@@ -186,7 +187,7 @@ begin
                     rAddrCnt_Plus  <= to_unsigned(initialWAddress,wAddrCnt'length);
                 end if;
                 
-                if cntNooffset >= 5  and cntNooffset mod 2  = 1 then 
+                if cntNooffset >= 5  and (cntNooffset mod 2) = 1 then 
                 
                     cnt <= cnt+1;
                     accumulator1 := accumulator1 + sample1 * coeff(0,to_integer(cnt));
@@ -195,60 +196,7 @@ begin
                 end if;
                 
                 
-                
-                -- if cnt = HALF_FILTER_TAP_NB-1  then 
-                    
-                    -- if selector = 0 then 
-                        -- selector <= selector+1;
-                        -- accumulator1 <= accumulator1 + resize((samples(to_integer(cnt)) * coeff(0,to_integer(cnt))),mul_v1'length);       
-                    -- else 
-                        -- selector <= (others => '0');
-                        -- accumulator2 <= accumulator2 + resize((samples(to_integer(cnt)) * coeff(1,to_integer(cnt))),mul_v2'length);                       
-                        -- cnt <= cnt + 1;      
-                    -- end if;
-                    
-                   
-                    
-                
-                                   
-                -- elsif cnt <  HALF_FILTER_TAP_NB-1  then
-                    
-                    -- if selector = 0 then 
-                        -- sum_v <= resize(samples(to_integer(cnt)),audio_In'length+1)
-                        -- + samples(FILTER_TAP_NB-1-to_integer(cnt));
-                        -- selector <= selector+1; 
-                    -- end if;
-                    
-                    -- if selector = 1 then 
-                        -- accumulator1 <= accumulator1 + sum_v*coeff(0,to_integer(cnt));
-                        -- selector <= selector+1;
-                    -- end if;
-                    
-                    -- if selector = 2 then 
-                        -- accumulator2 <= accumulator2 + sum_v*coeff(1,to_integer(cnt));
-                        -- cnt <= cnt + 1;
-                        -- selector <= (others => '0');
-                    -- end if;
-                   
-                    
-                -- elsif cnt > HALF_FILTER_TAP_NB-1  then 
-                   
-                     -- if selector = 0 then 
-                        -- lowPass <= resize(shift_right(accumulator1,ACCUMULATOR_Bit_NB-Lowpass'length-9),Lowpass'length);
-                        -- selector <= selector+1;
-                    -- else 
-                        -- selector <= (others => '0');
-                        -- Highpass <= resize(shift_right(accumulator2,ACCUMULATOR_Bit_NB-Lowpass'length-9),Lowpass'length);
-                        -- calculate <= calculate-1; 
-                        -- cnt <= (others => '0');  
-                        -- accumulator1 <= (others => '0'); 
-                        -- accumulator2 <= (others => '0');  
-                        -- sum_v <= (others => '0');  
-                        -- mul_v1 <= (others => '0');  
-                        -- mul_v2 <= (others => '0');                          
-                    -- end if;
-                -- end if;  
-               
+
             
                    
             end if;
@@ -258,8 +206,8 @@ begin
     end process shiftSamplesAndMul;
     
      DataReady <= '1' when calculate = 0 else '0';
-     -- DebugData(1) <= accumulator1(accumulator1'high); 
-     -- DebugData(0) <= accumulator1(accumulator1'high-1); 
+     DebugData(1) <= '0'; 
+     DebugData(0) <= '0'; 
      
 
     

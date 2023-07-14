@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom HighLevel
+DEFAULT_FILE atom HighLevel_HighLevel.vhd

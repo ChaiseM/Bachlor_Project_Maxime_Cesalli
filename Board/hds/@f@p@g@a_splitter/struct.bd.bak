@@ -294,7 +294,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:00:39"
+value "15:18:08"
 )
 (vvPair
 variable "group"
@@ -430,7 +430,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:00:39"
+value "15:18:08"
 )
 (vvPair
 variable "unit"
@@ -466,7 +466,7 @@ uid 1325,0
 decl (Decl
 n "clock"
 t "std_ulogic"
-o 3
+o 16
 suid 1,0
 )
 declText (MLText
@@ -908,7 +908,7 @@ uid 1633,0
 decl (Decl
 n "reset_n"
 t "std_ulogic"
-o 6
+o 17
 suid 2,0
 )
 declText (MLText
@@ -927,7 +927,7 @@ uid 1635,0
 decl (Decl
 n "reset"
 t "std_ulogic"
-o 20
+o 28
 suid 3,0
 )
 declText (MLText
@@ -1357,7 +1357,7 @@ uid 2521,0
 decl (Decl
 n "resetSynch"
 t "std_ulogic"
-o 22
+o 30
 suid 13,0
 )
 declText (MLText
@@ -1557,7 +1557,7 @@ uid 2602,0
 decl (Decl
 n "resetSynch_n"
 t "std_ulogic"
-o 23
+o 31
 suid 15,0
 )
 declText (MLText
@@ -1698,7 +1698,7 @@ uid 4012,0
 decl (Decl
 n "reset1"
 t "std_ulogic"
-o 21
+o 29
 suid 36,0
 )
 declText (MLText
@@ -2571,7 +2571,7 @@ uid 7445,0
 decl (Decl
 n "CLK_In"
 t "std_uLogic"
-o 7
+o 1
 suid 62,0
 )
 declText (MLText
@@ -2589,7 +2589,7 @@ uid 7447,0
 decl (Decl
 n "Data_In"
 t "std_uLogic"
-o 8
+o 2
 suid 63,0
 )
 declText (MLText
@@ -2607,7 +2607,7 @@ uid 7449,0
 decl (Decl
 n "LR_In"
 t "std_uLogic"
-o 9
+o 3
 suid 64,0
 )
 declText (MLText
@@ -2625,7 +2625,7 @@ uid 7469,0
 decl (Decl
 n "Data_I"
 t "std_uLogic"
-o 10
+o 24
 suid 68,0
 )
 declText (MLText
@@ -2643,7 +2643,7 @@ uid 7471,0
 decl (Decl
 n "CLK_I"
 t "std_uLogic"
-o 11
+o 22
 suid 69,0
 )
 declText (MLText
@@ -2661,7 +2661,7 @@ uid 7473,0
 decl (Decl
 n "LR_I"
 t "std_uLogic"
-o 12
+o 26
 suid 70,0
 )
 declText (MLText
@@ -2838,7 +2838,7 @@ uid 7496,0
 decl (Decl
 n "Data_O"
 t "std_uLogic"
-o 13
+o 19
 suid 71,0
 )
 declText (MLText
@@ -2856,7 +2856,7 @@ uid 7502,0
 decl (Decl
 n "CLK_O"
 t "std_uLogic"
-o 14
+o 18
 suid 72,0
 )
 declText (MLText
@@ -2874,7 +2874,7 @@ uid 7508,0
 decl (Decl
 n "LR_O"
 t "std_ulogic"
-o 15
+o 20
 suid 73,0
 )
 declText (MLText
@@ -3101,7 +3101,7 @@ uid 7841,0
 decl (Decl
 n "S23"
 t "std_ulogic"
-o 16
+o 7
 suid 74,0
 )
 declText (MLText
@@ -3119,7 +3119,7 @@ uid 7847,0
 decl (Decl
 n "S22"
 t "std_ulogic"
-o 17
+o 6
 suid 75,0
 )
 declText (MLText
@@ -3137,7 +3137,7 @@ uid 7853,0
 decl (Decl
 n "S21"
 t "std_ulogic"
-o 18
+o 5
 suid 76,0
 )
 declText (MLText
@@ -3155,7 +3155,7 @@ uid 7859,0
 decl (Decl
 n "S20"
 t "std_ulogic"
-o 19
+o 4
 suid 77,0
 )
 declText (MLText
@@ -3613,7 +3613,7 @@ uid 8208,0
 decl (Decl
 n "S33"
 t "std_ulogic"
-o 20
+o 11
 suid 78,0
 )
 declText (MLText
@@ -3631,7 +3631,7 @@ uid 8214,0
 decl (Decl
 n "S32"
 t "std_ulogic"
-o 21
+o 10
 suid 79,0
 )
 declText (MLText
@@ -3649,7 +3649,7 @@ uid 8220,0
 decl (Decl
 n "S31"
 t "std_ulogic"
-o 22
+o 9
 suid 80,0
 )
 declText (MLText
@@ -3667,7 +3667,7 @@ uid 8226,0
 decl (Decl
 n "S30"
 t "std_ulogic"
-o 23
+o 8
 suid 81,0
 )
 declText (MLText
@@ -3685,7 +3685,7 @@ uid 8232,0
 decl (Decl
 n "S40"
 t "std_ulogic"
-o 24
+o 12
 suid 82,0
 )
 declText (MLText
@@ -3703,7 +3703,7 @@ uid 8238,0
 decl (Decl
 n "S41"
 t "std_ulogic"
-o 25
+o 13
 suid 83,0
 )
 declText (MLText
@@ -3721,7 +3721,7 @@ uid 8244,0
 decl (Decl
 n "S42"
 t "std_ulogic"
-o 26
+o 14
 suid 84,0
 )
 declText (MLText
@@ -3739,7 +3739,7 @@ uid 8250,0
 decl (Decl
 n "S43"
 t "std_ulogic"
-o 27
+o 15
 suid 85,0
 )
 declText (MLText
@@ -4447,7 +4447,7 @@ uid 8691,0
 decl (Decl
 n "Data_O1"
 t "std_uLogic"
-o 31
+o 25
 suid 90,0
 )
 declText (MLText
@@ -4465,7 +4465,7 @@ uid 8697,0
 decl (Decl
 n "CLK_O1"
 t "std_uLogic"
-o 32
+o 23
 suid 91,0
 )
 declText (MLText
@@ -4483,7 +4483,7 @@ uid 8703,0
 decl (Decl
 n "LR_O1"
 t "std_ulogic"
-o 33
+o 27
 suid 92,0
 )
 declText (MLText
@@ -5096,8 +5096,7 @@ va (VaSet
 )
 xt "52700,-5200,71400,-2800"
 st "signalBitNb  = 24    ( positive )  
-signalOBitNb = 32    ( positive )  
-"
+signalOBitNb = 32    ( positive )  "
 )
 header ""
 )
@@ -5127,7 +5126,7 @@ decl (Decl
 n "testOut"
 t "std_ulogic_vector"
 b "(6 downto 0)"
-o 31
+o 21
 suid 94,0
 )
 declText (MLText
@@ -6932,8 +6931,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1066"
-viewArea "44300,-62150,171275,6100"
+windowSize "0,14,1921,1080"
+viewArea "44300,-62200,171275,6050"
 cachedDiagramExtent "-12000,-123200,169100,19000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -6961,7 +6960,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,-179000"
-lastUid 9021,0
+lastUid 9151,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8025,7 +8024,7 @@ port (LogicalPort
 decl (Decl
 n "clock"
 t "std_ulogic"
-o 3
+o 16
 suid 1,0
 )
 )
@@ -8036,7 +8035,7 @@ port (LogicalPort
 decl (Decl
 n "reset_n"
 t "std_ulogic"
-o 6
+o 17
 suid 2,0
 )
 )
@@ -8048,7 +8047,7 @@ m 4
 decl (Decl
 n "reset"
 t "std_ulogic"
-o 20
+o 28
 suid 3,0
 )
 )
@@ -8060,7 +8059,7 @@ m 4
 decl (Decl
 n "resetSynch"
 t "std_ulogic"
-o 22
+o 30
 suid 13,0
 )
 )
@@ -8072,7 +8071,7 @@ m 4
 decl (Decl
 n "resetSynch_n"
 t "std_ulogic"
-o 23
+o 31
 suid 15,0
 )
 )
@@ -8084,7 +8083,7 @@ m 4
 decl (Decl
 n "reset1"
 t "std_ulogic"
-o 21
+o 29
 suid 36,0
 )
 )
@@ -8095,7 +8094,7 @@ port (LogicalPort
 decl (Decl
 n "CLK_In"
 t "std_uLogic"
-o 7
+o 1
 suid 62,0
 )
 )
@@ -8106,7 +8105,7 @@ port (LogicalPort
 decl (Decl
 n "Data_In"
 t "std_uLogic"
-o 8
+o 2
 suid 63,0
 )
 )
@@ -8117,7 +8116,7 @@ port (LogicalPort
 decl (Decl
 n "LR_In"
 t "std_uLogic"
-o 9
+o 3
 suid 64,0
 )
 )
@@ -8129,7 +8128,7 @@ m 4
 decl (Decl
 n "Data_I"
 t "std_uLogic"
-o 10
+o 24
 suid 68,0
 )
 )
@@ -8141,7 +8140,7 @@ m 4
 decl (Decl
 n "CLK_I"
 t "std_uLogic"
-o 11
+o 22
 suid 69,0
 )
 )
@@ -8153,7 +8152,7 @@ m 4
 decl (Decl
 n "LR_I"
 t "std_uLogic"
-o 12
+o 26
 suid 70,0
 )
 )
@@ -8165,7 +8164,7 @@ m 1
 decl (Decl
 n "Data_O"
 t "std_uLogic"
-o 13
+o 19
 suid 71,0
 )
 )
@@ -8177,7 +8176,7 @@ m 1
 decl (Decl
 n "CLK_O"
 t "std_uLogic"
-o 14
+o 18
 suid 72,0
 )
 )
@@ -8189,7 +8188,7 @@ m 1
 decl (Decl
 n "LR_O"
 t "std_ulogic"
-o 15
+o 20
 suid 73,0
 )
 )
@@ -8200,7 +8199,7 @@ port (LogicalPort
 decl (Decl
 n "S23"
 t "std_ulogic"
-o 16
+o 7
 suid 74,0
 )
 )
@@ -8211,7 +8210,7 @@ port (LogicalPort
 decl (Decl
 n "S22"
 t "std_ulogic"
-o 17
+o 6
 suid 75,0
 )
 )
@@ -8222,7 +8221,7 @@ port (LogicalPort
 decl (Decl
 n "S21"
 t "std_ulogic"
-o 18
+o 5
 suid 76,0
 )
 )
@@ -8233,7 +8232,7 @@ port (LogicalPort
 decl (Decl
 n "S20"
 t "std_ulogic"
-o 19
+o 4
 suid 77,0
 )
 )
@@ -8244,7 +8243,7 @@ port (LogicalPort
 decl (Decl
 n "S33"
 t "std_ulogic"
-o 20
+o 11
 suid 78,0
 )
 )
@@ -8255,7 +8254,7 @@ port (LogicalPort
 decl (Decl
 n "S32"
 t "std_ulogic"
-o 21
+o 10
 suid 79,0
 )
 )
@@ -8266,7 +8265,7 @@ port (LogicalPort
 decl (Decl
 n "S31"
 t "std_ulogic"
-o 22
+o 9
 suid 80,0
 )
 )
@@ -8277,7 +8276,7 @@ port (LogicalPort
 decl (Decl
 n "S30"
 t "std_ulogic"
-o 23
+o 8
 suid 81,0
 )
 )
@@ -8288,7 +8287,7 @@ port (LogicalPort
 decl (Decl
 n "S40"
 t "std_ulogic"
-o 24
+o 12
 suid 82,0
 )
 )
@@ -8299,7 +8298,7 @@ port (LogicalPort
 decl (Decl
 n "S41"
 t "std_ulogic"
-o 25
+o 13
 suid 83,0
 )
 )
@@ -8310,7 +8309,7 @@ port (LogicalPort
 decl (Decl
 n "S42"
 t "std_ulogic"
-o 26
+o 14
 suid 84,0
 )
 )
@@ -8321,7 +8320,7 @@ port (LogicalPort
 decl (Decl
 n "S43"
 t "std_ulogic"
-o 27
+o 15
 suid 85,0
 )
 )
@@ -8333,7 +8332,7 @@ m 4
 decl (Decl
 n "Data_O1"
 t "std_uLogic"
-o 31
+o 25
 suid 90,0
 )
 )
@@ -8345,7 +8344,7 @@ m 4
 decl (Decl
 n "CLK_O1"
 t "std_uLogic"
-o 32
+o 23
 suid 91,0
 )
 )
@@ -8357,7 +8356,7 @@ m 4
 decl (Decl
 n "LR_O1"
 t "std_ulogic"
-o 33
+o 27
 suid 92,0
 )
 )
@@ -8370,7 +8369,7 @@ decl (Decl
 n "testOut"
 t "std_ulogic_vector"
 b "(6 downto 0)"
-o 31
+o 21
 suid 94,0
 )
 )
@@ -8440,175 +8439,175 @@ uid 3401,0
 )
 *290 (MRCItem
 litem &254
-pos 2
+pos 21
 dimension 20
 uid 3403,0
 )
 *291 (MRCItem
 litem &255
-pos 3
+pos 22
 dimension 20
 uid 3423,0
 )
 *292 (MRCItem
 litem &256
-pos 4
+pos 23
 dimension 20
 uid 3427,0
 )
 *293 (MRCItem
 litem &257
-pos 5
+pos 24
 dimension 20
 uid 4015,0
 )
 *294 (MRCItem
 litem &258
-pos 6
+pos 2
 dimension 20
 uid 7515,0
 )
 *295 (MRCItem
 litem &259
-pos 7
+pos 3
 dimension 20
 uid 7517,0
 )
 *296 (MRCItem
 litem &260
-pos 8
+pos 4
 dimension 20
 uid 7519,0
 )
 *297 (MRCItem
 litem &261
-pos 9
+pos 25
 dimension 20
 uid 7521,0
 )
 *298 (MRCItem
 litem &262
-pos 10
+pos 26
 dimension 20
 uid 7523,0
 )
 *299 (MRCItem
 litem &263
-pos 11
+pos 27
 dimension 20
 uid 7525,0
 )
 *300 (MRCItem
 litem &264
-pos 12
+pos 5
 dimension 20
 uid 7527,0
 )
 *301 (MRCItem
 litem &265
-pos 13
+pos 6
 dimension 20
 uid 7529,0
 )
 *302 (MRCItem
 litem &266
-pos 14
+pos 7
 dimension 20
 uid 7531,0
 )
 *303 (MRCItem
 litem &267
-pos 15
+pos 8
 dimension 20
 uid 7866,0
 )
 *304 (MRCItem
 litem &268
-pos 16
+pos 9
 dimension 20
 uid 7868,0
 )
 *305 (MRCItem
 litem &269
-pos 17
+pos 10
 dimension 20
 uid 7870,0
 )
 *306 (MRCItem
 litem &270
-pos 18
+pos 11
 dimension 20
 uid 7872,0
 )
 *307 (MRCItem
 litem &271
-pos 19
+pos 12
 dimension 20
 uid 8257,0
 )
 *308 (MRCItem
 litem &272
-pos 20
+pos 13
 dimension 20
 uid 8259,0
 )
 *309 (MRCItem
 litem &273
-pos 21
+pos 14
 dimension 20
 uid 8261,0
 )
 *310 (MRCItem
 litem &274
-pos 22
+pos 15
 dimension 20
 uid 8263,0
 )
 *311 (MRCItem
 litem &275
-pos 23
+pos 16
 dimension 20
 uid 8265,0
 )
 *312 (MRCItem
 litem &276
-pos 24
+pos 17
 dimension 20
 uid 8267,0
 )
 *313 (MRCItem
 litem &277
-pos 25
+pos 18
 dimension 20
 uid 8269,0
 )
 *314 (MRCItem
 litem &278
-pos 26
+pos 19
 dimension 20
 uid 8271,0
 )
 *315 (MRCItem
 litem &279
-pos 27
+pos 28
 dimension 20
 uid 8716,0
 )
 *316 (MRCItem
 litem &280
-pos 28
+pos 29
 dimension 20
 uid 8718,0
 )
 *317 (MRCItem
 litem &281
-pos 29
+pos 30
 dimension 20
 uid 8720,0
 )
 *318 (MRCItem
 litem &282
-pos 30
+pos 20
 dimension 20
 uid 9021,0
 )

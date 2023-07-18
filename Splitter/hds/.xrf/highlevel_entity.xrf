@@ -9,16 +9,19 @@ VIEW symbol.sb
 GRAPHIC 13,0 17 1 
 DESIGN @high@level
 VIEW symbol.sb
-GRAPHIC 145,0 21 0 
+GRAPHIC 262,0 21 0 
 DESIGN @high@level
 VIEW symbol.sb
-GRAPHIC 150,0 22 0 
+GRAPHIC 145,0 22 0 
 DESIGN @high@level
 VIEW symbol.sb
-GRAPHIC 155,0 23 0 
+GRAPHIC 150,0 23 0 
 DESIGN @high@level
 VIEW symbol.sb
-GRAPHIC 1,0 26 0 
+GRAPHIC 155,0 24 0 
 DESIGN @high@level
 VIEW symbol.sb
 GRAPHIC 1,0 27 0 
+DESIGN @high@level
+VIEW symbol.sb
+GRAPHIC 1,0 28 0 

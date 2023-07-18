@@ -183,19 +183,19 @@ value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_t
 )
 (vvPair
 variable "date"
-value "12/07/2023"
+value "13/07/2023"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "Thu"
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "Thursday"
 )
 (vvPair
 variable "dd"
-value "12"
+value "13"
 )
 (vvPair
 variable "designName"
@@ -227,7 +227,7 @@ value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "12/07/2023"
+value "13/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -239,7 +239,7 @@ value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:57:58"
+value "14:45:30"
 )
 (vvPair
 variable "group"
@@ -363,7 +363,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:57:58"
+value "14:45:30"
 )
 (vvPair
 variable "unit"
@@ -5416,8 +5416,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1537,864"
-viewArea "-18905,13729,91542,73467"
+windowSize "-8,-8,1544,872"
+viewArea "27300,40412,138516,99464"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5444,7 +5444,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 11637,0
+lastUid 11774,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

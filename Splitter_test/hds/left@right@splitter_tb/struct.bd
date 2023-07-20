@@ -139,23 +139,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hdl"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.info"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.user"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds"
 )
 (vvPair
 variable "appl"
@@ -175,27 +175,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb"
 )
 (vvPair
 variable "date"
-value "18.07.2023"
+value "19/07/2023"
 )
 (vvPair
 variable "day"
-value "mar."
+value "Wed"
 )
 (vvPair
 variable "day_long"
-value "mardi"
+value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "18"
+value "19"
 )
 (vvPair
 variable "designName"
@@ -223,11 +223,11 @@ value "struct"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "18.07.2023"
+value "19/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -235,11 +235,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:15:58"
+value "18:07:22"
 )
 (vvPair
 variable "group"
@@ -247,7 +247,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "language"
@@ -275,19 +275,19 @@ value "leftRightSplitter_tb"
 )
 (vvPair
 variable "month"
-value "juil."
+value "Jul"
 )
 (vvPair
 variable "month_long"
-value "juillet"
+value "July"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\left@right@splitter_tb\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb\\struct.bd"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter_test\\hds\\leftRightSplitter_tb\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -363,7 +363,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:15:58"
+value "18:07:22"
 )
 (vvPair
 variable "unit"
@@ -371,7 +371,7 @@ value "leftRightSplitter_tb"
 )
 (vvPair
 variable "user"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "version"
@@ -3448,8 +3448,8 @@ vasetType 3
 xt "63750,54000,77250,56000"
 pts [
 "63750,54000"
-"70000,54000"
-"70000,56000"
+"71000,54000"
+"71000,56000"
 "77250,56000"
 ]
 )
@@ -3932,8 +3932,8 @@ vasetType 3
 xt "108750,54000,130250,58000"
 pts [
 "108750,58000"
-"119000,58000"
-"119000,54000"
+"120000,58000"
+"120000,54000"
 "130250,54000"
 ]
 )
@@ -5416,8 +5416,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1553,880"
-viewArea "27300,40400,138600,101216"
+windowSize "0,0,1537,864"
+viewArea "-3874,15017,169978,112767"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5444,7 +5444,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 11911,0
+lastUid 12048,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

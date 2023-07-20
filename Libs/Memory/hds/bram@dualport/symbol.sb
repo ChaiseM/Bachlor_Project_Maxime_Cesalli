@@ -611,23 +611,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hdl"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport\\symbol.sb.info"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport\\symbol.sb.user"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds"
 )
 (vvPair
 variable "appl"
@@ -647,27 +647,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds\\bramDualport"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds\\bramDualport"
 )
 (vvPair
 variable "date"
-value "14.07.2023"
+value "19/07/2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "Wed"
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "14"
+value "19"
 )
 (vvPair
 variable "designName"
@@ -695,11 +695,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "14.07.2023"
+value "19/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -707,11 +707,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:49:31"
+value "12:26:57"
 )
 (vvPair
 variable "group"
@@ -719,7 +719,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "language"
@@ -743,19 +743,19 @@ value "bramDualport"
 )
 (vvPair
 variable "month"
-value "juil."
+value "Jul"
 )
 (vvPair
 variable "month_long"
-value "juillet"
+value "July"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport\\symbol.sb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds\\bram@dualport\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Libs\\Memory\\hds\\bramDualport\\symbol.sb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Libs\\Memory\\hds\\bramDualport\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -831,7 +831,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:49:31"
+value "12:26:57"
 )
 (vvPair
 variable "unit"
@@ -839,7 +839,7 @@ value "bramDualport"
 )
 (vvPair
 variable "user"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "version"
@@ -1853,8 +1853,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "766,144,2068,1011"
-viewArea "-1100,-1100,75154,51369"
+windowSize "234,0,1537,864"
+viewArea "-1100,-1100,75225,51156"
 cachedDiagramExtent "0,0,73000,49000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -2143,6 +2143,6 @@ xt "0,7400,0,7400"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 628,0
+lastUid 651,0
 activeModelName "Symbol"
 )

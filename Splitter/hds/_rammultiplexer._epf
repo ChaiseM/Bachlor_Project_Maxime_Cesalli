@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom Coeffs
+DEFAULT_FILE atom RAMmultiplexer_Coeffs.vhd

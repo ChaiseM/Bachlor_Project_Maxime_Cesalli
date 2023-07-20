@@ -523,23 +523,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.info"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.user"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "appl"
@@ -559,27 +559,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder"
 )
 (vvPair
 variable "date"
-value "23.06.2023"
+value "19/07/2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "Wed"
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "Wednesday"
 )
 (vvPair
 variable "dd"
-value "23"
+value "19"
 )
 (vvPair
 variable "entity_name"
@@ -603,11 +603,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "23.06.2023"
+value "19/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -615,11 +615,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:36:01"
+value "15:36:40"
 )
 (vvPair
 variable "group"
@@ -627,7 +627,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330804"
+value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "language"
@@ -643,7 +643,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "06"
+value "07"
 )
 (vvPair
 variable "module_name"
@@ -651,19 +651,19 @@ value "iisDecoder"
 )
 (vvPair
 variable "month"
-value "juin"
+value "Jul"
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "July"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder\\symbol.sb"
+value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -691,7 +691,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:36:01"
+value "15:36:40"
 )
 (vvPair
 variable "unit"
@@ -699,7 +699,7 @@ value "iisDecoder"
 )
 (vvPair
 variable "user"
-value "maxime.cesalli"
+value "maxim"
 )
 (vvPair
 variable "version"
@@ -1577,8 +1577,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "0,14,1921,1080"
-viewArea "-60000,-10500,94063,72310"
+windowSize "0,0,1537,864"
+viewArea "-60000,-10500,94000,72794"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-34000,-4000"
@@ -1851,6 +1851,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 357,0
+lastUid 380,0
 activeModelName "Symbol:GEN"
 )

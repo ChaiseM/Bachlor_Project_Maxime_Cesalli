@@ -1,14 +1,14 @@
 --
--- VHDL Architecture Splitter.Xover_with_RAM.FirstArchi
+-- VHDL Architecture Splitter.Xover_with_RAM.symetrical_reading_SR
 --
 -- Created:
 --          by - maxim.UNKNOWN (DESKTOP-ADLE19A)
---          at - 12:11:17 12/07/2023
+--          at - 17:59:37 19/07/2023
 --
 -- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
 --
-ARCHITECTURE FirstArchi OF Xover_with_RAM IS
- --constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
+ARCHITECTURE symetrical_reading_SR OF Xover_with_RAM IS
+    constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
     constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audio_In'length + FINAL_SHIFT  ;  
    
@@ -38,15 +38,20 @@ ARCHITECTURE FirstArchi OF Xover_with_RAM IS
     signal rAddrCnt_Minus : unsigned(addressBitNb-1 downto 0);
     signal initialRAddress : unsigned(addressBitNb-1 downto 0);
     signal RAMfull : std_ulogic;
+    signal convertsionPoint : std_ulogic;
+    signal lastSampleOK : std_ulogic;
     signal RAMfulldelayed : std_ulogic;
     constant n: positive := 1 ;     
     constant initialWAddress : natural := 0;
     signal temp1 :  signed (audio_In'range); 
+    signal temp2 :  signed (audio_In'range); 
     signal sample1 :  signed (audio_In'range);
+    signal sample2 :  signed (audio_In'range);
+    signal sample2en : std_ulogic; 
     constant RAMLength : positive := (((FILTER_TAP_NB * n * 2) + initialWAddress) -1);     
     
     -- lowpass firtst then highpass coeff
-    type coefficients is array (0 to 1,0 to FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
+    type coefficients is array (0 to 1,0 to HALF_FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
     signal coeff: coefficients :=(
     ( 
     x"FFFFF398", x"FFFFDCDB", x"FFFFC5DE", x"FFFFB1BE", x"FFFFA3BE", 
@@ -98,57 +103,7 @@ ARCHITECTURE FirstArchi OF Xover_with_RAM IS
     x"FFDCC41F", x"FF25F73D", x"FE718278", x"FDD2EC8C", x"FD5DF397", 
     x"FD24D8EF", x"FD36B4CA", x"FD9DF7CC", x"FE5F3DD5", x"FF788F73", 
     x"00E12683", x"0289BFB8", x"045D76A3", x"06431DF0", x"081EFA61", 
-    x"09D4BE19", x"0B499BBD", x"0C664636", x"0D18B2FC", x"0D557996", 
-    x"0D18B2FC", x"0C664636", x"0B499BBD", x"09D4BE19", x"081EFA61", 
-    x"06431DF0", x"045D76A3", x"0289BFB8", x"00E12683", x"FF788F73", 
-    x"FE5F3DD5", x"FD9DF7CC", x"FD36B4CA", x"FD24D8EF", x"FD5DF397", 
-    x"FDD2EC8C", x"FE718278", x"FF25F73D", x"FFDCC41F", x"00843054", 
-    x"010DA8B2", x"016EBDD6", x"01A1B75A", x"01A5B495", x"017E5E34", 
-    x"01333588", x"00CE96C5", x"005C8974", x"FFE97D6F", x"FF81133D", 
-    x"FF2D0BFC", x"FEF477EA", x"FEDB33C0", x"FEE1BCCB", x"FF055B07", 
-    x"FF409885", x"FF8BF647", x"FFDEC9D2", x"00302BA3", x"0077DE69", 
-    x"00AF18A7", x"00D11E81", x"00DB9EED", x"00CECE27", x"00AD3E1C", 
-    x"007B7C12", x"003F803E", x"00000000", x"FFC3B59E", x"FF90B094", 
-    x"FF6BBFB5", x"FF58031A", x"FF56AF14", x"FF670421", x"FF867A33", 
-    x"FFB11899", x"FFE1EF8C", x"0013A57D", x"004108D2", x"006596F7", 
-    x"007DEB77", x"00880CB7", x"00838FFF", x"007192DD", x"00548C65", 
-    x"002FFCD9", x"00080569", x"FFE0F3D1", x"FFBECE51", x"FFA4EC03", 
-    x"FF95A3AC", x"FF921889", x"FF9A291E", x"FFAC8067", x"FFC6C62E", 
-    x"FFE5E84E", x"00067426", x"0024F66B", x"003E5709", x"005027BD", 
-    x"0058DDD5", x"0057F1D2", x"004DE2D0", x"003C1E70", x"0024D0E9", 
-    x"000AA335", x"FFF06EEF", x"FFD8F03D", x"FFC67E04", x"FFBACF95", 
-    x"FFB6D566", x"FFBAA825", x"FFC58F0A", x"FFD61BBA", x"FFEA5809", 
-    x"00000000", x"0014C1B1", x"00267BD4", x"003374C1", x"003A8455", 
-    x"003B2CDC", x"0035A128", x"002AB7E8", x"001BCE68", x"000A9E66", 
-    x"FFF90C01", x"FFE8F14B", x"FFDBED1B", x"FFD33A1C", x"FFCF9219", 
-    x"FFD11FF6", x"FFD78142", x"FFE1D685", x"FFEEDFF6", x"FFFD2317", 
-    x"000B14DB", x"001743C4", x"00207D73", x"0025EC15", x"002728C0", 
-    x"0024416B", x"001DB264", x"0014546D", x"000941F8", x"FFFDB6A6", 
-    x"FFF2ECB5", x"FFE9FC21", x"FFE3BECD", x"FFE0BC71", x"FFE1200E", 
-    x"FFE4B79F", x"FFEAFD88", x"FFF32A71", x"FFFC4D25", x"000565D6", 
-    x"000D819F", x"0013D361", x"0017C78F", x"001910F7", x"0017AD8E", 
-    x"0013E31C", x"000E3480", x"0007510E", x"00000000", x"FFF90A69", 
-    x"FFF325FF", x"FFEEE2F8", x"FFEC9EBB", x"FFEC7C8B", x"FFEE64B6", 
-    x"FFF20A00", x"FFF6F468", x"FFFC8FEA", x"00023D7A", x"00076447", 
-    x"000B8177", x"000E34CA", x"000F48ED", x"000EB6DB", x"000CA42D", 
-    x"00095CD1", x"00054905", x"0000E0DE", x"FFFC9ED2", x"FFF8F2B3", 
-    x"FFF6367F", x"FFF4A61C", x"FFF45AB0", x"FFF549E5", x"FFF748FD", 
-    x"FFFA131E", x"FFFD520C", x"0000A839", x"0003BB0C", x"00063C3C", 
-    x"0007F159", x"0008B8CF", x"00088BF6", x"00077E2E", x"0005B94A", 
-    x"000377CD", x"0000FDBA", x"FFFE90D9", x"FFFC7138", x"FFFAD2CD", 
-    x"FFF9D8B5", x"FFF9928F", x"FFF9FC14", x"FFFAFECF", x"FFFC75A7", 
-    x"FFFE31BB", x"00000000", x"0001AEE6", x"00031380", x"00040D9B", 
-    x"00048A69", x"0004859C", x"000408D4", x"000329A7", x"0002067C", 
-    x"0000C2BA", x"FFFF82A6", x"FFFE6779", x"FFFD8C19", x"FFFD02AE", 
-    x"FFFCD35F", x"FFFCFC31", x"FFFD7201", x"FFFE2269", x"FFFEF641", 
-    x"FFFFD47B", x"0000A4EF", x"000152E2", x"0001CEF2", x"0002104C", 
-    x"00021516", x"0001E209", x"00018167", x"00010162", x"00007245", 
-    x"FFFFE481", x"FFFF66E3", x"FFFF0527", x"FFFEC6F6", x"FFFEAF75", 
-    x"FFFEBD56", x"FFFEEB6A", x"FFFF3191", x"FFFF85E4", x"FFFFDDF5", 
-    x"00003003", x"000073FC", x"0000A42D", x"0000BDA8", x"0000C04E", 
-    x"0000AE7F", x"00008C94", x"00006029", x"00002F5A", x"00000000", 
-    x"FFFFD710", x"FFFFB826", x"FFFFA548", x"FFFF9ED7", x"FFFFA3BE", 
-    x"FFFFB1BE", x"FFFFC5DE", x"FFFFDCDB", x"FFFFF398"
+    x"09D4BE19", x"0B499BBD", x"0C664636", x"0D18B2FC", x"0D557996"
    ),
    ( 
     x"00000C68", x"00002325", x"00003A21", x"00004E41", x"00005C41", 
@@ -200,57 +155,7 @@ ARCHITECTURE FirstArchi OF Xover_with_RAM IS
     x"00233B81", x"00DA0674", x"018E7951", x"022D0D90", x"02A20548", 
     x"02DB1F56", x"02C943AB", x"026201C1", x"01A0BDC3", x"00876F1E", 
     x"FF1EDBDE", x"FD764727", x"FBA2952F", x"F9BCF304", x"F7E11B9B", 
-    x"F62B5C85", x"F4B682D2", x"F399DB5C", x"F2E77079", x"72AAABFB", 
-    x"F2E77079", x"F399DB5C", x"F4B682D2", x"F62B5C85", x"F7E11B9B", 
-    x"F9BCF304", x"FBA2952F", x"FD764727", x"FF1EDBDE", x"00876F1E", 
-    x"01A0BDC3", x"026201C1", x"02C943AB", x"02DB1F56", x"02A20548", 
-    x"022D0D90", x"018E7951", x"00DA0674", x"00233B81", x"FF7BD111", 
-    x"FEF25A28", x"FE91460A", x"FE5E4D11", x"FE5A4FE1", x"FE81A5D7", 
-    x"FECCCDB8", x"FF316B6A", x"FFA37787", x"00168254", x"007EEB6B", 
-    x"00D2F1C8", x"010B8542", x"0124C927", x"011E402E", x"00FAA252", 
-    x"00BF6575", x"0074087F", x"002135D4", x"FFCFD4DF", x"FF8822DC", 
-    x"FF50E933", x"FF2EE3B6", x"FF246365", x"FF313409", x"FF52C3B9", 
-    x"FF84853C", x"FFC0806E", x"00000000", x"003C49BF", x"006F4E3F", 
-    x"00943EBA", x"00A7FB1F", x"00A94F21", x"0098FA41", x"00798484", 
-    x"004EE692", x"001E1023", x"FFEC5AB8", x"FFBEF7DE", x"FF9A6A1C", 
-    x"FF8215DE", x"FF77F4B9", x"FF7C7165", x"FF8E6E56", x"FFAB7480", 
-    x"FFD003A9", x"FFF7FAAD", x"001F0BDB", x"004130FE", x"005B1306", 
-    x"006A5B34", x"006DE64D", x"0065D5CE", x"00537EB7", x"00393937", 
-    x"001A176B", x"FFF98BEC", x"FFDB09F9", x"FFC1A9A0", x"FFAFD91C", 
-    x"FFA7231B", x"FFA80F1C", x"FFB21E03", x"FFC3E233", x"FFDB2F7A", 
-    x"FFF55CE8", x"000F90E7", x"00270F59", x"00398161", x"00452FB0", 
-    x"004929D4", x"0045571F", x"003A7058", x"0029E3D4", x"0015A7BD", 
-    x"00000000", x"FFEB3E87", x"FFD98495", x"FFCC8BCA", x"FFC57C49", 
-    x"FFC4D3C4", x"FFCA5F6A", x"FFD5488B", x"FFE431E3", x"FFF561B7", 
-    x"0006F3EC", x"00170E77", x"00241284", x"002CC56B", x"00306D64", 
-    x"002EDF8C", x"00287E50", x"001E2929", x"00111FDC", x"0002DCE1", 
-    x"FFF4EB43", x"FFE8BC7B", x"FFDF82E5", x"FFDA1452", x"FFD8D7AA", 
-    x"FFDBBEF7", x"FFE24DEC", x"FFEBABCA", x"FFF6BE21", x"00024954", 
-    x"000D1328", x"001603A3", x"001C40E6", x"001F433B", x"001EDF9E", 
-    x"001B4818", x"0015023F", x"000CD56D", x"0003B2D1", x"FFFA9A38", 
-    x"FFF27E86", x"FFEC2CD5", x"FFE838B1", x"FFE6EF4D", x"FFE852B2", 
-    x"FFEC1D1A", x"FFF1CBA6", x"FFF8AF06", x"00000000", x"0006F584", 
-    x"000CD9DE", x"00111CD9", x"00136111", x"00138341", x"00119B1A", 
-    x"000DF5DA", x"00090B80", x"0003700D", x"FFFDC28C", x"FFF89BCD", 
-    x"FFF47EA8", x"FFF1CB5D", x"FFF0B73D", x"FFF1494D", x"FFF35BF5", 
-    x"FFF6A348", x"FFFAB70A", x"FFFF1F25", x"00036125", x"00070D3A", 
-    x"0009C967", x"000B59C5", x"000BA531", x"000AB5FE", x"0008B6EC", 
-    x"0005ECD2", x"0002ADED", x"FFFF57C9", x"FFFC44FE", x"FFF9C3D5", 
-    x"FFF80EBC", x"FFF74749", x"FFF77422", x"FFF881E6", x"FFFA46C5", 
-    x"FFFC883D", x"FFFF0249", x"00016F24", x"00038EBE", x"00052D25", 
-    x"0006273A", x"00066D5F", x"000603DB", x"00050123", x"00038A50", 
-    x"0001CE40", x"00000000", x"FFFE511E", x"FFFCEC88", x"FFFBF270", 
-    x"FFFB75A3", x"FFFB7A70", x"FFFBF737", x"FFFCD662", x"FFFDF989", 
-    x"FFFF3D48", x"00007D59", x"00019883", x"000273E1", x"0002FD4A", 
-    x"00032C98", x"000303C7", x"00028DF8", x"0001DD92", x"000109BC", 
-    x"00002B84", x"FFFF5B13", x"FFFEAD21", x"FFFE3113", x"FFFDEFBA", 
-    x"FFFDEAF0", x"FFFE1DFC", x"FFFE7E9D", x"FFFEFEA0", x"FFFF8DBC", 
-    x"00001B7F", x"0000991C", x"0000FAD7", x"00013907", x"00015088", 
-    x"000142A7", x"00011493", x"0000CE6D", x"00007A1B", x"0000220A", 
-    x"FFFFCFFD", x"FFFF8C05", x"FFFF5BD5", x"FFFF425A", x"FFFF3FB4", 
-    x"FFFF5183", x"FFFF736E", x"FFFF9FD8", x"FFFFD0A6", x"00000000", 
-    x"000028F0", x"000047D9", x"00005AB7", x"00006128", x"00005C41", 
-    x"00004E41", x"00003A21", x"00002325", x"00000C68"
+    x"F62B5C85", x"F4B682D2", x"F399DB5C", x"F2E77079", x"72AAABFB"
    )
    );
 begin 
@@ -274,6 +179,8 @@ begin
             firstWrite <= '0';
             firstRead <= (others => '0');
             RAMfull <= '0';
+            convertsionPoint <= '0';
+            lastSampleOK <= '0';
             RAMfulldelayed <= '0';
             cntNooffset <= (others => '0');
         elsif rising_edge(clock) then  
@@ -304,6 +211,7 @@ begin
                 wAddrCnt <= wAddrCnt + n;
                 
                 rAddrCnt_Plus <= initialRAddress;
+                rAddrCnt_Minus <= initialRAddress;
                 wraddr <= std_ulogic_vector(initialRAddress); 
                 if wAddrCnt >= RAMLength then
                     RAMfull <= '1';
@@ -324,48 +232,81 @@ begin
             if calculatedelayed > 0  and RAMfull = '1' then 
                 
                 re <= '1';
-                if cntNooffset < 5 then 
+                if cntNooffset < 9 then 
                     sample1 <= (others => '0');
+                    sample2 <= (others => '0');
                     cnt <= (others => '0');
                 end if ;
-                if cntNooffset >= RAMLength + 2 then 
-                    calculate <= calculate-1;   
-                    cntNooffset   <= (others => '0');   
-                    lowPass <= resize(shift_right(accumulator1,ACCUMULATOR_Bit_NB-Lowpass'length-10),Lowpass'length);
-                    Highpass <= resize(shift_right(accumulator2,ACCUMULATOR_Bit_NB-Lowpass'length-10),Lowpass'length);
-                    cnt <= (others => '0');  
-                    accumulator1 := (others => '0'); 
-                    accumulator2 := (others => '0');  
-                else
-                    cntNooffset <= cntNooffset + 1; 
-                end if;
-                wraddr <= std_ulogic_vector(rAddrCnt_Plus); 
-                if (rAddrCnt_Plus mod 2) = 0 then 
-                    rAddrCnt_Plus <= rAddrCnt_Plus + 1;
-                    firstRead <= firstRead +1;
-                    temp1(temp1'length-1 downto (temp1'length-(temp1'length/2))) <= signed(dout1);
-                    sample1 <= temp1; 
-                end if;
-                if (rAddrCnt_Plus mod 2 = 1)  then 
-                    rAddrCnt_Plus <= rAddrCnt_Plus + 1;
-                    firstRead <= (others => '0');
-                    temp1((temp1'length-(temp1'length/2)-1) downto 0)  <= signed(dout1);
+                if convertsionPoint = '1' then 
+                        convertsionPoint <= '0';
+                        calculate <= calculate-1;   
+                        cntNooffset   <= (others => '0');   
+                        lowPass <= resize(shift_right(accumulator1,ACCUMULATOR_Bit_NB-Lowpass'length-10),Lowpass'length);
+                        Highpass <= resize(shift_right(accumulator2,ACCUMULATOR_Bit_NB-Lowpass'length-10),Lowpass'length);
+                        cnt <= (others => '0');  
+                        accumulator1 := (others => '0'); 
+                        accumulator2 := (others => '0');  
                    
+                else
+                      cntNooffset <= cntNooffset + 1; 
                 end if;
               
-              
+                    
+               
                 
-                if rAddrCnt_Plus >= RAMLength then     
-                    rAddrCnt_Plus  <= to_unsigned(initialWAddress,wAddrCnt'length);
-                end if;
+                    if (rAddrCnt_Plus mod 2) = 0  and (cntNooffset mod 4) = 0  then 
+                        wraddr <= std_ulogic_vector(rAddrCnt_Plus); 
+                        rAddrCnt_Plus <= rAddrCnt_Plus + 1;
+                        --firstRead <= (others => '0');
+                        temp1((temp1'length-(temp1'length/2)-1) downto 0) <= signed(dout1);
+                        sample1 <= temp1; 
+                    end if;
+                    if (rAddrCnt_Plus mod 2) = 1 and (cntNooffset mod 4) = 1 then
+                        wraddr <= std_ulogic_vector(rAddrCnt_Plus); 
+                        rAddrCnt_Plus <= rAddrCnt_Plus + 1;
+                        --firstRead <= firstRead +1;
+                        temp1(temp1'length-1 downto (temp1'length-(temp1'length/2)))  <= signed(dout1);
+                       
+                    end if;
+                     if (rAddrCnt_Minus mod 2) = 1 and (cntNooffset mod 4) = 2   then 
+                        wraddr <= std_ulogic_vector(rAddrCnt_Minus); 
+                        rAddrCnt_Minus <= rAddrCnt_Minus - 1;
+                        --firstRead <= (others => '0');
+                        temp2(temp2'length-1 downto (temp2'length-(temp2'length/2))) <= signed(dout1);
+                        sample2 <= temp2; 
+                    end if;
+                    if (rAddrCnt_Minus mod 2) = 0  and (cntNooffset mod 4) = 3   then
+                        wraddr <= std_ulogic_vector(rAddrCnt_Minus); 
+                        rAddrCnt_Minus <= rAddrCnt_Minus - 1;
+                        --firstRead <= firstRead +1;
+                        temp2((temp2'length-(temp2'length/2)-1) downto 0)  <= signed(dout1);
+                        
+                    end if;
+                  
+                  
+                    
+                    if rAddrCnt_Plus >= RAMLength then     
+                        rAddrCnt_Plus  <= to_unsigned(initialWAddress,wAddrCnt'length);
+                    end if;
+                    
+                    if rAddrCnt_Minus > RAMLength then     
+                        rAddrCnt_Minus  <= to_unsigned(RAMLength,rAddrCnt_Plus'length);
+                    end if;
+                    
+                    if cntNooffset >= 9  and (cntNooffset mod 4) = 3 then 
+                    
+                        if sample1 = sample2 then 
+                            convertsionPoint <= '1';
+                            accumulator1 := accumulator1 + sample1  * coeff(0,HALF_FILTER_TAP_NB-1);
+                            accumulator2 := accumulator2 + sample1  * coeff(1,HALF_FILTER_TAP_NB-1);
+                        end if;
+                    elsif cntNooffset >= 12  and (cntNooffset mod 4) = 1  and cnt  <= HALF_FILTER_TAP_NB - 2 then 
                 
-                if cntNooffset >= 5  and (cntNooffset mod 2) = 1 then 
-                
-                    cnt <= cnt+1;
-                    accumulator1 := accumulator1 + sample1 * coeff(0,to_integer(cnt));
-                    accumulator2 := accumulator2 + sample1 * coeff(1,to_integer(cnt));
-                
-                end if;
+                            cnt <= cnt+1;
+                            accumulator1 := accumulator1 + ((resize(sample1, sample1'length+1) + sample2) * coeff(0,to_integer(cnt)));
+                            accumulator2 := accumulator2 + ((resize(sample1, sample1'length+1) + sample2) * coeff(1,to_integer(cnt)));
+                       
+                    end if;
                 
                 
 
@@ -376,13 +317,11 @@ begin
             
         end if ;
     end process shiftSamplesAndMul;
-    
+        
+     rdaddr <= (others => '0' );
      DataReady <= '1' when calculate = 0 else '0';
      DebugData(1) <= '0'; 
      DebugData(0) <= '0'; 
-     rdaddr <= (others => '0' );
      
+END ARCHITECTURE symetrical_reading_SR;
 
-    
-     
-END ARCHITECTURE FirstArchi;

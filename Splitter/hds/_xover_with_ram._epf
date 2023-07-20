@@ -1,2 +1,2 @@
-DEFAULT_ARCHITECTURE atom FirstArchi
-DEFAULT_FILE atom Xover_with_RAM_FirstArchi.vhd
+DEFAULT_ARCHITECTURE atom symetrical_reading_SR
+DEFAULT_FILE atom Xover_with_RAM_symetrical_reading_SR.vhd

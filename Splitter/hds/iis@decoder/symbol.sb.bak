@@ -567,19 +567,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "14.06.2023"
+value "23.06.2023"
 )
 (vvPair
 variable "day"
-value "mer."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "mercredi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "14"
+value "23"
 )
 (vvPair
 variable "entity_name"
@@ -607,7 +607,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "14.06.2023"
+value "23.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -619,7 +619,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "08:34:12"
+value "09:36:01"
 )
 (vvPair
 variable "group"
@@ -691,7 +691,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "08:34:12"
+value "09:36:01"
 )
 (vvPair
 variable "unit"
@@ -1851,6 +1851,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 334,0
-activeModelName "Symbol:CDM"
+lastUid 357,0
+activeModelName "Symbol:GEN"
 )

@@ -1,23 +1,12 @@
---
--- VHDL Architecture Splitter.Lowpass1.parallell
---
--- Created:
---          by - maxime.cesalli.UNKNOWN (WE2330804)
---          at - 17:09:34 25.05.2023
---
--- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
---
 ARCHITECTURE parallell OF Lowpass1 IS
- constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2;
+    -- constants
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB); 
     constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioIn'length + FINAL_SHIFT+6;
-    --constant ShiftNB : positive := ACCUMULATOR_Bit_NB-audioOut'length+15;
+    -- signals 
+    signal accumulator : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
+    -- arrays 
     type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioIn'range);  -- vector of 50 signed elements
     signal      samples : t_samples ; 
-    signal accumulator : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
-    signal test2 : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
-    signal test1 : signed (ACCUMULATOR_Bit_NB-1 DOWNTO 0);
-    -- 
     type coefficients is array (0 to FILTER_TAP_NB-1) of signed( COEFF_BIT_NB-1 downto 0);
     signal coeff: coefficients :=( 
     x"0183", x"00D7", x"00A5", x"0013", x"FF2D", x"FE1B", 
@@ -37,9 +26,8 @@ begin
             if en = '1' then
                 samples(0) <= audioIn ;
                 shift : for ii in 0 to FILTER_TAP_NB-2 loop 
-                
-                    samples(ii+1) <= samples(ii) ;
-                    
+            
+                    samples(ii+1) <= samples(ii) ;  
                 end loop shift;
                 
             end if ; 

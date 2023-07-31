@@ -297,19 +297,19 @@ value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\
 )
 (vvPair
 variable "date"
-value "20/07/2023"
+value "31/07/2023"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "20"
+value "31"
 )
 (vvPair
 variable "designName"
@@ -341,7 +341,7 @@ value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "20/07/2023"
+value "31/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -353,7 +353,7 @@ value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:54:29"
+value "09:25:41"
 )
 (vvPair
 variable "group"
@@ -485,7 +485,7 @@ value "visitorsVersion"
 )
 (vvPair
 variable "time"
-value "10:54:29"
+value "09:25:41"
 )
 (vvPair
 variable "unit"
@@ -5089,7 +5089,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "98250,43625,99000,44375"
+xt "98250,44625,99000,45375"
 )
 tg (CPTG
 uid 31017,0
@@ -5100,9 +5100,9 @@ uid 31018,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "100000,43300,106700,44700"
+xt "100000,44300,106700,45700"
 st "dataVAlid"
-blo "100000,44500"
+blo "100000,45500"
 )
 )
 thePort (LogicalPort
@@ -9202,11 +9202,11 @@ uid 30074,0
 va (VaSet
 vasetType 3
 )
-xt "91000,44000,98250,46000"
+xt "91000,45000,98250,46000"
 pts [
 "91000,46000"
-"91000,44000"
-"98250,44000"
+"91000,45000"
+"98250,45000"
 ]
 )
 start &272
@@ -9809,9 +9809,9 @@ uid 32072,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "130750,41600,140350,43000"
+xt "124000,41600,133600,43000"
 st "audio_R_out"
-blo "130750,42800"
+blo "124000,42800"
 tm "WireNameMgr"
 )
 )
@@ -10680,8 +10680,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1537,840"
-viewArea "99115,15835,198648,67845"
+windowSize "2,0,1539,827"
+viewArea "126079,-9740,226872,44083"
 cachedDiagramExtent "0,-11600,307600,112000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -10708,7 +10708,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "24000,-12000"
-lastUid 35362,0
+lastUid 35641,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -11757,7 +11757,7 @@ va (VaSet
 xt "26000,1200,51400,9600"
 st "constant DATA_WIDTH : positive := 32;
 constant COEFF_BIT_NB : positive := 32;
-constant FILTER_TAP_NB : positive := 499;
+constant FILTER_TAP_NB : positive := 249;
 constant DATA_IN_WIDTH : positive := 32;
 constant addressBitNb :positive := 12;
 constant dataBitNb :positive := 16;

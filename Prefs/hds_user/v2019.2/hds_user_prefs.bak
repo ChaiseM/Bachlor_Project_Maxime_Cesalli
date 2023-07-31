@@ -6094,10 +6094,10 @@ size 190
 displayHierarchy 0
 xPos 0
 yPos 0
-width 1552
-height 840
+width 1542
+height 827
 activeSidePanelTab 2
-activeLibraryTab 2
+activeLibraryTab 3
 sidePanelSize 293
 showUnixHiddenFiles 0
 componentBrowserXpos 934
@@ -6109,6 +6109,7 @@ componentBrowserLibraryNames [
 "Common"
 "Common_test"
 "Memory"
+"Splitter"
 ]
 )
 (SmPreferences

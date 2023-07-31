@@ -1,19 +1,8 @@
---
--- VHDL Architecture Splitter.Xover.ParalelSmHL
---
--- Created:
---          by - maxime.cesalli.UNKNOWN (WE2330804)
---          at - 14:41:53 12.06.2023
---
--- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
---
 ARCHITECTURE ParalelSmHL OF Xover IS
     constant HALF_FILTER_TAP_NB: positive := FILTER_TAP_NB/2 + (FILTER_TAP_NB mod 2);
     constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
     constant ACCUMULATOR_Bit_NB: positive := COEFF_BIT_NB + audioMono'length + FINAL_SHIFT ;    
-    --constant ShiftNB : positive := ACCUMULATOR_Bit_NB-Lowpass'length-7; 
-    --signal savedHighpass : signed (audioMono'range);
-    --signal savedLowpass : signed (audioMono'range);
+  
     
     -- +1 because it is symetrical we add two samples together
     type        t_samples is array (0 to FILTER_TAP_NB-1) of signed (audioMono'range);  -- vector of FILTER_TAP_NB signed elements
@@ -43,13 +32,15 @@ begin
             samples <= (others =>(others => '0'));
         elsif rising_edge(clock) then  
         
-            if en = '1' then
+             if en = '1' then
+                -- shifting the registers 
+                -- the first info goes to samples 0
                 samples(0) <= audioMono ;
+                -- loop to shift the samples 
                 shift : for ii in 0 to FILTER_TAP_NB-2 loop
-                    samples(ii+1) <= samples(ii) ;  
+                    samples(ii+1) <= samples(ii) ;
                 end loop shift;
-                
-            end if ; 
+            end if;
         
         end if;
        

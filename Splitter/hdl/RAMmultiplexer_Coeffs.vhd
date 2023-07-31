@@ -1,12 +1,7 @@
---
--- VHDL Architecture Splitter.RAMmultiplexer.Coeffs
---
--- Created:
---          by - maxim.UNKNOWN (DESKTOP-ADLE19A)
---          at - 15:54:41 19/07/2023
---
--- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
---
+-----------------------------------------------------------------------------
+-- multiplexing the acces to the RAM between the coeff writer and the Xover 
+-----------------------------------------------------------------------------
+
 ARCHITECTURE Coeffs OF RAMmultiplexer IS
 BEGIN
 

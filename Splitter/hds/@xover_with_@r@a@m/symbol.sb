@@ -766,19 +766,19 @@ value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\
 )
 (vvPair
 variable "date"
-value "20/07/2023"
+value "30/07/2023"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Sun"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Sunday"
 )
 (vvPair
 variable "dd"
-value "20"
+value "30"
 )
 (vvPair
 variable "entity_name"
@@ -806,7 +806,7 @@ value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "20/07/2023"
+value "30/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -818,7 +818,7 @@ value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:26:28"
+value "16:12:37"
 )
 (vvPair
 variable "group"
@@ -890,7 +890,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "10:26:28"
+value "16:12:37"
 )
 (vvPair
 variable "unit"
@@ -2136,8 +2136,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "494,174,1537,864"
-viewArea "6700,-6600,58045,28806"
+windowSize "492,174,1537,864"
+viewArea "6700,-6600,58171,28806"
 cachedDiagramExtent "-4000,0,79500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
@@ -2410,6 +2410,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 897,0
+lastUid 943,0
 activeModelName "Symbol"
 )

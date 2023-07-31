@@ -28,6 +28,10 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample2en
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/cntNooffset
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMfull
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMLength
+add wave -noupdate -divider CoeffReading
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/coeffAddr
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/coeff1
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/coeff2
 add wave -noupdate -divider {Xover DUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/convertsionPoint
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample1
@@ -51,7 +55,7 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/SCK
 add wave -noupdate -divider {Final Data}
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_L_out
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_R_out
-add wave -noupdate /leftrightsplitter_tb/I_dut/addressB
+add wave -noupdate -radix decimal /leftrightsplitter_tb/I_dut/addressB
 add wave -noupdate /leftrightsplitter_tb/I_dut/dataInB
 add wave -noupdate /leftrightsplitter_tb/I_dut/enB
 add wave -noupdate /leftrightsplitter_tb/I_dut/writeEnB
@@ -59,10 +63,10 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I10/firstWrite
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/wAddrCnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/arrayCnt
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {15754870 ns} 0} {{Cursor 2} {15952341 ns} 0}
+WaveRestoreCursors {{Cursor 1} {12279006 ns} 0} {{Cursor 2} {15952341 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 302
-configure wave -valuecolwidth 100
+configure wave -valuecolwidth 94
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -75,4 +79,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ns} {104033149 ns}
+WaveRestoreZoom {0 ns} {104902957 ns}

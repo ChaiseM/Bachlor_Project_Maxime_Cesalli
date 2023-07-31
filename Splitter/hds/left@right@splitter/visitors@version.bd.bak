@@ -297,19 +297,19 @@ value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\
 )
 (vvPair
 variable "date"
-value "20/07/2023"
+value "31/07/2023"
 )
 (vvPair
 variable "day"
-value "Thu"
+value "Mon"
 )
 (vvPair
 variable "day_long"
-value "Thursday"
+value "Monday"
 )
 (vvPair
 variable "dd"
-value "20"
+value "31"
 )
 (vvPair
 variable "designName"
@@ -341,7 +341,7 @@ value "maxim"
 )
 (vvPair
 variable "graphical_source_date"
-value "20/07/2023"
+value "31/07/2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -353,7 +353,7 @@ value "DESKTOP-ADLE19A"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:26:31"
+value "09:24:19"
 )
 (vvPair
 variable "group"
@@ -485,7 +485,7 @@ value "visitorsVersion"
 )
 (vvPair
 variable "time"
-value "10:26:31"
+value "09:24:19"
 )
 (vvPair
 variable "unit"
@@ -643,7 +643,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "26000,5400,36300,6400"
-st "reset       : std_ulogic"
+st "reset       : std_ulogic
+"
 )
 )
 *4 (Net
@@ -661,7 +662,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "26000,1800,36300,2800"
-st "clock       : std_ulogic"
+st "clock       : std_ulogic
+"
 )
 )
 *5 (Grouping
@@ -1040,7 +1042,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,11200,1200"
-st "Data_O      : std_uLogic"
+st "Data_O      : std_uLogic
+"
 )
 )
 *18 (PortIoIn
@@ -1104,7 +1107,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10900,1200"
-st "CLK_I       : std_uLogic"
+st "CLK_I       : std_uLogic
+"
 )
 )
 *20 (PortIoOut
@@ -1167,7 +1171,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,11200,1200"
-st "CLK_O       : std_uLogic"
+st "CLK_O       : std_uLogic
+"
 )
 )
 *22 (PortIoIn
@@ -1231,7 +1236,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10900,1200"
-st "Data_I      : std_uLogic"
+st "Data_I      : std_uLogic
+"
 )
 )
 *24 (PortIoIn
@@ -1295,7 +1301,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10600,1200"
-st "LR_I        : std_uLogic"
+st "LR_I        : std_uLogic
+"
 )
 )
 *26 (PortIoOut
@@ -1358,7 +1365,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10700,1200"
-st "LR_O        : std_ulogic"
+st "LR_O        : std_ulogic
+"
 )
 )
 *28 (Net
@@ -1378,7 +1386,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,25700,1200"
-st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH-1 downto 0)"
+st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH-1 downto 0)
+"
 )
 )
 *29 (Net
@@ -1397,7 +1406,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,26700,1200"
-st "SIGNAL audioRight  : signed(DATA_IN_WIDTH-1 DOWNTO 0)"
+st "SIGNAL audioRight  : signed(DATA_IN_WIDTH-1 DOWNTO 0)
+"
 )
 )
 *30 (Net
@@ -1415,7 +1425,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,14000,1200"
-st "SIGNAL dataValid   : std_ulogic"
+st "SIGNAL dataValid   : std_ulogic
+"
 )
 )
 *31 (SaComponent
@@ -1781,7 +1792,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10400,1200"
-st "S22         : std_ulogic"
+st "S22         : std_ulogic
+"
 )
 )
 *42 (PortIoIn
@@ -1856,7 +1868,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10400,1200"
-st "S23         : std_ulogic"
+st "S23         : std_ulogic
+"
 )
 )
 *44 (PortIoIn
@@ -1931,7 +1944,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10400,1200"
-st "S20         : std_ulogic"
+st "S20         : std_ulogic
+"
 )
 )
 *46 (Net
@@ -1949,7 +1963,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,200,10400,1200"
-st "S21         : std_ulogic"
+st "S21         : std_ulogic
+"
 )
 )
 *47 (SaComponent
@@ -2417,7 +2432,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14100,1000"
-st "SIGNAL DOUT        : std_ulogic"
+st "SIGNAL DOUT        : std_ulogic
+"
 )
 )
 *62 (Net
@@ -2436,7 +2452,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14000,1000"
-st "SIGNAL LRCK        : std_ulogic"
+st "SIGNAL LRCK        : std_ulogic
+"
 )
 )
 *63 (Net
@@ -2455,7 +2472,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13800,1000"
-st "SIGNAL SCK         : std_ulogic"
+st "SIGNAL SCK         : std_ulogic
+"
 )
 )
 *64 (SaComponent
@@ -2895,7 +2913,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25700,1000"
-st "SIGNAL lowPass     : signed(DATA_WIDTH-1  DOWNTO  0)"
+st "SIGNAL lowPass     : signed(DATA_WIDTH-1  DOWNTO  0)
+"
 )
 )
 *78 (Net
@@ -2915,7 +2934,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25700,1000"
-st "SIGNAL highPass    : signed(DATA_WIDTH-1  DOWNTO  0)"
+st "SIGNAL highPass    : signed(DATA_WIDTH-1  DOWNTO  0)
+"
 )
 )
 *79 (SaComponent
@@ -3163,7 +3183,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14800,1000"
-st "SIGNAL DataReady   : std_ulogic"
+st "SIGNAL DataReady   : std_ulogic
+"
 )
 )
 *88 (SaComponent
@@ -3835,7 +3856,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14800,1000"
-st "SIGNAL NewData     : std_uLogic"
+st "SIGNAL NewData     : std_uLogic
+"
 )
 )
 *110 (Net
@@ -3853,7 +3875,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL Next_data   : std_ulogic"
+st "SIGNAL Next_data   : std_ulogic
+"
 )
 )
 *111 (Net
@@ -3871,7 +3894,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14300,1000"
-st "SIGNAL end_Calc    : std_ulogic"
+st "SIGNAL end_Calc    : std_ulogic
+"
 )
 )
 *112 (Net
@@ -3891,7 +3915,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25500,1000"
-st "SIGNAL audioRight1 : signed(DATA_WIDTH-1 DOWNTO 0)"
+st "SIGNAL audioRight1 : signed(DATA_WIDTH-1 DOWNTO 0)
+"
 )
 )
 *113 (Net
@@ -3911,7 +3936,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25200,1000"
-st "SIGNAL audioLeft1  : signed(DATA_WIDTH-1 DOWNTO 0)"
+st "SIGNAL audioLeft1  : signed(DATA_WIDTH-1 DOWNTO 0)
+"
 )
 )
 *114 (SaComponent
@@ -4432,7 +4458,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14900,1000"
-st "SIGNAL Frameout0   : std_uLogic"
+st "SIGNAL Frameout0   : std_uLogic
+"
 )
 )
 *130 (PortIoOut
@@ -4506,7 +4533,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,19500,1000"
-st "testOut     : std_ulogic_vector(6 downto 0)"
+st "testOut     : std_ulogic_vector(6 downto 0)
+"
 )
 )
 *132 (HdlText
@@ -4618,7 +4646,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13700,1000"
-st "SIGNAL Data        : std_ulogic"
+st "SIGNAL Data        : std_ulogic
+"
 )
 )
 *137 (SaComponent
@@ -5089,7 +5118,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "98250,43625,99000,44375"
+xt "98250,44625,99000,45375"
 )
 tg (CPTG
 uid 31017,0
@@ -5100,9 +5129,9 @@ uid 31018,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "100000,43300,106700,44700"
+xt "100000,44300,106700,45700"
 st "dataVAlid"
-blo "100000,44500"
+blo "100000,45500"
 )
 )
 thePort (LogicalPort
@@ -5222,7 +5251,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,21000,1000"
-st "SIGNAL DebugData   : unsigned(1 DOWNTO 0)"
+st "SIGNAL DebugData   : unsigned(1 DOWNTO 0)
+"
 )
 )
 *157 (Net
@@ -5241,7 +5271,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,12900,1000"
-st "SIGNAL en          : std_logic"
+st "SIGNAL en          : std_logic
+"
 )
 )
 *158 (Net
@@ -5261,7 +5292,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25800,1000"
-st "SIGNAL audio_R_out : signed(DATA_WIDTH-1 DOWNTO 0)"
+st "SIGNAL audio_R_out : signed(DATA_WIDTH-1 DOWNTO 0)
+"
 )
 )
 *159 (Net
@@ -5280,7 +5312,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL we          : std_ulogic"
+st "SIGNAL we          : std_ulogic
+"
 )
 )
 *160 (SaComponent
@@ -5842,7 +5875,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,29200,1000"
-st "SIGNAL wraddr      : std_ulogic_vector(addressBitNb-1 DOWNTO 0)"
+st "SIGNAL wraddr      : std_ulogic_vector(addressBitNb-1 DOWNTO 0)
+"
 )
 )
 *177 (Net
@@ -5862,7 +5896,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27200,1000"
-st "SIGNAL din         : std_ulogic_vector(dataBitNb-1 DOWNTO 0)"
+st "SIGNAL din         : std_ulogic_vector(dataBitNb-1 DOWNTO 0)
+"
 )
 )
 *178 (Net
@@ -5883,7 +5918,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28200,1000"
-st "SIGNAL dataOutA    : std_ulogic_vector(dataBitNb-1 DOWNTO 0)"
+st "SIGNAL dataOutA    : std_ulogic_vector(dataBitNb-1 DOWNTO 0)
+"
 )
 )
 *179 (Net
@@ -5902,7 +5938,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14100,1000"
-st "SIGNAL writeEnA    : std_ulogic"
+st "SIGNAL writeEnA    : std_ulogic
+"
 )
 )
 *180 (SaComponent
@@ -6262,7 +6299,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL enB         : std_ulogic"
+st "SIGNAL enB         : std_ulogic
+"
 )
 )
 *191 (Net
@@ -6282,7 +6320,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,29000,1000"
-st "SIGNAL rdaddr      : std_ulogic_vector(addressBitNb-1 DOWNTO 0)"
+st "SIGNAL rdaddr      : std_ulogic_vector(addressBitNb-1 DOWNTO 0)
+"
 )
 )
 *192 (Net
@@ -6302,7 +6341,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,29400,1000"
-st "SIGNAL addressB    : std_ulogic_vector(addressBitNb-1 DOWNTO 0)"
+st "SIGNAL addressB    : std_ulogic_vector(addressBitNb-1 DOWNTO 0)
+"
 )
 )
 *193 (Net
@@ -6321,7 +6361,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14100,1000"
-st "SIGNAL writeEnB    : std_ulogic"
+st "SIGNAL writeEnB    : std_ulogic
+"
 )
 )
 *194 (Net
@@ -6340,7 +6381,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13200,1000"
-st "SIGNAL re          : std_ulogic"
+st "SIGNAL re          : std_ulogic
+"
 )
 )
 *195 (Net
@@ -6359,7 +6401,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14300,1000"
-st "SIGNAL writeEnB1   : std_ulogic"
+st "SIGNAL writeEnB1   : std_ulogic
+"
 )
 )
 *196 (Net
@@ -6379,7 +6422,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,29600,1000"
-st "SIGNAL addressB1   : std_ulogic_vector(addressBitNb-1 DOWNTO 0)"
+st "SIGNAL addressB1   : std_ulogic_vector(addressBitNb-1 DOWNTO 0)
+"
 )
 )
 *197 (Net
@@ -6399,7 +6443,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27900,1000"
-st "SIGNAL dataInB     : std_ulogic_vector(dataBitNb-1 DOWNTO 0)"
+st "SIGNAL dataInB     : std_ulogic_vector(dataBitNb-1 DOWNTO 0)
+"
 )
 )
 *198 (SaComponent
@@ -6812,7 +6857,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13800,1000"
-st "SIGNAL enB1        : std_ulogic"
+st "SIGNAL enB1        : std_ulogic
+"
 )
 )
 *211 (Net
@@ -6832,7 +6878,8 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28200,1000"
-st "SIGNAL dataOutB    : std_ulogic_vector(dataBitNb-1 DOWNTO 0)"
+st "SIGNAL dataOutB    : std_ulogic_vector(dataBitNb-1 DOWNTO 0)
+"
 )
 )
 *212 (SaComponent
@@ -9202,11 +9249,11 @@ uid 30074,0
 va (VaSet
 vasetType 3
 )
-xt "91000,44000,98250,46000"
+xt "91000,45000,98250,46000"
 pts [
 "91000,46000"
-"91000,44000"
-"98250,44000"
+"91000,45000"
+"98250,45000"
 ]
 )
 start &272
@@ -9809,9 +9856,9 @@ uid 32072,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "130750,41600,140350,43000"
+xt "124000,41600,133600,43000"
 st "audio_R_out"
-blo "130750,42800"
+blo "124000,42800"
 tm "WireNameMgr"
 )
 )
@@ -10680,8 +10727,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1537,840"
-viewArea "99115,15835,198648,67845"
+windowSize "2,0,1539,827"
+viewArea "3418,-4427,104211,49396"
 cachedDiagramExtent "0,-11600,307600,112000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -10708,7 +10755,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "24000,-12000"
-lastUid 35362,0
+lastUid 35641,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -11757,7 +11804,7 @@ va (VaSet
 xt "26000,1200,51400,9600"
 st "constant DATA_WIDTH : positive := 32;
 constant COEFF_BIT_NB : positive := 32;
-constant FILTER_TAP_NB : positive := 499;
+constant FILTER_TAP_NB : positive := 249;
 constant DATA_IN_WIDTH : positive := 32;
 constant addressBitNb :positive := 12;
 constant dataBitNb :positive := 16;

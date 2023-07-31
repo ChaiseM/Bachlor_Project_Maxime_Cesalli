@@ -1,12 +1,6 @@
---
--- VHDL Architecture Splitter.eq.With_rot_sw
---
--- Created:
---          by - maxime.cesalli.UNKNOWN (WE2330804)
---          at - 11:31:00 14.06.2023
---
--- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
---
+----------------------------------------
+-- very simple equaliser using 4 bits 
+----------------------------------------
 ARCHITECTURE With_rot_sw OF eq IS
     signal mult :  unsigned(3 downto 0); 
 BEGIN

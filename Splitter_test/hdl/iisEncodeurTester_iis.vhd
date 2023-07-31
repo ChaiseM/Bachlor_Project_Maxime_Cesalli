@@ -1,12 +1,4 @@
---
--- VHDL Architecture Splitter_test.iisEncodeurTester.iis
---
--- Created:
---          by - maxime.cesalli.UNKNOWN (WE2330804)
---          at - 08:54:20 02.06.2023
---
--- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
---
+
 LIBRARY ieee;
   USE ieee.std_logic_1164.all;
   USE ieee.numeric_std.all;  

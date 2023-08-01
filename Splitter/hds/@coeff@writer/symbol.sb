@@ -533,23 +533,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer\\symbol.sb.info"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer\\symbol.sb.user"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "appl"
@@ -569,27 +569,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\CoeffWriter"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\CoeffWriter"
 )
 (vvPair
 variable "date"
-value "19/07/2023"
+value "01.08.2023"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "19"
+value "01"
 )
 (vvPair
 variable "entity_name"
@@ -613,11 +613,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxim"
+value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "19/07/2023"
+value "01.08.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -625,11 +625,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "DESKTOP-ADLE19A"
+value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:01:16"
+value "09:37:35"
 )
 (vvPair
 variable "group"
@@ -637,7 +637,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "DESKTOP-ADLE19A"
+value "WE2330804"
 )
 (vvPair
 variable "language"
@@ -653,7 +653,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "07"
+value "08"
 )
 (vvPair
 variable "module_name"
@@ -661,19 +661,19 @@ value "CoeffWriter"
 )
 (vvPair
 variable "month"
-value "Jul"
+value "août"
 )
 (vvPair
 variable "month_long"
-value "July"
+value "août"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer\\symbol.sb"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\@coeff@writer\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\CoeffWriter\\symbol.sb"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\CoeffWriter\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -701,7 +701,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:01:16"
+value "09:37:35"
 )
 (vvPair
 variable "unit"
@@ -709,7 +709,7 @@ value "CoeffWriter"
 )
 (vvPair
 variable "user"
-value "maxim"
+value "maxime.cesalli"
 )
 (vvPair
 variable "version"
@@ -1128,7 +1128,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,45800,49000"
+xt "36200,48000,49000,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1481,8 +1481,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "515,88,1537,778"
-viewArea "12300,2100,58352,34696"
+windowSize "515,88,1539,778"
+viewArea "12300,2100,58468,34696"
 cachedDiagramExtent "0,0,77500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-8000,0"
@@ -1755,6 +1755,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 343,0
+lastUid 389,0
 activeModelName "Symbol"
 )

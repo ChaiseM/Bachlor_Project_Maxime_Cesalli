@@ -19,25 +19,25 @@ add wave -noupdate -divider write
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/wraddr
 add wave -noupdate /leftrightsplitter_tb/I_dut/we
 add wave -noupdate /leftrightsplitter_tb/I_dut/din
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/initialRAddress
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/initialRAddress
 add wave -noupdate -divider Read
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/re
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/debug1
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/debug0
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/rAddrCnt_Plus
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/rAddrCnt_Minus
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample2en
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/cntNooffset
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMfull
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMLength
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/RAMLength
 add wave -noupdate -divider CoeffReading
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/coeffAddr
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/coeff1
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/coeff2
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/HighPassCoeff
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/LowPassCoeff
 add wave -noupdate -divider {Xover DUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/convertsionPoint
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample1
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample2
 add wave -noupdate /leftrightsplitter_tb/I_dut/highPass
-add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/cnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/end_Calc
 add wave -noupdate /leftrightsplitter_tb/I_dut/lowPass
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/calculate
@@ -63,7 +63,7 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I10/firstWrite
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/wAddrCnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/arrayCnt
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {12279006 ns} 0} {{Cursor 2} {15952341 ns} 0}
+WaveRestoreCursors {{Cursor 1} {15952428 ns} 0} {{Cursor 2} {1365854 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 302
 configure wave -valuecolwidth 94
@@ -79,4 +79,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ns} {104902957 ns}
+WaveRestoreZoom {0 ns} {105 ms}

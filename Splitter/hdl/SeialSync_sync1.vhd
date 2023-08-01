@@ -31,7 +31,7 @@ BEGIN
 			end if;
 			audioRight1 <= tempLow;
 			-- to account for the higher efficency of the twitter
-			audioLeft1 <= shift_right(tempHigh, 1);
+			audioLeft1 <= resize(shift_right(tempHigh, 2),audioLeft1'length);
 		end if;
 	end process syncro;
 END ARCHITECTURE sync1;

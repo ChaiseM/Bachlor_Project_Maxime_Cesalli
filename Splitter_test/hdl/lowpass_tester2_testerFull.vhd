@@ -22,7 +22,8 @@ ARCHITECTURE testerFull OF lowpass_tester2 IS
   constant frequencyStepLog: real := 1.0/10.0;
   constant frequencyStepPeriod: time := 1.0 * (1.0/(10.0**minFrequencyLog)) * 3 sec;
   signal sineFrequency: real;
-                                                                 -- time signals
+  
+                                                              -- time signals
   signal tReal: real := 0.0;
   signal phase: real := 0.0;
   signal outAmplitude: real := 1.0;

@@ -3,7 +3,7 @@ ARCHITECTURE symetrical_reading_SR OF Xover_with_RAM IS
    -- constants
    constant n : positive := 1;
    constant initialWAddress : natural := 0;
-   constant initialCoeffAddress : natural := 1023;
+   constant initialCoeffAddress : natural := 1501;
    constant HALF_FILTER_TAP_NB : positive := FILTER_TAP_NB/2 +
    (FILTER_TAP_NB mod 2);
    constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
@@ -107,9 +107,9 @@ BEGIN
             
                -- updating the Highpass and Lowpass outpout
                Highpass <= resize(shift_right(AccumulaorHP, ACCUMULATOR_Bit_NB - 
-               Highpass'LENGTH - 9), Highpass'length);
+               Highpass'LENGTH - 10), Highpass'length);
                LowPass<= resize(shift_right(AccumulaorLP, ACCUMULATOR_Bit_NB -
-               LowPass'LENGTH - 9), LowPass'length);
+               LowPass'LENGTH - 10), LowPass'length);
             
             
                -- reseting everything 

@@ -308,7 +308,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:34:42"
+value "15:51:54"
 )
 (vvPair
 variable "group"
@@ -444,7 +444,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "10:34:42"
+value "15:51:54"
 )
 (vvPair
 variable "unit"
@@ -7421,7 +7421,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,14,1921,1080"
-viewArea "-17398,-62208,114656,10956"
+viewArea "-17400,-76708,114654,-3544"
 cachedDiagramExtent "-12000,-123200,169100,19300"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -7449,7 +7449,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,-179000"
-lastUid 9498,0
+lastUid 9567,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8425,8 +8425,8 @@ uid 5,0
 va (VaSet
 )
 xt "-5000,-68800,44300,-55600"
-st "constant clockFrequency: real := 66.0E6;
-constant rs232BaudRate: real := 115.2E3;
+st "constant clockFrequency: real := 48.0E6;
+constant rs232BaudRate: real := 9.6E3;
 constant pwmFrequency: real := 100.0E3;
 constant mainsFrequency: real := 50.0;
 constant debounceCounterBitNb: positive := requiredBitNb(integer(clockFrequency/100.0));

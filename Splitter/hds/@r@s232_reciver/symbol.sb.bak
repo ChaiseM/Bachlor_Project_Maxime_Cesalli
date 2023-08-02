@@ -99,7 +99,7 @@ m 1
 decl (Decl
 n "RS232Data"
 t "std_ulogic_vector"
-b "(dataBitNb-1 DOWNTO 0)"
+b "(uartDataBitNb-1 DOWNTO 0)"
 o 49
 suid 3,0
 )
@@ -564,7 +564,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:16:48"
+value "11:18:57"
 )
 (vvPair
 variable "group"
@@ -636,7 +636,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "11:16:48"
+value "11:18:57"
 )
 (vvPair
 variable "unit"
@@ -703,7 +703,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,62000,4000"
-st "clock      : IN     std_ulogic  ;"
+st "clock      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -747,7 +748,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,62000,4800"
-st "reset      : IN     std_ulogic  ;"
+st "reset      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -790,8 +792,9 @@ uid 145,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,4800,77000,5600"
-st "RS232Data  : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
+xt "44000,4800,79000,5600"
+st "RS232Data  : OUT    std_ulogic_vector (uartDataBitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -799,7 +802,7 @@ m 1
 decl (Decl
 n "RS232Data"
 t "std_ulogic_vector"
-b "(dataBitNb-1 DOWNTO 0)"
+b "(uartDataBitNb-1 DOWNTO 0)"
 o 49
 suid 3,0
 )
@@ -838,7 +841,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,61000,6400"
-st "RS232Valid : OUT    std_ulogic "
+st "RS232Valid : OUT    std_ulogic 
+"
 )
 thePort (LogicalPort
 lang 11
@@ -885,7 +889,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,62000,3200"
-st "RxD        : IN     std_ulogic  ;"
+st "RxD        : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -946,8 +951,7 @@ xt "10000,28800,24500,32000"
 st "Generic Declarations
 
 uartDataBitNb  positive   
-baudRateDivide positive   
-"
+baudRateDivide positive   "
 )
 header "Generic Declarations"
 showHdrWhenContentsEmpty 1
@@ -1350,9 +1354,9 @@ tm "PackageList"
 )
 ]
 )
-windowSize "96,54,1122,744"
-viewArea "-500,-500,71320,47560"
-cachedDiagramExtent "0,0,77000,49000"
+windowSize "96,54,1123,744"
+viewArea "-500,-500,71410,47560"
+cachedDiagramExtent "0,0,79000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
 defaultCommentText (CommentText
@@ -1624,6 +1628,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 422,0
-activeModelName "Symbol:GEN"
+lastUid 445,0
+activeModelName "Symbol:CDM"
 )

@@ -239,7 +239,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:04:46"
+value "13:28:40"
 )
 (vvPair
 variable "group"
@@ -363,7 +363,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:04:46"
+value "13:28:40"
 )
 (vvPair
 variable "unit"
@@ -5508,8 +5508,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1058"
-viewArea "-90279,24119,305863,235179"
+windowSize "0,0,1921,1066"
+viewArea "-90300,24100,303421,242240"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5536,7 +5536,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 12811,0
+lastUid 12950,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

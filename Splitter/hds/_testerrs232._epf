@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom RS232_test1
+DEFAULT_FILE atom testerRS232_RS232_test1.vhd

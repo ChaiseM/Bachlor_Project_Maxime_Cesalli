@@ -6319,19 +6319,18 @@ yPos 0
 width 1936
 height 1066
 activeSidePanelTab 2
-activeLibraryTab 3
-sidePanelSize 293
+activeLibraryTab 1
+sidePanelSize 400
 showUnixHiddenFiles 0
 componentBrowserXpos 934
 componentBrowserYpos 157
 componentBrowserWidth 427
 componentBrowserHeight 373
 componentBrowserLibraryNames [
-"Board"
 "Common"
-"Common_test"
-"Memory"
 "Splitter"
+"Splitter_test"
+"moduleware"
 ]
 )
 (SmPreferences

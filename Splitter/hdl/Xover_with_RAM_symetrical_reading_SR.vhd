@@ -3,7 +3,7 @@ ARCHITECTURE symetrical_reading_SR OF Xover_with_RAM IS
    -- constants
    constant n : positive := 1;
    constant initialWAddress : natural := 0;
-   constant initialCoeffAddress : natural := 1501;
+   constant initialCoeffAddress : natural := 1023;
    constant HALF_FILTER_TAP_NB : positive := FILTER_TAP_NB/2 +
    (FILTER_TAP_NB mod 2);
    constant FINAL_SHIFT : positive := requiredBitNb(FILTER_TAP_NB);
@@ -15,7 +15,7 @@ ARCHITECTURE symetrical_reading_SR OF Xover_with_RAM IS
 
    signal debug0 : std_ulogic;
    signal debug1 : std_ulogic;
-   signal calculate : std_ulogic;
+   signal calculate : std_ulogic; 
    signal calculatedelayed : std_ulogic;
    -- RAM oriented variables ---------------------------------------------------
    signal firstWrite : std_ulogic;
@@ -201,14 +201,14 @@ BEGIN
           
             
             -- if the conversion point is reached 
-            if cntNooffset = (FILTER_TAP_NB * n * 2 ) + 4 then
+            if cntNooffset = (FILTER_TAP_NB * n * 2 ) + 5 then
                convertsionPoint <= '1';
                -- updates the accumulator with only one sample because
                -- sample1 = sample2 at the conversion Point 
                AccumulaorHP := AccumulaorHP + sample1 * HCoeff;
                AccumulaorLP := AccumulaorLP + sample1 * LCoeff;
             elsif cntNooffset >= 7 and (cntNooffset mod 4) = 0 
-            and cntNooffset <= (FILTER_TAP_NB * n * 2 )+3 then
+            and cntNooffset <= (FILTER_TAP_NB * n * 2 )+ 3 then
                -- updates the accumulators
                AccumulaorHP := AccumulaorHP + (resize(sample1, sample1'LENGTH + 1) + sample2) * HCoeff;
                AccumulaorLP := AccumulaorLP + (resize(sample1, sample1'LENGTH + 1) + sample2) * LCoeff;

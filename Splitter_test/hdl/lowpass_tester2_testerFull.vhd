@@ -10,6 +10,7 @@
 library ieee;
   use ieee.math_real.all;
 
+
 ARCHITECTURE testerFull OF lowpass_tester2 IS
  constant CLOCK_PERIOD: time := (1.0/CLOCK_FREQUENCY) * 1 sec;
   signal sClock: std_uLogic := '1';
@@ -28,13 +29,18 @@ ARCHITECTURE testerFull OF lowpass_tester2 IS
   signal phase: real := 0.0;
   signal outAmplitude: real := 1.0;
   signal outReal: real := 0.0;
+                                                             
 
 BEGIN
   ------------------------------------------------------------------------------
                                                               -- clock and reset
-  sClock <= not sClock after CLOCK_PERIOD/2;
-  clock <= transport sClock after CLOCK_PERIOD*9/10;
-  reset <= '1', '0' after 2*CLOCK_PERIOD;
+   sClock <= not sClock after CLOCK_PERIOD/2;
+   clock <= transport sClock after CLOCK_PERIOD*9/10;
+   reset <= '1', '0' after 2*CLOCK_PERIOD;
+                                     
+ 
+   
+
 
   ------------------------------------------------------------------------------
                                                                      -- sampling
@@ -85,6 +91,7 @@ BEGIN
     integer(outReal * ( 2.0**(audioIn'length-1) - 1.0 )),
     audioIn'length
   );
+ 
   
     sig0 <= '0';
     sig1 <= '0';

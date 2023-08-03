@@ -31,8 +31,6 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMfull
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/RAMLength
 add wave -noupdate -divider CoeffReading
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/coeffAddr
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/HighPassCoeff
-add wave -noupdate /leftrightsplitter_tb/I_dut/I11/LowPassCoeff
 add wave -noupdate -divider {Xover DUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/convertsionPoint
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample1
@@ -62,8 +60,20 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/writeEnB
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/firstWrite
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/wAddrCnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/arrayCnt
+add wave -noupdate -divider UART
+add wave -noupdate /leftrightsplitter_tb/I_dut/RS232Data
+add wave -noupdate /leftrightsplitter_tb/I_dut/RS232Valid
+add wave -noupdate /leftrightsplitter_tb/I_dut/RxD_synch
+add wave -noupdate /leftrightsplitter_tb/I_dut/I14/temp0
+add wave -noupdate /leftrightsplitter_tb/I_dut/I14/currentState
+add wave -noupdate /leftrightsplitter_tb/I_dut/I14/coeffCnt
+add wave -noupdate /leftrightsplitter_tb/I_dut/I14/coeff0
+add wave -noupdate /leftrightsplitter_tb/I_dut/I14/coeffNb
+add wave -noupdate /leftrightsplitter_tb/I_dut/I14/cnt
+add wave -noupdate /leftrightsplitter_tb/I_dut/NewCoeff
+add wave -noupdate /leftrightsplitter_tb/I_dut/RS232Coeff
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {15952428 ns} 0} {{Cursor 2} {1365854 ns} 0}
+WaveRestoreCursors {{Cursor 1} {37644290 ns} 0} {{Cursor 2} {1365854 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 302
 configure wave -valuecolwidth 94
@@ -79,4 +89,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ns} {105 ms}
+WaveRestoreZoom {0 ns} {21079082 ns}

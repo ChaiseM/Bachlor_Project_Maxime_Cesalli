@@ -308,7 +308,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:40:17"
+value "15:51:54"
 )
 (vvPair
 variable "group"
@@ -444,7 +444,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "15:40:17"
+value "15:51:54"
 )
 (vvPair
 variable "unit"

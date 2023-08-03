@@ -1,0 +1,18 @@
+DESIGN tester2
+VIEW interface
+NO_GRAPHIC 0
+DESIGN tester2
+VIEW interface
+GRAPHIC 50,0 8 0 
+DESIGN tester2
+VIEW interface
+GRAPHIC 13,0 17 1 
+DESIGN tester2
+VIEW interface
+GRAPHIC 188,0 22 0 
+DESIGN tester2
+VIEW interface
+GRAPHIC 1,0 25 0 
+DESIGN tester2
+VIEW interface
+GRAPHIC 1,0 26 0 

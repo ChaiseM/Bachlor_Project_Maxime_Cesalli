@@ -1,0 +1,39 @@
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+NO_GRAPHIC 0
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 50,0 8 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 13,0 17 1 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 66,0 23 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 76,0 24 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 56,0 25 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 234,0 26 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 71,0 27 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 51,0 28 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 61,0 29 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 81,0 30 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 1,0 33 0 
+DESIGN @rs232@to@ram
+VIEW symbol.sb
+GRAPHIC 1,0 34 0 

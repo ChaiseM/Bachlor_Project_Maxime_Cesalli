@@ -212,19 +212,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "03.08.2023"
+value "04.08.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "03"
+value "04"
 )
 (vvPair
 variable "designName"
@@ -256,7 +256,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "03.08.2023"
+value "04.08.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -268,7 +268,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "17:23:41"
+value "11:16:01"
 )
 (vvPair
 variable "group"
@@ -392,7 +392,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "17:23:41"
+value "11:16:01"
 )
 (vvPair
 variable "unit"
@@ -5644,7 +5644,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,14,1921,1080"
-viewArea "31800,37100,192635,126210"
+viewArea "2447,-307,203491,111080"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5671,7 +5671,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 13377,0
+lastUid 13516,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -6725,7 +6725,7 @@ constant COEFF_BIT_NB : positive := 32;
 constant FILTER_TAP_NB : positive := 149;
 constant DATA_IN_WIDTH_T : positive := 32;
 constant uartDataBitNb : positive := 7;
-constant uartBaudRate: real := 9.6E3;"
+constant uartBaudRate: real := 57.6E3;"
 tm "BdDeclarativeTextMgr"
 )
 diagSignalLabel (Text

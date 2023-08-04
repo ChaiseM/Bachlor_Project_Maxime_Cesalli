@@ -38,10 +38,7 @@ ARCHITECTURE RS232_test1 OF testerRS232 IS
   signal coeff0 : unsigned(31 downto 0);
   signal temp1 : unsigned(3 downto 0);
   signal coeffNb : unsigned(31 downto 0);
-  signal debug10 : std_ulogic;
-  signal debug11 : std_ulogic;
-  signal debug12 : std_ulogic;
-  signal debug13 : std_ulogic;
+  signal outputEnDriver : std_ulogic;
 BEGIN
 
     ------------------------------------------------------------------------------
@@ -97,15 +94,12 @@ BEGIN
          cnt1 <= (others => '0');
          Coeffcnt <= (others => '0');
          coeff0 <= (others => '0');
-         debug10 <= '0';
-         debug11 <= '0';
-         debug12 <= '0';
-         debug13 <= '0';
          coeffNb <= (others => '0');
-         
+         filterTapNb <= FILTER_TAP_NB;
+         outputEn <= '0';
       elsif rising_edge(clock) then
          newCoeff <= '0';
-         debug1  <= (others => '0');
+       
          if RS232Valid = '1' then 
             -- Idle State 
             if currentState = state_idle and isN = '1' then 
@@ -140,7 +134,9 @@ BEGIN
                elsif isE = '1'   then temp1 <= to_unsigned(14,temp1'length);
                elsif isF = '1'   then temp1 <= to_unsigned(15,temp1'length);
                -- condition to do out of the newCoeff state 
-               elsif isHashTag = '1'  then currentState <= state_startCoeff;
+               elsif isHashTag = '1'  then 
+                  currentState <= state_startCoeff;
+                  outputEnDriver <= not outputEnDriver;
                end if;
                
                
@@ -159,6 +155,7 @@ BEGIN
          
             
             if currentState = state_startCoeff and isX = '1' then 
+               
                if coeffcnt > coeffNb then
                   currentState <= state_idle;
                   coeffCnt <= (others => '0');
@@ -167,18 +164,12 @@ BEGIN
                      RS232Coeff <= signed(coeff0); 
                      newCoeff <= '1';
                   end if;
-                  debug10 <= not debug10;
                   currentState <= state_test2;
-                  -- x"DEADBEEF" in hex
-                  if coeff0 = "11011110101011011011111011101111" then 
-                      debug12 <= not debug12;
-                  end if;
                end if;
               
             end if;
             -- test if we are reciving a new coefff
-            if currentState = state_test2 and isExcla = '1' then 
-               --debug11 <= not debug11;
+            if currentState = state_test2 and isExcla = '1' then
                currentState <= state_newCoeff;
                coeffCnt <= coeffCnt + 1;
                cnt <= (others => '0');
@@ -206,7 +197,7 @@ BEGIN
                -- condition to do out of the newCoeff state 
                elsif isExcla = '1'  then 
                   currentState <= state_startCoeff;
-                 
+                  outputEnDriver <= not outputEnDriver;
                end if;
                
                
@@ -229,10 +220,7 @@ BEGIN
             end if;
          end if;  
          
-         debug1(0) <= debug10;
-         debug1(1) <= debug11;
-         debug1(2) <= debug12;
-         debug1(3) <= debug13;
+         outputEn <= outputEnDriver;
          
       end if; 
    end process testter;

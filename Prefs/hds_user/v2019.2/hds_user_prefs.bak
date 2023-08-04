@@ -6795,6 +6795,7 @@ font "Courier New,8,0"
 )
 order 0
 editSignalScope 4
+promptGenOrderIndicator 0
 showUpdateWhereUsedPrompt 0
 )
 ]

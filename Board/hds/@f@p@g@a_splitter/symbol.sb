@@ -792,19 +792,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Boar
 )
 (vvPair
 variable "date"
-value "03.08.2023"
+value "04.08.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "03"
+value "04"
 )
 (vvPair
 variable "designName"
@@ -836,7 +836,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "03.08.2023"
+value "04.08.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -848,7 +848,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "17:36:50"
+value "11:47:16"
 )
 (vvPair
 variable "group"
@@ -984,7 +984,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "17:36:50"
+value "11:47:16"
 )
 (vvPair
 variable "unit"
@@ -2710,7 +2710,7 @@ xt "0,7800,0,7800"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2308,0
+lastUid 2331,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

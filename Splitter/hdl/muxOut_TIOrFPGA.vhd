@@ -3,8 +3,8 @@
 --------------------------------------------------------------------------------
 ARCHITECTURE TIOrFPGA OF muxOut IS
 BEGIN
-    Data_O <= DOUT when S20 = '0' else Data_I ;
-    LR_O <= LRCK when S20 = '0' else LR_I ;
-    CLK_O <= SCK when S20 = '0' else CLK_I ;
+    Data_O <= DOUT when en = '0' else '0' ;
+    LR_O <= LRCK when en = '0' else '0' ;
+    CLK_O <= SCK when en = '0' else '0' ;
 END ARCHITECTURE TIOrFPGA;
 

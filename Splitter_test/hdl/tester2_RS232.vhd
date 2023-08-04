@@ -87,21 +87,22 @@ BEGIN
   rsSendSerialByte: process
     variable rxData: unsigned(uartDataBitNb-1 downto 0);
   begin
-    RxD_synch <= '1';
+    --RxD_synch <= '1';
 
     wait until rising_edge(uartSendInByte);
     rxData := to_unsigned(character'pos(uartInByte), rxData'length);
 
-    RxD_synch <= '0';
+    --RxD_synch <= '0';
     wait for uartPeriod;
 
     for index in rxData'reverse_range loop
-      RxD_synch <= rxData(index);
+      --RxD_synch <= rxData(index);
       wait for uartPeriod;
     end loop;
 
   end process rsSendSerialByte;
 
-  
+   RxD_synch <= '0';
+   
 END ARCHITECTURE RS232;
 

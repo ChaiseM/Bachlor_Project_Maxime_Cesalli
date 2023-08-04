@@ -32,7 +32,7 @@ model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
 ordering 1
-suid 14,0
+suid 15,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -613,7 +613,7 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Spli
 )
 (vvPair
 variable "date"
-value "30.06.2023"
+value "04.08.2023"
 )
 (vvPair
 variable "day"
@@ -625,7 +625,7 @@ value "vendredi"
 )
 (vvPair
 variable "dd"
-value "30"
+value "04"
 )
 (vvPair
 variable "entity_name"
@@ -653,7 +653,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "30.06.2023"
+value "04.08.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -665,7 +665,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "12:55:40"
+value "10:32:16"
 )
 (vvPair
 variable "group"
@@ -689,7 +689,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "06"
+value "08"
 )
 (vvPair
 variable "module_name"
@@ -697,11 +697,11 @@ value "iisEncoder"
 )
 (vvPair
 variable "month"
-value "juin"
+value "août"
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "août"
 )
 (vvPair
 variable "p"
@@ -737,7 +737,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "12:55:40"
+value "10:32:16"
 )
 (vvPair
 variable "unit"
@@ -804,7 +804,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,72000,4800"
-st "audioLeft  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
+st "audioLeft  : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -850,7 +851,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,72000,5600"
-st "audioRight : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
+st "audioRight : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -873,7 +875,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "34250,33625,35000,34375"
+xt "34250,32625,35000,33375"
 )
 tg (CPTG
 uid 63,0
@@ -884,9 +886,9 @@ uid 64,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "36000,33300,39800,34700"
+xt "36000,32300,39800,33700"
 st "clock"
-blo "36000,34500"
+blo "36000,33500"
 tm "CptPortNameMgr"
 )
 )
@@ -896,7 +898,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,62000,4000"
-st "clock      : IN     std_ulogic  ;"
+st "clock      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -942,7 +945,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,7200,62000,8000"
-st "DOUT       : OUT    std_ulogic  ;"
+st "DOUT       : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -989,7 +993,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,62000,6400"
-st "LRCK       : OUT    std_ulogic  ;"
+st "LRCK       : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1012,7 +1017,7 @@ va (VaSet
 vasetType 1
 fg "0,65535,0"
 )
-xt "34250,35625,35000,36375"
+xt "34250,33625,35000,34375"
 )
 tg (CPTG
 uid 78,0
@@ -1023,9 +1028,9 @@ uid 79,0
 va (VaSet
 font "Verdana,12,0"
 )
-xt "36000,35300,40100,36700"
+xt "36000,33300,40100,34700"
 st "reset"
-blo "36000,36500"
+blo "36000,34500"
 tm "CptPortNameMgr"
 )
 )
@@ -1035,7 +1040,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,62000,3200"
-st "reset      : IN     std_ulogic  ;"
+st "reset      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1081,7 +1087,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,62000,7200"
-st "SCK        : OUT    std_ulogic  ;"
+st "SCK        : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1127,7 +1134,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8000,62000,8800"
-st "CLKI2s     : IN     std_uLogic  ;"
+st "CLKI2s     : IN     std_uLogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1172,7 +1180,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8800,62000,9600"
-st "LRCK1      : IN     std_uLogic  ;"
+st "LRCK1      : IN     std_uLogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1217,7 +1226,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,9600,62000,10400"
-st "NewData    : OUT    std_uLogic  ;"
+st "NewData    : OUT    std_uLogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1264,7 +1274,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,10400,61000,11200"
-st "Frameout0  : OUT    std_uLogic "
+st "Frameout0  : OUT    std_uLogic 
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1370,7 +1381,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,48800,49000"
+xt "36200,48000,49000,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1724,7 +1735,7 @@ tm "PackageList"
 ]
 )
 windowSize "0,14,1921,1080"
-viewArea "-3100,7100,95094,61504"
+viewArea "-3100,7100,95094,59880"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-41000,-48000"
@@ -1997,6 +2008,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 689,0
-activeModelName "Symbol"
+lastUid 742,0
+activeModelName "Symbol:CDM"
 )

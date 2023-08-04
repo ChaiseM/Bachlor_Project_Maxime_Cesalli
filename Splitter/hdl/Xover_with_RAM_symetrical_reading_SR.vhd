@@ -41,11 +41,7 @@ ARCHITECTURE symetrical_reading_SR OF Xover_with_RAM IS
    signal HCoeff : signed (audio_In'range);
    signal LCoeff : signed (audio_In'range);
    
-   -- array
-   -- vector of FILTER_TAP_NB signed elements
-   type t_samples is array (0 to FILTER_TAP_NB - 1) of signed (audio_In'range); 
-   signal samples : t_samples;
-
+   
 BEGIN
    shiftSamplesAndMul : process (clock, reset)
       variable AccumulaorHP : signed (ACCUMULATOR_Bit_NB - 1 downto 0);
@@ -62,11 +58,11 @@ BEGIN
          convertsionPoint <= '0';
          convertsionPointDelayed <= '0';
          cntNooffset <= (others => '0');
-      elsif rising_edge(clock) then
+      elsif rising_edge(clock)  then
          convertsionPointDelayed <= convertsionPoint;
          writeEnA <= '0';
          we <= '1';
-         if en = '1' then
+         if newSample = '1' then
             firstWrite <= '1';
             -- writing the samples in the RAM
             if ((wAddrCnt + (2 * n) - initialWAddress)) >= RAMLength then
@@ -220,6 +216,6 @@ BEGIN
    
    DataReady <= '1' when calculate = '0' else '0';
    DebugData(1) <= convertsionPoint;
-   DebugData(0) <= en;
+   DebugData(0) <= newSample;
    
 END ARCHITECTURE symetrical_reading_SR;

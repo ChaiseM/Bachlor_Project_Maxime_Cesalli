@@ -6319,8 +6319,8 @@ yPos 0
 width 1936
 height 1066
 activeSidePanelTab 2
-activeLibraryTab 3
-sidePanelSize 400
+activeLibraryTab 1
+sidePanelSize 393
 showUnixHiddenFiles 0
 componentBrowserXpos 934
 componentBrowserYpos 157
@@ -6795,6 +6795,7 @@ font "Courier New,8,0"
 )
 order 0
 editSignalScope 4
+promptGenOrderIndicator 0
 showUpdateWhereUsedPrompt 0
 )
 ]

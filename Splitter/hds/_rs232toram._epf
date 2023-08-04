@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom a16BitArchi
+DEFAULT_FILE atom Rs232ToRam_a16BitArchi.vhd

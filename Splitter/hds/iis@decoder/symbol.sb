@@ -32,7 +32,7 @@ model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
 ordering 1
-suid 9,0
+suid 10,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -523,23 +523,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.info"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.user"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds"
 )
 (vvPair
 variable "appl"
@@ -559,27 +559,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder"
 )
 (vvPair
 variable "date"
-value "19/07/2023"
+value "04.08.2023"
 )
 (vvPair
 variable "day"
-value "Wed"
+value "ven."
 )
 (vvPair
 variable "day_long"
-value "Wednesday"
+value "vendredi"
 )
 (vvPair
 variable "dd"
-value "19"
+value "04"
 )
 (vvPair
 variable "entity_name"
@@ -603,11 +603,11 @@ value "symbol"
 )
 (vvPair
 variable "graphical_source_author"
-value "maxim"
+value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "19/07/2023"
+value "04.08.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -615,11 +615,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "DESKTOP-ADLE19A"
+value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:36:40"
+value "10:43:50"
 )
 (vvPair
 variable "group"
@@ -627,7 +627,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "DESKTOP-ADLE19A"
+value "WE2330804"
 )
 (vvPair
 variable "language"
@@ -643,7 +643,7 @@ value "$SCRATCH_DIR/$DESIGN_NAME/Splitter"
 )
 (vvPair
 variable "mm"
-value "07"
+value "08"
 )
 (vvPair
 variable "module_name"
@@ -651,19 +651,19 @@ value "iisDecoder"
 )
 (vvPair
 variable "month"
-value "Jul"
+value "août"
 )
 (vvPair
 variable "month_long"
-value "July"
+value "août"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iis@decoder\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\maxim\\Bachelor\\Audio\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder\\symbol.sb"
+value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Splitter\\hds\\iisDecoder\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -691,7 +691,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "15:36:40"
+value "10:43:50"
 )
 (vvPair
 variable "unit"
@@ -699,7 +699,7 @@ value "iisDecoder"
 )
 (vvPair
 variable "user"
-value "maxim"
+value "maxime.cesalli"
 )
 (vvPair
 variable "version"
@@ -758,7 +758,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,62000,3200"
-st "reset      : IN     std_ulogic  ;"
+st "reset      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -802,7 +803,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,62000,4000"
-st "clock      : IN     std_ulogic  ;"
+st "clock      : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -846,7 +848,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,62000,4800"
-st "LRCK       : IN     std_ulogic  ;"
+st "LRCK       : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -890,7 +893,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,62000,5600"
-st "SCK        : IN     std_ulogic  ;"
+st "SCK        : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -934,7 +938,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,62000,6400"
-st "DOUT       : IN     std_ulogic  ;"
+st "DOUT       : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -979,7 +984,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,62000,7200"
-st "dataValid  : OUT    std_ulogic  ;"
+st "dataValid  : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1025,7 +1031,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,7200,72000,8000"
-st "audioLeft  : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;"
+st "audioLeft  : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1072,7 +1079,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8000,72000,8800"
-st "audioRight : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;"
+st "audioRight : OUT    signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1119,7 +1127,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8800,61000,9600"
-st "lr2        : OUT    std_ulogic "
+st "lr2        : OUT    std_ulogic 
+"
 )
 thePort (LogicalPort
 m 1
@@ -1224,7 +1233,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "36200,48000,48800,49000"
+xt "36200,48000,49000,49000"
 st "
 by %user on %dd %month %year
 "
@@ -1577,8 +1586,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "0,0,1537,864"
-viewArea "-60000,-10500,94000,72794"
+windowSize "96,54,1635,918"
+viewArea "-60000,-10500,94235,72794"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-34000,-4000"
@@ -1851,6 +1860,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 380,0
-activeModelName "Symbol:GEN"
+lastUid 433,0
+activeModelName "Symbol:CDM"
 )

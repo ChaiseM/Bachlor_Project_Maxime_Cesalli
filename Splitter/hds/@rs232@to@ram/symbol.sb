@@ -635,7 +635,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:56:49"
+value "13:59:00"
 )
 (vvPair
 variable "group"
@@ -707,7 +707,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "11:56:49"
+value "13:59:00"
 )
 (vvPair
 variable "unit"
@@ -774,8 +774,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,78500,7200"
-st "addressBRs : OUT    std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;
-"
+st "addressBRs : OUT    std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -822,8 +821,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,62000,4800"
-st "clock      : IN     std_ulogic  ;
-"
+st "clock      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -867,8 +865,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,7200,77000,8000"
-st "dataInBRs  : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
-"
+st "dataInBRs  : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -916,8 +913,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,62000,3200"
-st "NewCoeff   : IN     std_ulogic  ;
-"
+st "NewCoeff   : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -962,8 +958,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,5600,62000,6400"
-st "reset      : IN     std_ulogic  ;
-"
+st "reset      : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1008,8 +1003,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,72000,4000"
-st "RS232Coeff : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
-"
+st "RS232Coeff : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1055,8 +1049,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8000,61000,8800"
-st "writeEnRs  : OUT    std_ulogic 
-"
+st "writeEnRs  : OUT    std_ulogic "
 )
 thePort (LogicalPort
 lang 11
@@ -1104,8 +1097,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,62000,5600"
-st "outputEn   : IN     std_ulogic  ;
-"
+st "outputEn   : IN     std_ulogic  ;"
 )
 thePort (LogicalPort
 lang 11
@@ -1575,8 +1567,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "529,390,1551,1080"
-viewArea "-500,-500,70960,47560"
+windowSize "529,390,1552,1080"
+viewArea "-500,-500,71050,47560"
 cachedDiagramExtent "0,0,78500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
@@ -1849,6 +1841,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 337,0
+lastUid 360,0
 activeModelName "Symbol:CDM"
 )

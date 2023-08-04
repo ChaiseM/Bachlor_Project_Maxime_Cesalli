@@ -268,7 +268,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:16:13"
+value "16:49:57"
 )
 (vvPair
 variable "group"
@@ -392,7 +392,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:16:13"
+value "16:49:57"
 )
 (vvPair
 variable "unit"
@@ -3477,8 +3477,7 @@ va (VaSet
 )
 xt "38700,70800,57400,73200"
 st "signalBitNb  = 32    ( positive )  
-signalOBitNb = 32    ( positive )  
-"
+signalOBitNb = 32    ( positive )  "
 )
 header ""
 )
@@ -5607,7 +5606,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,14,1921,1080"
-viewArea "2447,-307,203491,111080"
+viewArea "-18073,14901,110917,84234"
 cachedDiagramExtent "-7000,0,198350,113000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -5634,7 +5633,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,19000"
-lastUid 13580,0
+lastUid 13862,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -6688,7 +6687,7 @@ constant COEFF_BIT_NB : positive := 32;
 constant FILTER_TAP_NB : positive := 149;
 constant DATA_IN_WIDTH_T : positive := 32;
 constant uartDataBitNb : positive := 7;
-constant uartBaudRate: real := 57.6E3;"
+constant uartBaudRate: real := 9.6E3;"
 tm "BdDeclarativeTextMgr"
 )
 diagSignalLabel (Text

@@ -283,7 +283,7 @@ lang 11
 decl (Decl
 n "filterTapNb"
 t "integer"
-b "RANGE 15 DOWNTO 0"
+b "RANGE 999 DOWNTO 0"
 o 17
 suid 18,0
 )
@@ -837,7 +837,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:47:15"
+value "13:55:10"
 )
 (vvPair
 variable "group"
@@ -909,7 +909,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:47:15"
+value "13:55:10"
 )
 (vvPair
 variable "unit"
@@ -976,7 +976,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,3200,73000,4000"
-st "audio_In     : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;"
+st "audio_In     : IN     signed (DATA_WIDTH-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1022,7 +1023,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4000,63000,4800"
-st "clock        : IN     std_ulogic  ;"
+st "clock        : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1067,7 +1069,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8000,63000,8800"
-st "DataReady    : OUT    std_ulogic  ;"
+st "DataReady    : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1113,7 +1116,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,8800,68500,9600"
-st "DebugData    : OUT    unsigned (1 DOWNTO 0) ;"
+st "DebugData    : OUT    unsigned (1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 m 1
@@ -1159,7 +1163,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,9600,78000,10400"
-st "din          : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
+st "din          : OUT    std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1206,7 +1211,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,4800,78000,5600"
-st "dout1        : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
+st "dout1        : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1252,7 +1258,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,6400,62500,7200"
-st "newSample    : IN     std_logic  ;"
+st "newSample    : IN     std_logic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1298,7 +1305,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,10400,74000,11200"
-st "highPass     : OUT    signed (DATA_WIDTH-1  DOWNTO  0) ;"
+st "highPass     : OUT    signed (DATA_WIDTH-1  DOWNTO  0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1346,7 +1354,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,11200,74000,12000"
-st "lowPass      : OUT    signed (DATA_WIDTH-1  DOWNTO  0) ;"
+st "lowPass      : OUT    signed (DATA_WIDTH-1  DOWNTO  0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1394,7 +1403,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,12000,79500,12800"
-st "rdaddr       : OUT    std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;"
+st "rdaddr       : OUT    std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1442,7 +1452,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,12800,63000,13600"
-st "re           : OUT    std_ulogic  ;"
+st "re           : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1488,7 +1499,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,7200,63000,8000"
-st "reset        : IN     std_ulogic  ;"
+st "reset        : IN     std_ulogic  ;
+"
 )
 thePort (LogicalPort
 decl (Decl
@@ -1532,7 +1544,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,13600,63000,14400"
-st "we           : OUT    std_ulogic  ;"
+st "we           : OUT    std_ulogic  ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1578,7 +1591,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,14400,79500,15200"
-st "wraddr       : OUT    std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;"
+st "wraddr       : OUT    std_ulogic_vector (addressBitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1625,7 +1639,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,15200,62000,16000"
-st "writeEnA     : OUT    std_ulogic "
+st "writeEnA     : OUT    std_ulogic 
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1672,7 +1687,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "44000,2400,78000,3200"
-st "DataInCoeffs : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;"
+st "DataInCoeffs : IN     std_ulogic_vector (dataBitNb-1 DOWNTO 0) ;
+"
 )
 thePort (LogicalPort
 lang 11
@@ -1717,15 +1733,16 @@ uid 1072,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,5600,70500,6400"
-st "filterTapNb  : IN     integer RANGE 15 DOWNTO 0 ;"
+xt "44000,5600,71000,6400"
+st "filterTapNb  : IN     integer RANGE 999 DOWNTO 0 ;
+"
 )
 thePort (LogicalPort
 lang 11
 decl (Decl
 n "filterTapNb"
 t "integer"
-b "RANGE 15 DOWNTO 0"
+b "RANGE 999 DOWNTO 0"
 o 17
 suid 18,0
 )
@@ -2201,8 +2218,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "492,174,1547,864"
-viewArea "6700,-6600,58801,28806"
+windowSize "492,174,1548,864"
+viewArea "6700,-6600,58864,27042"
 cachedDiagramExtent "-4000,0,79500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
@@ -2475,6 +2492,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 1189,0
-activeModelName "Symbol"
+lastUid 1212,0
+activeModelName "Symbol:CDM"
 )

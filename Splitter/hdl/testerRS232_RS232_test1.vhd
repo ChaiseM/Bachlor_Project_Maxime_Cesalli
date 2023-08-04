@@ -8,7 +8,7 @@
 -- using Mentor Graphics HDL Designer(TM) 2019.2 (Build 5)
 --
 
-ARCHITECTURE RS232_test1 OF testerRS232 IS
+   ARCHITECTURE RS232_test1 OF testerRS232 IS
    signal debuggg : std_ulogic;
    
    signal isA, isB, isC, isD, isE, isF, isG, isH,
@@ -97,6 +97,7 @@ BEGIN
          coeffNb <= (others => '0');
          filterTapNb <= FILTER_TAP_NB;
          outputEn <= '0';
+         outputEnDriver <= '0';
       elsif rising_edge(clock) then
          newCoeff <= '0';
        
@@ -134,9 +135,9 @@ BEGIN
                elsif isE = '1'   then temp1 <= to_unsigned(14,temp1'length);
                elsif isF = '1'   then temp1 <= to_unsigned(15,temp1'length);
                -- condition to do out of the newCoeff state 
-               elsif isHashTag = '1'  then 
+               elsif isT = '1'  then 
                   currentState <= state_startCoeff;
-                  outputEnDriver <= not outputEnDriver;
+                  outputEnDriver <= '1';
                end if;
                
                
@@ -159,7 +160,9 @@ BEGIN
                if coeffcnt > coeffNb then
                   currentState <= state_idle;
                   coeffCnt <= (others => '0');
+                  outputEnDriver <= '0';
                else
+                  filterTapNb <= to_integer(coeffNb);
                   if coeffCnt /= 0 then 
                      RS232Coeff <= signed(coeff0); 
                      newCoeff <= '1';
@@ -197,7 +200,6 @@ BEGIN
                -- condition to do out of the newCoeff state 
                elsif isExcla = '1'  then 
                   currentState <= state_startCoeff;
-                  outputEnDriver <= not outputEnDriver;
                end if;
                
                

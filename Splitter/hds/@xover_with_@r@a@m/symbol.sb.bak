@@ -837,7 +837,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:46:26"
+value "13:47:15"
 )
 (vvPair
 variable "group"
@@ -909,7 +909,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:46:26"
+value "13:47:15"
 )
 (vvPair
 variable "unit"
@@ -2201,8 +2201,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "492,174,1546,864"
-viewArea "6700,-6600,58738,27042"
+windowSize "492,174,1547,864"
+viewArea "6700,-6600,58801,28806"
 cachedDiagramExtent "-4000,0,79500,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,0"
@@ -2475,6 +2475,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 1166,0
-activeModelName "Symbol:GEN"
+lastUid 1189,0
+activeModelName "Symbol"
 )

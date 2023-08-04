@@ -26,13 +26,16 @@ begin
          arrayCnt <= (others => '0');
          wAddrCnt <= to_unsigned(initialWAddress, wAddrCnt'length);
          writeCoeffs <= '1';
+         dataInBRs<= (others => '0');
+         addressBRs<= (others => '0');
+         writeEnRs <= '0';
       elsif rising_edge(clock) then
          if outputEn = '0' then 
             writeCoeffs <= '0';
             writeEnRs <= '0';
             wAddrCnt <= to_unsigned(initialWAddress, wAddrCnt'length);
          else
-            if newCoeff = '1' then
+            if newCoeff = '1' or firstWrite /= 0 then
                wAddrCnt <= wAddrCnt + n;
                addressBRs <= std_ulogic_vector(wAddrCnt);
                writeEnRs <= '1';

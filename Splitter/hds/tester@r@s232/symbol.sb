@@ -166,7 +166,7 @@ m 1
 decl (Decl
 n "FilterTapNb"
 t "integer"
-b "RANGE 15 DOWNTO 0"
+b "RANGE 999 DOWNTO 0"
 o 5
 suid 12,0
 )
@@ -638,7 +638,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:05:34"
+value "13:54:49"
 )
 (vvPair
 variable "group"
@@ -710,7 +710,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "11:05:34"
+value "13:54:49"
 )
 (vvPair
 variable "unit"
@@ -1107,8 +1107,8 @@ uid 610,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,5600,70000,6400"
-st "FilterTapNb : OUT    integer RANGE 15 DOWNTO 0 ;
+xt "44000,5600,70500,6400"
+st "FilterTapNb : OUT    integer RANGE 999 DOWNTO 0 ;
 "
 )
 thePort (LogicalPort
@@ -1117,7 +1117,7 @@ m 1
 decl (Decl
 n "FilterTapNb"
 t "integer"
-b "RANGE 15 DOWNTO 0"
+b "RANGE 999 DOWNTO 0"
 o 5
 suid 12,0
 )
@@ -1581,8 +1581,8 @@ tm "PackageList"
 )
 ]
 )
-windowSize "96,54,1133,744"
-viewArea "4700,2100,50813,32538"
+windowSize "96,54,1134,744"
+viewArea "4700,2100,50870,32538"
 cachedDiagramExtent "0,-2600,80000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "-11000,-49000"
@@ -1855,6 +1855,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 727,0
+lastUid 750,0
 activeModelName "Symbol:CDM"
 )

@@ -31,6 +31,8 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I11/RAMfull
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/RAMLength
 add wave -noupdate -divider CoeffReading
 add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/I11/coeffAddr
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/LCoeff
+add wave -noupdate /leftrightsplitter_tb/I_dut/I11/HCoeff
 add wave -noupdate -divider {Xover DUT}
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/convertsionPoint
 add wave -noupdate /leftrightsplitter_tb/I_dut/I11/sample1
@@ -53,7 +55,7 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/SCK
 add wave -noupdate -divider {Final Data}
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_L_out
 add wave -noupdate -format Analog-Step -height 75 -max 2500000000.0 -min -2500000000.0 -radix decimal /leftrightsplitter_tb/audio_R_out
-add wave -noupdate -radix decimal /leftrightsplitter_tb/I_dut/addressB
+add wave -noupdate -radix unsigned /leftrightsplitter_tb/I_dut/addressB
 add wave -noupdate /leftrightsplitter_tb/I_dut/dataInB
 add wave -noupdate /leftrightsplitter_tb/I_dut/enB
 add wave -noupdate /leftrightsplitter_tb/I_dut/writeEnB
@@ -72,6 +74,19 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I14/coeffNb
 add wave -noupdate /leftrightsplitter_tb/I_dut/I14/cnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/NewCoeff
 add wave -noupdate /leftrightsplitter_tb/I_dut/RS232Coeff
+add wave -noupdate -divider {RAM input outout}
+add wave -noupdate /leftrightsplitter_tb/I_dut/addressB1
+add wave -noupdate /leftrightsplitter_tb/I_dut/dataInB1
+add wave -noupdate /leftrightsplitter_tb/I_dut/dataOutA
+add wave -noupdate /leftrightsplitter_tb/I_dut/dataOutB
+add wave -noupdate /leftrightsplitter_tb/I_dut/din
+add wave -noupdate /leftrightsplitter_tb/I_dut/enB
+add wave -noupdate /leftrightsplitter_tb/I_dut/we
+add wave -noupdate /leftrightsplitter_tb/I_dut/wraddr
+add wave -noupdate /leftrightsplitter_tb/I_dut/writeEnA
+add wave -noupdate /leftrightsplitter_tb/I_dut/writeEnB1
+add wave -noupdate /leftrightsplitter_tb/I_dut/enB1
+add wave -noupdate /leftrightsplitter_tb/I_dut/outputEn
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {37644290 ns} 0} {{Cursor 2} {1365854 ns} 0}
 quietly wave cursor active 1
@@ -89,4 +104,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {0 ns} {21079082 ns}
+WaveRestoreZoom {31952172 ns} {31952647 ns}

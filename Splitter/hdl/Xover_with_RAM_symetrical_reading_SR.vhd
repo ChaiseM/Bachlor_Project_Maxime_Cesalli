@@ -105,9 +105,9 @@ BEGIN
             
                -- updating the Highpass and Lowpass outpout
                Highpass <= resize(shift_right(AccumulaorHP, ACCUMULATOR_Bit_NB - 
-               Highpass'LENGTH - 10), Highpass'length);
+               Highpass'LENGTH - gainIn), Highpass'length);
                LowPass<= resize(shift_right(AccumulaorLP, ACCUMULATOR_Bit_NB -
-               LowPass'LENGTH - 10), LowPass'length);
+               LowPass'LENGTH - gainIn), LowPass'length);
             
             
                -- reseting everything 

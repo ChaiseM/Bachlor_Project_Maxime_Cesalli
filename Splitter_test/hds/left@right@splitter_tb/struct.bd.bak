@@ -268,7 +268,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:49:55"
+value "16:49:57"
 )
 (vvPair
 variable "group"
@@ -392,7 +392,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:49:55"
+value "16:49:57"
 )
 (vvPair
 variable "unit"
@@ -438,8 +438,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-4000,35000,9500,36000"
-st "SIGNAL reset       : std_ulogic
-"
+st "SIGNAL reset       : std_ulogic"
 )
 )
 *2 (Net
@@ -457,8 +456,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-4000,29000,9500,30000"
-st "SIGNAL clock       : std_ulogic
-"
+st "SIGNAL clock       : std_ulogic"
 )
 )
 *3 (Grouping
@@ -896,8 +894,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,14200,3000"
-st "SIGNAL CLKI2s      : std_uLogic
-"
+st "SIGNAL CLKI2s      : std_uLogic"
 )
 )
 *19 (SaComponent
@@ -1148,8 +1145,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,14000,3000"
-st "SIGNAL ShiftData   : std_ulogic
-"
+st "SIGNAL ShiftData   : std_ulogic"
 )
 )
 *28 (Net
@@ -1168,8 +1164,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,2000,12900,3000"
-st "SIGNAL en          : std_logic
-"
+st "SIGNAL en          : std_logic"
 )
 )
 *29 (Net
@@ -1187,8 +1182,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14000,1000"
-st "SIGNAL dataValid   : std_ulogic
-"
+st "SIGNAL dataValid   : std_ulogic"
 )
 )
 *30 (Net
@@ -1207,8 +1201,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14100,1000"
-st "SIGNAL SCK_in      : std_ulogic
-"
+st "SIGNAL SCK_in      : std_ulogic"
 )
 )
 *31 (Net
@@ -1227,8 +1220,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14400,1000"
-st "SIGNAL DOUT_in     : std_ulogic
-"
+st "SIGNAL DOUT_in     : std_ulogic"
 )
 )
 *32 (Net
@@ -1247,8 +1239,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14300,1000"
-st "SIGNAL LRCK_in     : std_ulogic
-"
+st "SIGNAL LRCK_in     : std_ulogic"
 )
 )
 *33 (Net
@@ -1266,8 +1257,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL CLK_out     : std_uLogic
-"
+st "SIGNAL CLK_out     : std_uLogic"
 )
 )
 *34 (Net
@@ -1285,8 +1275,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14500,1000"
-st "SIGNAL Data_out    : std_uLogic
-"
+st "SIGNAL Data_out    : std_uLogic"
 )
 )
 *35 (Net
@@ -1304,8 +1293,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14600,1000"
-st "SIGNAL LRCK_out    : std_ulogic
-"
+st "SIGNAL LRCK_out    : std_ulogic"
 )
 )
 *36 (SaComponent
@@ -2103,8 +2091,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27400,1000"
-st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audioLeft   : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *61 (Net
@@ -2123,8 +2110,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,27700,1000"
-st "SIGNAL audioRight  : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audioRight  : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *62 (Net
@@ -2144,8 +2130,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28000,1000"
-st "SIGNAL audio_L_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audio_L_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *63 (Net
@@ -2165,8 +2150,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,28200,1000"
-st "SIGNAL audio_R_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audio_R_out : signed(DATA_IN_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *64 (Net
@@ -2185,8 +2169,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig0        : std_ulogic
-"
+st "SIGNAL sig0        : std_ulogic"
 )
 )
 *65 (Net
@@ -2205,8 +2188,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig1        : std_ulogic
-"
+st "SIGNAL sig1        : std_ulogic"
 )
 )
 *66 (Net
@@ -2225,8 +2207,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig2        : std_ulogic
-"
+st "SIGNAL sig2        : std_ulogic"
 )
 )
 *67 (Net
@@ -2245,8 +2226,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig3        : std_ulogic
-"
+st "SIGNAL sig3        : std_ulogic"
 )
 )
 *68 (Net
@@ -2266,8 +2246,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,25900,1000"
-st "SIGNAL audioIn     : signed(DATA_WIDTH_T-1 DOWNTO 0)
-"
+st "SIGNAL audioIn     : signed(DATA_WIDTH_T-1 DOWNTO 0)"
 )
 )
 *69 (SaComponent
@@ -2706,8 +2685,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig4        : std_ulogic
-"
+st "SIGNAL sig4        : std_ulogic"
 )
 )
 *83 (Net
@@ -2726,8 +2704,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig5        : std_ulogic
-"
+st "SIGNAL sig5        : std_ulogic"
 )
 )
 *84 (Net
@@ -2746,8 +2723,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig6        : std_ulogic
-"
+st "SIGNAL sig6        : std_ulogic"
 )
 )
 *85 (Net
@@ -2766,8 +2742,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig7        : std_ulogic
-"
+st "SIGNAL sig7        : std_ulogic"
 )
 )
 *86 (Net
@@ -2786,8 +2761,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig8        : std_ulogic
-"
+st "SIGNAL sig8        : std_ulogic"
 )
 )
 *87 (Net
@@ -2806,8 +2780,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13400,1000"
-st "SIGNAL sig9        : std_ulogic
-"
+st "SIGNAL sig9        : std_ulogic"
 )
 )
 *88 (Net
@@ -2826,8 +2799,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL sig10       : std_ulogic
-"
+st "SIGNAL sig10       : std_ulogic"
 )
 )
 *89 (Net
@@ -2846,8 +2818,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,13600,1000"
-st "SIGNAL sig11       : std_ulogic
-"
+st "SIGNAL sig11       : std_ulogic"
 )
 )
 *90 (Net
@@ -2865,8 +2836,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "0,0,14800,1000"
-st "SIGNAL RxD_synch   : std_ulogic
-"
+st "SIGNAL RxD_synch   : std_ulogic"
 )
 )
 *91 (Blk

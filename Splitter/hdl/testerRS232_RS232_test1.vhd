@@ -26,18 +26,22 @@
       state_test2,
       state_coeffNb,
       state_startCoeff,
-      state_newCoeff
+      state_newCoeff,
+      state_newGain
       
   );
   
   signal cnt : unsigned(7 downto 0);
   signal cnt1 : unsigned(7 downto 0);
+  signal cnt2 : unsigned(7 downto 0);
   signal coeffCnt : unsigned(31 downto 0);
   signal currentState : STATEL_TYPE;
   signal temp0 : unsigned(3 downto 0);
   signal coeff0 : unsigned(31 downto 0);
   signal temp1 : unsigned(3 downto 0);
+  signal temp2 : unsigned(3 downto 0);
   signal coeffNb : unsigned(31 downto 0);
+  signal gain : unsigned(31 downto 0);
   signal outputEnDriver : std_ulogic;
 BEGIN
 
@@ -92,21 +96,67 @@ BEGIN
          currentState <= state_idle;
          cnt <= (others => '0');
          cnt1 <= (others => '0');
+         cnt2 <= (others => '0');
          Coeffcnt <= (others => '0');
+         gain <= to_unsigned(10,gain'length);
+         gainOut <= 10;
          coeff0 <= (others => '0');
          coeffNb <= (others => '0');
          filterTapNb <= FILTER_TAP_NB;
          outputEn <= '0';
          outputEnDriver <= '0';
+       
       elsif rising_edge(clock) then
          newCoeff <= '0';
        
          if RS232Valid = '1' then 
             -- Idle State 
-            if currentState = state_idle and isN = '1' then 
-               currentState <= state_test0;
+            if currentState = state_idle  then 
+               gainOut <= to_integer(gain);
+               cnt2 <= (others => '0');
+               if isN = '1' then  
+                  currentState <= state_test0;
+               elsif isG = '1' then 
+                  currentState <= state_newGain;
+               end if;
+               
             end if;
+            if currentState = state_newGain then 
             
+               cnt2 <= cnt2 + 1;
+               if is0  = '1'     then temp2 <= to_unsigned(0,temp2'length);
+               elsif is1 = '1'   then temp2 <= to_unsigned(1,temp2'length);
+               elsif is2 = '1'   then temp2 <= to_unsigned(2,temp2'length);
+               elsif is3 = '1'   then temp2 <= to_unsigned(3,temp2'length);
+               elsif is4 = '1'   then temp2 <= to_unsigned(4,temp2'length);
+               elsif is5 = '1'   then temp2 <= to_unsigned(5,temp2'length);
+               elsif is6 = '1'   then temp2 <= to_unsigned(6,temp2'length);
+               elsif is7 = '1'   then temp2 <= to_unsigned(7,temp2'length);
+               elsif is8  = '1'  then temp2 <= to_unsigned(8,temp2'length); 
+               elsif is9 = '1'   then temp2 <= to_unsigned(9,temp2'length);
+               elsif isA = '1'   then temp2 <= to_unsigned(10,temp2'length);
+               elsif isB = '1'   then temp2 <= to_unsigned(11,temp2'length);
+               elsif isC = '1'   then temp2 <= to_unsigned(12,temp2'length);
+               elsif isD = '1'   then temp2 <= to_unsigned(13,temp2'length);
+               elsif isE = '1'   then temp2 <= to_unsigned(14,temp2'length);
+               elsif isF = '1'   then temp2 <= to_unsigned(15,temp2'length);
+               -- condition to go out of the state_newGain  
+               elsif isT = '1'  then 
+                  currentState <= state_idle;
+               end if;
+               
+               
+               
+               if cnt2 /= 0 and cnt2 <=4 then 
+                 
+                  if cnt2 = 1 then gain(15 downto 12) <= temp2;
+                  elsif cnt2 = 2 then gain(11 downto 8) <= temp2;
+                  elsif cnt2 = 3 then gain(7 downto 4) <= temp2;
+                  elsif cnt2 = 4 then gain(3 downto 0) <= temp2;
+                  end if;
+                  
+               end if; 
+            end if; 
             if currentState = state_test0 and isE = '1' then 
                currentState <= state_test1;
             end if;
@@ -134,7 +184,7 @@ BEGIN
                elsif isD = '1'   then temp1 <= to_unsigned(13,temp1'length);
                elsif isE = '1'   then temp1 <= to_unsigned(14,temp1'length);
                elsif isF = '1'   then temp1 <= to_unsigned(15,temp1'length);
-               -- condition to do out of the newCoeff state 
+               -- condition to go out of the newCoeff state 
                elsif isT = '1'  then 
                   currentState <= state_startCoeff;
                   outputEnDriver <= '1';
@@ -197,7 +247,7 @@ BEGIN
                elsif isD = '1'   then temp0 <= to_unsigned(13,temp0'length);
                elsif isE = '1'   then temp0 <= to_unsigned(14,temp0'length);
                elsif isF = '1'   then temp0 <= to_unsigned(15,temp0'length);
-               -- condition to do out of the newCoeff state 
+               -- condition to go out of the newCoeff state 
                elsif isExcla = '1'  then 
                   currentState <= state_startCoeff;
                end if;

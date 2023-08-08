@@ -31,24 +31,31 @@ BEGIN
     uartSendInString <= '0';
     wait for 1*uartPeriod;
                                          -- characters with max. 2 Morse symbols
-    print("Sending characters with max. 2 symbols");
-    uartInString <= pad("new0007#x!DEADBEEF!x!BAAAAAAD!", uartInString'length);
-    uartSendInString <= '1', '0' after 1 ns;
-    wait until uartSendInDone = '1';
-    wait for uartWriteInterval;
-                                               -- characters starting with a dot
-    print("Sending characters starting with a dot");
-    uartInString <= pad("x!12345678!x!89ABCDEF!", uartInString'length);
-    uartSendInString <= '1', '0' after 1 ns;
-    wait until uartSendInDone = '1';
-    wait for uartWriteInterval;
-                                              -- characters starting with a dash
+    -- print("Sending characters with max. 2 symbols");
+    -- uartInString <= pad("new0006#x!DEADBEEF!x!BAAAAAAD!", uartInString'length);
+    -- uartSendInString <= '1', '0' after 1 ns;
+    -- wait until uartSendInDone = '1';
+    -- wait for uartWriteInterval;
+                                              -- characters starting with a dot
+    -- print("Sending characters starting with a dot");
+    -- uartInString <= pad("x!12345678!x!89ABCDEF!", uartInString'length);
+    -- uartSendInString <= '1', '0' after 1 ns;
+    -- wait until uartSendInDone = '1';
+    -- wait for uartWriteInterval;
+                                              --characters starting with a dash
+    -- print("Sending characters starting with a dash");
+    -- uartInString <= pad("x!AAAAAAAA!x!BAAAAAAD!x!10101010!", uartInString'length);
+    -- uartSendInString <= '1', '0' after 1 ns;
+    -- wait until uartSendInDone = '1';
+    -- wait for uartWriteInterval;
+    wait for 30 ms;
+    
     print("Sending characters starting with a dash");
-    uartInString <= pad("x!AAAAAAAA!x!BAAAAAAD!x!10101010!", uartInString'length);
+    uartInString <= pad("G0009T", uartInString'length);
     uartSendInString <= '1', '0' after 1 ns;
     wait until uartSendInDone = '1';
     wait for uartWriteInterval;
-    wait for 300000 ms;
+     wait for 10000000 ms;
                                                             
   
   end process;

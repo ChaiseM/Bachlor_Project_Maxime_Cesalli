@@ -38,13 +38,12 @@ NET     "testOut<2>"  	LOC = "C4"  ;
 NET     "testOut<3>"  	LOC = "C5"  ;
 NET     "testOut<4>"  	LOC = "G6"  ;
 NET     "testOut<5>"  	LOC = "B3"  ;
-NET     "testOut<6>"  	LOC = "B4"  ;
+
 #-------------------------------------------------------------------------------
 # UART
 #
-NET "RxD"               LOC = "V2" ;    # female DB9 on J9
-#NET "RxD_synch"         LOC = "B6" ;
-#NET "TxD"               LOC = "T1" ;
+NET "RxD"               LOC = "B4" ;   
+
 
 #----------------------------------------------------------------------------
 # Globals

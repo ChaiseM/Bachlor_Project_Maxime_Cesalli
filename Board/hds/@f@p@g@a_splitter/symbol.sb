@@ -289,7 +289,7 @@ m 1
 decl (Decl
 n "testOut"
 t "std_ulogic_vector"
-b "(6 downto 0)"
+b "(5 DOWNTO 0)"
 o 22
 suid 2051,0
 )
@@ -479,13 +479,13 @@ uid 1765,0
 )
 *61 (MRCItem
 litem &34
-pos 20
+pos 21
 dimension 20
 uid 2065,0
 )
 *62 (MRCItem
 litem &35
-pos 21
+pos 20
 dimension 20
 uid 2141,0
 )
@@ -792,19 +792,19 @@ value "C:\\Users\\maxime.cesalli\\Desktop\\I2s\\Bachlor_Project\\Prefs\\..\\Boar
 )
 (vvPair
 variable "date"
-value "04.08.2023"
+value "15.08.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "04"
+value "15"
 )
 (vvPair
 variable "designName"
@@ -836,7 +836,7 @@ value "maxime.cesalli"
 )
 (vvPair
 variable "graphical_source_date"
-value "04.08.2023"
+value "15.08.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -848,7 +848,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:50:18"
+value "12:38:47"
 )
 (vvPair
 variable "group"
@@ -984,7 +984,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "16:50:18"
+value "12:38:47"
 )
 (vvPair
 variable "unit"
@@ -1935,15 +1935,15 @@ uid 2071,0
 va (VaSet
 font "Verdana,8,0"
 )
-xt "2000,30800,23500,31800"
-st "testOut : OUT    std_ulogic_vector (6 downto 0)"
+xt "2000,30800,24200,31800"
+st "testOut : OUT    std_ulogic_vector (5 DOWNTO 0)"
 )
 thePort (LogicalPort
 m 1
 decl (Decl
 n "testOut"
 t "std_ulogic_vector"
-b "(6 downto 0)"
+b "(5 DOWNTO 0)"
 o 22
 suid 2051,0
 )
@@ -2710,7 +2710,7 @@ xt "0,7800,0,7800"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 2446,0
+lastUid 2653,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

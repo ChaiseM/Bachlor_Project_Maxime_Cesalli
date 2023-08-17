@@ -63,10 +63,14 @@ add wave -noupdate /leftrightsplitter_tb/I_dut/I10/firstWrite
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/wAddrCnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/I10/arrayCnt
 add wave -noupdate -divider UART
-add wave -noupdate /leftrightsplitter_tb/I_dut/RS232Data
+add wave -noupdate -radix binary /leftrightsplitter_tb/I_dut/RS232Data
 add wave -noupdate /leftrightsplitter_tb/I_dut/RS232Valid
 add wave -noupdate /leftrightsplitter_tb/I_dut/RxD_synch
-add wave -noupdate /leftrightsplitter_tb/I_dut/I14/temp0
+add wave -noupdate /leftrightsplitter_tb/I_dut/I13/rxRising
+add wave -noupdate /leftrightsplitter_tb/I_dut/I13/cnt
+add wave -noupdate /leftrightsplitter_tb/I_dut/I13/cnt2
+add wave -noupdate /leftrightsplitter_tb/I_dut/I13/RS232Register
+add wave -noupdate /leftrightsplitter_tb/I_dut/I13/currentState
 add wave -noupdate /leftrightsplitter_tb/I_dut/I14/currentState
 add wave -noupdate /leftrightsplitter_tb/I_dut/I14/coeffCnt
 add wave -noupdate /leftrightsplitter_tb/I_dut/I14/coeff0
@@ -104,4 +108,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ms
 update
-WaveRestoreZoom {31952172 ns} {31952647 ns}
+WaveRestoreZoom {0 ns} {105 ms}

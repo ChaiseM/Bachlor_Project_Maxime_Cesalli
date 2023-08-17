@@ -27,7 +27,10 @@ VIEW symbol.sb
 GRAPHIC 471,0 27 0 
 DESIGN @r@s232_reciver
 VIEW symbol.sb
-GRAPHIC 1,0 30 0 
+GRAPHIC 524,0 28 0 
 DESIGN @r@s232_reciver
 VIEW symbol.sb
 GRAPHIC 1,0 31 0 
+DESIGN @r@s232_reciver
+VIEW symbol.sb
+GRAPHIC 1,0 32 0 

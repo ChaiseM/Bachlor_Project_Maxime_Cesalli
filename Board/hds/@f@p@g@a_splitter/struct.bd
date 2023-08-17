@@ -343,7 +343,7 @@ value "WE2330804"
 )
 (vvPair
 variable "graphical_source_time"
-value "14:35:41"
+value "18:13:35"
 )
 (vvPair
 variable "group"
@@ -479,7 +479,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "14:35:41"
+value "18:13:35"
 )
 (vvPair
 variable "unit"
@@ -524,8 +524,7 @@ va (VaSet
 isHidden 1
 )
 xt "-3000,-66600,10100,-65400"
-st "clock        : std_ulogic
-"
+st "clock        : std_ulogic"
 )
 )
 *2 (Grouping
@@ -967,8 +966,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "2000,-121400,13000,-120400"
-st "reset_n      : std_ulogic
-"
+st "reset_n      : std_ulogic"
 )
 )
 *16 (Net
@@ -986,8 +984,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "2000,-121400,15800,-120400"
-st "SIGNAL reset        : std_ulogic
-"
+st "SIGNAL reset        : std_ulogic"
 )
 )
 *17 (SaComponent
@@ -1416,8 +1413,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "2000,-94400,16700,-93400"
-st "SIGNAL resetSynch   : std_ulogic
-"
+st "SIGNAL resetSynch   : std_ulogic"
 )
 )
 *34 (SaComponent
@@ -1616,8 +1612,7 @@ isHidden 1
 font "Verdana,8,0"
 )
 xt "-10000,-88400,5100,-87400"
-st "SIGNAL resetSynch_n : std_ulogic
-"
+st "SIGNAL resetSynch_n : std_ulogic"
 )
 )
 *42 (SaComponent
@@ -1756,8 +1751,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,3200,19900,4400"
-st "SIGNAL reset1       : std_ulogic
-"
+st "SIGNAL reset1       : std_ulogic"
 )
 )
 *48 (SaComponent
@@ -2629,8 +2623,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,16200,3000"
-st "CLK_In       : std_uLogic
-"
+st "CLK_In       : std_uLogic"
 )
 )
 *79 (Net
@@ -2647,8 +2640,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,16200,3000"
-st "Data_In      : std_uLogic
-"
+st "Data_In      : std_uLogic"
 )
 )
 *80 (Net
@@ -2665,8 +2657,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15700,3000"
-st "LR_In        : std_uLogic
-"
+st "LR_In        : std_uLogic"
 )
 )
 *81 (Net
@@ -2683,8 +2674,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,20400,3000"
-st "SIGNAL Data_I       : std_uLogic
-"
+st "SIGNAL Data_I       : std_uLogic"
 )
 )
 *82 (Net
@@ -2701,8 +2691,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,20400,3000"
-st "SIGNAL CLK_I        : std_uLogic
-"
+st "SIGNAL CLK_I        : std_uLogic"
 )
 )
 *83 (Net
@@ -2719,8 +2708,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,19900,3000"
-st "SIGNAL LR_I         : std_uLogic
-"
+st "SIGNAL LR_I         : std_uLogic"
 )
 )
 *84 (PortIoOut
@@ -2896,8 +2884,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,16300,3000"
-st "Data_O       : std_uLogic
-"
+st "Data_O       : std_uLogic"
 )
 )
 *88 (Net
@@ -2914,8 +2901,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,16300,3000"
-st "CLK_O        : std_uLogic
-"
+st "CLK_O        : std_uLogic"
 )
 )
 *89 (Net
@@ -2932,8 +2918,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15500,3000"
-st "LR_O         : std_ulogic
-"
+st "LR_O         : std_ulogic"
 )
 )
 *90 (PortIoIn
@@ -3159,8 +3144,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S23          : std_ulogic
-"
+st "S23          : std_ulogic"
 )
 )
 *95 (Net
@@ -3177,8 +3161,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S22          : std_ulogic
-"
+st "S22          : std_ulogic"
 )
 )
 *96 (Net
@@ -3195,8 +3178,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S21          : std_ulogic
-"
+st "S21          : std_ulogic"
 )
 )
 *97 (Net
@@ -3213,8 +3195,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S20          : std_ulogic
-"
+st "S20          : std_ulogic"
 )
 )
 *98 (PortIoIn
@@ -3671,8 +3652,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S33          : std_ulogic
-"
+st "S33          : std_ulogic"
 )
 )
 *107 (Net
@@ -3689,8 +3669,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S32          : std_ulogic
-"
+st "S32          : std_ulogic"
 )
 )
 *108 (Net
@@ -3707,8 +3686,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S31          : std_ulogic
-"
+st "S31          : std_ulogic"
 )
 )
 *109 (Net
@@ -3725,8 +3703,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S30          : std_ulogic
-"
+st "S30          : std_ulogic"
 )
 )
 *110 (Net
@@ -3743,8 +3720,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S40          : std_ulogic
-"
+st "S40          : std_ulogic"
 )
 )
 *111 (Net
@@ -3761,8 +3737,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S41          : std_ulogic
-"
+st "S41          : std_ulogic"
 )
 )
 *112 (Net
@@ -3779,8 +3754,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S42          : std_ulogic
-"
+st "S42          : std_ulogic"
 )
 )
 *113 (Net
@@ -3797,8 +3771,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15100,3000"
-st "S43          : std_ulogic
-"
+st "S43          : std_ulogic"
 )
 )
 *114 (SaComponent
@@ -4505,8 +4478,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,21200,3000"
-st "SIGNAL Data_O1      : std_uLogic
-"
+st "SIGNAL Data_O1      : std_uLogic"
 )
 )
 *142 (Net
@@ -4523,8 +4495,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,21200,3000"
-st "SIGNAL CLK_O1       : std_uLogic
-"
+st "SIGNAL CLK_O1       : std_uLogic"
 )
 )
 *143 (Net
@@ -4541,8 +4512,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,20400,3000"
-st "SIGNAL LR_O1        : std_ulogic
-"
+st "SIGNAL LR_O1        : std_ulogic"
 )
 )
 *144 (PortIoOut
@@ -4897,8 +4867,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,15400,3000"
-st "RxD          : std_uLogic
-"
+st "RxD          : std_uLogic"
 )
 )
 *156 (Net
@@ -4915,8 +4884,7 @@ va (VaSet
 isHidden 1
 )
 xt "2000,1800,21700,3000"
-st "SIGNAL RxD_synch    : std_uLogic
-"
+st "SIGNAL RxD_synch    : std_uLogic"
 )
 )
 *157 (Net
@@ -4934,8 +4902,7 @@ va (VaSet
 isHidden 1
 )
 xt "0,200,26000,1400"
-st "testOut      : std_ulogic_vector(5 DOWNTO 0)
-"
+st "testOut      : std_ulogic_vector(5 DOWNTO 0)"
 )
 )
 *158 (SaComponent
@@ -7492,7 +7459,7 @@ tm "BdCompilerDirectivesTextMgr"
 associable 1
 )
 windowSize "0,14,1921,1080"
-viewArea "-41872,-70700,113884,15596"
+viewArea "-29600,-67000,126156,16720"
 cachedDiagramExtent "-10000,-121400,169100,20000"
 pageSetupInfo (PageSetupInfo
 ptrCmd "\\\\ipp://ipp.hevs.ch\\PREA309_HPLJP3005DN,winspool,"
@@ -7520,7 +7487,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-7000,-179000"
-lastUid 10784,0
+lastUid 10926,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -8498,13 +8465,13 @@ va (VaSet
 xt "-3000,-67000,27000,-56200"
 st "constant DATA_WIDTH : positive := 32; --i2s out
 constant COEFF_BIT_NB : positive := 32; 
-constant FILTER_TAP_NB : positive := 649;
+constant FILTER_TAP_NB : positive := 499;
 constant DATA_IN_WIDTH : positive := 32; -- i2s In
 constant addressBitNb :positive := 12; -- for the RAM
 constant dataBitNb :positive := 16; -- For the RAM
 constant uartDataBitNb : positive := 7;
 constant uartBaudRate: real := 9.6E3;
-constant clockFrequency: real := 66.6E6;"
+constant clockFrequency: real := 66.0E6;"
 tm "BdDeclarativeTextMgr"
 )
 diagSignalLabel (Text

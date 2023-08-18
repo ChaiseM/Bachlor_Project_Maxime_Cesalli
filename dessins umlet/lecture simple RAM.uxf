@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>20</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>160</y>
+      <w>60</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+D4
+--
+D3
+--
+D2
+--
+D1
+--
+D0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>160</y>
+      <w>60</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+D4
+--
+D3
+--
+D2
+--
+D1
+--
+D5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>160</y>
+      <w>60</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+D4
+--
+D3
+--
+D2
+--
+D6
+--
+D5</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>160</y>
+      <w>60</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>180</y>
+      <w>60</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>140</y>
+      <w>60</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>320</y>
+      <w>60</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>180</y>
+      <w>60</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>140</y>
+      <w>60</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>280</y>
+      <w>60</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>300</y>
+      <w>60</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>120</x>
+      <y>100</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("Première lecture ", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>380</x>
+      <y>100</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("Deuxième lecture ", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>640</x>
+      <y>100</y>
+      <w>320</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("Troisième  lecture ", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>340</y>
+      <w>80</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>300</y>
+      <w>80</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>260</y>
+      <w>80</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+</diagram>

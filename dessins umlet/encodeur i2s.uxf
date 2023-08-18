@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>252</y>
+      <w>312</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5
+audio Gauche</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>120</y>
+      <w>300</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5
+audio Droite</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>720</x>
+      <y>132</y>
+      <w>24</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("0", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>720</x>
+      <y>252</y>
+      <w>24</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("1", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>120</y>
+      <w>36</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>72</y>
+      <w>36</w>
+      <h>276</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>72</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>70.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>264</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;50.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>192</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>120</y>
+      <w>36</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>876</x>
+      <y>72</y>
+      <w>36</w>
+      <h>276</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>876</x>
+      <y>72</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>70.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>876</x>
+      <y>264</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;50.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>180</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Data Line
+</panel_attributes>
+    <additional_attributes>180.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>480</y>
+      <w>252</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bit clock line</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>636</x>
+      <y>444</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+compteur </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>288</y>
+      <w>156</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;180.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>276</y>
+      <w>216</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bit clock line</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>972</x>
+      <y>228</y>
+      <w>216</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Word select</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>324</y>
+      <w>156</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Word select</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>396</y>
+      <w>156</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bit clock line</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>324</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+registre</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>288</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Word select décalé </panel_attributes>
+    <additional_attributes>190.0;10.0;190.0;50.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>420</x>
+      <y>408</y>
+      <w>24</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("en", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

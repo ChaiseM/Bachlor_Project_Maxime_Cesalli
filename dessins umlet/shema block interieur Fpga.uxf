@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>221</x>
+      <y>286</y>
+      <w>169</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+décodeur I2S</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>338</y>
+      <w>247</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio i2s stereo</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>377</x>
+      <y>299</y>
+      <w>195</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5
+audio Droite</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>377</x>
+      <y>364</y>
+      <w>195</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5
+audio Gauche</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>793</x>
+      <y>247</y>
+      <w>104</w>
+      <h>247</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>793</x>
+      <y>455</y>
+      <w>104</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>871</x>
+      <y>182</y>
+      <w>169</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Filtre passe Bas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>871</x>
+      <y>390</y>
+      <w>169</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Filtre passe Haut</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1131</x>
+      <y>312</y>
+      <w>117</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1131</x>
+      <y>390</y>
+      <w>117</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+lw=5</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1222</x>
+      <y>286</y>
+      <w>169</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+encodeur I2S</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1378</x>
+      <y>338</y>
+      <w>286</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio i2s Aigus/Graves</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>533</x>
+      <y>208</y>
+      <w>39</w>
+      <h>312</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>533</x>
+      <y>208</y>
+      <w>117</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>70.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>611</x>
+      <y>260</y>
+      <w>39</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>533</x>
+      <y>429</y>
+      <w>117</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=1
+bg=CYAN</panel_attributes>
+    <additional_attributes>10.0;50.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>611</x>
+      <y>338</y>
+      <w>221</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=5
+audio selectionné</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>247</x>
+      <y>455</y>
+      <w>364</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+selection filtre gauche ou droite</panel_attributes>
+    <additional_attributes>260.0;10.0;260.0;50.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>572</x>
+      <y>312</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("0", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>572</x>
+      <y>377</y>
+      <w>26</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>//Text Element
+_umletcode=
+// Parameters drawText(text, x, y, horizontal alignment)
+// Parameters drawLine(x1, y1, x2, y2) 
+// Helping lines are drawn for better understanding of the Text Positioning
+
+// " can be escaped by \ and \\ is converted to \
+drawText("1", width/2, 18, center) //fg= //Parameters (text, x, y, horizontal alignment)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>793</x>
+      <y>351</y>
+      <w>26</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1131</x>
+      <y>390</y>
+      <w>39</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=5</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1131</x>
+      <y>234</y>
+      <w>39</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=5</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1027</x>
+      <y>442</y>
+      <w>143</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=5
+Aigus</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1027</x>
+      <y>221</y>
+      <w>143</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=-
+lw=5
+Graves</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

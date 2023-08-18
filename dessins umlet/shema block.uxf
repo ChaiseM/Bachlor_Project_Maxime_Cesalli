@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>348</y>
+      <w>156</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+ADC 
+Texas Instruments 
+PCM1808EVM</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>396</y>
+      <w>204</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio I2S Stereo</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>348</y>
+      <w>132</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+FPGA
+Xilinx 
+spartan 3E
+xc3s-1200e
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>888</x>
+      <y>348</y>
+      <w>132</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+DAC
+For rasbery Pi</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>396</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio I2S HP/LP</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1476</x>
+      <y>276</y>
+      <w>156</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>
+bg=#8c7a00
+_umletcode=
+//DrawConfig Parameters (bg: bgColor?, fg: fgColor?, lt: lineType?, lw: lineWidth?, transparency: transparencyValue?)
+var drawConfigBlue = {bg: blue}; 
+var config = { bg: blue, fg: '#8A2BE2', lt: '-', lw: 3}
+var configRedBlack = {bg: 'red', fg: 'black', lt:'=', lw: 3, transparency: 0}
+var randomConfig = {bg: '#6B8E23', fg: "#8B4513", lt: '.', lw: 3, transparency:10}
+
+drawCircle(65,50,15)
+drawCircle(65,50,8)
+drawCircle(65,120,40)
+drawCircle(65,120,25)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1272</x>
+      <y>360</y>
+      <w>228</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio amplifié aigus</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1272</x>
+      <y>432</y>
+      <w>228</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio amplifié graves</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>348</y>
+      <w>132</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>valign=center
+halign=center
+Amplificateur
+Aiyiama A07</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>360</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio aigus</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1008</x>
+      <y>432</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio graves</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>360</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio channel R</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>108</x>
+      <y>432</y>
+      <w>192</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+audio channel L</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

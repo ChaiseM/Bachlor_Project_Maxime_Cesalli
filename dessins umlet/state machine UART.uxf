@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>13</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>559</x>
+      <y>117</y>
+      <w>130</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>Idle</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>741</x>
+      <y>234</y>
+      <w>130</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>start</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>377</x>
+      <y>234</y>
+      <w>130</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Read Data
+cntBits++</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>676</x>
+      <y>117</y>
+      <w>182</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+falling edge</panel_attributes>
+    <additional_attributes>100.0;90.0;100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>494</x>
+      <y>234</y>
+      <w>273</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+cnt = uartPeriod*1.5</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>403</x>
+      <y>117</y>
+      <w>182</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+cntBits = 7</panel_attributes>
+    <additional_attributes>120.0;20.0;30.0;20.0;30.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>247</y>
+      <w>130</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>299</y>
+      <w>39</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>351</y>
+      <w>195</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>lt=-
+cnt = uartPeriod
+</panel_attributes>
+    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
